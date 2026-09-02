@@ -1,0 +1,43 @@
+---
+import Base from '../layouts/Base.astro';
+import PostList from '../components/PostList.astro';
+import ProjectItem from '../components/ProjectItem.astro';
+import { getCollection } from 'astro:content';
+import { groups } from '../data/projects';
+
+const posts = (await getCollection('blog', (p) => !p.data.draft))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, 4);
+---
+<Base section="home">
+  <section class="hero">
+    <h1>Law librarian.<br />Former attorney.<br />Occasional toolmaker.</h1>
+    <p>
+      I teach legal research, writing, and technology. I write
+      about what generative AI gets wrong in legal research. And I build small tools to teach with.
+    </p>
+  </section>
+
+  <section class="section">
+    <div class="section-head"><h2>Writing</h2><a class="more" href="/blog/">All posts →</a></div>
+    <PostList posts={posts} />
+  </section>
+
+  <section class="section">
+    <div class="section-head"><h2>Projects</h2><a class="more" href="/projects/">All projects →</a></div>
+    <div class="kinds">
+      {
+        groups.map((g) => (
+          <div class="kind" style={`--kind: var(--${g.color})`}>
+            <h3>{g.title}</h3>
+            <ul>
+              {g.items.slice(0, 3).map((p) => (
+                <ProjectItem project={p} />
+              ))}
+            </ul>
+          </div>
+        ))
+      }
+    </div>
+  </section>
+</Base>

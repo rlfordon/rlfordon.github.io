@@ -1,0 +1,31 @@
+---
+import Base from '../../layouts/Base.astro';
+import PostList from '../../components/PostList.astro';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('blog', (p) => !p.data.draft)).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+const years = [...new Set(posts.map((p) => p.data.pubDate.getUTCFullYear()))];
+---
+<Base
+  title="Writing"
+  section="blog"
+  description="Essays and notes on generative AI in legal research, hallucinations, vibe-coding for teaching, and law librarianship."
+>
+  <header class="article-head">
+    <h1>Writing</h1>
+    <p class="intro">
+      Posts from 2023 to 2026 first appeared on <em><a href="https://www.ailawlibrarians.com">AI Law Librarians</a></em>, a group blog I co-founded. They are
+      republished here with their original dates. Subscribe via <a href="/rss.xml">RSS</a>.
+    </p>
+  </header>
+  {
+    years.map((y) => (
+      <>
+        <p class="year-label">{y}</p>
+        <PostList posts={posts.filter((p) => p.data.pubDate.getUTCFullYear() === y)} />
+      </>
+    ))
+  }
+</Base>

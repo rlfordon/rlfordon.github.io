@@ -1,0 +1,23 @@
+---
+import type { Project } from '../data/projects';
+
+interface Props {
+  project: Project;
+  /** Show Try it / Source links (projects page). */
+  detailed?: boolean;
+}
+const { project: p, detailed = false } = Astro.props;
+const primary = p.live ?? p.repo;
+---
+<li>
+  {primary ? <a href={primary}>{p.name}</a> : <span>{p.name}</span>}
+  <p>{p.blurb}</p>
+  {
+    detailed && (p.live || p.repo) && (
+      <div class="links">
+        {p.live && <a href={p.live}>Try it</a>}
+        {p.repo && <a href={p.repo}>Source</a>}
+      </div>
+    )
+  }
+</li>

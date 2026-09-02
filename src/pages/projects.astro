@@ -1,0 +1,31 @@
+---
+import Base from '../layouts/Base.astro';
+import ProjectItem from '../components/ProjectItem.astro';
+import { groups } from '../data/projects';
+---
+<Base
+  title="Projects"
+  section="projects"
+  description="Teaching tools, legal research tooling, and side projects by Rebecca Fordon."
+>
+  <header class="article-head">
+    <h1>Projects</h1>
+    <p class="intro">
+      Most of this is open source on <a href="https://github.com/rlfordon">GitHub</a>. Tools hosted on Replit sleep
+      when idle and can take a few seconds to wake.
+    </p>
+  </header>
+  {
+    groups.map((g) => (
+      <section class="kind-page" style={`--kind: var(--${g.color})`}>
+        <p class="kind-title">{g.title}</p>
+        <p class="intro">{g.intro}</p>
+        <ul class="kind-list">
+          {g.items.map((p) => (
+            <ProjectItem project={p} detailed />
+          ))}
+        </ul>
+      </section>
+    ))
+  }
+</Base>

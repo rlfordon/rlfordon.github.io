@@ -1,0 +1,66 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+  /** Current top-level section, for nav highlighting. */
+  section?: 'home' | 'blog' | 'projects' | 'about';
+  ogType?: 'website' | 'article';
+}
+const SITE_NAME = 'Rebecca Fordon';
+const DEFAULT_DESC =
+  'Law librarian, former attorney, and builder of small legal-tech tools. Writing on generative AI in legal research and teaching.';
+const { title, description = DEFAULT_DESC, section = 'home', ogType = 'website' } = Astro.props;
+const fullTitle = title ? `${title} · ${SITE_NAME}` : `${SITE_NAME} — law librarian, legal tech, AI in legal research`;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const year = new Date().getFullYear();
+---
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="alternate" type="application/rss+xml" title={`${SITE_NAME} — writing`} href="/rss.xml" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <meta property="og:site_name" content={SITE_NAME} />
+    <meta property="og:type" content={ogType} />
+    <meta property="og:title" content={title ?? SITE_NAME} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta name="twitter:card" content="summary" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="preload" href="/fonts/Fraunces-VF.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/Montserrat-VF.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="/fonts/fonts.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <div class="shell">
+      <header class="masthead">
+        <a class="brand" href="/"><span class="name">Rebecca Fordon</span></a>
+        <div class="lines">
+          <i aria-hidden="true"></i><i aria-hidden="true"></i><i aria-hidden="true"></i><i aria-hidden="true"></i>
+          <nav class="nav" aria-label="Primary">
+            <a href="/blog/" aria-current={section === 'blog' ? 'page' : undefined}>Writing</a>
+            <a href="/projects/" aria-current={section === 'projects' ? 'page' : undefined}>Projects</a>
+            <a href="/about/" aria-current={section === 'about' ? 'page' : undefined}>About</a>
+          </nav>
+        </div>
+      </header>
+      <main id="main">
+        <slot />
+      </main>
+      <footer class="colophon">
+        <span>© {year} Rebecca Fordon. Views here are my own.</span>
+        <span>
+          <a href="https://github.com/rlfordon">GitHub</a> ·
+          <a href="/rss.xml">RSS</a>
+        </span>
+      </footer>
+    </div>
+  </body>
+</html>

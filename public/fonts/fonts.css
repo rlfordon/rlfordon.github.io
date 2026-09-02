@@ -1,0 +1,6 @@
+/* Self-hosted web fonts, SIL Open Font License 1.1 (see OFL-*.txt alongside).
+   Fraunces by Undercase Type; Montserrat by Julieta Ulanovsky et al.
+   Variable fonts, subset to Latin and Latin Extended. */
+@font-face { font-family: 'Fraunces'; font-style: normal; font-weight: 100 900; font-display: swap; src: url('/fonts/Fraunces-VF.woff2') format('woff2'); }
+@font-face { font-family: 'Montserrat'; font-style: normal; font-weight: 100 900; font-display: swap; src: url('/fonts/Montserrat-VF.woff2') format('woff2'); }
+@font-face { font-family: 'Montserrat'; font-style: italic; font-weight: 100 900; font-display: swap; src: url('/fonts/Montserrat-Italic-VF.woff2') format('woff2'); }
