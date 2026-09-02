@@ -130,7 +130,7 @@ export const groups: { title: string; color: KindColor; intro: string; items: Pr
   {
     title: 'Just for fun',
     color: 'red',
-    intro: 'Games and small things built with my kids, or for the pure joy of shipping something on a weekend.',
+    intro: 'Games and small things built with my kid, or just for fun.',
     items: [
       {
         name: 'Bug Lab',
