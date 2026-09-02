@@ -8,6 +8,8 @@ export type Project = {
   blurb: string;
   live?: string;
   repo?: string;
+  /** Extra links, e.g. browser-extension stores. */
+  links?: { label: string; url: string }[];
 };
 
 export type KindColor = 'yellow' | 'orange' | 'red';
@@ -85,7 +87,12 @@ export const groups: { title: string; color: KindColor; intro: string; items: Pr
         name: 'The Missing Link',
         blurb:
           'Browser extension that finds the case an article mentioned but did not link, using Claude to identify it and CourtListener to fetch it.',
+        live: 'https://chromewebstore.google.com/detail/the-missing-link/keabioafoggdllieldimckfijklbdoii',
         repo: 'https://github.com/rlfordon/the-missing-link',
+        links: [
+          { label: 'Chrome', url: 'https://chromewebstore.google.com/detail/the-missing-link/keabioafoggdllieldimckfijklbdoii' },
+          { label: 'Firefox', url: 'https://addons.mozilla.org/en-US/firefox/addon/the-missing-link/' },
+        ],
       },
       {
         name: 'Docket Q&A',

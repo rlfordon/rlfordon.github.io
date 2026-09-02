@@ -3,19 +3,23 @@ import type { Project } from '../data/projects';
 
 interface Props {
   project: Project;
-  /** Show Try it / Source links (projects page). */
+  /** Show the link row (projects page). */
   detailed?: boolean;
 }
 const { project: p, detailed = false } = Astro.props;
 const primary = p.live ?? p.repo;
+// If the project lists its own links (e.g. extension stores), those replace the generic "Try it".
+const extra = p.links ?? [];
+const showTryIt = p.live && extra.length === 0;
 ---
 <li>
   {primary ? <a href={primary}>{p.name}</a> : <span>{p.name}</span>}
   <p>{p.blurb}</p>
   {
-    detailed && (p.live || p.repo) && (
+    detailed && (showTryIt || extra.length > 0 || p.repo) && (
       <div class="links">
-        {p.live && <a href={p.live}>Try it</a>}
+        {showTryIt && <a href={p.live}>Try it</a>}
+        {extra.map((l) => <a href={l.url}>{l.label}</a>)}
         {p.repo && <a href={p.repo}>Source</a>}
       </div>
     )
