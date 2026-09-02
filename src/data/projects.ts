@@ -79,7 +79,7 @@ export const groups: { title: string; color: KindColor; intro: string; items: Pr
     title: 'Research tooling and side projects',
     color: 'orange',
     intro:
-      'Open tools for legal research built on public data, mostly the Free Law Project’s CourtListener, plus things built for the fun of it, some of them with my kids.',
+      'Things I built on my own time: open tools for legal research on public data, mostly the Free Law Project’s CourtListener, and other side projects.',
     items: [
       {
         name: 'The Missing Link',
@@ -118,6 +118,13 @@ export const groups: { title: string; color: KindColor; intro: string; items: Pr
         live: 'https://rlfordon.github.io/teaching-explainer/',
         repo: 'https://github.com/rlfordon/teaching-explainer',
       },
+    ],
+  },
+  {
+    title: 'Just for fun',
+    color: 'red',
+    intro: 'Games and small things built with my kids, or for the pure joy of shipping something on a weekend.',
+    items: [
       {
         name: 'Bug Lab',
         blurb:
