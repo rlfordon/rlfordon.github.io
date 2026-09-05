@@ -66,7 +66,6 @@ items:
   - ref: levy-ai-and-the-legal-profession-2d
   - ref: pli-ai-course-handbooks
     note: Check whether your library has PLI Plus.
-  - ref: choi-schwarcz-ai-tools-for-lawyers
   - ref: ashley-artificial-intelligence-and-legal-analytics
   - ref: katz-dolin-bommarito-legal-informatics
   - ref: waisberg-hudek-ai-for-lawyers
@@ -77,7 +76,5 @@ items:
     note: A model for asynchronous structure.
   - ref: chandler-llms-for-lawyers
     note: Hands-on use, evaluate, and build sequence with a semester-long project.
-  - ref: unc-generative-ai-and-law-schools-annotated-bibliography
-    note: Dated; useful as a cross-check.
   - ref: arkfeld-on-artificial-intelligence
   - ref: artificial-intelligence-law-and-litigation

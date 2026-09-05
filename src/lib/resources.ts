@@ -82,10 +82,10 @@ export const KIND_LABELS: Record<Resource['kind'], string> = {
 export const KIND_GROUPS: { id: string; label: string; kinds: Resource['kind'][] }[] = [
   { id: 'casebooks', label: 'Casebooks & textbooks', kinds: ['casebook', 'open-casebook', 'textbook', 'supplement'] },
   { id: 'study-aids', label: 'Study aids', kinds: ['study-aid'] },
-  { id: 'practitioner', label: 'Practitioner & general', kinds: ['practitioner-book', 'monograph'] },
-  { id: 'reference', label: 'Reference', kinds: ['treatise', 'bibliography', 'article'] },
+  { id: 'practitioner', label: 'Practitioner & general', kinds: ['practitioner-book', 'monograph', 'treatise'] },
   { id: 'courses', label: 'Courses & syllabi', kinds: ['online-course', 'syllabus', 'website'] },
 ];
+// Articles and bibliographies have no group of their own; a record of those kinds still lists, but no Kind chip selects it.
 
 export function kindGroup(kind: Resource['kind']): string {
   return KIND_GROUPS.find((g) => g.kinds.includes(kind))?.id ?? 'other';
