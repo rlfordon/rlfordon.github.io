@@ -3,10 +3,13 @@ description: >
   Textbooks, casebooks, study aids, and open materials for teaching AI in legal practice, grouped by
   how students can get them.
 intro: >
-  Textbooks, casebooks, study aids, open materials, and course sites for people teaching AI in legal
-  practice, including non-JD programs. Titles marked Subscription are in the West Academic Study Aids
-  package that many law libraries license. Open casebooks on H2O may exist in several forks; the entry
-  links the original. Descriptions are neutral; prices and dates are as of the last check.
+  A reading list for people teaching AI in legal practice or legal education, including non-JD
+  programs: textbooks, casebooks, study aids, open materials, and course sites, with tables of
+  contents for most of the books. Pick a topic on the left to see which books have a chapter on it.
+  Search covers titles, authors, descriptions, chapter titles, and topics, and each result says where
+  the match was found. The filters narrow by how a title can be obtained and what kind of book it is.
+  Titles marked Subscription are in the West Academic Study Aids package many law libraries license.
+  Prices and dates are as of the last check.
 updated: 2026-09-05
 items:
   - ref: rich-ai-and-the-law
@@ -43,7 +46,7 @@ items:
   - ref: hu-introduction-to-ai-law-and-policy
     note: The shorter of the Hu volumes.
   - ref: dawson-artificial-intelligence-and-academic-integrity
-    note: Inexpensive and student-facing; tool discussion is dated.
+    note: Inexpensive and student-facing.
   - ref: murray-ai-and-the-practice-of-law
     note: Current on agentic AI at a low price. Self-published; evaluate before assigning.
   - ref: murray-legal-issues-of-generative-and-agentic-ai

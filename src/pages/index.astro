@@ -5,9 +5,14 @@ import ProjectItem from '../components/ProjectItem.astro';
 import { getCollection } from 'astro:content';
 import { groups } from '../data/projects';
 
+import { formatFullDate } from '../lib/resources';
+
 const posts = (await getCollection('blog', (p) => !p.data.draft))
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
   .slice(0, 4);
+const guides = (await getCollection('guides', (g) => !g.data.draft))
+  .sort((a, b) => b.data.updated.localeCompare(a.data.updated))
+  .slice(0, 3);
 ---
 <Base section="home">
   <section class="hero">
@@ -21,6 +26,23 @@ const posts = (await getCollection('blog', (p) => !p.data.draft))
   <section class="section">
     <div class="section-head"><h2>Writing</h2><a class="more" href="/blog/">All posts →</a></div>
     <PostList posts={posts} />
+  </section>
+
+  <section class="section">
+    <div class="section-head"><h2>Resources</h2><a class="more" href="/resources/">All resources →</a></div>
+    <ul class="posts">
+      {
+        guides.map((g) => (
+          <li>
+            <time datetime={g.data.updated}>{formatFullDate(g.data.updated)}</time>
+            <div>
+              <a href={`/resources/${g.id}/`}>{g.data.title}</a>
+              <span class="desc">{g.data.description}</span>
+            </div>
+          </li>
+        ))
+      }
+    </ul>
   </section>
 
   <section class="section">

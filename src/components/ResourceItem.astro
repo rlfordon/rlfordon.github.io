@@ -23,6 +23,8 @@ const pub = formatPublication(r);
 const qual = accessQualifier(r);
 const keys = sortKeys(r);
 const sep = ' · ';
+// Topics for filtering: every chapter topic plus any whole-work topics.
+const topics = [...new Set([...r.topics, ...r.contents.flatMap((c) => c.topics)])];
 ---
 <li
   class="resource"
@@ -31,6 +33,7 @@ const sep = ' · ';
   data-kind={kindGroup(r.kind)}
   data-for={r.audience.join(' ')}
   data-pub={publishedBucket(r)}
+  data-topic={topics.join(' ')}
   data-sort-date={keys.date}
   data-sort-title={keys.title}
   data-sort-author={keys.author}
@@ -43,6 +46,7 @@ const sep = ' · ';
       {pub}
       {sep}
       {KIND_LABELS[r.kind]}
+      {publishedBucket(r) === 'older' && <span class="era">Pre-generative AI</span>}
     </p>
     <p class="chapter-hits" hidden></p>
     <p class="desc">{r.description}</p>

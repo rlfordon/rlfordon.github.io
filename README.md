@@ -11,6 +11,8 @@ Personal site: writing, projects, about. Built with [Astro](https://astro.build)
 | `src/content/resources/*.yaml` | Resource catalog. One YAML record per book, course, or site; the file name is the record id. Neutral descriptions only. |
 | `src/content/guides/*.yaml` | Curated reading lists built from catalog records: a flat list of record ids, each with an optional note for that list. The page sorts and filters; file order is not shown. |
 | `src/lib/resources.ts` | Record helpers: formatting, the facet definitions (kind groups, audiences, published buckets), and sort keys. |
+| `src/data/topics.ts` | Controlled vocabulary for chapter topics, grouped, with a scope note per term. The build rejects any topic id not listed here. |
+| `src/data/search-synonyms.ts` | Query expansion groups for the in-page search. |
 | `src/pages/` | Routes: home, `/blog/`, `/blog/[slug]/`, `/projects/`, `/resources/`, `/resources/[guide]/`, `/about/`, `/rss.xml`. |
 | `src/layouts/Base.astro` | Shared shell: head, masthead, nav, footer. |
 | `src/styles/global.css` | All styling. Palette, type, and layout tokens at the top. Light-only by design. |
@@ -60,8 +62,8 @@ description: >
   One to three neutral sentences: what it is and what it covers.
 contents:                # optional chapter list; topics go on chapters, not the book
   - title: "Chapter title"
-    note: One line on what it covers.
-    topics: [evidence]
+    note: One line on what it covers; search indexes it, so name the sub-topics.
+    topics: [evidence-and-deepfakes]   # ids from src/data/topics.ts; read the scope notes before tagging
 contentsSource: https://example.com/toc
 added: 2026-08-14
 verified: 2026-08-14
@@ -70,8 +72,12 @@ verified: 2026-08-14
 Then list it in a guide under `src/content/guides/`, as `- ref: author-short-title` with an optional `note` that is
 specific to that list. Everything in these files is public, since the repo is.
 
-The guide page filters by access, kind group, audience, and publication era, sorts by date, title, or first
-author, and offers a compact view. Search runs in the browser with [MiniSearch](https://github.com/lucaong/minisearch)
+The guide page has a topic contents list in the left rail (one topic at a time; the matching chapters are
+listed under each record while a topic is chosen), a toolbar with search and two chip filters (access and kind
+group), sort by date, title, or first author, and a compact view. With a topic chosen, the search box searches
+within that topic and offers "Search everything instead". Topics are tagged on chapters; a record matches a topic
+when any of its chapters carries it. Records with no chapter list (courses, articles, sites) may carry whole-work
+`topics` instead. The `audience` field is kept on records but not shown as a filter. Search runs in the browser with [MiniSearch](https://github.com/lucaong/minisearch)
 over an index embedded in the page (titles, authors, publisher, description, note, and chapter titles and notes);
 a hit inside a chapter list shows the chapter under the book. Filter and search state live in the URL query string,
 so a filtered view can be linked. The kind groups and other facet labels are defined in `src/lib/resources.ts`.

@@ -112,6 +112,11 @@ export function publishedBucket(r: Resource): string {
   return Number(r.date.slice(0, 4)) >= 2023 ? 'recent' : 'older';
 }
 
+/** Every topic a record carries, from its chapters and its whole-work list. */
+export function recordTopics(r: Resource): string[] {
+  return [...new Set([...r.topics, ...r.contents.flatMap((c) => c.topics)])];
+}
+
 /** Keys the client sorts on. Strings compare lexically, so pad dates to a fixed width. */
 export function sortKeys(r: Resource): { date: string; title: string; author: string } {
   // "2026-04" → "2026-04-00" so month-only dates sort inside their year; undated → "0000" sorts last when descending.

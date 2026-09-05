@@ -7,12 +7,11 @@ import {
   ACCESS_LABELS,
   KIND_LABELS,
   KIND_GROUPS,
-  AUDIENCE_LABELS,
-  PUBLISHED_BUCKETS,
   kindGroup,
-  publishedBucket,
   sortKeys,
+  recordTopics,
 } from '../../lib/resources';
+import { TOPIC_GROUPS, TOPIC_LABELS } from '../../data/topics';
 
 export async function getStaticPaths() {
   const guides = await getCollection('guides', (g) => !g.data.draft);
@@ -22,6 +21,10 @@ const { guide } = Astro.props;
 const g = guide.data;
 
 const entries = (await getEntries(g.items.map((i) => i.ref))).map((entry, i) => ({ entry, note: g.items[i].note }));
+// Server-side default order: newest first, undated last. The client re-sorts on demand.
+entries.sort((a, b) => sortKeys(b.entry.data).date.localeCompare(sortKeys(a.entry.data).date));
+const total = entries.length;
+const count = (pred: (e: (typeof entries)[number]) => boolean) => entries.filter(pred).length;
 
 // Search documents: one per record plus one per chapter, so a hit inside a table
 // of contents can point at the chapter. Embedded in the page; the client indexes it.
@@ -34,7 +37,7 @@ const searchDocs = entries.flatMap(({ entry, note }) => {
     title: r.title,
     authors: r.authors.map((a) => a.name).join(' '),
     publisher: r.publisher ?? '',
-    text: [r.description, note ?? '', KIND_LABELS[r.kind]].join(' '),
+    text: [r.description, note ?? '', KIND_LABELS[r.kind], ...recordTopics(r).map((t) => TOPIC_LABELS[t])].join(' '),
   };
   const chapters = r.contents.map((c, i) => ({
     id: `${entry.id}#${i}`,
@@ -44,46 +47,27 @@ const searchDocs = entries.flatMap(({ entry, note }) => {
     title: c.title,
     authors: '',
     publisher: '',
-    text: [c.note ?? '', ...c.topics].join(' '),
+    text: [c.note ?? '', ...c.topics.map((t) => TOPIC_LABELS[t])].join(' '),
+    topics: c.topics,
   }));
   return [record, ...chapters];
 });
-// Server-side default order: newest first, undated last. The client re-sorts on demand.
-entries.sort((a, b) => sortKeys(b.entry.data).date.localeCompare(sortKeys(a.entry.data).date));
-const total = entries.length;
 
-// Facet definitions with build-time counts, so the rail is complete without JavaScript.
-const count = (pred: (e: (typeof entries)[number]) => boolean) => entries.filter(pred).length;
-const facets = [
-  {
-    id: 'access',
-    label: 'Access',
-    values: (Object.keys(ACCESS_LABELS) as (keyof typeof ACCESS_LABELS)[]).map((k) => ({
-      id: k,
-      label: ACCESS_LABELS[k],
-      n: count((e) => e.entry.data.access === k),
-    })),
-  },
-  {
-    id: 'kind',
-    label: 'Kind',
-    values: KIND_GROUPS.map((k) => ({ id: k.id, label: k.label, n: count((e) => kindGroup(e.entry.data.kind) === k.id) })),
-  },
-  {
-    id: 'for',
-    label: 'For',
-    values: Object.entries(AUDIENCE_LABELS).map(([id, label]) => ({
-      id,
-      label,
-      n: count((e) => e.entry.data.audience.includes(id as never)),
-    })),
-  },
-  {
-    id: 'pub',
-    label: 'Published',
-    values: PUBLISHED_BUCKETS.map((b) => ({ id: b.id, label: b.label, n: count((e) => publishedBucket(e.entry.data) === b.id) })),
-  },
-].map((f) => ({ ...f, values: f.values.filter((v) => v.n > 0) }));
+// The two book filters that earn their place: how you get it, and what it is.
+const accessValues = (Object.keys(ACCESS_LABELS) as (keyof typeof ACCESS_LABELS)[])
+  .map((k) => ({ id: k, label: ACCESS_LABELS[k], n: count((e) => e.entry.data.access === k) }))
+  .filter((v) => v.n > 0);
+const kindValues = KIND_GROUPS.map((k) => ({ id: k.id, label: k.label, n: count((e) => kindGroup(e.entry.data.kind) === k.id) })).filter(
+  (v) => v.n > 0,
+);
+
+// Topics as a table of contents: every group, every topic with a record count.
+const topicGroups = TOPIC_GROUPS.map((grp) => ({
+  label: grp.label,
+  values: grp.topics
+    .map((t) => ({ id: t.id, label: t.label, n: count((e) => recordTopics(e.entry.data).includes(t.id)) }))
+    .filter((v) => v.n > 0),
+})).filter((grp) => grp.values.length > 0);
 ---
 <Base title={g.title} section="resources" description={g.description}>
   <header class="article-head">
@@ -93,28 +77,48 @@ const facets = [
   </header>
 
   <div class="guide" id="guide" data-total={total}>
-    <form class="rail" id="filters" aria-label="Filter" onsubmit="return false">
-      <p class="search">
-        <label class="visually-hidden" for="q">Search</label>
-        <input id="q" type="search" name="q" placeholder="Search" autocomplete="off" disabled />
-      </p>
-      {
-        facets.map((f) => (
-          <fieldset class="facet" data-facet={f.id}>
-            <legend>{f.label}</legend>
-            {f.values.map((v) => (
-              <label>
-                <input type="checkbox" name={f.id} value={v.id} />
-                <span>{v.label}</span>
-                <data value={v.n}>{v.n}</data>
-              </label>
-            ))}
-          </fieldset>
-        ))
-      }
-    </form>
+    <nav class="toc" aria-label="Topics">
+      <details class="toc-wrap" open>
+        <summary><span class="toc-title">Topics</span><span class="toc-hint">Tagged on chapters. Pick one to see the books with a chapter on it.</span></summary>
+        {
+          topicGroups.map((grp) => (
+            <div class="toc-group">
+              <p class="toc-heading">{grp.label}</p>
+              {grp.values.map((v) => (
+                <label class="toc-item">
+                  <input type="checkbox" name="topic" value={v.id} form="filters" />
+                  <span>{v.label}</span>
+                  <data value={v.n}>{v.n}</data>
+                </label>
+              ))}
+            </div>
+          ))
+        }
+      </details>
+    </nav>
 
     <div class="results">
+      <form class="toolbar" id="filters" aria-label="Search and filter" onsubmit="return false">
+        <div class="search-row">
+          <label class="visually-hidden" for="q">Search</label>
+          <input id="q" type="search" name="q" placeholder="Search titles, authors, chapters, topics" autocomplete="off" disabled />
+          <button type="button" class="scope-all" id="scope-all" hidden>Search everything instead</button>
+        </div>
+        <p class="topic-suggest" id="topic-suggest" hidden></p>
+        <fieldset class="chips" data-facet="access">
+          <legend>Access</legend>
+          {accessValues.map((v) => (
+            <label><input type="checkbox" name="access" value={v.id} /><span>{v.label}</span><data value={v.n}>{v.n}</data></label>
+          ))}
+        </fieldset>
+        <fieldset class="chips" data-facet="kind">
+          <legend>Kind</legend>
+          {kindValues.map((v) => (
+            <label><input type="checkbox" name="kind" value={v.id} /><span>{v.label}</span><data value={v.n}>{v.n}</data></label>
+          ))}
+        </fieldset>
+      </form>
+
       <div class="results-head">
         <p class="result-line" id="result-line" aria-live="polite"><strong>{total} resources</strong></p>
         <div class="display">
@@ -142,21 +146,25 @@ const facets = [
 
 <script>
   import MiniSearch from 'minisearch';
+  import { SYNONYMS } from '../../data/search-synonyms';
+  import { TOPIC_LABELS, TOPICS } from '../../data/topics';
 
   // Client-side search, filter, sort, and view for the guide. Every record is
   // already in the HTML; this only hides, reorders, annotates, and counts.
   // State lives in the URL so a filtered view can be shared.
   const guide = document.getElementById('guide')!;
   const q = document.getElementById('q') as HTMLInputElement;
+  const scopeAll = document.getElementById('scope-all') as HTMLButtonElement;
+  const suggest = document.getElementById('topic-suggest')!;
   const list = document.getElementById('resource-list')!;
   const rows = Array.from(list.querySelectorAll<HTMLLIElement>('li.resource'));
   const resultLine = document.getElementById('result-line')!;
   const empty = document.getElementById('empty')!;
   const total = rows.length;
-  const FACETS = ['access', 'kind', 'for', 'pub'] as const;
+  const FACETS = ['access', 'kind', 'topic'] as const;
   type Facet = (typeof FACETS)[number];
+  const PLACEHOLDER_ALL = 'Search titles, authors, chapters, topics';
 
-  // Sort and View live in the results header, outside the rail form, so query the whole guide.
   const inputs = (sel: string) => Array.from(guide.querySelectorAll<HTMLInputElement>(`input${sel}`));
   const labelOf = (facet: string, value: string) =>
     guide.querySelector<HTMLElement>(`input[name="${facet}"][value="${value}"] + span`)?.textContent ?? value;
@@ -165,9 +173,22 @@ const facets = [
     return inputs(`[name="${facet}"]:checked`).map((i) => i.value);
   }
 
+  /** Selected values in words. */
+  function describe(facet: string, values: string[]): string {
+    return values.map((v) => labelOf(facet, v)).join(' or ');
+  }
+
   // ---- search ----
-  type Doc = { id: string; type: 'record' | 'chapter'; record: string; n?: number; title: string; authors: string; publisher: string; text: string };
+  type Doc = { id: string; type: 'record' | 'chapter'; record: string; n?: number; title: string; authors: string; publisher: string; text: string; topics?: string[] };
   const docs: Doc[] = JSON.parse(document.getElementById('search-data')!.textContent || '[]');
+  // Chapters by record, for the "on this topic" lines when a topic is chosen.
+  const chaptersOf = new Map<string, { n: number; title: string; topics: string[] }[]>();
+  for (const d of docs) {
+    if (d.type !== 'chapter') continue;
+    const l = chaptersOf.get(d.record) ?? [];
+    l.push({ n: d.n!, title: d.title, topics: d.topics ?? [] });
+    chaptersOf.set(d.record, l);
+  }
   const index = new MiniSearch<Doc>({
     fields: ['title', 'authors', 'publisher', 'text'],
     storeFields: ['type', 'record', 'n', 'title'],
@@ -176,17 +197,36 @@ const facets = [
   index.addAll(docs);
 
   type Hit = { terms: string[]; chapters: { n: number; title: string }[] };
+
+  /** Synonym-group terms to search alongside the query, for the result line and the search itself. */
+  function expansions(text: string): string[] {
+    const s = ` ${text.toLowerCase().replace(/\s+/g, ' ')} `;
+    const extra = new Set<string>();
+    for (const group of SYNONYMS) {
+      if (group.some((term) => s.includes(` ${term} `))) {
+        for (const term of group) if (!s.includes(` ${term} `)) extra.add(term);
+      }
+    }
+    return [...extra];
+  }
+  let also: string[] = [];
+
   /** Records matching the query, with the chapters that matched inside each. Null when there is no query. */
   function runSearch(query: string): Map<string, Hit> | null {
     const text = query.trim();
     if (text.length < 2) return null;
+    also = expansions(text);
     const hits = new Map<string, Hit>();
-    for (const res of index.search(text)) {
+    // Expansions are exact: no fuzziness, and a multi-word synonym must match all its words.
+    const strict = also.map((term) => ({ queries: term.split(' '), combineWith: 'AND', fuzzy: false, prefix: false }));
+    const results = strict.length ? index.search({ combineWith: 'OR', queries: [text, ...strict] }) : index.search(text);
+    for (const res of results) {
       const hit = hits.get(res.record) ?? { terms: [], chapters: [] };
       for (const t of res.terms) if (!hit.terms.includes(t)) hit.terms.push(t);
       if (res.type === 'chapter') hit.chapters.push({ n: res.n, title: res.title });
       hits.set(res.record, hit);
     }
+    for (const hit of hits.values()) hit.chapters.sort((a, b) => a.n - b.n);
     return hits;
   }
 
@@ -204,9 +244,8 @@ const facets = [
       frag.append(text);
       return frag;
     }
-    const parts = text.split(re);
     // split() with a capturing group alternates plain text and matches.
-    parts.forEach((part, i) => {
+    text.split(re).forEach((part, i) => {
       if (!part) return;
       if (i % 2 === 1) {
         const m = document.createElement('mark');
@@ -261,8 +300,15 @@ const facets = [
     return marked;
   }
 
-  /** Show why a row matched: marks in place, chapter lines, or a snippet when the match is out of sight. */
-  function annotate(row: HTMLLIElement, hit: Hit | undefined, view: string) {
+  function line(className: string, ...content: (string | Node)[]): HTMLSpanElement {
+    const el = document.createElement('span');
+    el.className = className;
+    el.append(...content);
+    return el;
+  }
+
+  /** Show why a row is here: marks in place, chapter lines, or a snippet when the match is out of sight. */
+  function annotate(row: HTMLLIElement, hit: Hit | undefined, view: string, topics: string[]) {
     const terms = hit?.terms ?? [];
     const title = row.querySelector<HTMLElement>('.title');
     const authors = row.querySelector<HTMLElement>('.authors');
@@ -277,34 +323,42 @@ const facets = [
     box.replaceChildren();
     if (hit) {
       if (hit.chapters.length > 0) {
-        const lab = document.createElement('span');
-        lab.className = 'lab';
-        lab.textContent = 'In contents';
-        box.append(lab);
+        box.append(line('lab', 'In contents'));
         for (const c of hit.chapters.slice(0, 3)) {
-          const line = document.createElement('span');
-          line.className = 'hit';
-          line.append(`Ch. ${c.n} — `, highlighted(c.title, terms));
-          box.append(line);
+          const titleFrag = highlighted(c.title, terms);
+          const inChapterTitle = titleFrag.querySelector('mark') !== null;
+          const l = line('hit', `Ch. ${c.n} — `, titleFrag);
+          if (!inChapterTitle) {
+            // The match came from the note or a topic label; say which topic.
+            const chapter = (chaptersOf.get(row.id) ?? []).find((x) => x.n === c.n);
+            const re = termRegex(terms);
+            const label = chapter?.topics.map((t) => TOPIC_LABELS[t]).find((x) => re && re.test(x));
+            if (label) l.append(line('via', ' · topic: ', highlighted(label, terms)));
+          }
+          box.append(l);
         }
-        if (hit.chapters.length > 3) {
-          const more = document.createElement('span');
-          more.className = 'hit more';
-          more.textContent = `+${hit.chapters.length - 3} more chapters match`;
-          box.append(more);
-        }
+        if (hit.chapters.length > 3) box.append(line('hit more', `+${hit.chapters.length - 3} more chapters match`));
       }
-      // Nothing marked where the reader can see it: show a snippet from the hidden field.
+      // Nothing marked where the reader can see it: show a snippet from the hidden field, or the topic.
       const visible = inTitle || inAuthors || (view === 'full' && (inDesc || inNote));
       if (!visible && hit.chapters.length === 0) {
         const source = [desc, note].find((el) => el && termRegex(terms)?.test(original(el)));
         const frag = source && snippet(original(source), terms);
         if (frag) {
-          const line = document.createElement('span');
-          line.className = 'hit snippet';
-          line.append(frag);
-          box.append(line);
+          box.append(line('hit snippet', frag));
+        } else {
+          const re = termRegex(terms);
+          const label = (row.dataset.topic ?? '').split(' ').map((t) => TOPIC_LABELS[t]).find((x) => x && re && re.test(x));
+          if (label) box.append(line('hit snippet', 'Topic: ', highlighted(label, terms)));
         }
+      }
+    } else if (topics.length > 0) {
+      // A topic is chosen and there is no search: show the chapters that carry the topic.
+      const matching = (chaptersOf.get(row.id) ?? []).filter((c) => c.topics.some((t) => topics.includes(t)));
+      if (matching.length > 0) {
+        box.append(line('lab', 'On this topic'));
+        for (const c of matching.slice(0, 3)) box.append(line('hit', `Ch. ${c.n} — ${c.title}`));
+        if (matching.length > 3) box.append(line('hit more', `+${matching.length - 3} more chapters`));
       }
     }
     box.hidden = box.childElementCount === 0;
@@ -329,7 +383,7 @@ const facets = [
       const ok = inSearch(row) && FACETS.every((f) => matches(row, f, sel[f]));
       row.hidden = !ok;
       if (ok) shown++;
-      annotate(row, hits?.get(row.id), view);
+      annotate(row, hits?.get(row.id), view, sel.topic);
     }
 
     // Counts: for each value, what the list would show if this value were the only
@@ -357,6 +411,50 @@ const facets = [
 
     list.classList.toggle('compact', view === 'compact');
 
+    // A query that names a topic, or lands in a topic's scope note or synonym group, gets the topic
+    // offered directly, since the topic view lists the chapters. Name matches rank first.
+    suggest.replaceChildren();
+    const queryWords = q.value.trim().toLowerCase().split(/\s+/).filter((w) => w.length >= 3);
+    const wordStart = (words: string[]) =>
+      words.length ? new RegExp(`\\b(${words.map((t) => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')})`, 'i') : null;
+    const direct = wordStart(queryWords);
+    const viaSynonym = wordStart(also.filter((w) => w.length >= 3));
+    const matchedTopics =
+      hits && sel.topic.length === 0 && direct
+        ? inputs('[name="topic"]')
+            .map((i) => {
+              const scope = TOPICS.find((t) => t.id === i.value)?.scope ?? '';
+              const label = labelOf('topic', i.value);
+              // Rank: the query word in the name, then a synonym in the name, then either in the scope note.
+              const rank = direct.test(label) ? 0 : viaSynonym?.test(label) ? 1 : direct.test(scope) ? 2 : viaSynonym?.test(scope) ? 3 : -1;
+              return { input: i, label, rank };
+            })
+            .filter((m) => m.rank >= 0)
+            .sort((a, b) => a.rank - b.rank)
+            .slice(0, 3)
+        : [];
+    if (matchedTopics.length > 0) {
+      suggest.append(matchedTopics.length === 1 ? 'There is a topic for this: ' : 'There are topics for this: ');
+      matchedTopics.forEach(({ input, label }, i) => {
+        if (i > 0) suggest.append(' · ');
+        const b = document.createElement('button');
+        b.type = 'button';
+        b.textContent = label;
+        b.addEventListener('click', () => {
+          inputs('[name="topic"]').forEach((t) => (t.checked = t === input));
+          q.value = '';
+          apply();
+        });
+        suggest.append(b);
+      });
+    }
+    suggest.hidden = matchedTopics.length === 0;
+
+    // Search scope follows the chosen topic.
+    const topicName = sel.topic.length === 1 ? labelOf('topic', sel.topic[0]) : sel.topic.length > 1 ? 'these topics' : '';
+    q.placeholder = topicName ? `Search within ${topicName}` : PLACEHOLDER_ALL;
+    scopeAll.hidden = !(topicName && q.value.trim().length >= 2);
+
     // Result line, in words.
     const active = FACETS.filter((f) => sel[f].length > 0);
     const anything = active.length > 0 || hits !== null;
@@ -365,39 +463,28 @@ const facets = [
     strong.textContent = anything ? `Showing ${shown} of ${total}` : `${total} resources`;
     resultLine.append(strong);
     if (anything) {
-      if (hits !== null) {
+      const term = (text: string, remove: () => void, aria: string) => {
         resultLine.append(' · ');
         const span = document.createElement('span');
         span.className = 'term';
-        span.textContent = `matching “${q.value.trim()}”`;
+        span.textContent = text;
         const x = document.createElement('button');
         x.type = 'button';
         x.className = 'remove';
-        x.setAttribute('aria-label', 'Clear search');
+        x.setAttribute('aria-label', aria);
         x.textContent = '×';
         x.addEventListener('click', () => {
-          q.value = '';
+          remove();
           apply();
         });
         span.append(' ', x);
         resultLine.append(span);
+      };
+      if (hits !== null) {
+        term(`matching “${q.value.trim()}”` + (also.length ? ` (also ${also.slice(0, 4).join(', ')})` : ''), () => (q.value = ''), 'Clear search');
       }
       for (const f of active) {
-        resultLine.append(' · ');
-        const span = document.createElement('span');
-        span.className = 'term';
-        span.textContent = sel[f].map((v) => labelOf(f, v)).join(' or ');
-        const x = document.createElement('button');
-        x.type = 'button';
-        x.className = 'remove';
-        x.setAttribute('aria-label', `Remove ${labelOf(f, sel[f][0])} filter`);
-        x.textContent = '×';
-        x.addEventListener('click', () => {
-          inputs(`[name="${f}"]`).forEach((i) => (i.checked = false));
-          apply();
-        });
-        span.append(' ', x);
-        resultLine.append(span);
+        term(describe(f, sel[f]), () => inputs(`[name="${f}"]`).forEach((i) => (i.checked = false)), `Remove ${labelOf(f, sel[f][0])} filter`);
       }
       resultLine.append(' · ');
       const clear = document.createElement('button');
@@ -438,14 +525,22 @@ const facets = [
     if (input) input.checked = true;
   }
 
-  guide.addEventListener('change', apply);
+  guide.addEventListener('change', (e) => {
+    const t = e.target as HTMLInputElement;
+    // Topics behave as a table of contents: one at a time. Choosing another swaps; clicking the current one clears.
+    if (t.name === 'topic' && t.checked) inputs('[name="topic"]').forEach((i) => (i.checked = i === t));
+    apply();
+  });
   let timer = 0;
   q.addEventListener('input', () => {
     clearTimeout(timer);
     timer = window.setTimeout(apply, 150);
   });
+  scopeAll.addEventListener('click', () => {
+    inputs('[name="topic"]').forEach((i) => (i.checked = false));
+    apply();
+  });
   q.disabled = false;
-  q.placeholder = 'Search titles, authors, chapters';
   guide.classList.add('js');
   apply();
 </script>
