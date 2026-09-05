@@ -1,0 +1,87 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import {
+  formatAuthors,
+  formatPublication,
+  accessQualifier,
+  ACCESS_LABELS,
+  KIND_LABELS,
+  kindGroup,
+  publishedBucket,
+  sortKeys,
+} from '../lib/resources';
+
+interface Props {
+  resource: CollectionEntry<'resources'>;
+  /** Curatorial note from the guide that lists this record. */
+  note?: string;
+}
+const { resource, note } = Astro.props;
+const r = resource.data;
+const authors = formatAuthors(r);
+const pub = formatPublication(r);
+const qual = accessQualifier(r);
+const keys = sortKeys(r);
+const sep = ' · ';
+---
+<li
+  class="resource"
+  id={resource.id}
+  data-access={r.access}
+  data-kind={kindGroup(r.kind)}
+  data-for={r.audience.join(' ')}
+  data-pub={publishedBucket(r)}
+  data-sort-date={keys.date}
+  data-sort-title={keys.title}
+  data-sort-author={keys.author}
+>
+  <div class="body">
+    <a class="title" href={r.url}>{r.title}</a>
+    <p class="meta">
+      {authors && <span class="authors">{authors}</span>}
+      {authors && pub && sep}
+      {pub}
+      {sep}
+      {KIND_LABELS[r.kind]}
+    </p>
+    <p class="chapter-hits" hidden></p>
+    <p class="desc">{r.description}</p>
+    {note && <p class="note">{note}</p>}
+    {
+      r.links.length > 0 && (
+        <p class="links">
+          {r.links.map((l, i) => (
+            <>
+              {i > 0 && sep}
+              <a href={l.url}>{l.label}</a>
+            </>
+          ))}
+        </p>
+      )
+    }
+    {
+      r.contents.length > 0 && (
+        <details class="contents">
+          <summary>Contents ({r.contents.length} {r.contents.length === 1 ? 'chapter' : 'chapters'})</summary>
+          <ol>
+            {r.contents.map((c) => (
+              <li>
+                {c.title}
+                {c.note && <span class="chapter-note"> {c.note}</span>}
+              </li>
+            ))}
+          </ol>
+          {r.contentsSource && (
+            <p class="meta">
+              Source: <a href={r.contentsSource}>{new URL(r.contentsSource).hostname}</a>
+            </p>
+          )}
+        </details>
+      )
+    }
+  </div>
+  <div class="access" data-access={r.access}>
+    <span class="dot" aria-hidden="true"></span>{ACCESS_LABELS[r.access]}
+    {qual && <small>{qual}</small>}
+  </div>
+</li>

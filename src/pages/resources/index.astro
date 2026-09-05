@@ -1,0 +1,36 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+import { formatFullDate } from '../../lib/resources';
+
+const guides = (await getCollection('guides', (g) => !g.data.draft)).sort((a, b) =>
+  b.data.updated.localeCompare(a.data.updated),
+);
+---
+<Base
+  title="Resources"
+  section="resources"
+  description="Reading lists and reference guides on AI in legal practice and legal education, maintained for people teaching these courses."
+>
+  <header class="article-head">
+    <h1>Resources</h1>
+    <p class="intro">
+      Reading lists and reference guides, mostly for people teaching courses on AI in legal practice and looking for
+      readings to assign. Each guide notes when it was last checked.
+    </p>
+  </header>
+  <p class="kind-title" style="--kind: var(--orange)">Guides</p>
+  <ul class="posts">
+    {
+      guides.map((g) => (
+        <li>
+          <time datetime={g.data.updated}>{formatFullDate(g.data.updated)}</time>
+          <div>
+            <a href={`/resources/${g.id}/`}>{g.data.title}</a>
+            <span class="desc">{g.data.description}</span>
+          </div>
+        </li>
+      ))
+    }
+  </ul>
+</Base>

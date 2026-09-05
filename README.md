@@ -8,7 +8,10 @@ Personal site: writing, projects, about. Built with [Astro](https://astro.build)
 |---|---|
 | `src/content/blog/*.md` | Blog posts. One Markdown file per post with YAML frontmatter. |
 | `src/data/projects.ts` | Hand-curated project list, grouped into teaching tools, research tooling, and fun; the home page shows the first three of each. |
-| `src/pages/` | Routes: home, `/blog/`, `/blog/[slug]/`, `/projects/`, `/about/`, `/rss.xml`. |
+| `src/content/resources/*.yaml` | Resource catalog. One YAML record per book, course, or site; the file name is the record id. Neutral descriptions only. |
+| `src/content/guides/*.yaml` | Curated reading lists built from catalog records: a flat list of record ids, each with an optional note for that list. The page sorts and filters; file order is not shown. |
+| `src/lib/resources.ts` | Record helpers: formatting, the facet definitions (kind groups, audiences, published buckets), and sort keys. |
+| `src/pages/` | Routes: home, `/blog/`, `/blog/[slug]/`, `/projects/`, `/resources/`, `/resources/[guide]/`, `/about/`, `/rss.xml`. |
 | `src/layouts/Base.astro` | Shared shell: head, masthead, nav, footer. |
 | `src/styles/global.css` | All styling. Palette, type, and layout tokens at the top. Light-only by design. |
 | `public/images/blog/<slug>/` | Post images. |
@@ -34,6 +37,44 @@ Body in Markdown. Images go in `public/images/blog/my-post-slug/` and are refere
 
 Add `draft: true` to keep a post out of the build. The `originalUrl` and `originalSite` fields are only for
 republished posts; they render the provenance note at the top of the article.
+
+## Adding a resource
+
+Create `src/content/resources/author-short-title.yaml`. The schema is in `src/content.config.ts`; the required
+fields are `title`, `kind`, `access`, `url`, `description`, `added`, and `verified`.
+
+```yaml
+title: "Book Title"
+authors:
+  - name: Jane Doe
+publisher: West Academic
+date: 2026-04            # YYYY, YYYY-MM, or YYYY-MM-DD; add `status: forthcoming` if not yet out
+pages: 618
+kind: study-aid          # textbook, casebook, open-casebook, study-aid, practitioner-book, monograph,
+                         # supplement, treatise, online-course, syllabus, website, article, bibliography
+access: subscription     # open (free + open license), free (free to read), subscription, purchase
+via: West Academic Study Aids   # subscription platform
+price: "$65 print"
+url: https://example.com/book
+description: >
+  One to three neutral sentences: what it is and what it covers.
+contents:                # optional chapter list; topics go on chapters, not the book
+  - title: "Chapter title"
+    note: One line on what it covers.
+    topics: [evidence]
+contentsSource: https://example.com/toc
+added: 2026-08-14
+verified: 2026-08-14
+```
+
+Then list it in a guide under `src/content/guides/`, as `- ref: author-short-title` with an optional `note` that is
+specific to that list. Everything in these files is public, since the repo is.
+
+The guide page filters by access, kind group, audience, and publication era, sorts by date, title, or first
+author, and offers a compact view. Search runs in the browser with [MiniSearch](https://github.com/lucaong/minisearch)
+over an index embedded in the page (titles, authors, publisher, description, note, and chapter titles and notes);
+a hit inside a chapter list shows the chapter under the book. Filter and search state live in the URL query string,
+so a filtered view can be linked. The kind groups and other facet labels are defined in `src/lib/resources.ts`.
 
 ## Commands
 

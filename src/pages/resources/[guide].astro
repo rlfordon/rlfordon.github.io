@@ -1,0 +1,451 @@
+---
+import Base from '../../layouts/Base.astro';
+import ResourceItem from '../../components/ResourceItem.astro';
+import { getCollection, getEntries } from 'astro:content';
+import {
+  formatFullDate,
+  ACCESS_LABELS,
+  KIND_LABELS,
+  KIND_GROUPS,
+  AUDIENCE_LABELS,
+  PUBLISHED_BUCKETS,
+  kindGroup,
+  publishedBucket,
+  sortKeys,
+} from '../../lib/resources';
+
+export async function getStaticPaths() {
+  const guides = await getCollection('guides', (g) => !g.data.draft);
+  return guides.map((guide) => ({ params: { guide: guide.id }, props: { guide } }));
+}
+const { guide } = Astro.props;
+const g = guide.data;
+
+const entries = (await getEntries(g.items.map((i) => i.ref))).map((entry, i) => ({ entry, note: g.items[i].note }));
+
+// Search documents: one per record plus one per chapter, so a hit inside a table
+// of contents can point at the chapter. Embedded in the page; the client indexes it.
+const searchDocs = entries.flatMap(({ entry, note }) => {
+  const r = entry.data;
+  const record = {
+    id: entry.id,
+    type: 'record',
+    record: entry.id,
+    title: r.title,
+    authors: r.authors.map((a) => a.name).join(' '),
+    publisher: r.publisher ?? '',
+    text: [r.description, note ?? '', KIND_LABELS[r.kind]].join(' '),
+  };
+  const chapters = r.contents.map((c, i) => ({
+    id: `${entry.id}#${i}`,
+    type: 'chapter',
+    record: entry.id,
+    n: i + 1,
+    title: c.title,
+    authors: '',
+    publisher: '',
+    text: [c.note ?? '', ...c.topics].join(' '),
+  }));
+  return [record, ...chapters];
+});
+// Server-side default order: newest first, undated last. The client re-sorts on demand.
+entries.sort((a, b) => sortKeys(b.entry.data).date.localeCompare(sortKeys(a.entry.data).date));
+const total = entries.length;
+
+// Facet definitions with build-time counts, so the rail is complete without JavaScript.
+const count = (pred: (e: (typeof entries)[number]) => boolean) => entries.filter(pred).length;
+const facets = [
+  {
+    id: 'access',
+    label: 'Access',
+    values: (Object.keys(ACCESS_LABELS) as (keyof typeof ACCESS_LABELS)[]).map((k) => ({
+      id: k,
+      label: ACCESS_LABELS[k],
+      n: count((e) => e.entry.data.access === k),
+    })),
+  },
+  {
+    id: 'kind',
+    label: 'Kind',
+    values: KIND_GROUPS.map((k) => ({ id: k.id, label: k.label, n: count((e) => kindGroup(e.entry.data.kind) === k.id) })),
+  },
+  {
+    id: 'for',
+    label: 'For',
+    values: Object.entries(AUDIENCE_LABELS).map(([id, label]) => ({
+      id,
+      label,
+      n: count((e) => e.entry.data.audience.includes(id as never)),
+    })),
+  },
+  {
+    id: 'pub',
+    label: 'Published',
+    values: PUBLISHED_BUCKETS.map((b) => ({ id: b.id, label: b.label, n: count((e) => publishedBucket(e.entry.data) === b.id) })),
+  },
+].map((f) => ({ ...f, values: f.values.filter((v) => v.n > 0) }));
+---
+<Base title={g.title} section="resources" description={g.description}>
+  <header class="article-head">
+    <p class="meta"><a href="/resources/">Resources</a> · Last checked {formatFullDate(g.updated)}</p>
+    <h1>{g.title}</h1>
+    {g.intro && <p class="intro">{g.intro}</p>}
+  </header>
+
+  <div class="guide" id="guide" data-total={total}>
+    <form class="rail" id="filters" aria-label="Filter" onsubmit="return false">
+      <p class="search">
+        <label class="visually-hidden" for="q">Search</label>
+        <input id="q" type="search" name="q" placeholder="Search" autocomplete="off" disabled />
+      </p>
+      {
+        facets.map((f) => (
+          <fieldset class="facet" data-facet={f.id}>
+            <legend>{f.label}</legend>
+            {f.values.map((v) => (
+              <label>
+                <input type="checkbox" name={f.id} value={v.id} />
+                <span>{v.label}</span>
+                <data value={v.n}>{v.n}</data>
+              </label>
+            ))}
+          </fieldset>
+        ))
+      }
+    </form>
+
+    <div class="results">
+      <div class="results-head">
+        <p class="result-line" id="result-line" aria-live="polite"><strong>{total} resources</strong></p>
+        <div class="display">
+          <fieldset class="seg">
+            <legend>Sort</legend>
+            <label><input type="radio" name="sort" value="date" checked /><span>Newest</span></label>
+            <label><input type="radio" name="sort" value="title" /><span>Title</span></label>
+            <label><input type="radio" name="sort" value="author" /><span>Author</span></label>
+          </fieldset>
+          <fieldset class="seg">
+            <legend>View</legend>
+            <label><input type="radio" name="view" value="full" checked /><span>Full</span></label>
+            <label><input type="radio" name="view" value="compact" /><span>Compact</span></label>
+          </fieldset>
+        </div>
+      </div>
+      <ul class="resource-list" id="resource-list">
+        {entries.map(({ entry, note }) => <ResourceItem resource={entry} note={note} />)}
+      </ul>
+      <p class="empty" id="empty" hidden>Nothing matches.</p>
+    </div>
+  </div>
+  <script type="application/json" id="search-data" set:html={JSON.stringify(searchDocs)} />
+</Base>
+
+<script>
+  import MiniSearch from 'minisearch';
+
+  // Client-side search, filter, sort, and view for the guide. Every record is
+  // already in the HTML; this only hides, reorders, annotates, and counts.
+  // State lives in the URL so a filtered view can be shared.
+  const guide = document.getElementById('guide')!;
+  const q = document.getElementById('q') as HTMLInputElement;
+  const list = document.getElementById('resource-list')!;
+  const rows = Array.from(list.querySelectorAll<HTMLLIElement>('li.resource'));
+  const resultLine = document.getElementById('result-line')!;
+  const empty = document.getElementById('empty')!;
+  const total = rows.length;
+  const FACETS = ['access', 'kind', 'for', 'pub'] as const;
+  type Facet = (typeof FACETS)[number];
+
+  // Sort and View live in the results header, outside the rail form, so query the whole guide.
+  const inputs = (sel: string) => Array.from(guide.querySelectorAll<HTMLInputElement>(`input${sel}`));
+  const labelOf = (facet: string, value: string) =>
+    guide.querySelector<HTMLElement>(`input[name="${facet}"][value="${value}"] + span`)?.textContent ?? value;
+
+  function selected(facet: string): string[] {
+    return inputs(`[name="${facet}"]:checked`).map((i) => i.value);
+  }
+
+  // ---- search ----
+  type Doc = { id: string; type: 'record' | 'chapter'; record: string; n?: number; title: string; authors: string; publisher: string; text: string };
+  const docs: Doc[] = JSON.parse(document.getElementById('search-data')!.textContent || '[]');
+  const index = new MiniSearch<Doc>({
+    fields: ['title', 'authors', 'publisher', 'text'],
+    storeFields: ['type', 'record', 'n', 'title'],
+    searchOptions: { prefix: true, fuzzy: 0.2, boost: { title: 3, authors: 2 } },
+  });
+  index.addAll(docs);
+
+  type Hit = { terms: string[]; chapters: { n: number; title: string }[] };
+  /** Records matching the query, with the chapters that matched inside each. Null when there is no query. */
+  function runSearch(query: string): Map<string, Hit> | null {
+    const text = query.trim();
+    if (text.length < 2) return null;
+    const hits = new Map<string, Hit>();
+    for (const res of index.search(text)) {
+      const hit = hits.get(res.record) ?? { terms: [], chapters: [] };
+      for (const t of res.terms) if (!hit.terms.includes(t)) hit.terms.push(t);
+      if (res.type === 'chapter') hit.chapters.push({ n: res.n, title: res.title });
+      hits.set(res.record, hit);
+    }
+    return hits;
+  }
+
+  /** One regex for all matched terms, or null when there are none. */
+  function termRegex(terms: string[]): RegExp | null {
+    if (terms.length === 0) return null;
+    return new RegExp(`(${terms.map((t) => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')})`, 'gi');
+  }
+
+  /** Text with the matched terms wrapped in <mark>, built from nodes rather than markup. */
+  function highlighted(text: string, terms: string[]): DocumentFragment {
+    const frag = document.createDocumentFragment();
+    const re = termRegex(terms);
+    if (!re) {
+      frag.append(text);
+      return frag;
+    }
+    const parts = text.split(re);
+    // split() with a capturing group alternates plain text and matches.
+    parts.forEach((part, i) => {
+      if (!part) return;
+      if (i % 2 === 1) {
+        const m = document.createElement('mark');
+        m.textContent = part;
+        frag.append(m);
+      } else {
+        frag.append(part);
+      }
+    });
+    return frag;
+  }
+
+  /** A short window of text around the first match, with ellipses. */
+  function snippet(text: string, terms: string[]): DocumentFragment | null {
+    const re = termRegex(terms);
+    const m = re && re.exec(text);
+    if (!m) return null;
+    const span = 70;
+    let start = Math.max(0, m.index - span);
+    let end = Math.min(text.length, m.index + m[0].length + span);
+    if (start > 0) start = text.indexOf(' ', start) + 1 || start;
+    if (end < text.length) end = text.lastIndexOf(' ', end);
+    const frag = document.createDocumentFragment();
+    if (start > 0) frag.append('…');
+    frag.append(highlighted(text.slice(start, end), terms));
+    if (end < text.length) frag.append('…');
+    return frag;
+  }
+
+  // Original text of each field, so marks can be removed when the query changes.
+  const originals = new WeakMap<HTMLElement, string>();
+  function original(el: HTMLElement): string {
+    let t = originals.get(el);
+    if (t === undefined) {
+      t = el.textContent ?? '';
+      originals.set(el, t);
+    }
+    return t;
+  }
+
+  /** Re-render a field with marks. Returns whether anything was marked. */
+  function markField(el: HTMLElement | null, terms: string[]): boolean {
+    if (!el) return false;
+    const text = original(el);
+    if (terms.length === 0) {
+      el.textContent = text;
+      return false;
+    }
+    const frag = highlighted(text, terms);
+    const marked = frag.querySelector('mark') !== null;
+    el.replaceChildren(frag);
+    return marked;
+  }
+
+  /** Show why a row matched: marks in place, chapter lines, or a snippet when the match is out of sight. */
+  function annotate(row: HTMLLIElement, hit: Hit | undefined, view: string) {
+    const terms = hit?.terms ?? [];
+    const title = row.querySelector<HTMLElement>('.title');
+    const authors = row.querySelector<HTMLElement>('.authors');
+    const desc = row.querySelector<HTMLElement>('.desc');
+    const note = row.querySelector<HTMLElement>('.note');
+    const inTitle = markField(title, terms);
+    const inAuthors = markField(authors, terms);
+    const inDesc = markField(desc, terms);
+    const inNote = markField(note, terms);
+
+    const box = row.querySelector<HTMLElement>('.chapter-hits')!;
+    box.replaceChildren();
+    if (hit) {
+      if (hit.chapters.length > 0) {
+        const lab = document.createElement('span');
+        lab.className = 'lab';
+        lab.textContent = 'In contents';
+        box.append(lab);
+        for (const c of hit.chapters.slice(0, 3)) {
+          const line = document.createElement('span');
+          line.className = 'hit';
+          line.append(`Ch. ${c.n} — `, highlighted(c.title, terms));
+          box.append(line);
+        }
+        if (hit.chapters.length > 3) {
+          const more = document.createElement('span');
+          more.className = 'hit more';
+          more.textContent = `+${hit.chapters.length - 3} more chapters match`;
+          box.append(more);
+        }
+      }
+      // Nothing marked where the reader can see it: show a snippet from the hidden field.
+      const visible = inTitle || inAuthors || (view === 'full' && (inDesc || inNote));
+      if (!visible && hit.chapters.length === 0) {
+        const source = [desc, note].find((el) => el && termRegex(terms)?.test(original(el)));
+        const frag = source && snippet(original(source), terms);
+        if (frag) {
+          const line = document.createElement('span');
+          line.className = 'hit snippet';
+          line.append(frag);
+          box.append(line);
+        }
+      }
+    }
+    box.hidden = box.childElementCount === 0;
+  }
+
+  function matches(row: HTMLLIElement, facet: Facet, values: string[]): boolean {
+    if (values.length === 0) return true;
+    const have = (row.dataset[facet] ?? '').split(' ').filter(Boolean);
+    return values.some((v) => have.includes(v));
+  }
+
+  function apply() {
+    const sel = Object.fromEntries(FACETS.map((f) => [f, selected(f)])) as Record<Facet, string[]>;
+    const sort = selected('sort')[0] ?? 'date';
+    const view = selected('view')[0] ?? 'full';
+    const hits = runSearch(q.value);
+    const inSearch = (row: HTMLLIElement) => hits === null || hits.has(row.id);
+
+    // Visibility: the search AND every facet; OR within one facet.
+    let shown = 0;
+    for (const row of rows) {
+      const ok = inSearch(row) && FACETS.every((f) => matches(row, f, sel[f]));
+      row.hidden = !ok;
+      if (ok) shown++;
+      annotate(row, hits?.get(row.id), view);
+    }
+
+    // Counts: for each value, what the list would show if this value were the only
+    // selection in its facet, with the search and every other facet as currently set.
+    for (const f of FACETS) {
+      for (const input of inputs(`[name="${f}"]`)) {
+        const n = rows.filter(
+          (row) =>
+            inSearch(row) && FACETS.every((g) => (g === f ? matches(row, g, [input.value]) : matches(row, g, sel[g]))),
+        ).length;
+        const d = input.parentElement!.querySelector('data')!;
+        d.textContent = String(n);
+        d.setAttribute('value', String(n));
+        input.parentElement!.classList.toggle('none', n === 0 && !input.checked);
+      }
+    }
+
+    // Order: newest first for dates, A to Z for the rest.
+    const key = `sort${sort[0].toUpperCase()}${sort.slice(1)}`;
+    const dir = sort === 'date' ? -1 : 1;
+    rows
+      .slice()
+      .sort((a, b) => dir * (a.dataset[key] ?? '').localeCompare(b.dataset[key] ?? ''))
+      .forEach((row) => list.appendChild(row));
+
+    list.classList.toggle('compact', view === 'compact');
+
+    // Result line, in words.
+    const active = FACETS.filter((f) => sel[f].length > 0);
+    const anything = active.length > 0 || hits !== null;
+    resultLine.replaceChildren();
+    const strong = document.createElement('strong');
+    strong.textContent = anything ? `Showing ${shown} of ${total}` : `${total} resources`;
+    resultLine.append(strong);
+    if (anything) {
+      if (hits !== null) {
+        resultLine.append(' · ');
+        const span = document.createElement('span');
+        span.className = 'term';
+        span.textContent = `matching “${q.value.trim()}”`;
+        const x = document.createElement('button');
+        x.type = 'button';
+        x.className = 'remove';
+        x.setAttribute('aria-label', 'Clear search');
+        x.textContent = '×';
+        x.addEventListener('click', () => {
+          q.value = '';
+          apply();
+        });
+        span.append(' ', x);
+        resultLine.append(span);
+      }
+      for (const f of active) {
+        resultLine.append(' · ');
+        const span = document.createElement('span');
+        span.className = 'term';
+        span.textContent = sel[f].map((v) => labelOf(f, v)).join(' or ');
+        const x = document.createElement('button');
+        x.type = 'button';
+        x.className = 'remove';
+        x.setAttribute('aria-label', `Remove ${labelOf(f, sel[f][0])} filter`);
+        x.textContent = '×';
+        x.addEventListener('click', () => {
+          inputs(`[name="${f}"]`).forEach((i) => (i.checked = false));
+          apply();
+        });
+        span.append(' ', x);
+        resultLine.append(span);
+      }
+      resultLine.append(' · ');
+      const clear = document.createElement('button');
+      clear.type = 'button';
+      clear.className = 'clear';
+      clear.textContent = 'Clear all';
+      clear.addEventListener('click', () => {
+        inputs('[type="checkbox"]').forEach((i) => (i.checked = false));
+        q.value = '';
+        apply();
+      });
+      resultLine.append(clear);
+    }
+    empty.hidden = shown > 0;
+
+    // URL state.
+    const params = new URLSearchParams();
+    if (hits !== null) params.set('q', q.value.trim());
+    for (const f of active) params.set(f, sel[f].join(','));
+    if (sort !== 'date') params.set('sort', sort);
+    if (view !== 'full') params.set('view', view);
+    const qs = params.toString();
+    history.replaceState(null, '', qs ? `?${qs}` : location.pathname);
+  }
+
+  // Restore state from the URL.
+  const params = new URLSearchParams(location.search);
+  q.value = params.get('q') ?? '';
+  for (const f of FACETS) {
+    for (const v of (params.get(f) ?? '').split(',').filter(Boolean)) {
+      const input = guide.querySelector<HTMLInputElement>(`input[name="${f}"][value="${v}"]`);
+      if (input) input.checked = true;
+    }
+  }
+  for (const name of ['sort', 'view']) {
+    const v = params.get(name);
+    const input = v && guide.querySelector<HTMLInputElement>(`input[name="${name}"][value="${v}"]`);
+    if (input) input.checked = true;
+  }
+
+  guide.addEventListener('change', apply);
+  let timer = 0;
+  q.addEventListener('input', () => {
+    clearTimeout(timer);
+    timer = window.setTimeout(apply, 150);
+  });
+  q.disabled = false;
+  q.placeholder = 'Search titles, authors, chapters';
+  guide.classList.add('js');
+  apply();
+</script>

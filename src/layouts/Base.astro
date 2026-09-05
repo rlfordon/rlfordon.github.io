@@ -5,7 +5,7 @@ interface Props {
   title?: string;
   description?: string;
   /** Current top-level section, for nav highlighting. */
-  section?: 'home' | 'blog' | 'projects' | 'about';
+  section?: 'home' | 'blog' | 'projects' | 'resources' | 'about';
   ogType?: 'website' | 'article';
 }
 const SITE_NAME = 'Rebecca Fordon';
@@ -47,6 +47,7 @@ const year = new Date().getFullYear();
           <nav class="nav" aria-label="Primary">
             <a href="/blog/" aria-current={section === 'blog' ? 'page' : undefined}>Writing</a>
             <a href="/projects/" aria-current={section === 'projects' ? 'page' : undefined}>Projects</a>
+            <a href="/resources/" aria-current={section === 'resources' ? 'page' : undefined}>Resources</a>
             <a href="/about/" aria-current={section === 'about' ? 'page' : undefined}>About</a>
           </nav>
         </div>

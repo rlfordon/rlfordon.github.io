@@ -1,0 +1,19 @@
+title: "Large Language Models for Lawyers"
+authors:
+  - name: Seth Chandler
+publisher: University of Houston Law Center
+date: "2026"
+kind: syllabus
+access: free
+url: https://llms4l.netlify.app/
+links:
+  - label: Syllabus
+    url: https://llms4l.netlify.app/syllabus
+audience: [faculty, jd-students]
+description: >
+  Public course site and syllabus for a Fall 2026 hands-on course in using, evaluating, and building
+  with AI systems. The schedule runs from prompting and context engineering through
+  retrieval-augmented generation and hallucination control, agents and MCP, speech and coding, and
+  data analysis, alongside a semester-long legal AI project.
+added: 2026-08-20
+verified: 2026-09-05

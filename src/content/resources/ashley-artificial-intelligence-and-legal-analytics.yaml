@@ -1,0 +1,28 @@
+title: "Artificial Intelligence and Legal Analytics: New Tools for Law Practice in the Digital Age"
+authors:
+  - name: Kevin D. Ashley
+publisher: Cambridge University Press
+date: "2017"
+kind: monograph
+access: purchase
+url: https://www.cambridge.org/core/books/artificial-intelligence-and-legal-analytics/E7D705EEF392501A1DB180645917E7E0
+audience: [faculty, jd-students]
+description: >
+  Technical account of computational models of legal reasoning and text analytics as of 2017.
+  Predates large language models.
+contents:
+  - title: Introducing AI & Law and Its Role in Future Legal Practice
+  - title: Modeling Statutory Reasoning
+  - title: Modeling Case-based Legal Reasoning
+  - title: Models for Predicting Legal Outcomes
+  - title: Computational Models of Legal Argument
+  - title: Representing Legal Concepts in Ontologies and Type Systems
+  - title: Making Legal Information Retrieval Smarter
+  - title: Machine Learning with Legal Texts
+  - title: Extracting Information from Statutory and Regulatory Texts
+  - title: Extracting Argument-Related Information from Legal Case Texts
+  - title: Conceptual Legal Information Retrieval for Cognitive Computing
+  - title: Cognitive Computing Legal Apps
+contentsSource: https://www.cambridge.org/core/books/artificial-intelligence-and-legal-analytics/E7D705EEF392501A1DB180645917E7E0
+added: 2026-08-14
+verified: 2026-09-05
