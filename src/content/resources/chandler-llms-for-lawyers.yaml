@@ -10,6 +10,7 @@ links:
   - label: Syllabus
     url: https://llms4l.netlify.app/syllabus
 audience: [faculty, jd-students]
+topics: [tools-and-platforms, prompting, ai-agents, how-llms-work]
 description: >
   Public course site and syllabus for a Fall 2026 hands-on course in using, evaluating, and building
   with AI systems. The schedule runs from prompting and context engineering through

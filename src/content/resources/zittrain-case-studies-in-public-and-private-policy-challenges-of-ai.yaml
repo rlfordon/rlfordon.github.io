@@ -3,11 +3,12 @@ authors:
   - name: Jonathan Zittrain
 publisher: H2O open casebook
 date: "2024"
-kind: open-casebook
+kind: syllabus
 access: open
 url: https://opencasebook.org/casebooks/11402-case-studies-in-public-private-policy-challenges-of-artificial-intelligence/
 audience: [jd-students]
+topics: [ai-regulation, ai-safety-and-agi]
 description: >
   Case-study collection on policy challenges of AI in public and private settings.
 added: 2026-08-14
-verified: 2026-08-14
+verified: 2026-09-05

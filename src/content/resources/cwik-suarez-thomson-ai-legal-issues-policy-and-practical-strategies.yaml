@@ -12,5 +12,58 @@ url: https://www.americanbar.org/products/inv/book/443758527/
 audience: [practitioners]
 description: >
   Edited volume of practitioner chapters on legal issues, policy, and practice strategies for AI.
+contents:
+  - title: "Part One: Reflections on Artificial Intelligence and the Law"
+    note: "Ten short essays by Michael Chertoff, Trooper Sanders, Reva Schwartz, Miriam Vogel, Steven P. Croley, Ericka Watson, Bridget McCormack, Daniel E. Ho and colleagues, David Danks, and Paul Rosenzweig, on topics from soft law and the NIST framework to benefits adjudication and black-box reasoning."
+    topics: [ai-governance-and-risk-management, ai-regulation]
+  - title: "Artificial Intelligence: A Primer for Legal Practitioners"
+    note: "By Hany Farid. Predictive AI, regression, neural networks, a recidivism case study, generative AI for language and images, real or fake."
+    topics: [ai-fundamentals, how-llms-work]
+  - title: "Governing AI in a Changing World"
+    note: "By Cynthia H. Cwik, Karen E. Silverman, and Joseph Blass. What is different about governing AI; US federal, state, and international paradigms; responsible AI principles and practices."
+    topics: [ai-governance-and-risk-management, ai-regulation]
+  - title: "AI and Ethics: A Lawyer's Professional Obligations"
+    note: "By Lucian T. Pera, John F. Weaver, and Andrew P. Sutton. Model Rules 1.1, 1.3, 1.4, 1.5, 1.6, 1.18, 2.1, 3.3, 5.1, 5.3, 5.5, 7.1, and 7.2."
+    topics: [professional-responsibility]
+  - title: "The Promise of Digital Legal Assistants"
+    note: "By Ivan Fong. Promise, risks, and a framework for assessing digital legal assistants."
+    topics: [tools-and-platforms, ai-agents]
+  - title: "Practice Management: Use Cases for Generative AI and Associated Risks"
+    note: "By John Rosenthal and Scott Milner. Legal research, summarization, document review, drafting, contract management, due diligence; best practices."
+    topics: [law-firm-business, legal-research, drafting-and-contracts, confidentiality-and-client-data]
+  - title: "Paths to Responsible AI: Reflections from the Classroom"
+    note: "By Jeffrey W. Chivers, William N. Eskridge, Jr., and Theodore I. Rostow. Technical basics, effects on the profession, legal education, and scholarship."
+    topics: [teaching-with-ai, how-llms-work]
+  - title: "Artificial Intelligence and the Courts"
+    note: "By Hon. Scott U. Schlegel, Maura R. Grossman, and Hon. Herbert B. Dixon, Jr. The ChatGPT sanctions episode, deepfakes, experts and evidentiary rules, lawyers' and judges' use, court operations, virtual courtrooms."
+    topics: [courts-and-judicial-use, evidence-and-deepfakes, accuracy-and-verification]
+  - title: "Artificial Intelligence and Access to Justice: A Potential Game Changer in Closing the Justice Gap"
+    note: "By Ray Brescia and James Sandman. Tenant rights, serving veterans, the justice gap."
+    topics: [access-to-justice]
+  - title: "AI in the Workplace"
+    note: "By Stephanie Wilson and Natalie Pierce. HR uses, legislative guidance and discrimination suits, worker displacement and reskilling, the EU AI Act and AI Liability Directive."
+    topics: [employment-and-labor, ai-regulation]
+  - title: "Artificial Intelligence and the Intellectual Property Explosion"
+    note: "By Christopher A. Suarez and Margaret M. Welsh. Predictive and generative AI across patents, copyright, trade secrets, and trademark; authorship and infringement case law; IP management and licensing."
+    topics: [copyright-and-training-data, patents-and-trade-secrets]
+  - title: "Legal Issues at the Convergence of AI and the Internet of Things"
+    note: "By Christopher A. Suarez. Data protection, cybersecurity, privacy, IP, and e-discovery."
+    topics: [privacy-law, ediscovery-and-document-review]
+  - title: "Cybersecurity Challenges with Artificial Intelligence"
+    note: "By Lucy L. Thomson. Offensive and defensive uses, the IoT Cybersecurity Improvement Act, Executive Order 14110, NIST AI RMF, the EU AI Act, UK NCSC guidelines, the Hiroshima Process."
+    topics: [ai-governance-and-risk-management]
+  - title: "Protecting Privacy in an AI-Powered World"
+    note: "By Ruth Hill Bro and Lothar Determann. Legislation, regulatory action, litigation; biometrics, children, automated decision-making, anonymization and reidentification."
+    topics: [privacy-law]
+  - title: "AI and National Security Law"
+    note: "By Brig. Gen. R. Patrick Huston (Ret.). Autonomous weapons, intelligence, deepfakes, the law of war, human-machine teaming."
+    topics: [national-security]
+  - title: "European Perspective on the Challenges of AI in the Practice of Law"
+    note: "By Péter Homoki. Languages, divergent national laws, transfer learning and transparency in the EU."
+    topics: [international-and-comparative]
+  - title: "The Long-Term Future of Law and Artificial Intelligence"
+    note: "By Stephen S. Wu. Scenarios from more of the same to superintelligence; AI rights and personhood, liability, integration with the human body."
+    topics: [ai-safety-and-agi, ai-personhood]
+contentsSource: https://www.americanbar.org/products/inv/book/443758527/
 added: 2026-08-14
-verified: 2026-08-14
+verified: 2026-09-05

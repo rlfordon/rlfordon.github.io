@@ -11,5 +11,35 @@ audience: [jd-students, non-jd-students, practitioners]
 description: >
   Self-published companion volume on the legal issues raised by generative and agentic AI. Not
   press-reviewed.
+contents:
+  - title: "The “ChatGPT Moment” and the AI Value Chain from GenAI to Agentic AI"
+    topics: [ai-fundamentals, ai-agents]
+  - title: "A Liability Map: “Who Did What” and Why It Matters"
+    topics: [liability-and-torts]
+  - title: "Copyrightability of AI-Assisted Outputs"
+    topics: [copyright-and-training-data]
+  - title: "Copyright Infringement or Fair Use in GenAI Training and Outputs"
+    topics: [copyright-and-training-data]
+  - title: "Patents and Trade Secrets: Innovation vs. Disclosure in the Age of Artificial Intelligence"
+    topics: [patents-and-trade-secrets]
+  - title: "Cybersecurity in the Age of Generative AI and AI Agents"
+    topics: [ai-governance-and-risk-management]
+  - title: "Trademarks, Unfair Competition, and Brand Misuse"
+    topics: [patents-and-trade-secrets]
+  - title: "AI Crime and Punishment: The Criminal Law Event Horizon for Deepfakes, Hackers, and Rogue Agents"
+    topics: [criminal-justice-and-policing, evidence-and-deepfakes]
+  - title: "Artificial Intelligence and the Rights of Publicity and Privacy"
+    topics: [copyright-and-training-data, privacy-law]
+  - title: "News and Public Affairs Reporting Including AI Disinformation Activities"
+    topics: [liability-and-torts, evidence-and-deepfakes]
+  - title: "Evidence Law and Artificial Intelligence"
+    topics: [evidence-and-deepfakes]
+  - title: "Employment and Labor Law and the Algorithmic Boss"
+    topics: [employment-and-labor]
+  - title: "Legislating Generative Artificial Intelligence: Can Legislators Put a Box Around Pandora?"
+    topics: [ai-regulation]
+  - title: "Generative and Agentic AI and the Rules of Ethics and Professional Responsibility"
+    topics: [professional-responsibility]
+contentsSource: https://www.amazon.com/Generative-Agentic-Artificial-Intelligence-Michael/dp/B0H962S5C9
 added: 2026-08-14
-verified: 2026-08-14
+verified: 2026-09-05

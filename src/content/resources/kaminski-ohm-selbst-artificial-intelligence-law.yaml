@@ -16,6 +16,71 @@ links:
 audience: [jd-students]
 description: >
   Doctrinal casebook built primarily on primary sources. Written at the JD level. Faculty can
-  request draft proofs from the publisher ahead of publication.
+  request draft proofs from the publisher ahead of publication. The contents listed here are from the Fall 2023
+  draft table of contents and may change in the published edition.
+contents:
+  - title: "Overview, Themes, and Vocabulary"
+    note: "Part I, Preliminaries."
+    topics: [ai-fundamentals]
+  - title: "Machine Learning 101: Good Old Fashioned AI"
+    topics: [ai-fundamentals]
+  - title: "Tort, Fault, Liability, and Product Safety: Who Is Liable When Self-Driving Cars Collide?"
+    note: "Part II, How AI disrupts traditional legal concepts. Tort liability for users and owners; products liability for manufacturers."
+    topics: [liability-and-torts]
+  - title: "Competing Definitions of Algorithmic Bias and Fairness"
+    topics: [bias-and-discrimination]
+  - title: "Bias and Discrimination: Algorithms in Employment Under Title VII"
+    topics: [bias-and-discrimination, employment-and-labor]
+  - title: "Technological Due Process: Government Use of Algorithms in Benefits Administration"
+    topics: [government-and-administrative-use, bias-and-discrimination]
+  - title: "Algorithmic Crime Prediction and Detection"
+    note: "Individualized suspicion; the analogy to narcotics dog sniffs under the Fourth Amendment."
+    topics: [criminal-justice-and-policing]
+  - title: "Facial Recognition and the First Amendment"
+    topics: [criminal-justice-and-policing, privacy-law]
+  - title: "Privacy and Big Data"
+    note: "The power of inference; inferring identity and sensitive information; using data about some people to build models that control others."
+    topics: [privacy-law]
+  - title: "Generative AI"
+    note: "Part III, AI in context. Technical primers on neural networks and large language models."
+    topics: [how-llms-work]
+  - title: "Liability of LLM Creators for Speech Harms"
+    note: "Defamation and other speech-related harms."
+    topics: [liability-and-torts]
+  - title: "Generative AI and Copyright Law"
+    note: "AI and authorship; fair use and model training."
+    topics: [copyright-and-training-data]
+  - title: "Algorithms and Financial Regulation"
+    topics: [consumer-protection-and-competition]
+  - title: "Medical Malpractice"
+    note: "Standards of care and informed consent."
+    topics: [liability-and-torts]
+  - title: "Prompt Engineering"
+    topics: [prompting]
+  - title: "Governance Strategies"
+    note: "Part IV, Regulating AI. Pauses and bans; agenda setting and trustworthy AI; binary governance, managerialism, and neoliberalism."
+    topics: [ai-governance-and-risk-management, ai-regulation]
+  - title: "Consumer Protection and Data Protection Approaches"
+    note: "The FTC; the GDPR; enforcing consumer protection, bias, and data protection laws."
+    topics: [consumer-protection-and-competition, privacy-law, ai-regulation]
+  - title: "Risk-Based Regulation and Impact Assessments"
+    note: "Risk regulation generally; the EU AI Act; risk assessment frameworks; algorithmic audits."
+    topics: [ai-regulation, ai-governance-and-risk-management]
+  - title: "The Right to a Human-in-the-Loop"
+    note: "Laws requiring a human in the loop; justifications and efficacy."
+    topics: [ai-governance-and-risk-management, ai-regulation]
+  - title: "The Right to Explanation"
+    note: "Licensure and justification."
+    topics: [ai-governance-and-risk-management, ai-regulation]
+  - title: "AI in China"
+    note: "Chinese AI regulation, the social credit system, US export restrictions."
+    topics: [international-and-comparative, national-security]
+  - title: "AI and the International Law of Human Rights"
+    topics: [international-and-comparative]
+  - title: "AGI, Alignment, and Safety"
+    note: "Analogies to other existential threats."
+    topics: [ai-safety-and-agi]
+  - title: "Coda"
+contentsSource: https://aila.ws/docs/ailaw.ToC.fall2023.pdf
 added: 2026-08-14
-verified: 2026-08-14
+verified: 2026-09-05

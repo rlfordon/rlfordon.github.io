@@ -1,6 +1,6 @@
 title: "A Lawyer's Guide to AI: Ten Essential Concepts"
 authors:
-  - name: Henshon
+  - name: Matthew T. Henshon
 publisher: American Bar Association
 date: 2026-01
 pages: 270
@@ -11,5 +11,27 @@ url: https://www.americanbar.org/products/inv/book/454167724/
 audience: [practitioners, jd-students]
 description: >
   Ten concepts, one per chapter, that lawyers need in order to work with AI.
+contents:
+  - title: "What Is AI?"
+    topics: [ai-fundamentals]
+  - title: "Content Creation"
+    topics: [how-llms-work, copyright-and-training-data]
+  - title: "Fair Use"
+    topics: [copyright-and-training-data]
+  - title: "Bias"
+    topics: [bias-and-discrimination]
+  - title: "Privacy"
+    topics: [privacy-law]
+  - title: "Ethics and Laws"
+    topics: [professional-responsibility, ai-regulation]
+  - title: "Employment"
+    topics: [employment-and-labor]
+  - title: "AI That Moves: Drones and Self-Driving Cars"
+    topics: [liability-and-torts]
+  - title: "China"
+    topics: [international-and-comparative, national-security]
+  - title: "The Dark Side"
+    topics: [ai-safety-and-agi]
+contentsSource: https://www.americanbar.org/products/inv/book/454167724/
 added: 2026-08-14
-verified: 2026-08-14
+verified: 2026-09-05

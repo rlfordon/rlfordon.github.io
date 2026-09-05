@@ -10,5 +10,37 @@ audience: [jd-students, non-jd-students, practitioners]
 description: >
   Textbook with an accompanying workbook on generative AI in legal service delivery. Assumes no
   technical background. Free to read online; all rights reserved, so link or excerpt rather than remix.
+contents:
+  - title: "The Context of Generative AI"
+    note: "Part I, Foundations of Generative AI in Legal Practice."
+    topics: [ai-fundamentals]
+  - title: "How Does Generative AI Work?"
+    topics: [how-llms-work]
+  - title: "Generative AI Models and Tools"
+    topics: [tools-and-platforms]
+  - title: "Legal AI Tools and Use Cases"
+    topics: [tools-and-platforms]
+  - title: "Bringing It All Together"
+    note: "Review of chapters 1 through 4."
+  - title: "Prompt Engineering and RAG"
+    note: "Part II, Impact of Generative AI on the Legal Profession."
+    topics: [prompting, how-llms-work]
+  - title: "Impact of AI on the Business and Practice of Law"
+    topics: [law-firm-business]
+  - title: "Ethical and Regulatory Implications of AI in Law"
+    topics: [professional-responsibility, ai-regulation]
+  - title: "Rethinking Access to Justice and Pro Bono"
+    topics: [access-to-justice]
+  - title: "Consolidated Review of Key Concepts"
+    note: "Review of chapters 6 through 9."
+  - title: "Cultivating a Culture of Innovation and Continuous Learning"
+    note: "Part III, Generative AI Strategy, Change Management, and Professional Growth."
+    topics: [law-firm-business]
+  - title: "Transformative Change and the Future of AI in Law Practice"
+    topics: [law-firm-business, careers-and-licensure]
+  - title: "Workbook"
+    note: "Exercises for each chapter and a capstone AI integration plan; glossary, minilectures, podcasts, and a chatbot tutor in the appendix."
+    topics: [teaching-with-ai]
+contentsSource: https://books.lawdroidmanifesto.com/3/generative-ai-and-the-delivery-of-legal-services
 added: 2026-08-14
-verified: 2026-08-14
+verified: 2026-09-05

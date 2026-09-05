@@ -12,5 +12,34 @@ audience: [jd-students, non-jd-students, practitioners]
 description: >
   Survey of AI regulation. Includes chapters on organizational strategy that distinguish developer
   and deployer obligations.
+contents:
+  - title: "Introduction to Artificial Intelligence"
+    note: "Machine learning, neural networks, deep learning, generative AI; illustrative uses in healthcare, product design, autonomous vehicles, chatbots and agents, law firms."
+    topics: [ai-fundamentals, how-llms-work]
+  - title: "Societal Concerns About the Implementation of AI"
+    note: "Risk framework, labor and workforce disruption, the digital divide, the Rite Aid case, algorithmic discrimination, psychographic targeting, misinformation and elections."
+    topics: [bias-and-discrimination, employment-and-labor, evidence-and-deepfakes]
+  - title: "The Evolving Legal Framework"
+    note: "Federal executive orders, state approaches including deepfakes, publicity rights, bias mitigation, and biometrics; the EU AI Act, GDPR, DMA, and DSA; China, the UK, Canada."
+    topics: [ai-regulation, international-and-comparative]
+  - title: "The Relation of Intellectual Property to Generative AI"
+    note: "Patent inventorship and prior art; copyright authorship, training-set liability, and substantially similar output; publicity rights, trade secrets, trademark, enforcement."
+    topics: [copyright-and-training-data, patents-and-trade-secrets]
+  - title: "Tort-Based Liability for AI Development and Deployment"
+    note: "Defamation from AI output and Section 230; informational privacy; health information; products liability; use in legal briefs and law firm operations."
+    topics: [liability-and-torts, privacy-law]
+  - title: "Transactional Considerations for AI Development and Deployment"
+    note: "The NIST AI Risk Management Framework, deployer risk, and contract terms on territory, ownership, liability, and personal data."
+    topics: [ai-governance-and-risk-management, evaluating-and-procuring-ai-tools, in-house-and-compliance]
+  - title: "The Use of AI in Law Enforcement and National Security"
+    note: "Predictive policing and racial disparities; constitutional limits from Olmstead to Katz, the third-party doctrine, data surveillance."
+    topics: [criminal-justice-and-policing, national-security, privacy-law]
+  - title: "AI in Armed Conflict"
+    note: "Signals intelligence, lethal autonomous weapons systems, humans in the loop."
+    topics: [national-security]
+  - title: "Conclusion: Considerations for the Law and Regulation of Artificial Intelligence"
+    note: "Framing rather than defining AI, sources of regulation, transparency and explainability, consumer protections, business adoption, existential considerations."
+    topics: [ai-regulation, ai-governance-and-risk-management]
+contentsSource: https://www.vitalsource.com/products/artificial-intelligence-law-and-regulation-in-a-jon-m-garon-v9798892093347
 added: 2026-08-14
-verified: 2026-08-14
+verified: 2026-09-05

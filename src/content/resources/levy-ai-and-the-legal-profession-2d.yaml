@@ -1,6 +1,6 @@
 title: "AI and the Legal Profession: Transforming the Future of Law, 2nd ed."
 authors:
-  - name: Levy
+  - name: Colin Levy
 edited: true
 publisher: Globe Law and Business
 date: 2025-09
@@ -10,5 +10,43 @@ url: https://www.globelawandbusiness.com/books/ai-and-the-legal-profession-trans
 audience: [practitioners]
 description: >
   Edited volume of practitioner essays on AI in the legal profession.
+contents:
+  - title: "Artificial Intelligence, Authentic Practice: The Uneasy Partnership Reshaping Legal Services"
+    note: "By Colin Levy. Human judgment and AI capabilities, governance frameworks, judgment skills, professional standards for collaboration."
+    topics: [law-firm-business, ai-governance-and-risk-management]
+  - title: "The Law, GenAI, and Us: A Journey into the Future of Legal Thinking"
+    note: "By Valérie M. Saintot. How generative AI changes thinking; training the legal mind; a prompting accountability checklist."
+    topics: [prompting, careers-and-licensure]
+  - title: "Challenges and Ethical Considerations in the Age of Generative AI"
+    note: "By Natalie Pierce and Stephanie Goutos. Professional obligations, the risks of not using generative AI, best practices."
+    topics: [professional-responsibility]
+  - title: "The Data Drain: Navigating Copyright Challenges in the Era of AI"
+    note: "By Joanne Brook. Training data ownership, claiming back copyright, whether AI output is art."
+    topics: [copyright-and-training-data]
+  - title: "The Legal Technology Playbook: A Step-by-Step Guide to Implementing Legal Technology"
+    note: "By Justin Turman. Ten phases from needs assessment to evaluation."
+    topics: [law-firm-business, evaluating-and-procuring-ai-tools]
+  - title: "Managing Expectations: Practical Steps to Achieve Successful AI Implementation"
+    note: "By Mark Gediman. Why AI cannot yet replace legal research; choosing tools."
+    topics: [evaluating-and-procuring-ai-tools, legal-research]
+  - title: "The Global Impact of the European Union's AI Act on the Legal Profession"
+    note: "By Itsiq Benizri. Essentials of the Act, effects on non-EU law, compliance requirements for legal professionals."
+    topics: [ai-regulation, international-and-comparative]
+  - title: "Navigating Regulatory Frameworks: Building Ethical and Compliant AI in the Legal Sector"
+    note: "By Harry Borovick. Ethical and legally compliant AI, frameworks, compliance strategies."
+    topics: [ai-governance-and-risk-management, ai-regulation]
+  - title: "AI in the Legal Arena: Navigating Ethics, Confidentiality, and Professional Responsibility"
+    note: "By Erick Robinson. Confidentiality and privacy, client consent, security, balancing innovation with ethics."
+    topics: [confidentiality-and-client-data, professional-responsibility]
+  - title: "The Human Side of Legal AI: Leadership and Value Creation in In-House Teams"
+    note: "By Rasmus Kirkeby Salling and Peter Kaas. Leadership, capturing and measuring value, setting the team."
+    topics: [in-house-and-compliance]
+  - title: "Building AI-Ready Legal Teams: Strategies for Hiring and Integrating External Talent"
+    note: "By Matthew Dunne."
+    topics: [law-firm-business, careers-and-licensure]
+  - title: "Tech and Law: How Research Prototyping Drives GenAI Adoption in Legal Practice"
+    note: "By Megan Ma. Prototyping with purpose, testing and evaluation."
+    topics: [evaluating-and-procuring-ai-tools, law-firm-business]
+contentsSource: https://www.globelawandbusiness.com/storage/files/books/1719-6842f7fe6069e.pdf
 added: 2026-08-14
-verified: 2026-08-14
+verified: 2026-09-05

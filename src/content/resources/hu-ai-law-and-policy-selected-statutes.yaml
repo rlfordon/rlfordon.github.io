@@ -14,16 +14,26 @@ description: >
   acts, executive orders, and EU and Chinese materials. Usable on its own without the casebook.
 contents:
   - title: "Part I: Selected U.S. Federal Statutes and Executive Orders"
+    topics: [ai-regulation]
   - title: "Part II: Selected U.S. State Statutes and Executive Orders"
+    topics: [ai-regulation]
   - title: "Part III: European Union"
+    topics: [ai-regulation, international-and-comparative]
   - title: "Part IV: China (PRC)"
+    topics: [ai-regulation, international-and-comparative]
   - title: "Part V: Other Selected International Frameworks"
+    topics: [international-and-comparative]
   - title: "Appendix A: United States Constitution"
   - title: "Appendix B: Blueprint for an AI Bill of Rights"
+    topics: [ai-governance-and-risk-management, ai-regulation]
   - title: "Appendix C: Artificial Intelligence Risk Management Framework (AI RMF 1.0)"
+    topics: [ai-governance-and-risk-management]
   - title: "Appendix D: AI Risk Management Framework, Generative Artificial Intelligence Profile"
+    topics: [ai-governance-and-risk-management, how-llms-work]
   - title: "Appendix E: Biden Memoranda and Other Documents"
+    topics: [ai-regulation, government-and-administrative-use]
   - title: "Appendix F: Trump Memoranda and Other Documents"
+    topics: [ai-regulation, government-and-administrative-use]
 contentsSource: https://aspenpublishing.com/products/supplements-law-policy
 added: 2026-08-14
 verified: 2026-09-05

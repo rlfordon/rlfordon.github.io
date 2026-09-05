@@ -12,17 +12,29 @@ description: >
   Predates large language models.
 contents:
   - title: Introducing AI & Law and Its Role in Future Legal Practice
+    topics: [computational-law-and-analytics, ai-fundamentals]
   - title: Modeling Statutory Reasoning
+    topics: [computational-law-and-analytics]
   - title: Modeling Case-based Legal Reasoning
+    topics: [computational-law-and-analytics]
   - title: Models for Predicting Legal Outcomes
+    topics: [computational-law-and-analytics, litigation-analytics]
   - title: Computational Models of Legal Argument
+    topics: [computational-law-and-analytics]
   - title: Representing Legal Concepts in Ontologies and Type Systems
+    topics: [computational-law-and-analytics]
   - title: Making Legal Information Retrieval Smarter
+    topics: [computational-law-and-analytics, legal-research]
   - title: Machine Learning with Legal Texts
+    topics: [computational-law-and-analytics, ai-fundamentals]
   - title: Extracting Information from Statutory and Regulatory Texts
+    topics: [computational-law-and-analytics]
   - title: Extracting Argument-Related Information from Legal Case Texts
+    topics: [computational-law-and-analytics]
   - title: Conceptual Legal Information Retrieval for Cognitive Computing
+    topics: [computational-law-and-analytics, legal-research]
   - title: Cognitive Computing Legal Apps
+    topics: [computational-law-and-analytics]
 contentsSource: https://www.cambridge.org/core/books/artificial-intelligence-and-legal-analytics/E7D705EEF392501A1DB180645917E7E0
 added: 2026-08-14
 verified: 2026-09-05

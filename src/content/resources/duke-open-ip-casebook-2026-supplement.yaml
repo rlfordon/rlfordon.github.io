@@ -7,9 +7,13 @@ date: "2026"
 kind: open-casebook
 access: open
 url: https://web.law.duke.edu/cspd/openip/
+links:
+  - label: Full casebook
+    url: https://web.law.duke.edu/cspd/casebook/
 audience: [jd-students]
+topics: [copyright-and-training-data, patents-and-trade-secrets]
 description: >
   Supplement to the open IP casebook. Chapters on generative AI and copyright, fair use for model
   training, and patentability, built on primary sources.
 added: 2026-08-14
-verified: 2026-08-14
+verified: 2026-09-05

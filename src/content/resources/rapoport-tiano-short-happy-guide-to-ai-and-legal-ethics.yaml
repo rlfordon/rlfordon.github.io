@@ -13,5 +13,28 @@ audience: [jd-students, non-jd-students, practitioners]
 description: >
   Short plain-language guide to how the rules of professional conduct apply when lawyers use AI:
   confidentiality, competence, conflicts, transparency, and fees.
+contents:
+  - title: "Introduction: The Legal Profession at an Inflection Point"
+    note: "Generative AI, other legal tech, ethics, and the future of practice."
+    topics: [professional-responsibility]
+  - title: "Overview: What's All of This Fuss About Artificial Intelligence and Legal Technology, Anyway?"
+    topics: [ai-fundamentals, tools-and-platforms]
+  - title: "Competence and Diligence"
+    topics: [professional-responsibility, accuracy-and-verification]
+  - title: "Confidentiality and Data Security in the Age of Artificial Intelligence"
+    topics: [confidentiality-and-client-data]
+  - title: "Communicating with Clients, Counterparties, and the Court"
+    topics: [professional-responsibility, courts-and-judicial-use]
+  - title: "Artificial Intelligence and the Ethics of Lawyer Advertising and Solicitation"
+    topics: [professional-responsibility]
+  - title: "Artificial Intelligence, Rule 1.5, and the New Arithmetic of “Reasonable” Fees"
+    topics: [professional-responsibility, law-firm-business]
+  - title: "Duty to Supervise"
+    topics: [professional-responsibility]
+  - title: "The Unauthorized Practice of Law and Jurisdictional Issues"
+    topics: [professional-responsibility, access-to-justice]
+  - title: "Conflicts of Interest"
+    topics: [professional-responsibility]
+contentsSource: https://www.vitalsource.com/products/a-short-amp-happy-guide-to-artificial-intelligence-nancy-b-rapoport-joseph-r-v9798317708337
 added: 2026-08-14
 verified: 2026-09-05

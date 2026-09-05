@@ -10,5 +10,23 @@ url: https://www.routledge.com/Data-Driven-Law-Data-Analytics-and-the-New-Legal-
 audience: [practitioners, jd-students]
 description: >
   Edited volume on data analytics in legal services.
+contents:
+  - title: "Introduction: Data Analytics for Law Firms: Using Data for Smarter Legal Services"
+    topics: [computational-law-and-analytics, law-firm-business]
+  - title: "Mining Legal Data: Collecting and Analyzing 21st Century Gold"
+    topics: [computational-law-and-analytics]
+  - title: "Deconstructing Contracts: Analytics and Contract Standards"
+    topics: [drafting-and-contracts, computational-law-and-analytics]
+  - title: "The Big Move Toward Big Data in Employment"
+    topics: [employment-and-labor, computational-law-and-analytics]
+  - title: "Computational Law, Symbolic Discourse, and the AI Constitution"
+    topics: [computational-law-and-analytics]
+  - title: "Quantifying Success: Using Data Science to Measure the Accuracy of Technology-Assisted Review in Electronic Discovery"
+    topics: [ediscovery-and-document-review, computational-law-and-analytics]
+  - title: "Quantifying the Quality of Legal Services: Data Science Lessons"
+    topics: [law-firm-business, computational-law-and-analytics]
+  - title: "Uncovering Big Bias with Big Data: An Introduction to Linear Regression"
+    topics: [bias-and-discrimination, computational-law-and-analytics]
+contentsSource: https://www.routledge.com/Data-Driven-Law-Data-Analytics-and-the-New-Legal-Services/Walters/p/book/9781498766654
 added: 2026-08-14
-verified: 2026-08-14
+verified: 2026-09-05

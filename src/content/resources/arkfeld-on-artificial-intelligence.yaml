@@ -1,13 +1,37 @@
-title: "Arkfeld on Artificial Intelligence"
+title: "Arkfeld on Artificial Intelligence and the Practice of Law"
 authors:
   - name: Michael R. Arkfeld
 publisher: LexisNexis
+date: "2025"
 kind: treatise
 access: subscription
 via: Lexis+
-url: https://www.lexisnexis.com/en-us/products/lexis-plus.page
+url: https://store.lexisnexis.com/en-us/products/arkfeld-on-artificial-intelligence-and-the-practice-of-law.html
+links:
+  - label: Open in Lexis+ (subscription)
+    url: https://plus.lexis.com/api/permalink/bc2cb5ba-5b24-4cdf-82e1-73fb69f20741/?context=1530671
 audience: [practitioners, faculty]
 description: >
   Practitioner treatise on AI in legal practice, available on Lexis+.
+contents:
+  - title: "AI in Legal Practice: An Introduction"
+    topics: [ai-fundamentals]
+  - title: "Artificial Intelligence (AI), Components, Generative AI, and General AI"
+    topics: [ai-fundamentals, how-llms-work]
+  - title: "Impact of AI on Ethics, Competency, and Confidentiality"
+    topics: [professional-responsibility, confidentiality-and-client-data]
+  - title: "AI Applications Transforming Law Firms and Legal Organizations"
+    topics: [law-firm-business, tools-and-platforms]
+  - title: "Integrating AI into Discovery and Litigation in Civil Cases"
+    topics: [ediscovery-and-document-review]
+  - title: "Adequacy Determination, Validation, and Certification of Searches"
+    topics: [ediscovery-and-document-review, accuracy-and-verification]
+  - title: "AI for Litigation and the Courtroom"
+    topics: [courts-and-judicial-use, evidence-and-deepfakes]
+  - title: "Planning for eDiscovery and Artificial Intelligence (AI)"
+    topics: [ediscovery-and-document-review]
+  - title: "Summary and Conclusion: Embracing the AI Revolution in Legal Practice and Its Future"
+    topics: [careers-and-licensure]
+contentsSource: https://store.lexisnexis.com/en-us/products/arkfeld-on-artificial-intelligence-and-the-practice-of-law.html
 added: 2026-08-14
-verified: 2026-08-14
+verified: 2026-09-05

@@ -9,5 +9,24 @@ url: https://www.amazon.com/Legal-AI-Joshua-Walker/dp/1949884074
 audience: [practitioners]
 description: >
   Practitioner account of AI in law from 2019. The publisher page is no longer available.
+contents:
+  - title: "Part I: Tabula Rasa"
+    note: "Essential codes; a classification and procedures practicum; work as foil to pretension; four axioms in a bottle; definitions, representations, models."
+    topics: [computational-law-and-analytics]
+  - title: "Part II: Why, What, How"
+    topics: [computational-law-and-analytics]
+  - title: "Part III: A Computational Model of Law"
+    note: "A brief history of law and computer science; a narrow view of a scalable truth."
+    topics: [computational-law-and-analytics]
+  - title: "Part IV: Eden"
+    note: "Initial conditions; a brief recipe."
+    topics: [computational-law-and-analytics]
+  - title: "Part V: FinCity"
+    note: "Project background; design; empirical work; FinCity Net; evolution."
+    topics: [computational-law-and-analytics]
+  - title: "Coda: Next Acts, Recursive Steps"
+    note: "FinCity as AI; AI futures past."
+    topics: [computational-law-and-analytics, ai-safety-and-agi]
+contentsSource: https://lawcat.berkeley.edu/record/1101977
 added: 2026-08-14
-verified: 2026-08-14
+verified: 2026-09-05

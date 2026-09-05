@@ -10,5 +10,38 @@ url: https://www.wiley.com/en-us/AI+For+Lawyers:+How+Artificial+Intelligence+is+
 audience: [practitioners]
 description: >
   Practitioner overview of AI in legal work by the founders of Kira Systems. Predates generative AI.
+contents:
+  - title: "How Lawyers Learned to Stop Worrying and Love AI"
+    note: "Part I, The Point: AI in law is here to stay."
+    topics: [ai-fundamentals, law-firm-business]
+  - title: "#DoMoreLaw: How Doing Work More Efficiently Can Create More Legal Work, Not Less"
+    topics: [law-firm-business]
+  - title: "The Small Law Mindset: Bringing Biglaw Capabilities to Smaller Firms"
+    topics: [law-firm-business]
+  - title: "AI: A Modern Job Creator: The New Legal Mindsets, Skill Sets, and Jobs That Are in Demand"
+    topics: [careers-and-licensure]
+  - title: "Amplifying Legal Expertise: From One-to-One Advisory to Scalable, One-to-Many Service Delivery"
+    topics: [law-firm-business, access-to-justice]
+  - title: "The Ethics of Lawyers Using, and Not Using, AI"
+    topics: [professional-responsibility]
+  - title: "eDiscovery: What It Is and How AI Is Continuing to Transform How It Works for You"
+    note: "Part II, The Proof. By Dera Nevin."
+    topics: [ediscovery-and-document-review]
+  - title: "AI in Legal Research: How AI Is Providing Everyone Access to Information and Leveling the Playing Field"
+    note: "By Jake Heller, Laura Safdie, and Pablo Arredondo of Casetext."
+    topics: [legal-research]
+  - title: "Litigation Analytics: The Emergence of Analytics in Law and Why It's Now Dangerous to Practice Litigation Without Data"
+    note: "By Anthony Niblett of Blue J Legal."
+    topics: [litigation-analytics]
+  - title: "Contract Review to Contract Capital: How Ubiquitous Access to Contract Analysis Software Will Transform Legal and Business Practices"
+    topics: [drafting-and-contracts]
+  - title: "Expert Systems: Self-Service Law and the Automation of Legal Question-Answering"
+    note: "By Michael Mills of Neota Logic."
+    topics: [computational-law-and-analytics, access-to-justice]
+  - title: "The AI Adoption Framework: Understanding the Adoption Path That Will Help You Get Ahead and Build the Practice of the Future"
+    note: "Part III, The Plan."
+    topics: [law-firm-business]
+  - title: "Conclusion"
+contentsSource: https://www.wiley.com/en-us/AI+For+Lawyers:+How+Artificial+Intelligence+is+Adding+Value,+Amplifying+Expertise,+and+Transforming+Careers-p-9781119723844
 added: 2026-08-14
-verified: 2026-08-14
+verified: 2026-09-05

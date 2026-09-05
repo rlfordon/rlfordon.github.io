@@ -1,6 +1,7 @@
 import { defineCollection, reference } from 'astro:content';
 import { glob } from 'astro/loaders';
 import { z } from 'astro/zod';
+import { TOPIC_IDS } from './data/topics';
 
 const blog = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/blog' }),
@@ -46,6 +47,9 @@ export const RESOURCE_KINDS = [
 
 export const ACCESS_TYPES = ['open', 'free', 'subscription', 'purchase'] as const;
 
+/** A topic id from the controlled vocabulary in src/data/topics.ts. */
+const topicId = z.string().refine((t) => TOPIC_IDS.has(t), (t) => ({ message: `unknown topic "${t}"; add it to src/data/topics.ts or fix the spelling` }));
+
 export const AUDIENCES = ['jd-students', 'non-jd-students', 'faculty', 'practitioners', 'general'] as const;
 
 /**
@@ -77,10 +81,10 @@ const resources = defineCollection({
     links: z.array(z.object({ label: z.string(), url: z.string().url() })).default([]),
     audience: z.array(z.enum(AUDIENCES)).default([]),
     /** Whole-work topics, for resources with no chapter list. Chapters carry their own. */
-    topics: z.array(z.string()).default([]),
+    topics: z.array(topicId).default([]),
     description: z.string(),
     contents: z
-      .array(z.object({ title: z.string(), note: z.string().optional(), topics: z.array(z.string()).default([]) }))
+      .array(z.object({ title: z.string(), note: z.string().optional(), topics: z.array(topicId).default([]) }))
       .default([]),
     contentsSource: z.string().url().optional(),
     added: fullDate,

@@ -1,7 +1,7 @@
 title: "The AI-Enabled Law Firm"
 authors:
-  - name: Switzer
-  - name: Dittmar
+  - name: Lee Dittmar
+  - name: Carole Stern Switzer
 publisher: American Bar Association
 date: 2026-02
 kind: practitioner-book
@@ -10,5 +10,58 @@ url: https://www.americanbar.org/products/inv/book/455618133/
 audience: [practitioners]
 description: >
   Governance frameworks, training, and ethics for adopting AI in a law firm.
+contents:
+  - title: "The AI Revolution in Legal Services"
+    note: "Hype versus reality, key technologies, agentic AI, the competitive necessity of adoption."
+    topics: [ai-fundamentals, tools-and-platforms, ai-agents]
+  - title: "Using AI Tools in Your Legal Practice"
+    note: "Document review, legal research and analytics, contract analysis, litigation analytics, knowledge management, operations."
+    topics: [legal-research, drafting-and-contracts, ediscovery-and-document-review, litigation-analytics, law-firm-business]
+  - title: "Practice-Specific AI Applications"
+    note: "Litigation, transactional, regulatory counseling, other specialties."
+    topics: [law-firm-business]
+  - title: "Managing Your Firm's Knowledge with AI"
+    note: "Evolution of knowledge management, ethics and governance, a tiered framework, multimodal capture."
+    topics: [law-firm-business]
+  - title: "Professional Responsibility and AI"
+    note: "Foundational obligations, emerging challenges, frameworks for ethical governance."
+    topics: [professional-responsibility]
+  - title: "Managing Legal and Compliance Risks with AI"
+    note: "Privacy and security, confidentiality, bias, regulatory compliance, malpractice, insurance, vendor due diligence."
+    topics: [confidentiality-and-client-data, bias-and-discrimination, ai-regulation, evaluating-and-procuring-ai-tools]
+  - title: "Creating Your AI Strategy"
+    note: "Readiness assessment, use cases, business case, metrics, vendor selection, change management."
+    topics: [law-firm-business]
+  - title: "AI Technology Selection and Implementation"
+    note: "The technology landscape, an evaluation framework, testing, data foundations, governance, security."
+    topics: [evaluating-and-procuring-ai-tools, ai-governance-and-risk-management]
+  - title: "Training Your People on AI"
+    note: "Required competencies, training programs, measuring effectiveness, ethics, client conversations, resistance to change."
+    topics: [law-firm-business, careers-and-licensure]
+  - title: "Creating AI Policies and Governance"
+    note: "Policy components, quality control, model risk management, governance technology, international dimensions."
+    topics: [ai-governance-and-risk-management]
+  - title: "Preparing Your Workforce for the AI Future"
+    note: "Changing roles, skills, structure, career paths and compensation."
+    topics: [law-firm-business, careers-and-licensure]
+  - title: "Communicating with Clients About AI"
+    note: "Disclosure requirements, pricing and value, expectations, client feedback."
+    topics: [professional-responsibility, confidentiality-and-client-data]
+  - title: "Using AI for Project Management and Budgeting"
+    note: "Budget development and tracking, resource allocation, contractual frameworks."
+    topics: [law-firm-business]
+  - title: "International AI Considerations"
+    note: "Regional regulation, cross-jurisdiction governance, international client service, outside counsel."
+    topics: [international-and-comparative, ai-regulation]
+  - title: "Next-Generation AI and Beyond"
+    note: "Future capabilities, convergence with other technologies, professional transformation."
+    topics: [ai-safety-and-agi, ai-agents]
+  - title: "Building a Future-Ready Organization"
+    note: "Innovation ecosystems, competitive boundaries, sustainability, measuring ROI."
+    topics: [law-firm-business]
+  - title: "Appendices"
+    note: "Ten recommendations for law firms; ten for in-house counsel; twenty-five discussion questions."
+    topics: [law-firm-business, in-house-and-compliance]
+contentsSource: https://www.americanbar.org/content/dam/aba-cms-dotorg/products/inv/book/455615345/5150541_TOC.pdf
 added: 2026-08-14
-verified: 2026-08-14
+verified: 2026-09-05

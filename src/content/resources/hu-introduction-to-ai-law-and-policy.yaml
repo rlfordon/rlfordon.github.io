@@ -11,5 +11,40 @@ audience: [jd-students, non-jd-students]
 description: >
   Shorter primary-source volume on AI governance from the author of the full AI Law and Policy
   casebook.
+contents:
+  - title: "Introduction"
+    note: "Title taken from the companion casebook; the first pages of the contents were not captured."
+    topics: [ai-fundamentals]
+  - title: "Definitions"
+    note: "Title taken from the companion casebook. AI systems and taxonomy, machine learning, natural language processing, data science, perception and robotics; narrow, predictive, generative, and theoretical AI; AI lifecycles."
+    topics: [ai-fundamentals]
+  - title: "Conceptualizing AI Governance"
+    note: "Hard and soft law, horizontal and vertical oversight, self-governance, multistakeholder governance; rights-based (Blueprint for an AI Bill of Rights) and risk-based (NIST AI RMF) frameworks; the EU AI Act as hybrid; Rodgers v. Christie; Colorado and California statutes."
+    topics: [ai-governance-and-risk-management, ai-regulation]
+  - title: "Algorithmic Discrimination and Disparate Impact"
+    note: "Blueprint, NIST, EU AI Act and GDPR, Colorado AI Consumer Protection Act; State v. Loomis, ACLU v. Clearview AI, FTC v. Rite Aid; executive orders 14179 and 14110, the joint enforcement statement, federal procurement and contractor guidance."
+    topics: [bias-and-discrimination, government-and-administrative-use]
+  - title: "Transparency and Explanation"
+    note: "EU AI Act and GDPR transparency, right to explanation, notice and disclosure; Deyerler v. HireVue, HireVue's explainability statement, the Facebook Papers, the proposed Algorithmic Accountability Act, FTC v. TransUnion Rental Screening."
+    topics: [ai-governance-and-risk-management, ai-regulation]
+  - title: "Data Privacy and Autonomy"
+    note: "California constitution, Google Assistant litigation, UN and European human rights instruments, the PNR case; Snowden and Schrems, Klayman v. Obama, Cambridge Analytica, FTC settlements with Facebook."
+    topics: [privacy-law]
+  - title: "Personhood and Citizenship"
+    note: "Citizens United, Lehrman v. LOVO, Thaler v. Vidal and USPTO inventorship guidance, Thaler v. Perlmutter and Copyright Office registration guidance, Sophia's Saudi citizenship, Moffatt v. Air Canada."
+    topics: [ai-personhood, copyright-and-training-data, patents-and-trade-secrets]
+  - title: "Human Oversight and Generative AI"
+    note: "EU AI Act human oversight, UNESCO ethical impact assessment, the intelligence community ethics framework, OMB memo, Microsoft Responsible AI Standard; regulating foundation models; California training data transparency; NIST generative AI profile; New York Times v. Microsoft and OpenAI."
+    topics: [ai-governance-and-risk-management, how-llms-work]
+  - title: "AI Ethics and Audits"
+    note: "UNESCO recommendation, Mastercard principles; agency AI inventories and governance boards; ISACA and European Court of Auditors guidance, AI Security Institute evaluations; EU AI Act conformity assessment and market surveillance."
+    topics: [ai-governance-and-risk-management]
+  - title: "Remedies and Preventive Measures"
+    note: "Prohibited practices, the Somerville facial recognition ban, the Amazon Alexa order; impact assessments and testing; algorithmic disgorgement in Kurbo, punitive damages, injunctive relief."
+    topics: [ai-regulation, ai-governance-and-risk-management]
+  - title: "Humanity and Sustainability"
+    note: "WGA and SAG-AFTRA strikes, workforce training acts, AI in education and research, GDPR research rules, the CHIPS Act; sustainability reporting, UN capacity-building resolution, environmental impacts."
+    topics: [employment-and-labor, ai-regulation]
+contentsSource: https://aspenpublishing.com/products/hu-ailaw-policy1
 added: 2026-08-14
-verified: 2026-08-14
+verified: 2026-09-05

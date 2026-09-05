@@ -13,6 +13,39 @@ audience: [jd-students, non-jd-students, practitioners]
 description: >
   Open textbook series. Book 1, Agentic AI in Law and Finance, covers agents as a concept, agent
   design, and governance, without exercises. Book 2, LLM Essentials, is forthcoming and covers
-  language-model literacy. The site also has free explainers and a glossary.
+  language-model literacy. Chapters are released one at a time on GitHub and SSRN. The site also has free
+  explainers and a glossary.
+contents:
+  - title: "LLM Primer and Mechanics"
+    note: "Part I, Foundations. Tokens, sampling, embeddings, context windows, and failure modes for practitioners. In progress."
+    topics: [how-llms-work]
+  - title: "Conversations and Reasoning"
+    note: "Multi-turn state management, context strategies, and reasoning patterns such as chain-of-thought and ReAct. In progress."
+    topics: [how-llms-work, prompting]
+  - title: "Structured Outputs and Tool Use"
+    note: "JSON schemas, validation, function calling, RAG basics, and the evidence record. In progress."
+    topics: [how-llms-work, ai-agents]
+  - title: "Multimodal Fundamentals"
+    note: "Documents, images, tables, charts, and audio, with privacy for regulated domains. In progress."
+    topics: [how-llms-work]
+  - title: "Prompt Design and Optimization"
+    note: "Specifications, evaluation test sets, meta-prompting, threat modeling, and versioning. In progress."
+    topics: [prompting, evaluating-and-procuring-ai-tools]
+  - title: "What Is an Agent?"
+    note: "Part II, Agents and Agentic Systems. Seven decades of agency scholarship synthesized into evaluation frameworks. Published."
+    topics: [ai-agents]
+  - title: "How to Design an Agent"
+    note: "Ten architectural questions: triggers, perception, memory, planning, and escalation. Published."
+    topics: [ai-agents]
+  - title: "How to Govern an Agent"
+    note: "Risk calibration, compliance stacks, and accountability for regulated industries. Published."
+    topics: [ai-agents, ai-governance-and-risk-management]
+  - title: "Knowledge Graph Foundations"
+    note: "Part III, Knowledge Graphs and Semantic Web. RDF, RDFS/OWL, SKOS, SPARQL, SHACL, and JSON-LD with legal and financial examples. Planned."
+    topics: [computational-law-and-analytics]
+  - title: "Knowledge Graph Operations with LLMs"
+    note: "Ingestion pipelines, LLM-assisted curation, hybrid retrieval, and evaluation. Planned."
+    topics: [computational-law-and-analytics, how-llms-work]
+contentsSource: https://github.com/mjbommar/ai-law-finance-book
 added: 2026-08-14
-verified: 2026-08-14
+verified: 2026-09-05

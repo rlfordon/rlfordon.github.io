@@ -4,12 +4,13 @@ authors:
   - name: Joi Ito
 publisher: H2O open casebook
 date: "2018"
-kind: open-casebook
+kind: syllabus
 access: open
 url: https://opencasebook.org/casebooks/476-the-ethics-and-governance-of-artificial-intelligence/
 audience: [jd-students]
+topics: [ai-governance-and-risk-management, ai-safety-and-agi]
 description: >
   Readings from the 2018 Harvard and MIT course on AI ethics and governance. Predates
   generative AI.
 added: 2026-08-14
-verified: 2026-08-14
+verified: 2026-09-05

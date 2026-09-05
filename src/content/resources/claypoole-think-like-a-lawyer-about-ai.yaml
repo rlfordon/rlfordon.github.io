@@ -9,5 +9,31 @@ url: https://www.americanbar.org/products/inv/book/450231972/
 audience: [practitioners, general]
 description: >
   Groups AI systems by what they do and works through the legal impact of each category.
+contents:
+  - title: "What Is Artificial Intelligence?"
+    topics: [ai-fundamentals]
+  - title: "Why Would Lawyers Need to Think Differently about AI?"
+    topics: [ai-fundamentals]
+  - title: "Lawyers Should Think of AI in Functional Categories"
+    topics: [ai-fundamentals]
+  - title: "Decision-Making AI"
+    topics: [bias-and-discrimination, government-and-administrative-use]
+  - title: "Generative AI"
+    topics: [how-llms-work, copyright-and-training-data]
+  - title: "Personal Identification AI"
+    topics: [privacy-law, criminal-justice-and-policing]
+  - title: "Strategizing AI: AI Analytics and Safety"
+    topics: [computational-law-and-analytics, ai-safety-and-agi]
+  - title: "Physical Action AI"
+    topics: [liability-and-torts]
+  - title: "Military AI"
+    topics: [national-security]
+  - title: "Should AI Receive Legal Rights?"
+    topics: [ai-personhood]
+  - title: "Developing Policy for Novel AI Problems"
+    topics: [ai-regulation]
+  - title: "Final Note: Lawyers Can Use Generative AI in Compliance with Their Professional Rules"
+    topics: [professional-responsibility]
+contentsSource: https://www.americanbar.org/products/inv/book/450231972/
 added: 2026-08-14
-verified: 2026-08-14
+verified: 2026-09-05

@@ -10,5 +10,21 @@ description: >
   Web primer written for a law school course on the law and policy of AI. Part I covers what AI is,
   how large language models work, and developments since ChatGPT. Part II covers why regulate,
   benefits and harms, and how AI changes existing legal problems. No license stated.
+contents:
+  - title: "What Is AI? Definitions and History"
+    note: "Part I, What AI Is and How We Got Here."
+    topics: [ai-fundamentals]
+  - title: "How Large Language Models Work"
+    topics: [how-llms-work]
+  - title: "What Has Happened Since ChatGPT"
+    topics: [ai-fundamentals]
+  - title: "Benefits, Harms, and Uncertainty"
+    note: "Part II, Why Regulate AI?"
+    topics: [ai-regulation]
+  - title: "How AI Changes Old Problems"
+    topics: [ai-regulation]
+  - title: "How to Think About Law and AI"
+    topics: [ai-regulation]
+contentsSource: https://matthewsag.com/ai-policy-primer/
 added: 2026-08-19
-verified: 2026-08-19
+verified: 2026-09-05

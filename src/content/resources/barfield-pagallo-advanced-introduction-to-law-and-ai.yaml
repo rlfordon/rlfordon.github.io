@@ -10,5 +10,31 @@ url: https://www.e-elgar.com/shop/usd/advanced-introduction-to-law-and-artificia
 audience: [faculty, jd-students]
 description: >
   Short scholarly introduction to law and AI. No second edition as of August 2026.
+contents:
+  - title: "Introduction to Law and Artificial Intelligence"
+    topics: [ai-fundamentals]
+  - title: "Definitions, Actors, Concepts"
+    topics: [ai-fundamentals, ai-regulation]
+  - title: "Human Rights Considerations"
+    topics: [international-and-comparative]
+  - title: "Constitutional Law Issues"
+    topics: [government-and-administrative-use]
+  - title: "Legal Personality and Artificial Intelligence"
+    topics: [ai-personhood]
+  - title: "Issues of Data Protection"
+    topics: [privacy-law]
+  - title: "Tort Law Approaches"
+    topics: [liability-and-torts]
+  - title: "Criminal Law"
+    topics: [criminal-justice-and-policing]
+  - title: "Copyright Law"
+    topics: [copyright-and-training-data]
+  - title: "Patent Law"
+    topics: [patents-and-trade-secrets]
+  - title: "Business Law, Antitrust, and Trade Secrets"
+    topics: [consumer-protection-and-competition, patents-and-trade-secrets]
+  - title: "Looking Ahead: Towards a Law of Artificial Intelligence"
+    topics: [ai-regulation]
+contentsSource: https://www.e-elgar.com/shop/usd/advanced-introduction-to-law-and-artificial-intelligence-9781789905144.html
 added: 2026-08-14
-verified: 2026-08-14
+verified: 2026-09-05

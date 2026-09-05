@@ -9,7 +9,20 @@ price: "$35"
 url: https://aspenpublishing.com/products/dawson-aiai
 audience: [jd-students, non-jd-students]
 description: >
-  Student-facing coursebook on responsible AI use and academic integrity. Published before
-  GPT-4o, so the discussion of specific tools is dated.
+  Student-facing coursebook on responsible AI use and academic integrity. 
+contents:
+  - title: "Introduction to Artificial Intelligence"
+    note: "Rule-based systems and expert systems; machine learning, deep learning, natural language processing; large language models from OpenAI, Google, and Meta; ethical and responsible AI."
+    topics: [ai-fundamentals, how-llms-work, tools-and-platforms]
+  - title: "Fundamentals of Academic Integrity"
+    note: "Why integrity matters; academic integrity and the ethics of the legal profession; types and causes of academic dishonesty; academic, professional, and personal consequences; Mata v. Avianca and the North Carolina election fraud hearing as case studies."
+    topics: [academic-integrity-and-student-use, professional-responsibility, accuracy-and-verification]
+  - title: "Best Practices for Maintaining Academic Integrity in the Age of AI"
+    note: "Whether to use or ban generative AI; institutional rules; privacy implications of ChatGPT; appropriate uses for terminology, complex topics, exams, research and writing; false information and hallucinations; courts requiring certification of cited cases."
+    topics: [academic-integrity-and-student-use, confidentiality-and-client-data, accuracy-and-verification]
+  - title: "Use of Generative AI in the Legal Profession"
+    note: "Leading legal generative AI products including CoCounsel, Lexis+ AI, Harvey, Spellbook; the profession's cautious response; access to justice."
+    topics: [tools-and-platforms, access-to-justice]
+contentsSource: https://aspenpublishing.com/products/dawson-aiai
 added: 2026-08-14
-verified: 2026-08-14
+verified: 2026-09-05

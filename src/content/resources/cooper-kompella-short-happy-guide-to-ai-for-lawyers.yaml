@@ -12,5 +12,38 @@ url: https://www.westacademic.com/Cooper-and-Kompellas-A-Short-Happy-Guide-to-Ar
 audience: [jd-students, non-jd-students, practitioners]
 description: >
   Short plain-language introduction to AI for lawyers. Predates agentic tools.
+contents:
+  - title: "Artificial Intelligence in 30 Minutes or It Is Free"
+    note: "Seeing like an algorithm; AI and legal practice."
+    topics: [ai-fundamentals]
+  - title: "Key Concepts of Artificial Intelligence and Its Use in Legal Practice"
+    note: "Origins, popular culture, legal definitions; algorithms, automated decision-making, disparate impact and treatment, bias, predictive policing, risk assessments, transparency, human in the loop, legal analytics, legal tech."
+    topics: [ai-fundamentals, bias-and-discrimination]
+  - title: "Artificial Intelligence and Criminal Law"
+    note: "Pre-trial, post-trial, and probation uses; predictive policing; gunshot detection; benefits and challenges; State v. Loomis; smart regulation."
+    topics: [criminal-justice-and-policing]
+  - title: "Artificial Intelligence and Commercial Law"
+    note: "Insurance, consumer finance, banking, mergers and acquisitions, antitrust, securities, contracts, arbitration, corporate governance, international trade."
+    topics: [consumer-protection-and-competition]
+  - title: "Artificial Intelligence and Intellectual Property Law"
+    note: "Machine inventorship and patents; copyright, trademarks, and trade secrets; generative AI and copyright."
+    topics: [copyright-and-training-data, patents-and-trade-secrets]
+  - title: "Artificial Intelligence and Employment Law"
+    note: "AI in employment decisions, algorithmic wage discrimination, OSHA and workplace robots, job losses across blue-collar, white-collar, and legal work."
+    topics: [employment-and-labor]
+  - title: "Artificial Intelligence and Consumer Law"
+    note: "Tort law, healthcare, facial recognition and the Rite Aid FTC action, voice recognition."
+    topics: [consumer-protection-and-competition, liability-and-torts, privacy-law]
+  - title: "The Ethics and Regulation of Artificial Intelligence"
+    note: "Responsible AI principles from technology companies, law firms, and bar associations; regulation in the EU, US, and China; geopolitics."
+    topics: [ai-regulation, ai-governance-and-risk-management, professional-responsibility]
+  - title: "A Call to Action"
+    note: "Legal education, litigation as guidance, upskilling judges and legislators, access to justice."
+    topics: [access-to-justice, teaching-with-ai]
+  - title: "Appendix 1: Glossary and Legal Technology Applications"
+    topics: [ai-fundamentals]
+  - title: "Appendix 2: Artificial Intelligence as per Hollywood"
+    note: "Fifteen films from 2001: A Space Odyssey to The Creator."
+contentsSource: https://www.vitalsource.com/products/cooper-and-kompella-39-s-a-short-amp-happy-guide-to-james-m-cooper-kashyap-v9798892097734
 added: 2026-08-14
-verified: 2026-08-14
+verified: 2026-09-05

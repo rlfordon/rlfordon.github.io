@@ -3,13 +3,14 @@ authors:
   - name: Becka Rich
 publisher: H2O open casebook
 date: "2026"
-kind: open-casebook
+kind: syllabus
 access: open
 url: https://opencasebook.org/casebooks/18040-ai-and-the-law/
 links:
   - label: 2024 edition
     url: https://opencasebook.org/casebooks/12223-ai-and-the-law/
 audience: [jd-students, non-jd-students]
+topics: [evaluating-and-procuring-ai-tools, ai-governance-and-risk-management, ai-regulation]
 description: >
   Problem-based open casebook organized around tool evaluation and compliance planning.
   Readings are tagged by audience, including a set marked for MLS students. The 2026 rebuild

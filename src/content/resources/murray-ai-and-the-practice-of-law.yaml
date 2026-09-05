@@ -10,5 +10,25 @@ url: https://www.amazon.com/Artificial-Intelligence-Practice-Law-Generative/dp/B
 audience: [jd-students, non-jd-students, practitioners]
 description: >
   Self-published text on generative and agentic AI in legal practice. Not press-reviewed.
+contents:
+  - title: "Starting Your Relationship with Generative AI"
+    topics: [ai-fundamentals, tools-and-platforms]
+  - title: "Where Did Generative AI Come From?"
+    topics: [ai-fundamentals]
+  - title: "Generative AI: How Does It Work?"
+    topics: [how-llms-work]
+  - title: "Generative AI Compared to Extractive Research Tools"
+    topics: [legal-research]
+  - title: "Interacting with Generative AI: Prompting, Priming, Context Engineering, and Role-Playing Techniques"
+    topics: [prompting]
+  - title: "Getting to Ground Truth: GenAI Innovations and the Fight Against Hallucinations and Confabulations"
+    topics: [accuracy-and-verification]
+  - title: "AI Agents in the Present and Future Practice of Law"
+    topics: [ai-agents]
+  - title: "Developing Imagination and a Vision for AI in the Present and Future Practice of Law"
+    topics: [law-firm-business, careers-and-licensure]
+  - title: "Generative and Agentic AI and the Rules of Ethics and Professional Responsibility"
+    topics: [professional-responsibility]
+contentsSource: https://www.amazon.com/Artificial-Intelligence-Practice-Law-Generative/dp/B0GDYY2MX5
 added: 2026-08-14
-verified: 2026-08-14
+verified: 2026-09-05

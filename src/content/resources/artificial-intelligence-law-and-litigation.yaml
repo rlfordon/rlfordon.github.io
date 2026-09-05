@@ -3,9 +3,52 @@ publisher: LexisNexis
 kind: treatise
 access: subscription
 via: Lexis+
-url: https://www.lexisnexis.com/en-us/products/lexis-plus.page
+url: https://store.lexisnexis.com/en-us/products/artificial-intelligence-law-litigation-grpsku02987.html
 audience: [practitioners, faculty]
 description: >
-  Practitioner treatise on AI-related litigation, available on Lexis+.
+  Practitioner treatise on AI-related litigation organized by cause of action, with cases collected by
+  industry sector in each chapter. Available on Lexis+.
+contents:
+  - title: "What Is “Artificial Intelligence”?"
+    note: "Human and artificial neural networks."
+    topics: [ai-fundamentals]
+  - title: "Antitrust"
+    note: "Dual-sided markets, mergers, standard setting, cases by industry sector."
+    topics: [consumer-protection-and-competition]
+  - title: "Communications Decency Act"
+    note: "Whether Section 230 applies to AI defendants."
+    topics: [liability-and-torts]
+  - title: "Contracts"
+  - title: "Copyright"
+    note: "Copyrightable AI data under Section 102, fair use under Section 107, experts, Feist."
+    topics: [copyright-and-training-data]
+  - title: "Employment"
+    note: "Non-compete and non-disclosure agreements, fiduciary duty."
+    topics: [employment-and-labor]
+  - title: "Immigration"
+    topics: [government-and-administrative-use]
+  - title: "Patent Litigation"
+    note: "Patentable subject matter, claim construction, written description and enablement, the Federal Circuit."
+    topics: [patents-and-trade-secrets]
+  - title: "Privacy"
+    note: "Fourth Amendment, Illinois BIPA, California Invasion of Privacy Act, Washington, federal litigation."
+    topics: [privacy-law]
+  - title: "Products Liability"
+    note: "Whether AI is a product or a service; automotive AI."
+    topics: [liability-and-torts]
+  - title: "Section 1983"
+    topics: [government-and-administrative-use, criminal-justice-and-policing]
+  - title: "Securities"
+    note: "SEC actions against AI defendants."
+    topics: [consumer-protection-and-competition]
+  - title: "Trade Secrets"
+    topics: [patents-and-trade-secrets]
+  - title: "Trademark"
+    note: "The Lanham Act and likelihood of confusion."
+    topics: [patents-and-trade-secrets]
+  - title: "Emotional Intelligence"
+    note: "Whether DABUS is an inventor; human emotions in AI litigation."
+    topics: [ai-personhood, patents-and-trade-secrets]
+contentsSource: https://store.lexisnexis.com/en-us/products/artificial-intelligence-law-litigation-grpsku02987.html
 added: 2026-08-14
-verified: 2026-08-14
+verified: 2026-09-05

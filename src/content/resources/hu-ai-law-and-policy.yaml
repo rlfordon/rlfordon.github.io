@@ -14,33 +14,61 @@ description: >
   intellectual property, and antitrust.
 contents:
   - title: Introduction
+    topics: [ai-fundamentals]
   - title: Definitions
+    topics: [ai-fundamentals]
   - title: Conceptualizing AI Governance
+    topics: [ai-governance-and-risk-management, ai-regulation]
   - title: Algorithmic Discrimination and Disparate Impact
+    topics: [bias-and-discrimination]
   - title: Transparency and Explanation
+    topics: [ai-governance-and-risk-management, ai-regulation]
   - title: Data Privacy and Autonomy
+    topics: [privacy-law]
   - title: Personhood and Citizenship
+    topics: [ai-personhood, copyright-and-training-data, patents-and-trade-secrets]
   - title: Human Oversight and Generative AI
+    topics: [ai-governance-and-risk-management, how-llms-work]
   - title: Selected European Union (EU) Frameworks
+    topics: [ai-regulation, international-and-comparative]
   - title: Selected International Frameworks
+    topics: [international-and-comparative]
   - title: U.S. Federal and State Law Developments
+    topics: [ai-regulation]
   - title: "Overlapping Legal Regimes: International and Domestic, Public and Private"
+    topics: [ai-regulation, international-and-comparative]
   - title: Expressive Freedoms
+    topics: [liability-and-torts]
   - title: Elections and Deepfakes
+    topics: [evidence-and-deepfakes]
   - title: Due Process and Equal Protection
+    topics: [government-and-administrative-use, bias-and-discrimination]
   - title: Criminal Procedure
+    topics: [criminal-justice-and-policing]
   - title: Worker Protections in Equal Employment and Disability Laws
+    topics: [employment-and-labor, bias-and-discrimination]
   - title: Consumer and Financial Protections
+    topics: [consumer-protection-and-competition]
   - title: "Overview of AI Product Liability and Negligence: Examining the Intersection of Tort and Contract Law"
+    topics: [liability-and-torts]
   - title: Privacy Torts and Defamation
+    topics: [privacy-law, liability-and-torts]
   - title: Data Protection, Cybersecurity, and Web Scraping
+    topics: [privacy-law]
   - title: Intellectual Property
+    topics: [copyright-and-training-data, patents-and-trade-secrets]
   - title: Securities and Antitrust
+    topics: [consumer-protection-and-competition]
   - title: Impact on Legal Practice and Legal Systems
+    topics: [professional-responsibility, courts-and-judicial-use, law-firm-business]
   - title: AI Ethics and Audits
+    topics: [ai-governance-and-risk-management]
   - title: Remedies and Preventive Measures
+    topics: [ai-regulation, ai-governance-and-risk-management]
   - title: National Security
+    topics: [national-security]
   - title: Humanity and Sustainability
+    topics: [employment-and-labor, ai-regulation]
 contentsSource: https://aspenpublishing.com/products/hu-ailawandpolicy
 added: 2026-08-14
 verified: 2026-09-05

@@ -7,5 +7,47 @@ url: https://www.americanbar.org/products/inv/book/457125278/
 audience: [practitioners]
 description: >
   ABA title on AI and the future of legal practice.
+contents:
+  - title: "Introduction: The Augmented Lawyer"
+  - title: "The Ideal Lawyer"
+    note: "Part I, The Architecture of Lawyering."
+    topics: [careers-and-licensure]
+  - title: "The Modern Lawyer's Dilemma"
+    topics: [law-firm-business]
+  - title: "The Chipped Crucible: Law School"
+    topics: [teaching-with-ai, careers-and-licensure]
+  - title: "Lawyers versus Machines"
+    topics: [ai-fundamentals, careers-and-licensure]
+  - title: "What You Need to Know About AI"
+    note: "Part II, A Field Guide to the Future of Legal Practice."
+    topics: [ai-fundamentals, how-llms-work]
+  - title: "How I Used AI to Transform My Legal Work"
+    topics: [tools-and-platforms, drafting-and-contracts]
+  - title: "AI in Law School: The Quiet Revolution"
+    topics: [teaching-with-ai]
+  - title: "Bias and the Black Box"
+    topics: [bias-and-discrimination]
+  - title: "Redefine Legal Ethics for the AI Era"
+    topics: [professional-responsibility]
+  - title: "A Note to Law Students: How to Approach AI"
+    topics: [academic-integrity-and-student-use, careers-and-licensure]
+  - title: "How AI Can Democratize the Law"
+    note: "Part III, Looking Ahead: Musings on AI."
+    topics: [access-to-justice]
+  - title: "Can Nonlawyers (like Robots) Practice Law"
+    topics: [access-to-justice, professional-responsibility]
+  - title: "The Future Law Firm"
+    topics: [law-firm-business]
+  - title: "How Do Doctors Think About AI"
+  - title: "How Do We Regulate AI in the Legal System"
+    topics: [ai-regulation, courts-and-judicial-use]
+  - title: "AI and the Future of Courts"
+    topics: [courts-and-judicial-use]
+  - title: "AI and the Environment: A Lawyer's Take"
+  - title: "Declaration of Principles for AI Use in the Legal Field"
+    topics: [professional-responsibility, ai-governance-and-risk-management]
+  - title: "Conclusion: A New Kind of Lawyer"
+    topics: [careers-and-licensure]
+contentsSource: https://www.americanbar.org/products/inv/book/457125278/
 added: 2026-08-14
-verified: 2026-08-14
+verified: 2026-09-05

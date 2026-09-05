@@ -14,5 +14,55 @@ description: >
   Survey of AI in legal practice. Covers sanctions cases beginning with Mata v. Avianca, ABA Formal
   Opinion 512 and state guidance, practice applications, the EU AI Act, bias, liability, deepfakes and
   evidence, and governance policies and vendor checklists in the appendices.
+contents:
+  - title: "The Intersection of Artificial Intelligence and Legal Practice"
+    topics: [ai-fundamentals]
+  - title: "What Is Artificial Intelligence"
+    topics: [ai-fundamentals]
+  - title: "Generative Artificial Intelligence"
+    topics: [how-llms-work]
+  - title: "Revolutionizing Legal Practice with AI"
+    topics: [tools-and-platforms, law-firm-business]
+  - title: "Principles of Ethical AI for Legal Professionals"
+    topics: [professional-responsibility, ai-governance-and-risk-management]
+  - title: "Bias in Artificial Intelligence Systems"
+    topics: [bias-and-discrimination]
+  - title: "Liability in the Age of AI"
+    topics: [liability-and-torts]
+  - title: "Artificial Intelligence and the Courts"
+    topics: [courts-and-judicial-use, accuracy-and-verification, evidence-and-deepfakes]
+  - title: "AI and the Business of Law Practice"
+    topics: [law-firm-business]
+  - title: "Appendix A: AI Tool Evaluation Form"
+    topics: [evaluating-and-procuring-ai-tools]
+  - title: "Appendix B: Client Informed Consent Templates"
+    topics: [confidentiality-and-client-data]
+  - title: "Appendix C: Verification Documentation Checklist"
+    topics: [accuracy-and-verification]
+  - title: "Appendix D: AI Incident Report Form"
+    topics: [ai-governance-and-risk-management]
+  - title: "Appendix E: Practice Area-Specific Protocols"
+    topics: [law-firm-business]
+  - title: "Appendix F: Approved AI Tools List"
+    topics: [evaluating-and-procuring-ai-tools, ai-governance-and-risk-management]
+  - title: "Appendix G: Glossary of AI Terms"
+    topics: [ai-fundamentals]
+  - title: "Appendix H: Quick Reference Guide to AI Use in Legal Practice"
+    topics: [professional-responsibility]
+  - title: "Appendix I: Court AI Disclosure Requirements by Jurisdiction"
+    topics: [courts-and-judicial-use]
+  - title: "Appendix J: Training Curriculum and Resources"
+    topics: [law-firm-business, careers-and-licensure]
+  - title: "Appendix K: Prompt Libraries, Uses and Examples for Lawyers"
+    topics: [prompting]
+  - title: "Appendix L: CustomGPTs, Uses and Examples Guide"
+    topics: [tools-and-platforms, prompting]
+  - title: "Appendix M: Advanced Prompting Techniques for Lawyers"
+    topics: [prompting]
+  - title: "Appendix N: Comparative Guide to Generative AI Platforms for Legal Practice"
+    topics: [tools-and-platforms, evaluating-and-procuring-ai-tools]
+  - title: "Appendix O: A Comprehensive List of Legal Tech Using AI"
+    topics: [tools-and-platforms]
+contentsSource: https://subscription.westacademic.com/Book/Detail?id=29264
 added: 2026-08-14
-verified: 2026-08-14
+verified: 2026-09-05

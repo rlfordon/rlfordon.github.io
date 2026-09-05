@@ -6,11 +6,62 @@ date: 2026-05
 pages: 524
 kind: textbook
 access: open
+license: CC BY-NC-SA 3.0
 url: https://www.cali.org/books/genai-legal-education-practical-guide-professors-and-students
 audience: [faculty, jd-students, non-jd-students]
 description: >
   Guide to generative AI in law school teaching and learning. Covers platform selection, prompting
   techniques, evidence on when AI helps or hurts learning, course policies, assignment design,
   detection, and permitted and prohibited student uses. Addressed to faculty and students.
+contents:
+  - title: "Why This Book, Why Now: The GenAI Revolution in Legal Education"
+    note: "Students already use GenAI; why instructor-led use beats solo use; evidence-based integration; preliminary data on bar passage."
+    topics: [teaching-with-ai]
+  - title: "A Primer on LLMs"
+    note: "How large language models work, training data, RLHF and RLAIF, context windows, tokens and parameters, hallucinations, deception, bias, alignment, system prompts, skills."
+    topics: [how-llms-work, accuracy-and-verification]
+  - title: "Choosing Your Platform: What Faculty Members Need to Know"
+    note: "Cost, privacy and training-data use, terms of service; strengths and weaknesses of ChatGPT, Claude, Gemini, Copilot, Perplexity, and Poe; task-based recommendations; CustomGPTs, Claude Projects and Skills, Gemini Gems, NotebookLM."
+    topics: [tools-and-platforms, evaluating-and-procuring-ai-tools, confidentiality-and-client-data]
+  - title: "The Art and Science of Effective Prompting"
+    note: "The AI fluency framework, the CORRECT framework, basic principles, fifteen advanced techniques including chain-of-thought, few-shot, Socratic, and retrieval-augmented prompting, common mistakes, teaching students to prompt."
+    topics: [prompting]
+  - title: "Guardrails and Gatekeeping: Governing AI in the Law Classroom"
+    note: "Cheating and the Model Rules; GenAI-prohibited, resistant, transparent, and integrated policies; why detection fails; GenAI-resistant and GenAI-transparent assignments including the hallucination hunt."
+    topics: [academic-integrity-and-student-use, teaching-with-ai]
+  - title: "The Data on Human-GenAI Learning"
+    note: "Evidence that AI tutoring improves learning and engagement; the crutch effect, dependency, and metacognitive laziness; equity; six evidence-based principles."
+    topics: [teaching-with-ai]
+  - title: "Course Design and Teaching Logistics"
+    note: "Course proposals and syllabi, a Canvas bot, assessment development, using GenAI for grading and feedback, practicing the Socratic method."
+    topics: [teaching-with-ai]
+  - title: "Designing Assignments in the Age of GenAI"
+    note: "GenAI-prohibited, resistant, integrated, and transparent assignments; workable disclosure requirements; a decision framework."
+    topics: [teaching-with-ai]
+  - title: "Assessments That GenAI Can't Take for Them"
+    note: "Team-based learning, oral assessments, portfolio assessment, process-based grading, collaborative assessment, making the switch."
+    topics: [teaching-with-ai]
+  - title: "Creating Custom AI Assistants for Legal Education"
+    note: "CustomGPTs and agents, types of assistants, platform selection, a fifteen-step build guide, ethical guardrails."
+    topics: [tools-and-platforms, ai-agents, teaching-with-ai]
+  - title: "The Other Two-Thirds: GenAI for Service, Scholarship, and Administration"
+    note: "Committee work, advising, research and writing support, publication management, institutional documentation, when to delegate."
+    topics: [teaching-with-ai]
+  - title: "GenAI Policies for Scholarship, Tenure & Promotion"
+    note: "Copyright, plagiarism, scholarly integrity, disclosure, scholarship policies; tenure and promotion; academic freedom."
+    topics: [teaching-with-ai, copyright-and-training-data]
+  - title: "For Students: How to Learn Law with GenAI"
+    note: "Why law school learning is different; green-, yellow-, and red-light uses; the CORRECT framework for students; sample workflows."
+    topics: [academic-integrity-and-student-use]
+  - title: "For Students: From Academic Integrity to Professional Responsibility"
+    note: "Parallels between academic and professional obligations including Rule 11; scenarios; accommodating learning differences; preparing for practice."
+    topics: [academic-integrity-and-student-use, professional-responsibility, careers-and-licensure]
+  - title: "Dealing with Uncertainty"
+    note: "Known and unknown unknowns; autonomous agents; the integration of legal AI into legal systems."
+    topics: [ai-agents, ai-safety-and-agi]
+  - title: "The Path Forward"
+    note: "First principles, the professional responsibility through-line, rigor while embracing change, the academic integrity ecosystem."
+    topics: [teaching-with-ai, careers-and-licensure]
+contentsSource: https://www.cali.org/books/genai-legal-education-practical-guide-professors-and-students
 added: 2026-08-14
-verified: 2026-08-14
+verified: 2026-09-05

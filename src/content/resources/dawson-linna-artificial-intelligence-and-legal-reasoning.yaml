@@ -11,6 +11,7 @@ access: purchase
 price: "$126"
 url: https://aspenpublishing.com/products/dawson-aiandlegal
 audience: [jd-students, non-jd-students]
+topics: [legal-research, drafting-and-contracts, professional-responsibility]
 description: >
   Skills-oriented textbook on using AI in legal work. Covers large language models, machine
   learning, and expert systems across research, drafting, counseling, and adjudication, with

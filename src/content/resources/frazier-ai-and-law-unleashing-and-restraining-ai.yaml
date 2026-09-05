@@ -9,5 +9,22 @@ url: https://opencasebook.org/casebooks/14178-ai-and-law-unleashing-and-restrain
 audience: [jd-students]
 description: >
   Open casebook covering consumer protection, competition, and corporate law questions raised by AI.
+contents:
+  - title: "Introduction to AI"
+    topics: [ai-fundamentals]
+  - title: "Introduction to AI Tools and AI Agents"
+    topics: [tools-and-platforms, ai-agents]
+  - title: "Consumer Protection"
+    note: "Privacy; state UDAAP statutes; the FTC, SEC, and CFPB."
+    topics: [consumer-protection-and-competition, privacy-law]
+  - title: "Competition"
+    note: "AI and the supply chain; mergers, acquisitions, and partnerships; accelerating innovation; an enforcement survey."
+    topics: [consumer-protection-and-competition]
+  - title: "Content Moderation"
+    note: "The basics, content moderation in practice, elections."
+    topics: [liability-and-torts]
+  - title: "Corporate Governance"
+    topics: [in-house-and-compliance, ai-governance-and-risk-management]
+contentsSource: https://opencasebook.org/casebooks/14178-ai-and-law-unleashing-and-restraining-ai/
 added: 2026-08-14
-verified: 2026-08-14
+verified: 2026-09-05

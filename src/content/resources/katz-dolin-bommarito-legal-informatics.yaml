@@ -12,5 +12,109 @@ url: https://www.cambridge.org/core/books/legal-informatics/37956B00CC40F2803B77
 audience: [faculty, jd-students]
 description: >
   Edited volume on legal informatics. Individual chapters are assignable on their own.
+contents:
+  - title: "Motivation and Rationale for this Book"
+    note: "Part I, Introduction to Legal Informatics. By Michael J. Bommarito, Daniel Martin Katz, and Ron Dolin."
+    topics: [computational-law-and-analytics]
+  - title: "Technology Issues in Legal Philosophy"
+    note: "By Ron Dolin."
+    topics: [computational-law-and-analytics]
+  - title: "The Origins and History of Legal Informatics"
+    note: "By Michael J. Bommarito."
+    topics: [computational-law-and-analytics]
+  - title: "Representation of Legal Information"
+    note: "Part II, Building Blocks and Core Concepts. By Katie Atkinson."
+    topics: [computational-law-and-analytics]
+  - title: "Information Intermediation"
+    note: "By Ron Dolin."
+    topics: [computational-law-and-analytics, legal-research]
+  - title: "Preprocessing Data"
+    note: "By Michael J. Bommarito."
+    topics: [computational-law-and-analytics]
+  - title: "XML in Law: The Role of Standards in Legal Informatics"
+    note: "By Ron Dolin."
+    topics: [computational-law-and-analytics]
+  - title: "Document Automation"
+    note: "By Marc Lauritsen."
+    topics: [drafting-and-contracts, computational-law-and-analytics]
+  - title: "AI + Law: An Overview"
+    note: "By Daniel Martin Katz."
+    topics: [computational-law-and-analytics, ai-fundamentals]
+  - title: "Machine Learning and Law"
+    note: "By Daniel Martin Katz and John J. Nay."
+    topics: [computational-law-and-analytics, ai-fundamentals]
+  - title: "Natural Language Processing for Legal Texts"
+    note: "By John J. Nay."
+    topics: [computational-law-and-analytics]
+  - title: "Introduction to Blockchain and Cryptography"
+    note: "By Nelson M. Rosario."
+    topics: [computational-law-and-analytics]
+  - title: "Legal Informatics-Based Technology in Broader Workflows"
+    note: "By Kenneth A. Grady."
+    topics: [law-firm-business, computational-law-and-analytics]
+  - title: "Gamification of Work and Feedback Systems"
+    note: "By Stephanie Kimbro."
+    topics: [law-firm-business]
+  - title: "Introduction to Design Thinking for Law"
+    note: "By Margaret Hagan."
+    topics: [law-firm-business]
+  - title: "Measuring Legal Quality"
+    note: "By Ron Dolin."
+    topics: [law-firm-business, evaluating-and-procuring-ai-tools]
+  - title: "Contract Analytics"
+    note: "Part III, Use Cases in Legal Informatics. By Noah Waisberg."
+    topics: [drafting-and-contracts, computational-law-and-analytics]
+  - title: "Contracts as Interfaces: Visual Representation Patterns in Contract Design"
+    note: "By Helena Haapio and Stefania Passera."
+    topics: [drafting-and-contracts]
+  - title: "Distributed Ledgers, Cryptography, and Smart Contracts"
+    note: "By Nina Gunther Kilbride."
+    topics: [drafting-and-contracts, computational-law-and-analytics]
+  - title: "Patent Analytics: Information from Innovation"
+    note: "By Andrew W. Torrance and Jevin D. West."
+    topics: [patents-and-trade-secrets, computational-law-and-analytics]
+  - title: "The Core Concepts of E-discovery"
+    note: "By Jonathan Kerry-Tyerman and A. J. Shankar."
+    topics: [ediscovery-and-document-review]
+  - title: "Predictive Coding in E-discovery and the NexLP Story Engine"
+    note: "By Irina Matveeva."
+    topics: [ediscovery-and-document-review]
+  - title: "Examining Public Court Data to Understand and Predict Bankruptcy Case Results"
+    note: "By Warren E. Agin."
+    topics: [litigation-analytics, computational-law-and-analytics]
+  - title: "Fastcase, and the Visual Understanding of Judicial Precedents"
+    note: "By Ed Walters and Jeff Asjes."
+    topics: [legal-research, computational-law-and-analytics]
+  - title: "Mining Information from Statutory Texts in a Public Health Domain"
+    note: "By Kevin D. Ashley."
+    topics: [computational-law-and-analytics]
+  - title: "Gov2Vec: A Case Study in Text Model Application to Government Data"
+    note: "By John J. Nay."
+    topics: [computational-law-and-analytics, government-and-administrative-use]
+  - title: "Representation and Automation of Legal Information"
+    note: "By Katie Atkinson."
+    topics: [computational-law-and-analytics]
+  - title: "Online Dispute Resolution"
+    note: "By Dave Orr and Colin Rule."
+    topics: [access-to-justice]
+  - title: "Access to Justice and Technology: Reaching a Greater Future for Legal Aid"
+    note: "By Ronald W. Staudt and Alexander F. A. Rabanal."
+    topics: [access-to-justice]
+  - title: "Designing Legal Experiences: Online Communication and Resolution in Courts"
+    note: "By Maximilian A. Bulinski and J. J. Prescott."
+    topics: [access-to-justice, courts-and-judicial-use]
+  - title: "Adaptive Innovation: The Innovator's Dilemma in Big Law"
+    note: "Part IV, Legal Informatics in the Industrial Context. By Ron Dolin and Thomas Buley."
+    topics: [law-firm-business]
+  - title: "Legal Data Access"
+    note: "By Christine Bannan."
+    topics: [computational-law-and-analytics, access-to-justice]
+  - title: "A History of Knowledge Management at Littler Mendelson"
+    note: "By Scott Rechtschaffen."
+    topics: [law-firm-business]
+  - title: "Legal Operations at Google"
+    note: "By Mary O'Carroll and Stephanie Kimbro."
+    topics: [in-house-and-compliance]
+contentsSource: https://www.cambridge.org/core/books/legal-informatics/37956B00CC40F2803B77A164CD970757
 added: 2026-08-14
-verified: 2026-08-14
+verified: 2026-09-05

@@ -6,6 +6,7 @@ kind: website
 access: free
 url: https://ailegalresearch.org
 audience: [faculty]
+topics: [legal-research, teaching-with-ai]
 description: >
   Teaching site rather than a book. Sets out five teaching pillars, twelve reusable exercises with
   teaching notes, and a session builder for asynchronous formats.
