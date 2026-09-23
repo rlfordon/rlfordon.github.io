@@ -157,6 +157,13 @@ export const groups: { title: string; color: KindColor; intro: string; items: Pr
         live: 'https://rlfordon.github.io/bookshop-bingo/',
         repo: 'https://github.com/rlfordon/bookshop-bingo',
       },
+      {
+        name: 'SplitTheTab',
+        blurb:
+          'Splits vacation expenses with family and friends: no accounts, couples settle as one wallet, and it works out the fewest payments to square up.',
+        live: 'https://splitthetab.rlfordon.workers.dev/',
+        repo: 'https://github.com/rlfordon/splitthetab',
+      },
     ],
   },
 ];
