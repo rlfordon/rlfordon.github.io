@@ -25,14 +25,14 @@ export const groups: { title: string; color: KindColor; intro: string; items: Pr
         name: 'Citation Hallucination Game',
         blurb:
           'Classroom exercise where students read a brief and decide, citation by citation, which cases are real and which were fabricated by an AI.',
-        live: 'https://hallucination-game.replit.app/',
+        live: 'https://hallucination-game-ctgj.onrender.com/',
         repo: 'https://github.com/rlfordon/hallucination-game',
       },
       {
         name: 'Prompt Coach',
         blurb:
           'Split-panel workspace: students chat with Claude on the left and get feedback on the prompt itself on the right, including a hallucination-risk review.',
-        live: 'https://prompt-coach-21cl.replit.app/',
+        live: 'https://rlfordon.github.io/prompt-coach/',
         repo: 'https://github.com/rlfordon/prompt-coach',
       },
       {
@@ -46,7 +46,7 @@ export const groups: { title: string; color: KindColor; intro: string; items: Pr
         name: 'Token Explorer',
         blurb:
           'Token-by-token probability visualizer that makes model uncertainty visible. Low-confidence case names and docket numbers light up in orange and pink.',
-        live: 'https://token-explorer-rlfordon.replit.app/',
+        live: 'https://rlfordon.github.io/TokenExplorer/',
         repo: 'https://github.com/rlfordon/TokenExplorer',
       },
       {
