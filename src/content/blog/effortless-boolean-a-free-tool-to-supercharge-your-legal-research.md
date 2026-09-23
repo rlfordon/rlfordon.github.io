@@ -10,11 +10,11 @@ tags: ["AI", "legal research"]
 
 As anyone who has taught legal research knows, Boolean searching is a superpower. The ability to craft a precise query with terms and connectors is the difference between finding a needle in a haystack and finding nothing at all. But for newcomers, the syntax of `( )`, `!`, `/p`, and `/s` can feel like learning a new language under pressure.
 
-The **[Legal Boolean Search Builder](https://booleanbuilder.replit.app/)** is built directly on a process I’ve been teaching for a while now—an 8-step method designed to take the guesswork out of query construction. It moves from identifying key concepts, to brainstorming alternates, and finally to connecting them with the right syntax.
+The **[Legal Boolean Search Builder](https://rlfordon.github.io/BooleanBuilder/)** is built directly on a process I’ve been teaching for a while now—an 8-step method designed to take the guesswork out of query construction. It moves from identifying key concepts, to brainstorming alternates, and finally to connecting them with the right syntax.
 
 For years, I’ve shared this process in slide decks, but it’s always been static. I wanted to turn it into something dynamic—a tool that could handle the syntax so that researchers could focus on the strategy.
 
-![A screenshot of the Legal Boolean Search Builder, as described in the rest of this post, and available at https://booleanbuilder.replit.app/](/images/blog/effortless-boolean-a-free-tool-to-supercharge-your-legal-research/image-1-1024x726.png)
+![A screenshot of the Legal Boolean Search Builder, as described in the rest of this post, and available at https://rlfordon.github.io/BooleanBuilder/](/images/blog/effortless-boolean-a-free-tool-to-supercharge-your-legal-research/image-1-1024x726.png)
 
 ## The Building Process: An Iterative Approach
 
@@ -44,4 +44,4 @@ Finding the correct word root for truncation can be tricky. Is it `assum!` or `a
 
 This project was a fantastic experience in turning a teaching methodology into a living tool. The goal was never to replace the critical thinking that goes into legal research, but to remove the syntactic barriers that can get in the way.
 
-You can [**try the tool out for yourself**](https://booleanbuilder.replit.app/) and [**view the source code on GitHub**](https://github.com/rlfordon/BooleanBuilder). I’d love to hear your feedback!
+You can [**try the tool out for yourself**](https://rlfordon.github.io/BooleanBuilder/) and [**view the source code on GitHub**](https://github.com/rlfordon/BooleanBuilder). I’d love to hear your feedback!

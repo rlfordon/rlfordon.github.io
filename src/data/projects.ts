@@ -39,7 +39,7 @@ export const groups: { title: string; color: KindColor; intro: string; items: Pr
         name: 'Boolean Builder',
         blurb:
           'Walks a researcher through building a terms-and-connectors search step by step. The "Effortless Boolean" tool from the blog.',
-        live: 'https://booleanbuilder.replit.app/',
+        live: 'https://rlfordon.github.io/BooleanBuilder/',
         repo: 'https://github.com/rlfordon/BooleanBuilder',
       },
       {
