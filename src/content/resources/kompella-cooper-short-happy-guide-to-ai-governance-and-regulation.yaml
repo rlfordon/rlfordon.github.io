@@ -7,7 +7,10 @@ kind: study-aid
 access: subscription
 via: West Academic Study Aids
 price: "$30 print"
-url: https://www.westacademic.com/Kompella-and-Coopers-A-Short-Happy-Guide-to-AI-Governance-and-Regulation-9798892099790
+url: https://subscription.westacademic.com/Book/Detail?id=29121
+links:
+  - label: Buy the print edition
+    url: https://www.westacademic.com/Kompella-and-Coopers-A-Short-Happy-Guide-to-AI-Governance-and-Regulation-9798892099790
 audience: [jd-students, non-jd-students, practitioners]
 description: >
   Short plain-language guide to AI governance and regulation, a companion to the same authors'

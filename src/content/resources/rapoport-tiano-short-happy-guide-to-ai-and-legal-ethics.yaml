@@ -8,7 +8,10 @@ kind: study-aid
 access: subscription
 via: West Academic Study Aids
 price: "$30 print"
-url: https://www.westacademic.com/Rapoport-and-Tianos-A-Short-Happy-Guide-to-Artificial-Intelligence-and-Legal-Ethics-9798892097130
+url: https://subscription.westacademic.com/Book/Detail?id=29273
+links:
+  - label: Buy the print edition
+    url: https://www.westacademic.com/Rapoport-and-Tianos-A-Short-Happy-Guide-to-Artificial-Intelligence-and-Legal-Ethics-9798892097130
 audience: [jd-students, non-jd-students, practitioners]
 description: >
   Short plain-language guide to how the rules of professional conduct apply when lawyers use AI:

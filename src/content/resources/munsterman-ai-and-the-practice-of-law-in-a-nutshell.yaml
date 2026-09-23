@@ -8,7 +8,10 @@ kind: study-aid
 access: subscription
 via: West Academic Study Aids
 price: "$65 print"
-url: https://www.westacademic.com/Munstermans-Artificial-Intelligence-and-the-Practice-of-Law-in-a-Nutshell-9798892090988
+url: https://subscription.westacademic.com/Book/Detail?id=29264
+links:
+  - label: Buy the print edition
+    url: https://www.westacademic.com/Munstermans-Artificial-Intelligence-and-the-Practice-of-Law-in-a-Nutshell-9798892090988
 audience: [jd-students, non-jd-students, practitioners]
 description: >
   Survey of AI in legal practice. Covers sanctions cases beginning with Mata v. Avianca, ABA Formal

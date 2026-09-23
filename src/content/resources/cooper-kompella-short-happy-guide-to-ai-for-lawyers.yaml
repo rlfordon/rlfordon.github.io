@@ -8,7 +8,10 @@ kind: study-aid
 access: subscription
 via: West Academic Study Aids
 price: "$30 print"
-url: https://www.westacademic.com/Cooper-and-Kompellas-A-Short-Happy-Guide-to-Artificial-Intelligence-for-Lawyers-9798892090858
+url: https://subscription.westacademic.com/Book/Detail?id=28648
+links:
+  - label: Buy the print edition
+    url: https://www.westacademic.com/Cooper-and-Kompellas-A-Short-Happy-Guide-to-Artificial-Intelligence-for-Lawyers-9798892090858
 audience: [jd-students, non-jd-students, practitioners]
 description: >
   Short plain-language introduction to AI for lawyers. Predates agentic tools.

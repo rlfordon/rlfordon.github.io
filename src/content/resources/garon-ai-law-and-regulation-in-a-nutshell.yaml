@@ -7,7 +7,10 @@ kind: study-aid
 access: subscription
 via: West Academic Study Aids
 price: "$65 print"
-url: https://www.westacademic.com/Garons-Artificial-Intelligence-Law-and-Regulation-in-a-Nutshell-9798892093156
+url: https://subscription.westacademic.com/Book/Detail?id=28898
+links:
+  - label: Buy the print edition
+    url: https://www.westacademic.com/Garons-Artificial-Intelligence-Law-and-Regulation-in-a-Nutshell-9798892093156
 audience: [jd-students, non-jd-students, practitioners]
 description: >
   Survey of AI regulation. Includes chapters on organizational strategy that distinguish developer
