@@ -140,7 +140,8 @@ footer.colophon a:hover { color: var(--link); }
 .prose ul, .prose ol { padding-left: 1.4rem; margin: 0 0 1.15em; }
 .prose li { margin-bottom: 0.35em; }
 .prose img { margin: 1.8rem auto; border: 1px solid var(--rule); }
-.prose p > em:only-child { display: block; font-size: 0.85rem; color: var(--muted); margin-top: -1.2rem; }
+/* image captions: <p class="caption"> in post Markdown, directly under the image */
+.prose p.caption { display: block; font-size: 0.85rem; color: var(--muted); margin-top: -1.2rem; }
 .prose .video { position: relative; aspect-ratio: 16 / 9; margin: 1.8rem 0; }
 .prose .video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
 .prose a { overflow-wrap: anywhere; }
@@ -169,6 +170,28 @@ footer.colophon a:hover { color: var(--link); }
 .toc-item:has(input:checked) data { color: var(--link); }
 .toc-item:has(input:focus-visible) { outline: 2px solid var(--link); outline-offset: 2px; }
 .toc-item.none { opacity: 0.4; }
+/* a topic row: the topic (click switches to it) and a + that adds it to the chosen ones */
+/* The + sits left of the topic, in a narrow column that is always reserved so names never shift.
+   It shows on the hovered row only (faintly everywhere on touch screens, which cannot hover). */
+.toc-row { display: grid; grid-template-columns: 0.95rem 1fr; align-items: baseline; }
+.toc-row .toc-item { margin-left: 0; padding-left: 0.45rem; }
+.toc-add { font: inherit; font-size: 0.95rem; font-weight: 500; line-height: 1; padding: 0; border: 0; background: none; color: var(--link); cursor: pointer; opacity: 0; transition: opacity 0.12s; }
+.toc-row:hover .toc-add, .toc-add:focus-visible { opacity: 1; }
+.toc-add:hover { color: var(--link-hover); }
+.toc-add:focus-visible { outline: 2px solid var(--link); outline-offset: 1px; }
+@media (hover: none) { .toc-add { opacity: 0.55; } }
+.toc-add.no-overlap { color: var(--muted); opacity: 0; }
+.toc-row:hover .toc-add.no-overlap, .toc-add.no-overlap:focus-visible { opacity: 0.45; }
+@media (hover: none) { .toc-add.no-overlap { opacity: 0.25; } }
+.toc-add[hidden] { visibility: hidden; display: inline-block; }
+/* × on a chosen topic is always visible, not only on hover */
+.toc-add.remove { opacity: 1; color: var(--muted); font-size: 1rem; }
+.toc-add.remove:hover { color: var(--red); }
+/* resets the topic selection; shown only while topics are chosen */
+.toc-clear { font: inherit; font-size: 0.74rem; font-weight: 500; margin: -0.3rem 0 0.9rem; padding: 0.2rem 0.6rem; border: 1px solid var(--rule); border-radius: 999px; background: #fff; color: var(--ink-soft); cursor: pointer; }
+.toc-clear:hover { border-color: var(--ink-soft); color: var(--ink); }
+.toc-clear:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; }
+.toc-clear[hidden] { display: none; }
 .guide:not(.js) .toc-item { pointer-events: none; opacity: 0.5; }
 
 /* toolbar: search, then the two book filters as chips */
@@ -226,6 +249,7 @@ footer.colophon a:hover { color: var(--link); }
 .resource .chapter-hits .hit::before { content: "↳ "; color: var(--muted); }
 .resource .chapter-hits .snippet::before { content: none; }
 .resource .chapter-hits .more { color: var(--muted); font-style: italic; }
+.resource .chapter-hits .via-topic { font-weight: 600; color: var(--ink); }
 .resource .note { margin: 0.4rem 0 0; font-size: 0.86rem; color: var(--ink); padding-left: 0.75rem; border-left: 2px solid var(--yellow); max-width: 60ch; }
 .resource .links { margin: 0.35rem 0 0; font-size: 0.76rem; font-weight: 500; }
 .resource .contents { margin-top: 0.4rem; font-size: 0.85rem; }
@@ -255,7 +279,7 @@ footer.colophon a:hover { color: var(--link); }
   .toc-wrap:not([open]) > summary .toc-hint { display: none; }
   .toc-group { column-count: 2; column-gap: 1.5rem; }
   .toc-heading { column-span: all; }
-  .toc-item { break-inside: avoid; }
+  .toc-item, .toc-row { break-inside: avoid; }
   .resource { grid-template-columns: 1fr; }
   .resource .access { padding-top: 0; margin-top: 0.3rem; order: 1; }
   .resource .access small { display: inline; margin-left: 0.4rem; }
@@ -296,3 +320,8 @@ a.rl-title:hover { color: var(--link); }
   .rl-toc-item { break-inside: avoid; }
   .rl-session { scroll-margin-top: 0.5rem; }
 }
+
+/* "Your turn" exercise prompts inside a post: a callout, not a quotation */
+.prose .your-turn { margin: 1.8rem 0; padding: 0.9rem 1.2rem; background: var(--bg-raised); border-left: 3px solid var(--orange); border-radius: 0 4px 4px 0; font-size: 0.96rem; }
+.prose .your-turn p:last-child { margin-bottom: 0; }
+.prose .your-turn strong:first-child { color: var(--ink); }

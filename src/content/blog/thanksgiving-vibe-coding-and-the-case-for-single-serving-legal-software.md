@@ -34,7 +34,7 @@ The AI updated the code. It added a little “reschedule” button, so when I ta
 
 ![A screenshot of a "Dinner Plan" mobile or web application showing the cooking schedule, which has progressed to "PHASE 1: THE STUFFING" scheduled for "2:00 PM – 3:20 PM." A highlighted task, "PUT STUFFING IN OVEN", is displayed with a 'SYNC SCHEDULE' pop-up overlay. The pop-up is dark blue with a button that reads "I Finished This Just Now" and options to adjust the time: "Earlier (-5m)" and "Later (+5m)." The overlay states: "Adjusts all future steps automatically." The task details for PUT STUFFING IN OVEN are: "Cover tightly with foil. Bake 40 mins at 350°F." and "Click the clock icon here when you actually close the oven door!" A smaller status tag above the task reads 2:15 PM and OVEN IN/OUT (with the 'OVEN IN/OUT' being smaller and circled). The next task, 2:55 PM Uncover Stuffing, is partially visible: "Remove foil. Bake another 30-35 minutes until crisp."](/images/blog/thanksgiving-vibe-coding-and-the-case-for-single-serving-legal-software/image-2.png)
 
-*Left is overview, right is the detail (with the reschedule feature).*
+<p class="caption"><em>Left is overview, right is the detail (with the reschedule feature).</em></p>
 
 The result? Despite how tightly-timed my schedule was, dinner was on the table only 15 minutes late. For my household, where “at least an hour late” is the standard for a holiday meal, this was a massive victory.
 

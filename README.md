@@ -36,6 +36,8 @@ tags: ["legal research", "AI"]
 
 Body in Markdown. Images go in `public/images/blog/my-post-slug/` and are referenced as
 `/images/blog/my-post-slug/file.png`.
+A caption goes on the line after its image as `<p class="caption"><em>Caption text</em></p>`; plain italic
+paragraphs are styled as ordinary text.
 ```
 
 Add `draft: true` to keep a post out of the build. The `originalUrl` and `originalSite` fields are only for
@@ -73,8 +75,8 @@ verified: 2026-08-14
 Then list it in a guide under `src/content/guides/`, as `- ref: author-short-title` with an optional `note` that is
 specific to that list. Everything in these files is public, since the repo is.
 
-The guide page has a topic contents list in the left rail (one topic at a time; the matching chapters are
-listed under each record while a topic is chosen), a toolbar with search and two chip filters (access and kind
+The guide page has a topic contents list in the left rail (clicking a topic switches to it; the + beside another
+topic adds it, listing only records with a chapter on every chosen topic; the matching chapters are listed under each record), a toolbar with search and two chip filters (access and kind
 group), sort by date, title, or first author, and a compact view. With a topic chosen, the search box searches
 within that topic and offers "Search everything instead". Topics are tagged on chapters; a record matches a topic
 when any of its chapters carries it. Records with no chapter list (courses, articles, sites) may carry whole-work

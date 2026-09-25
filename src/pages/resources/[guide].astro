@@ -79,17 +79,21 @@ const topicGroups = TOPIC_GROUPS.map((grp) => ({
   <div class="guide" id="guide" data-total={total}>
     <nav class="toc" aria-label="Topics">
       <details class="toc-wrap" open>
-        <summary><span class="toc-title">Topics</span><span class="toc-hint">Tagged on chapters. Pick one to see the books with a chapter on it.</span></summary>
+        <summary><span class="toc-title">Topics</span><span class="toc-hint">Tagged on chapters. Pick one to see the books with a chapter on it; use + to add topics and find books that cover them all.</span></summary>
+        <button type="button" class="toc-clear" id="toc-clear" hidden>× Clear all topics</button>
         {
           topicGroups.map((grp) => (
             <div class="toc-group">
               <p class="toc-heading">{grp.label}</p>
               {grp.values.map((v) => (
-                <label class="toc-item">
-                  <input type="checkbox" name="topic" value={v.id} form="filters" />
-                  <span>{v.label}</span>
-                  <data value={v.n}>{v.n}</data>
-                </label>
+                <div class="toc-row">
+                  <button type="button" class="toc-add" data-topic={v.id} aria-label={`Add ${v.label}`} hidden>+</button>
+                  <label class="toc-item">
+                    <input type="checkbox" name="topic" value={v.id} form="filters" />
+                    <span>{v.label}</span>
+                    <data value={v.n}>{v.n}</data>
+                  </label>
+                </div>
               ))}
             </div>
           ))
@@ -160,6 +164,8 @@ const topicGroups = TOPIC_GROUPS.map((grp) => ({
   const rows = Array.from(list.querySelectorAll<HTMLLIElement>('li.resource'));
   const resultLine = document.getElementById('result-line')!;
   const empty = document.getElementById('empty')!;
+  const tocClear = document.getElementById('toc-clear') as HTMLButtonElement;
+  const addButtons = Array.from(guide.querySelectorAll<HTMLButtonElement>('.toc-add'));
   const total = rows.length;
   const FACETS = ['access', 'kind', 'topic'] as const;
   type Facet = (typeof FACETS)[number];
@@ -173,9 +179,9 @@ const topicGroups = TOPIC_GROUPS.map((grp) => ({
     return inputs(`[name="${facet}"]:checked`).map((i) => i.value);
   }
 
-  /** Selected values in words. */
+  /** Selected values in words. Topics must all be covered; other facets accept any. */
   function describe(facet: string, values: string[]): string {
-    return values.map((v) => labelOf(facet, v)).join(' or ');
+    return values.map((v) => labelOf(facet, v)).join(facet === 'topic' ? ' and ' : ' or ');
   }
 
   // ---- search ----
@@ -353,21 +359,38 @@ const topicGroups = TOPIC_GROUPS.map((grp) => ({
         }
       }
     } else if (topics.length > 0) {
-      // A topic is chosen and there is no search: show the chapters that carry the topic.
-      const matching = (chaptersOf.get(row.id) ?? []).filter((c) => c.topics.some((t) => topics.includes(t)));
-      if (matching.length > 0) {
-        box.append(line('lab', 'On this topic'));
-        for (const c of matching.slice(0, 3)) box.append(line('hit', `Ch. ${c.n} — ${c.title}`));
-        if (matching.length > 3) box.append(line('hit more', `+${matching.length - 3} more chapters`));
+      // Topics are chosen and there is no search: show the chapters that carry them.
+      const chapters = chaptersOf.get(row.id) ?? [];
+      if (topics.length === 1) {
+        const matching = chapters.filter((c) => c.topics.includes(topics[0]));
+        if (matching.length > 0) {
+          box.append(line('lab', 'On this topic'));
+          for (const c of matching.slice(0, 3)) box.append(line('hit', `Ch. ${c.n} — ${c.title}`));
+          if (matching.length > 3) box.append(line('hit more', `+${matching.length - 3} more chapters`));
+        }
+      } else {
+        // Several topics: one line per topic, naming the first chapter that covers it.
+        const lines = topics
+          .map((t) => ({ t, matching: chapters.filter((c) => c.topics.includes(t)) }))
+          .filter((x) => x.matching.length > 0);
+        if (lines.length > 0) {
+          box.append(line('lab', 'On these topics'));
+          for (const { t, matching } of lines) {
+            const first = matching[0];
+            const more = matching.length > 1 ? ` (+${matching.length - 1} more)` : '';
+            box.append(line('hit', line('via-topic', `${TOPIC_LABELS[t]}: `), `Ch. ${first.n} — ${first.title}${more}`));
+          }
+        }
       }
     }
     box.hidden = box.childElementCount === 0;
   }
 
+  /** A record must carry every chosen topic; for the other facets, any chosen value will do. */
   function matches(row: HTMLLIElement, facet: Facet, values: string[]): boolean {
     if (values.length === 0) return true;
     const have = (row.dataset[facet] ?? '').split(' ').filter(Boolean);
-    return values.some((v) => have.includes(v));
+    return facet === 'topic' ? values.every((v) => have.includes(v)) : values.some((v) => have.includes(v));
   }
 
   function apply() {
@@ -377,7 +400,7 @@ const topicGroups = TOPIC_GROUPS.map((grp) => ({
     const hits = runSearch(q.value);
     const inSearch = (row: HTMLLIElement) => hits === null || hits.has(row.id);
 
-    // Visibility: the search AND every facet; OR within one facet.
+    // Visibility: the search AND every facet; OR within access and kind, AND within topics.
     let shown = 0;
     for (const row of rows) {
       const ok = inSearch(row) && FACETS.every((f) => matches(row, f, sel[f]));
@@ -386,19 +409,52 @@ const topicGroups = TOPIC_GROUPS.map((grp) => ({
       annotate(row, hits?.get(row.id), view, sel.topic);
     }
 
-    // Counts: for each value, what the list would show if this value were the only
-    // selection in its facet, with the search and every other facet as currently set.
+    // Counts: what the list would show if this value were the only selection in its facet,
+    // with the search and every other facet as currently set. For a topic that is what a
+    // click gives, since a click switches topics. Once two or more topics are combined, a
+    // topic's count is instead how many of the current results also cover it, and topics
+    // at zero grey out; a chosen topic shows the current total.
+    const count = (f: Facet, values: string[]) =>
+      rows.filter((row) => inSearch(row) && FACETS.every((g) => (g === f ? matches(row, g, values) : matches(row, g, sel[g])))).length;
+    const combining = sel.topic.length > 1;
     for (const f of FACETS) {
       for (const input of inputs(`[name="${f}"]`)) {
-        const n = rows.filter(
-          (row) =>
-            inSearch(row) && FACETS.every((g) => (g === f ? matches(row, g, [input.value]) : matches(row, g, sel[g]))),
-        ).length;
+        const n =
+          f === 'topic' && combining ? (input.checked ? shown : count(f, [...sel.topic, input.value])) : count(f, [input.value]);
         const d = input.parentElement!.querySelector('data')!;
         d.textContent = String(n);
         d.setAttribute('value', String(n));
         input.parentElement!.classList.toggle('none', n === 0 && !input.checked);
       }
+    }
+
+    // Beside each topic, once any is chosen: × on a chosen topic removes just that one;
+    // + on another adds it. Its count is what adding gives.
+    for (const b of addButtons) {
+      const t = b.dataset.topic!;
+      const label = labelOf('topic', t);
+      const isChosen = sel.topic.includes(t);
+      b.classList.toggle('remove', isChosen);
+      b.textContent = isChosen ? '×' : '+';
+      if (isChosen) {
+        b.hidden = false;
+        b.classList.remove('no-overlap');
+        b.title = `Remove ${label}`;
+        b.setAttribute('aria-label', b.title);
+        continue;
+      }
+      const n = sel.topic.length > 0 ? count('topic', [...sel.topic, t]) : 0;
+      // When combining, a topic with no overlap is greyed out and gets no +.
+      const show = sel.topic.length > 0 && !(combining && n === 0);
+      b.hidden = !show;
+      if (!show) continue;
+      // A + that would empty the list stays visible but pale, and says why; clicking it still
+      // adds the topic, and the empty-list message then explains the dead end.
+      // Topic names often contain "and", so list them with a separator rather than in a sentence.
+      const all = [...sel.topic, t].map((v) => labelOf('topic', v)).join(' + ');
+      b.classList.toggle('no-overlap', n === 0);
+      b.title = n === 0 ? `No book covers ${all}` : `Add ${label} (${n} ${n === 1 ? 'book covers' : 'books cover'} ${all})`;
+      b.setAttribute('aria-label', b.title);
     }
 
     // Order: newest first for dates, A to Z for the rest.
@@ -484,7 +540,14 @@ const topicGroups = TOPIC_GROUPS.map((grp) => ({
         term(`matching “${q.value.trim()}”` + (also.length ? ` (also ${also.slice(0, 4).join(', ')})` : ''), () => (q.value = ''), 'Clear search');
       }
       for (const f of active) {
-        term(describe(f, sel[f]), () => inputs(`[name="${f}"]`).forEach((i) => (i.checked = false)), `Remove ${labelOf(f, sel[f][0])} filter`);
+        if (f === 'topic') {
+          // Each topic is its own term, so one can be dropped without losing the rest.
+          for (const v of sel.topic) {
+            term(labelOf(f, v), () => inputs(`[name="topic"][value="${v}"]`).forEach((i) => (i.checked = false)), `Remove ${labelOf(f, v)} topic`);
+          }
+        } else {
+          term(describe(f, sel[f]), () => inputs(`[name="${f}"]`).forEach((i) => (i.checked = false)), `Remove ${labelOf(f, sel[f][0])} filter`);
+        }
       }
       resultLine.append(' · ');
       const clear = document.createElement('button');
@@ -499,6 +562,8 @@ const topicGroups = TOPIC_GROUPS.map((grp) => ({
       resultLine.append(clear);
     }
     empty.hidden = shown > 0;
+    empty.textContent = sel.topic.length > 1 && shown === 0 ? 'No single book covers all of these topics. Remove one to widen the list.' : 'Nothing matches.';
+    tocClear.hidden = sel.topic.length === 0;
 
     // URL state.
     const params = new URLSearchParams();
@@ -525,10 +590,23 @@ const topicGroups = TOPIC_GROUPS.map((grp) => ({
     if (input) input.checked = true;
   }
 
+  // Topics behave as a table of contents: clicking one switches to it, and clicking the
+  // current one clears it. The + beside a topic adds it instead, narrowing the list to
+  // books that cover every chosen topic.
   guide.addEventListener('change', (e) => {
     const t = e.target as HTMLInputElement;
-    // Topics behave as a table of contents: one at a time. Choosing another swaps; clicking the current one clears.
     if (t.name === 'topic' && t.checked) inputs('[name="topic"]').forEach((i) => (i.checked = i === t));
+    apply();
+  });
+  for (const b of addButtons) {
+    b.addEventListener('click', () => {
+      const input = guide.querySelector<HTMLInputElement>(`input[name="topic"][value="${b.dataset.topic}"]`);
+      if (input) input.checked = !input.checked;
+      apply();
+    });
+  }
+  tocClear.addEventListener('click', () => {
+    inputs('[name="topic"]').forEach((i) => (i.checked = false));
     apply();
   });
   let timer = 0;

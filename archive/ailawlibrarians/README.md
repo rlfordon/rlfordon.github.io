@@ -2,7 +2,7 @@
 
 Recovered from the Internet Archive Wayback Machine on 2026-09-02, after ailawlibrarians.com stopped resolving.
 
-- `posts/` — raw archived HTML of the 13 posts authored by Rebecca Fordon (Sept 2023 to Apr 2026). Latest Wayback capture of each, unmodified.
+- `posts/` — raw archived HTML of the posts authored by Rebecca Fordon (Sept 2023 onward). The first 13 (to Apr 2026) are the latest Wayback capture of each, unmodified; later posts were saved from the live site after it came back.
 - `images/` — every image referenced inside those posts' body content, named `<post-slug>__<original-filename>`.
 - `pages/` — shared site pages for reference only (About, Prompt Library, Benchmarking Group, Current Awareness, Recommended Resources, interactive table). These are group work, not Rebecca's alone.
 - `manifest.json` — date, title, original URL, Wayback URL, word count, categories, and tags for each post.

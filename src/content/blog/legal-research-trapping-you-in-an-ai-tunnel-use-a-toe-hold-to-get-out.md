@@ -18,7 +18,7 @@ I’ve started calling this the “AI Tunnel.” And I’ve realized that as exp
 
 ![A person climbing a cliff. The photo is zoomed in to show only their leg from the knee down. Their is the only thing supporting them.](/images/blog/legal-research-trapping-you-in-an-ai-tunnel-use-a-toe-hold-to-get-out/patrick-hendry-IGUnXA9vBwQ-unsplash-1024x683.jpg)
 
-*Photo by [Patrick Hendry](https://unsplash.com/@worldsbetweenlines?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/person-in-blue-denim-jeans-and-black-hiking-shoes-standing-on-gray-rock-during-daytime-IGUnXA9vBwQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)*
+<p class="caption"><em>Photo by <a href="https://unsplash.com/@worldsbetweenlines?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Patrick Hendry</a> on <a href="https://unsplash.com/photos/person-in-blue-denim-jeans-and-black-hiking-shoes-standing-on-gray-rock-during-daytime-IGUnXA9vBwQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></em></p>
 
 ## The “AI Tunnel” vs. The “Toe-Hold” Strategy
 
@@ -38,7 +38,7 @@ My first instinct was to just *tell* them my strategy. “Don’t stay in the AI
 
 ![A GIF of a clip from the TV show Friends. Ross and an unseen Friend are trying to get a couch up the stairs and Ross is shouting "PIVOT!!"](/images/blog/legal-research-trapping-you-in-an-ai-tunnel-use-a-toe-hold-to-get-out/friends-ross.gif)
 
-*Friends is cool again, so I can use this GIF*
+<p class="caption"><em>Friends is cool again, so I can use this GIF</em></p>
 
 But as we all know, that doesn’t work. This is a classic **“Expert Blind Spot”** problem.
 

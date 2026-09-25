@@ -62,11 +62,11 @@ We will want to have some insight into the searches that are being run, so that 
 
 ![](/images/blog/the-truth-about-hallucinations-in-legal-research-ai-how-to-avoid-them-and-trust-your-sources/image004-1024x293.jpg)
 
-*scite AI Assistant Sample Results*
+<p class="caption"><em>scite AI Assistant Sample Results</em></p>
 
 ![](/images/blog/the-truth-about-hallucinations-in-legal-research-ai-how-to-avoid-them-and-trust-your-sources/image005-1024x909.jpg)
 
-*sCcite AI Assistant Settings*
+<p class="caption"><em>sCcite AI Assistant Settings</em></p>
 
 ## **Are there uses for generative AI where the risks presented by hallucinations are lessened?**
 

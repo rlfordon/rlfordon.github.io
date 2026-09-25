@@ -5,7 +5,8 @@ description: >
 intro: >
   A reading list for people teaching AI in legal practice or legal education, including non-JD
   programs: textbooks, casebooks, study aids, open materials, and course sites, with tables of
-  contents for most of the books. Pick a topic on the left to see which books have a chapter on it.
+  contents for most of the books. Pick a topic on the left to see which books have a chapter on it,
+  or use the + beside another topic to find the books that cover both.
   Search covers titles, authors, descriptions, chapter titles, and topics, and each result says where
   the match was found. The filters narrow by how a title can be obtained and what kind of book it is.
   Titles marked Subscription are in the West Academic Study Aids package many law libraries license.
@@ -13,42 +14,24 @@ intro: >
 updated: 2026-09-05
 items:
   - ref: rich-ai-and-the-law
-    note: Problem-based, with readings tagged for MLS students. Use the 2026 rebuild.
   - ref: martin-generative-ai-and-the-delivery-of-legal-services
-    note: Textbook and workbook with no technical background assumed.
   - ref: munsterman-genai-in-legal-education
-    note: Addressed to faculty and students. Chapters on choosing a platform, prompting, evidence on learning effects, policies, assignment design, and student use guidelines.
   - ref: bommarito-katz-ai-for-law-and-finance
-    note: The agentic AI volume is out; the LLM literacy volume is forthcoming.
   - ref: sag-ai-policy-primer-for-students
-    note: Part I is an AI-literacy explainer; Part II frames regulatory questions.
   - ref: pavuluri-teaching-ai-augmented-legal-research
-    note: Exercises and teaching notes for legal research instruction.
   - ref: duke-open-ip-casebook-2026-supplement
-    note: Primary-source chapters for IP coverage.
   - ref: munsterman-ai-and-the-practice-of-law-in-a-nutshell
-    note: The most comprehensive practice-oriented survey on this list. Appendices include governance policies and vendor checklists.
   - ref: garon-ai-law-and-regulation-in-a-nutshell
-    note: The regulation counterpart, with developer-versus-deployer chapters.
   - ref: cooper-kompella-short-happy-guide-to-ai-for-lawyers
-    note: Shortest introduction here.
   - ref: rapoport-tiano-short-happy-guide-to-ai-and-legal-ethics
-    note: Ethics in the same short format.
   - ref: kompella-cooper-short-happy-guide-to-ai-governance-and-regulation
-    note: Compare its table of contents against Garon before assigning both.
   - ref: dawson-linna-artificial-intelligence-and-legal-reasoning
-    note: Skills-forward. Publishes late September 2026; review copies available.
   - ref: kaminski-ohm-selbst-artificial-intelligence-law
-    note: JD-level doctrinal casebook. Draft proofs available to faculty before the October 2026 release.
   - ref: hu-ai-law-and-policy
   - ref: hu-ai-law-and-policy-selected-statutes
-    note: Assignable primary-source reader without adopting the casebook.
   - ref: hu-introduction-to-ai-law-and-policy
-    note: The shorter of the Hu volumes.
   - ref: dawson-artificial-intelligence-and-academic-integrity
-    note: Inexpensive and student-facing.
   - ref: murray-ai-and-the-practice-of-law
-    note: Current on agentic AI at a low price. Self-published; evaluate before assigning.
   - ref: murray-legal-issues-of-generative-and-agentic-ai
   - ref: frazier-ai-and-law-unleashing-and-restraining-ai
   - ref: zittrain-case-studies-in-public-and-private-policy-challenges-of-ai
@@ -57,15 +40,12 @@ items:
   - ref: desaunettes-barbero-trade-secrets-and-ai
   - ref: ceipi-advanced-training-on-ai-and-ip
   - ref: henshon-a-lawyers-guide-to-ai
-    note: One concept per chapter, which maps onto a weekly schedule.
   - ref: claypoole-think-like-a-lawyer-about-ai
-    note: Organized by what AI systems do, a useful frame for non-lawyers.
   - ref: cwik-suarez-thomson-ai-legal-issues-policy-and-practical-strategies
   - ref: switzer-dittmar-the-ai-enabled-law-firm
   - ref: aba-the-augmented-lawyer
   - ref: levy-ai-and-the-legal-profession-2d
   - ref: pli-ai-course-handbooks
-    note: Check whether your library has PLI Plus.
   - ref: ashley-artificial-intelligence-and-legal-analytics
   - ref: katz-dolin-bommarito-legal-informatics
   - ref: waisberg-hudek-ai-for-lawyers
@@ -73,8 +53,6 @@ items:
   - ref: walker-on-legal-ai
   - ref: barfield-pagallo-advanced-introduction-to-law-and-ai
   - ref: pli-linna-ai-competence-and-law-practice
-    note: A model for asynchronous structure.
   - ref: chandler-llms-for-lawyers
-    note: Hands-on use, evaluate, and build sequence with a semester-long project.
   - ref: arkfeld-on-artificial-intelligence
   - ref: artificial-intelligence-law-and-litigation

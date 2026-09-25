@@ -22,13 +22,13 @@ Not all AI tools are created equal. The research shows a dramatic performance ga
 
 ![Bar chart showing hallucination rates for general-purpose language models on legal queries. Llama 2 hallucinated 88% of the time, GPT-3.5 hallucinated 69%, and GPT-4 hallucinated 58%, demonstrating that newer models perform better but still hallucinate on more than half of legal questions.](/images/blog/what-the-science-says-about-hallucinations-in-legal-research/image-1.png)
 
-*Dahl, et al., “Large Legal Fictions,” Fig. 1. The figure shows reduced hallucination rates with more advanced and modern models.*
+<p class="caption"><em>Dahl, et al., “Large Legal Fictions,” Fig. 1. The figure shows reduced hallucination rates with more advanced and modern models.</em></p>
 
 **Models are improving over time.** A comprehensive 2024 study by Stanford researchers titled [“Large Legal Fictions”](https://arxiv.org/abs/2401.01301) tested 2023 general-purpose models on over 800,000 verifiable legal questions and found hallucination rates between 58% and 88%. Within that cohort, newer models performed better: GPT-4 hallucinated 58% of the time compared to GPT-3.5 at 69% and Llama 2 at 88%. This pattern of improvement with each model generation appears fairly consistent across AI development.
 
 ![Chart comparing hallucination rates across legal AI tools and GPT-4. Lexis+ AI had a 17% hallucination rate, Westlaw AI-Assisted Research had 33%, and GPT-4 had 43%, showing that legal-specific tools with retrieval-augmented generation substantially outperform general-purpose models.](/images/blog/what-the-science-says-about-hallucinations-in-legal-research/image.png)
 
-*Magesh, et al., “Hallucination Free?”, Figure 1. The study shows higher hallucinations in general purpose model GPT-4 than specialized legal research products.*
+<p class="caption"><em>Magesh, et al., “Hallucination Free?”, Figure 1. The study shows higher hallucinations in general purpose model GPT-4 than specialized legal research products.</em></p>
 
 ****Architecture matters, but it’s not the whole story**.** A second Stanford study, titled [“Hallucination-Free? Assessing the Reliability of Leading AI Legal Research Tools”](http://arxiv.org/abs/2405.20362), published in 2025 but testing tools from May 2024, found hallucination rates of 17% for Lexis+ AI, 33% for Westlaw AI-Assisted Research, and 43% for GPT-4. These errors include both outright fabrications (fake cases) and more subtle problems like mischaracterizing real cases or citing inapplicable authority. This head-to-head comparison shows legal-specific tools with retrieval-augmented generation (RAG) substantially outperforming general LLMs.
 
@@ -55,7 +55,7 @@ AI performance degrades sharply when dealing with less common jurisdictions, loc
 
 ![Table showing AI hallucination rates varying by geographic location. For the same legal scenarios, hallucination rates were 45% for Los Angeles, 55% for London, and 61% for Sydney.](/images/blog/what-the-science-says-about-hallucinations-in-legal-research/image-2.png)
 
-*Curran, et al., “Place Matters”, Fig. 1. Hallucination rates by jurisdiction.*
+<p class="caption"><em>Curran, et al., “Place Matters”, Fig. 1. Hallucination rates by jurisdiction.</em></p>
 
 Researchers in a study called [“Place Matters”](https://arxiv.org/abs/2511.06700) (2025) tested the same legal scenarios across different geographic locations and found hallucination rates varied dramatically: Los Angeles (45%), London (55%), and Sydney (61%). For specific local laws like a local Australian ‘s Residential Tenancies Act, hallucination rates reached 100%.
 
