@@ -5,7 +5,7 @@ interface Props {
   title?: string;
   description?: string;
   /** Current top-level section, for nav highlighting. */
-  section?: 'home' | 'blog' | 'projects' | 'resources' | 'about';
+  section?: 'home' | 'blog' | 'projects' | 'resources' | 'media' | 'about';
   ogType?: 'website' | 'article';
 }
 const SITE_NAME = 'Rebecca Fordon';
@@ -48,6 +48,7 @@ const year = new Date().getFullYear();
             <a href="/blog/" aria-current={section === 'blog' ? 'page' : undefined}>Writing</a>
             <a href="/projects/" aria-current={section === 'projects' ? 'page' : undefined}>Projects</a>
             <a href="/resources/" aria-current={section === 'resources' ? 'page' : undefined}>Resources</a>
+            <a href="/media/" aria-current={section === 'media' ? 'page' : undefined}>Media</a>
             <a href="/about/" aria-current={section === 'about' ? 'page' : undefined}>About</a>
           </nav>
         </div>
@@ -58,8 +59,19 @@ const year = new Date().getFullYear();
       <footer class="colophon">
         <span>© {year} Rebecca Fordon. Views here are my own.</span>
         <span>
-          <a href="https://github.com/rlfordon">GitHub</a> ·
-          <a href="/rss.xml">RSS</a>
+          {
+            [
+              ['LinkedIn', 'https://www.linkedin.com/in/rebeccafordon/'],
+              ['Bluesky', 'https://bsky.app/profile/thefordon.bsky.social'],
+              ['GitHub', 'https://github.com/rlfordon'],
+              ['RSS', '/rss.xml'],
+            ].map(([label, href], i) => (
+              <>
+                {i > 0 && ' · '}
+                <a href={href}>{label}</a>
+              </>
+            ))
+          }
         </span>
       </footer>
     </div>

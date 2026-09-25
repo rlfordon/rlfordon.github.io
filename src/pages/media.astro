@@ -1,0 +1,50 @@
+---
+import Base from '../layouts/Base.astro';
+import { media } from '../data/media';
+
+const items = [...media].sort((a, b) => b.date.localeCompare(a.date));
+const years = [...new Set(items.map((m) => m.date.slice(0, 4)))];
+const fmt = (d: string) =>
+  new Date(`${d}T00:00:00Z`).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric', timeZone: 'UTC' });
+---
+<Base
+  title="Media"
+  section="media"
+  description="Podcast appearances and articles quoting Rebecca Fordon on AI in legal research, legal education, and law libraries."
+>
+  <header class="article-head">
+    <h1>Media</h1>
+    <p class="intro">Podcasts I’ve been a guest on, and articles that quote me.</p>
+  </header>
+  {
+    years.map((y) => (
+      <>
+        <p class="year-label">{y}</p>
+        <ul class="posts media-list">
+          {items
+            .filter((m) => m.date.startsWith(y))
+            .map((m) => (
+              <li>
+                <time datetime={m.date}>{fmt(m.date)}</time>
+                <div>
+                  <p class="media-source">
+                    <span class="media-kind">{m.kind}</span> {m.outlet}
+                    {m.by && <span class="media-by"> · {m.kind === 'Podcast' ? 'with' : 'by'} {m.by}</span>}
+                  </p>
+                  <a href={m.url}>{m.title}</a>
+                  {m.note && <span class="desc">{m.note}</span>}
+                  {m.links && (
+                    <span class="media-links">
+                      {m.links.map((l) => (
+                        <a href={l.url}>{l.label}</a>
+                      ))}
+                    </span>
+                  )}
+                </div>
+              </li>
+            ))}
+        </ul>
+      </>
+    ))
+  }
+</Base>

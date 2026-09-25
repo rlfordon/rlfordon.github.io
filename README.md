@@ -7,6 +7,7 @@ Personal site: writing, projects, about. Built with [Astro](https://astro.build)
 | Path | What |
 |---|---|
 | `src/content/blog/*.md` | Blog posts. One Markdown file per post with YAML frontmatter. |
+| `src/data/media.ts` | Media appearances (podcasts, articles quoting me), newest first, for `/media/`. |
 | `src/data/projects.ts` | Hand-curated project list, grouped into teaching tools, research tooling, and fun; the home page shows the first three of each. |
 | `src/content/resources/*.yaml` | Resource catalog. One YAML record per book, course, or site; the file name is the record id. Neutral descriptions only. |
 | `src/content/guides/*.yaml` | Curated reading lists built from catalog records: a flat list of record ids, each with an optional note for that list. The page sorts and filters; file order is not shown. |
@@ -14,7 +15,7 @@ Personal site: writing, projects, about. Built with [Astro](https://astro.build)
 | `src/lib/resources.ts` | Record helpers: formatting, the facet definitions (kind groups, audiences, published buckets), and sort keys. |
 | `src/data/topics.ts` | Controlled vocabulary for chapter topics, grouped, with a scope note per term. The build rejects any topic id not listed here. |
 | `src/data/search-synonyms.ts` | Query expansion groups for the in-page search. |
-| `src/pages/` | Routes: home, `/blog/`, `/blog/[slug]/`, `/projects/`, `/resources/`, `/resources/[guide]/`, `/resources/reading-lists/[list]/`, `/about/`, `/rss.xml`. |
+| `src/pages/` | Routes: home, `/blog/`, `/blog/[slug]/`, `/projects/`, `/resources/`, `/resources/[guide]/`, `/resources/reading-lists/[list]/`, `/media/`, `/about/`, `/rss.xml`. |
 | `src/layouts/Base.astro` | Shared shell: head, masthead, nav, footer. |
 | `src/styles/global.css` | All styling. Palette, type, and layout tokens at the top. Light-only by design. |
 | `public/images/blog/<slug>/` | Post images. |
