@@ -10,10 +10,108 @@ access: subscription
 via: Cambridge Core
 url: https://www.cambridge.org/core/books/cambridge-handbook-of-ai-and-technologies-in-courts/D8C0488F782847EF4EC93EDE8B3C1B9B
 audience: [faculty, practitioners]
-topics: [courts-and-judicial-use, international-and-comparative]
 description: >
   Comparative handbook on how courts use AI and digital technologies, with more than seventy
   contributors from over twenty-five countries covering Europe, the Americas, Asia-Pacific, and
   Africa. Treats AI in courts as a question of judicial accountability and the rule of law.
+contents:
+  - title: "AI in Courtrooms Across the Globe"
+    topics: [courts-and-judicial-use, international-and-comparative]
+  - title: "AI and Courts: Challenges and Opportunities"
+    note: "Part I, Courts and AI: Context and Normative Positions."
+    topics: [courts-and-judicial-use]
+  - title: "The History and Developments of AI in Courts: A Legal Informatics Perspective"
+    topics: [courts-and-judicial-use, computational-law-and-analytics]
+  - title: "Judging and Limits on Legal Automation"
+    topics: [courts-and-judicial-use]
+  - title: "Chief Justice Robots"
+    topics: [courts-and-judicial-use]
+  - title: "The Rule of AI and the Rule of Law"
+    topics: [courts-and-judicial-use]
+  - title: "Artificial Intelligence in the Judiciary: A Threat to the Rule of Law?"
+    topics: [courts-and-judicial-use]
+  - title: "Anticipatory Governance and AI in Courts"
+    topics: [courts-and-judicial-use, ai-governance-and-risk-management]
+  - title: "The Internalisation and Externalisation of Judicial Functions in the Age of AI"
+    note: "Part II, Courts and AI: Disciplinary Perspectives."
+    topics: [courts-and-judicial-use]
+  - title: "AI Generated Evidence Used in European Criminal Courtrooms"
+    topics: [courts-and-judicial-use, evidence-and-deepfakes, criminal-justice-and-policing, international-and-comparative]
+  - title: "Courts and AI: An Administrative Law Perspective"
+    topics: [courts-and-judicial-use, government-and-administrative-use]
+  - title: "Criminal Courts and AI: On the Role and Use of Algorithms at Sentencing"
+    topics: [courts-and-judicial-use, criminal-justice-and-policing]
+  - title: "AI in Criminal Justice: Against the Trade Secret Privilege"
+    topics: [courts-and-judicial-use, criminal-justice-and-policing, patents-and-trade-secrets]
+  - title: "Public Perceptions of Judicial Use of AI: A Legal and Psychological Perspective"
+    topics: [courts-and-judicial-use]
+  - title: "AI and Judicial Transparency"
+    note: "Part III, AI and Tech Challenges to Judicial Values."
+    topics: [courts-and-judicial-use]
+  - title: "Judicial Independence: Impact of AI on Courts"
+    topics: [courts-and-judicial-use]
+  - title: "Judicial Impartiality: AI in Courts"
+    topics: [courts-and-judicial-use]
+  - title: "Procedural Fairness, AI and Courts"
+    topics: [courts-and-judicial-use]
+  - title: "AI and the Judicial Duty to State Reasons"
+    topics: [courts-and-judicial-use]
+  - title: "Balancing Legal Certainty and Judicial Discretion in AI-Assisted Adjudication"
+    topics: [courts-and-judicial-use]
+  - title: "AI and the Efficiency of Courts"
+    topics: [courts-and-judicial-use]
+  - title: "AI, Judicial Diversity, and Representativeness"
+    topics: [courts-and-judicial-use, bias-and-discrimination]
+  - title: "Judicial Competence and AI"
+    topics: [courts-and-judicial-use]
+  - title: "AI and Judicial Accountability"
+    topics: [courts-and-judicial-use]
+  - title: "AI and Courts: An International Human Rights Perspective"
+    note: "Part IV, AI in Courts Across the Globe: Jurisdictional Perspectives. International and regional jurisdictions."
+    topics: [courts-and-judicial-use, international-and-comparative]
+  - title: "AI at the European Court of Human Rights"
+    topics: [courts-and-judicial-use, international-and-comparative]
+  - title: "The Right to a Fair Trial & the 'AI-Equipped-Judges' of the Future"
+    topics: [courts-and-judicial-use, international-and-comparative]
+  - title: "EU AI Act and Courts"
+    topics: [courts-and-judicial-use, ai-regulation, international-and-comparative]
+  - title: "AI Literacy and the Judiciary under the EU AI Act"
+    topics: [courts-and-judicial-use, ai-regulation, international-and-comparative]
+  - title: "Generative AI and Courts in the UK: A Candle in a Hurricane"
+    note: "Europe."
+    topics: [courts-and-judicial-use, international-and-comparative]
+  - title: "AI and the Courts in Germany"
+    topics: [courts-and-judicial-use, international-and-comparative]
+  - title: "Digital Justice in Estonia"
+    topics: [courts-and-judicial-use, international-and-comparative]
+  - title: "AI in Courts in Eastern Europe: Lithuania & Poland"
+    topics: [courts-and-judicial-use, international-and-comparative]
+  - title: "AI and Courts in Central Europe: Croatia and Slovenia"
+    topics: [courts-and-judicial-use, international-and-comparative]
+  - title: "AI and Courts in Spain"
+    topics: [courts-and-judicial-use, international-and-comparative]
+  - title: "Courts and the Use of Technologies and Artificial Intelligence in Türkiye"
+    topics: [courts-and-judicial-use, international-and-comparative]
+  - title: "Generative AI and Courts in the United States"
+    note: "The Americas."
+    topics: [courts-and-judicial-use]
+  - title: "The Regulation of Judicial Use of Artificial Intelligence in Colombia from the Perspective of Legal Field Theory"
+    topics: [courts-and-judicial-use, international-and-comparative]
+  - title: "Courting AI: How Brazilian Courts are Using AI"
+    topics: [courts-and-judicial-use, international-and-comparative]
+  - title: "Application of Technologies and AI in the Nigerian Court System: Challenges and Prospects"
+    note: "Other parts of the world."
+    topics: [courts-and-judicial-use, international-and-comparative]
+  - title: "AI and India's Judicial System: Lessons from POCSO"
+    topics: [courts-and-judicial-use, international-and-comparative, criminal-justice-and-policing]
+  - title: "Algorithmic Justice: AI Sentencing Tools in Taiwan"
+    topics: [courts-and-judicial-use, international-and-comparative, criminal-justice-and-policing]
+  - title: "AI and Courts in Japan"
+    topics: [courts-and-judicial-use, international-and-comparative]
+  - title: "Courts and AI: A View from Australia and New Zealand"
+    topics: [courts-and-judicial-use, international-and-comparative]
+  - title: "The Future of Courts and AI"
+    topics: [courts-and-judicial-use]
+contentsSource: https://www.cambridge.org/9781009744201
 added: 2026-09-25
 verified: 2026-09-25
