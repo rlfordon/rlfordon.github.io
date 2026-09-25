@@ -9,10 +9,28 @@ access: purchase
 price: "$85 paperback"
 url: https://www.e-elgar.com/shop/usd/determann-s-field-guide-to-artificial-intelligence-law-9781049411798.html
 audience: [practitioners]
-topics: [ai-regulation, ai-governance-and-risk-management, in-house-and-compliance, international-and-comparative]
 description: >
   Practical guide to AI compliance for organizations, second edition. Covers jurisdiction-specific
   legal requirements, governance and accountability, and identifying and prioritizing risks, with
   checklists, contract clauses, and sample protocols. Covers predictive, generative, and agentic AI.
+contents:
+  - title: "Artificial Intelligence Law"
+    note: "Overview of AI law across jurisdictions, following orientation and key-terms sections."
+    topics: [ai-regulation, international-and-comparative]
+  - title: "Starting an AI Law Compliance Program"
+    topics: [ai-governance-and-risk-management, in-house-and-compliance]
+  - title: "Drafting Documentation"
+    topics: [ai-governance-and-risk-management]
+  - title: "Assessing Impacts and Mitigating Risks"
+    topics: [ai-governance-and-risk-management]
+  - title: "AI Agreements"
+    note: "Contract clauses for AI procurement and use."
+    topics: [evaluating-and-procuring-ai-tools]
+  - title: "Protocols"
+    topics: [ai-governance-and-risk-management]
+  - title: "Maintaining and Auditing Compliance"
+    topics: [ai-governance-and-risk-management, in-house-and-compliance]
+  - title: "Checklist: AI Law Compliance"
+    topics: [in-house-and-compliance]
 added: 2026-09-25
 verified: 2026-09-25
