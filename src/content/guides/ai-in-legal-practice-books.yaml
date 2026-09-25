@@ -56,3 +56,7 @@ items:
   - ref: chandler-llms-for-lawyers
   - ref: arkfeld-on-artificial-intelligence
   - ref: artificial-intelligence-law-and-litigation
+  - ref: sloan-using-generative-ai-for-legal-research
+  - ref: zalnieriute-limante-cambridge-handbook-of-ai-and-technologies-in-courts
+  - ref: determann-field-guide-to-ai-law
+  - ref: becher-alarie-superjustice
