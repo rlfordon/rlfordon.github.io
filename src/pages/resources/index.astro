@@ -6,6 +6,9 @@ import { formatFullDate } from '../../lib/resources';
 const guides = (await getCollection('guides', (g) => !g.data.draft)).sort((a, b) =>
   b.data.updated.localeCompare(a.data.updated),
 );
+const readingLists = (await getCollection('readingLists', (l) => !l.data.draft)).sort((a, b) =>
+  b.data.updated.localeCompare(a.data.updated),
+);
 ---
 <Base
   title="Resources"
@@ -16,7 +19,7 @@ const guides = (await getCollection('guides', (g) => !g.data.draft)).sort((a, b)
     <h1>Resources</h1>
     <p class="intro">
       Reading lists and reference guides, mostly for people teaching courses on AI in legal practice and looking for
-      readings to assign. Each guide notes when it was last checked.
+      readings to assign, plus the reading lists from my own courses. Each page notes when it was last checked.
     </p>
   </header>
   <p class="kind-title" style="--kind: var(--orange)">Guides</p>
@@ -28,6 +31,20 @@ const guides = (await getCollection('guides', (g) => !g.data.draft)).sort((a, b)
           <div>
             <a href={`/resources/${g.id}/`}>{g.data.title}</a>
             <span class="desc">{g.data.description}</span>
+          </div>
+        </li>
+      ))
+    }
+  </ul>
+  <p class="kind-title" style="--kind: var(--teal); margin-top: 3.5rem">Course reading lists</p>
+  <ul class="posts">
+    {
+      readingLists.map((l) => (
+        <li>
+          <time datetime={l.data.updated}>{formatFullDate(l.data.updated)}</time>
+          <div>
+            <a href={`/resources/reading-lists/${l.id}/`}>{l.data.title}</a>
+            <span class="desc">{l.data.description}</span>
           </div>
         </li>
       ))

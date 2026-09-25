@@ -109,4 +109,46 @@ const guides = defineCollection({
   }),
 });
 
-export const collections = { blog, resources, guides };
+/**
+ * A course's readings as assigned, class by class. Unlike guides, order matters
+ * and readings are not catalog records: most are articles and posts cited once.
+ */
+const reading = z
+  .object({
+    level: z.enum(['required', 'optional', 'reference']),
+    authors: z.string().optional(),
+    title: z.string(),
+    /** Venue, citation, or date, as one line. */
+    source: z.string().optional(),
+    url: z.string().url().optional(),
+    /** Extra links for a reading in parts, or a set of alternatives. */
+    links: z.array(z.object({ label: z.string(), url: z.string().url() })).default([]),
+    /** Which pages or sections, or how to read it. */
+    note: z.string().optional(),
+  });
+
+const readingLists = defineCollection({
+  loader: glob({ pattern: '**/*.yaml', base: './src/content/reading-lists' }),
+  schema: z.object({
+    title: z.string(),
+    course: z.string(),
+    institution: z.string().optional(),
+    term: z.string(),
+    description: z.string(),
+    intro: z.string().optional(),
+    updated: fullDate,
+    draft: z.boolean().default(false),
+    sessions: z.array(
+      z.object({
+        id: z.string(),
+        title: z.string(),
+        /** Estimated time for the required readings. */
+        time: z.string().optional(),
+        note: z.string().optional(),
+        readings: z.array(reading).default([]),
+      }),
+    ),
+  }),
+});
+
+export const collections = { blog, resources, guides, readingLists };

@@ -10,8 +10,11 @@ import { formatFullDate } from '../lib/resources';
 const posts = (await getCollection('blog', (p) => !p.data.draft))
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
   .slice(0, 4);
-const guides = (await getCollection('guides', (g) => !g.data.draft))
-  .sort((a, b) => b.data.updated.localeCompare(a.data.updated))
+const resourcePages = [
+  ...(await getCollection('guides', (g) => !g.data.draft)).map((g) => ({ href: `/resources/${g.id}/`, ...g.data })),
+  ...(await getCollection('readingLists', (l) => !l.data.draft)).map((l) => ({ href: `/resources/reading-lists/${l.id}/`, ...l.data })),
+]
+  .sort((a, b) => b.updated.localeCompare(a.updated))
   .slice(0, 3);
 ---
 <Base section="home">
@@ -32,12 +35,12 @@ const guides = (await getCollection('guides', (g) => !g.data.draft))
     <div class="section-head"><h2>Resources</h2><a class="more" href="/resources/">All resources →</a></div>
     <ul class="posts">
       {
-        guides.map((g) => (
+        resourcePages.map((g) => (
           <li>
-            <time datetime={g.data.updated}>{formatFullDate(g.data.updated)}</time>
+            <time datetime={g.updated}>{formatFullDate(g.updated)}</time>
             <div>
-              <a href={`/resources/${g.id}/`}>{g.data.title}</a>
-              <span class="desc">{g.data.description}</span>
+              <a href={g.href}>{g.title}</a>
+              <span class="desc">{g.description}</span>
             </div>
           </li>
         ))

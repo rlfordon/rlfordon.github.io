@@ -1,0 +1,156 @@
+---
+import Base from '../../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+import { formatFullDate } from '../../../lib/resources';
+
+export async function getStaticPaths() {
+  const lists = await getCollection('readingLists', (l) => !l.data.draft);
+  return lists.map((list) => ({ params: { list: list.id }, props: { list } }));
+}
+const { list } = Astro.props;
+const l = list.data;
+
+const LEVELS = [
+  { id: 'required', label: 'Required' },
+  { id: 'optional', label: 'Optional' },
+  { id: 'reference', label: 'For reference' },
+] as const;
+
+const sessions = l.sessions.map((s) => ({
+  ...s,
+  anchor: `class-${s.id}`,
+  groups: LEVELS.map((lv) => ({ ...lv, readings: s.readings.filter((r) => r.level === lv.id) })).filter((g) => g.readings.length),
+}));
+const counts = Object.fromEntries(LEVELS.map((lv) => [lv.id, l.sessions.flatMap((s) => s.readings).filter((r) => r.level === lv.id).length]));
+---
+<Base title={l.title} section="resources" description={l.description}>
+  <header class="article-head">
+    <p class="meta"><a href="/resources/">Resources</a> · Last checked {formatFullDate(l.updated)}</p>
+    <h1>{l.title}</h1>
+    {l.intro && <p class="intro">{l.intro}</p>}
+    <p class="meta">
+      {[l.course, l.institution, l.term].filter(Boolean).join(' · ')} · {l.sessions.length} classes · {counts.required} required,
+      {counts.optional} optional
+    </p>
+  </header>
+
+  <div class="rl-layout">
+    <nav class="toc" aria-label="Classes">
+      <details class="toc-wrap" id="rl-toc" open>
+        <summary><span class="toc-title">Classes</span><span class="toc-hint">Pick a class to jump to its readings. Counts are readings listed.</span></summary>
+        <div class="rl-toc-list">
+          {
+            sessions.map((s) => (
+              <a class="toc-item rl-toc-item" href={`#${s.anchor}`} data-target={s.anchor}>
+                <span class="rl-num">{s.id}</span>
+                <span>{s.title}</span>
+                <data value={s.readings.length}>{s.readings.length || '–'}</data>
+              </a>
+            ))
+          }
+        </div>
+      </details>
+    </nav>
+
+  <div class="rl-sessions">
+    {
+      sessions.map((s) => (
+        <section class="rl-session" id={s.anchor}>
+          <h2>
+            <span class="rl-num">{s.id}</span>
+            {s.title}
+          </h2>
+          {s.time && <p class="meta rl-time">Required reading: {s.time}</p>}
+          {s.note && <p class="rl-note">{s.note}</p>}
+          {s.groups.map((g) => (
+            <div class="rl-group">
+              <p class="rl-level">{g.label}</p>
+              <ul class="rl-readings">
+                {g.readings.map((r) => (
+                  <li>
+                    {r.authors && <span class="rl-authors">{r.authors}, </span>}
+                    {r.url ? (
+                      <a class="rl-title" href={r.url}>
+                        {r.title}
+                      </a>
+                    ) : (
+                      <span class="rl-title">{r.title}</span>
+                    )}
+                    {r.source && <span class="rl-source"> ({r.source})</span>}
+                    {r.links.length > 0 && (
+                      <span class="rl-links">
+                        {r.links.map((k) => (
+                          <a href={k.url}>{k.label}</a>
+                        ))}
+                      </span>
+                    )}
+                    {r.note && <span class="rl-read">{r.note}</span>}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </section>
+      ))
+    }
+  </div>
+  </div>
+</Base>
+
+<script>
+  const toc = document.getElementById('rl-toc') as HTMLDetailsElement;
+  const narrow = window.matchMedia('(max-width: 52rem)');
+  // On phones the class list sits above the readings, so start it closed and close it after a jump.
+  if (narrow.matches) toc.open = false;
+  const items = new Map<string, HTMLElement>();
+  document.querySelectorAll<HTMLElement>('.rl-toc-item').forEach((a) => {
+    items.set(a.dataset.target!, a);
+    a.addEventListener('click', () => {
+      if (narrow.matches) toc.open = false;
+    });
+  });
+
+  // Highlight the class whose heading most recently crossed the top third of the viewport.
+  let current: HTMLElement | undefined;
+  const mark = (id: string) => {
+    const a = items.get(id);
+    if (!a || a === current) return;
+    current?.classList.remove('is-current');
+    current?.removeAttribute('aria-current');
+    a.classList.add('is-current');
+    a.setAttribute('aria-current', 'location');
+    current = a;
+    // Keep the highlight visible in the class list, scrolling only the list itself, and never
+    // while the pointer is over it, so it cannot fight someone scrolling the list by hand.
+    const rail = toc.parentElement!;
+    if (narrow.matches || rail.matches(':hover')) return;
+    const box = rail.getBoundingClientRect();
+    const item = a.getBoundingClientRect();
+    if (item.top < box.top) rail.scrollTop -= box.top - item.top + 8;
+    else if (item.bottom > box.bottom) rail.scrollTop += item.bottom - box.bottom + 8;
+  };
+  const sections = [...document.querySelectorAll<HTMLElement>('.rl-session')];
+  const update = () => {
+    const line = window.innerHeight / 3;
+    let id = sections[0]?.id;
+    for (const sec of sections) {
+      if (sec.getBoundingClientRect().top <= line) id = sec.id;
+      else break;
+    }
+    if (id) mark(id);
+  };
+  let queued = false;
+  window.addEventListener(
+    'scroll',
+    () => {
+      if (queued) return;
+      queued = true;
+      requestAnimationFrame(() => {
+        queued = false;
+        update();
+      });
+    },
+    { passive: true },
+  );
+  update();
+</script>

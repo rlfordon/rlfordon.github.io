@@ -260,3 +260,39 @@ footer.colophon a:hover { color: var(--link); }
   .resource .access { padding-top: 0; margin-top: 0.3rem; order: 1; }
   .resource .access small { display: inline; margin-left: 0.4rem; }
 }
+
+/* ---- course reading lists -------------------------------------------- */
+/* Same two-column shape as .guide: a sticky class list on the left, readings on the right. */
+.rl-layout { display: grid; grid-template-columns: 15rem 1fr; gap: 2rem 3rem; align-items: start; }
+.rl-num { font-family: var(--sans); font-weight: 600; font-size: 0.72rem; font-variant-numeric: tabular-nums; letter-spacing: 0.02em; color: var(--link); display: inline-block; min-width: 3.2ch; margin-right: 0.6rem; }
+a.toc-item { text-decoration: none; }
+.rl-layout .toc { overscroll-behavior: contain; }
+.rl-toc-list { margin-top: 0.2rem; border-top: 1px solid var(--rule); padding-top: 0.3rem; }
+.rl-toc-item { grid-template-columns: 2.4rem 1fr 2ch; padding-top: 0.2rem; padding-bottom: 0.2rem; line-height: 1.3; }
+.rl-toc-item .rl-num { margin: 0; min-width: 0; white-space: nowrap; font-weight: 500; color: var(--muted); }
+.rl-toc-item.is-current { color: var(--ink); font-weight: 600; border-left-color: var(--teal); }
+.rl-toc-item.is-current .rl-num, .rl-toc-item.is-current data { color: var(--link); }
+.rl-toc-item:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; }
+.rl-sessions { min-width: 0; max-width: var(--measure); border-top: 2px solid var(--teal); }
+.rl-session { padding: 1.6rem 0 1.2rem; border-top: 1px solid var(--rule); scroll-margin-top: 1rem; }
+.rl-session:first-child { border-top: 0; padding-top: 1rem; }
+.rl-session h2 { font-size: 1.35rem; line-height: 1.2; margin: 0 0 0.3rem; }
+.rl-time { margin: 0 0 0.4rem; }
+.rl-note { font-size: 0.92rem; color: var(--ink-soft); font-weight: 300; margin: 0.4rem 0 0.6rem; }
+.rl-group { margin-top: 0.9rem; }
+.rl-level { font-size: 0.66rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin: 0 0 0.3rem; }
+.rl-readings { list-style: none; margin: 0; padding: 0; font-size: 0.92rem; line-height: 1.45; }
+.rl-readings li { padding: 0.3rem 0 0.3rem 0.8rem; border-left: 2px solid var(--rule); margin-bottom: 0.25rem; overflow-wrap: anywhere; }
+.rl-authors { color: var(--ink-soft); }
+.rl-title { font-weight: 600; color: var(--ink); }
+a.rl-title { color: var(--ink); text-decoration-color: var(--teal); }
+a.rl-title:hover { color: var(--link); }
+.rl-source { color: var(--muted); font-size: 0.85rem; }
+.rl-links { display: inline-flex; flex-wrap: wrap; gap: 0.2rem 0.8rem; margin-left: 0.6rem; font-size: 0.82rem; font-weight: 500; }
+.rl-read { display: block; font-size: 0.82rem; color: var(--ink-soft); font-style: italic; margin-top: 0.1rem; }
+@media (max-width: 52rem) {
+  .rl-layout { grid-template-columns: 1fr; gap: 1.5rem; }
+  .rl-toc-list { columns: 2 16rem; column-gap: 1.5rem; }
+  .rl-toc-item { break-inside: avoid; }
+  .rl-session { scroll-margin-top: 0.5rem; }
+}

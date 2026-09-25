@@ -1,0 +1,656 @@
+title: "21st Century Lawyering: Spring 2026 reading list"
+course: 21st Century Lawyering
+institution: The Ohio State University Moritz College of Law
+term: Spring 2026
+description: >
+  The class-by-class readings for a law school course on legal technology and AI: LLM basics,
+  prompting, legal design, ethics, hallucinations, research, vibe-coding, bias, agents, access to
+  justice, and the business of law.
+intro: >
+  The readings I assigned in 21st Century Lawyering, a course on legal technology and generative AI
+  for law students, in Spring 2026. Classes are numbered by week and meeting (1-1 is the first class
+  of week one). Times are the estimates students were given for the required readings. Links were
+  checked in August 2026; where a link had moved, it points to the new location.
+updated: 2026-09-25
+sessions:
+  - id: "1-1"
+    title: Introduction to Legal Technology & Technology as Problem Solving
+    time: 30–40 min
+    readings:
+      - level: required
+        authors: Ursula K. Le Guin
+        title: 'A Rant about "Technology"'
+        url: https://www.ursulakleguin.com/a-rant-about-technology
+      - level: required
+        authors: M.H. Hoeflich
+        title: "From Scriveners to Typewriters: Legal Technology in Historical Perspective"
+        source: 16 Green Bag 2d 435 (2013)
+        url: http://greenbag.org/v16n4/v16n4_articles_hoeflich.pdf
+        note: Skim.
+      - level: required
+        authors: Suffolk LIT Lab
+        title: Legal Technology Overview
+        url: https://projects.suffolklitlab.org/legal-tech-class/docs/legal-tech-overview/legal-tech-overview/
+      - level: optional
+        authors: Jonathan H. Choi, Daniel Schwarcz & Amy J. Monahan
+        title: Lawyering in the Age of Artificial Intelligence
+        source: SSRN
+        url: https://papers.ssrn.com/abstract=4626276
+
+  - id: "1-2"
+    title: Introduction to Legal AI
+    time: 49–60 min
+    readings:
+      - level: required
+        authors: Jess Miers
+        title: A Generative AI Primer for Law Students
+        source: SSRN, Aug. 2025
+        url: https://papers.ssrn.com/abstract=5381890
+      - level: required
+        authors: Ethan Mollick
+        title: "The Shape of AI: Jaggedness, Bottlenecks and Salients"
+        source: One Useful Thing, Dec. 2025
+        url: https://www.oneusefulthing.org/p/the-shape-of-ai-jaggedness-bottlenecks
+      - level: required
+        authors: Celeste Rodriguez Louro
+        title: "Generative AI is not a 'calculator for words'"
+        source: The Conversation, Aug. 18, 2025
+        url: http://theconversation.com/generative-ai-is-not-a-calculator-for-words-5-reasons-why-this-idea-is-misleading-263323
+      - level: required
+        authors: Jordan Furlong
+        title: The fallacy of the calculator
+        url: https://jordanfurlong.substack.com/p/the-fallacy-of-the-calculator
+      - level: required
+        title: 85 AI & Automation Use Cases for Solo and Small Firm Lawyers
+        source: Google Doc
+        url: https://docs.google.com/document/d/1YtkFGUJIYdvgNqa88LfxvEhbDh5a_K7Le1k_ETE2Jvk/mobilebasic
+        note: Skim.
+      - level: optional
+        authors: Harry Surden
+        title: ChatGPT, Large Language Models, and Law
+        source: 92 Fordham L. Rev. (2024)
+        url: https://ir.lawnet.fordham.edu/flr/vol92/iss5/9/
+      - level: optional
+        authors: Harry Surden
+        title: "Artificial Intelligence and Law – An Overview of Recent Technological Changes in LLMs and Law"
+        source: SSRN, 2025
+        url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5135305
+      - level: optional
+        authors: Daniel Schwarcz et al.
+        title: "AI-Powered Lawyering: AI Reasoning Models, Retrieval Augmented Generation, and the Future of Legal Practice"
+        source: SSRN, 2025
+        url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5162111
+
+  - id: "2-1"
+    title: Technical Basics of LLMs
+    time: 45 min
+    readings:
+      - level: required
+        authors: Financial Times
+        title: "Generative AI exists because of the transformer — This is how it works"
+        source: FT interactive
+        url: https://ig.ft.com/generative-ai/
+      - level: required
+        authors: Melanie Mitchell
+        title: Why AI chatbots lie to us
+        source: Science, July 2025
+        url: https://www.science.org/doi/10.1126/science.aea3922
+      - level: required
+        authors: Ivy Grey
+        title: "Why You're Thinking About 'Reasoning' All Wrong"
+        source: WordRake, May 2025
+        url: https://www.wordrake.com/resources/youre-thinking-about-reasoning-wrong
+      - level: optional
+        authors: Murray Shanahan
+        title: Talking About Large Language Models
+        source: arXiv, 2024
+        url: https://arxiv.org/abs/2212.03551
+      - level: optional
+        authors: Ars Technica
+        title: A jargon-free explanation of how AI large language models work
+        source: "2023"
+        url: https://arstechnica.com/science/2023/07/a-jargon-free-explanation-of-how-ai-large-language-models-work/
+      - level: optional
+        title: "The architecture of language: Understanding the mechanics behind LLMs"
+        source: Cambridge Forum on AI, Law and Governance, 2025
+        url: https://www.cambridge.org/core/journals/cambridge-forum-on-ai-law-and-governance/article/architecture-of-language-understanding-the-mechanics-behind-llms/E3DDEFB9C04883733380E04331D6F782
+      - level: optional
+        authors: Antino
+        title: "Pre-Training vs Fine-Tuning vs RAG: Which AI Approach Fits Your Business in 2026?"
+        url: https://www.antino.com/blog/pre-training-vs-fine-tuning-vs-rag
+
+  - id: "2-2"
+    title: Introduction to Prompting
+    time: 30–40 min, plus 10–15 min for one company guide
+    readings:
+      - level: required
+        authors: Jennifer L. Wondracek
+        title: "Mastering AI Prompts for Legal Professionals: Practical Strategies and Tools"
+        source: AALL Spectrum, reprinted on Slaw, Nov. 27, 2024
+        url: https://www.slaw.ca/2024/11/27/mastering-ai-prompts-for-legal-professionals-practical-strategies-and-tools/
+      - level: required
+        authors: MIT Sloan Teaching & Learning Technologies
+        title: "Effective Prompts for AI: The Essentials"
+        source: updated May 30, 2025
+        url: https://mitsloanedtech.mit.edu/ai/basics/effective-prompts/
+      - level: required
+        authors: James Campbell
+        title: "The Intent Pipeline: Why Most Prompt Guides Miss How People Actually Use AI"
+        source: Medium, Dec. 2025
+        url: https://medium.com/@jhcampbe/the-intent-pipeline-why-most-prompt-guides-miss-how-people-actually-use-ai-861042c634d3
+      - level: optional
+        title: AI company prompting guides
+        note: Choose one.
+        links:
+          - label: Anthropic (Claude)
+            url: https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview
+          - label: Google (Gemini)
+            url: https://workspace.google.com/resources/ai/writing-effective-prompts/
+          - label: OpenAI (ChatGPT)
+            url: https://academy.openai.com/public/clubs/work-users-ynjqu/resources/prompting
+          - label: Lexis+ AI
+            url: https://www.lexisnexis.com/documents/20231025032115_small.pdf
+
+  - id: "3-1"
+    title: "Legal Design: From Pain Point to Use Case"
+    time: 40–50 min
+    readings:
+      - level: required
+        authors: Toptal
+        title: "Design Problem Statements: What They Are and How to Frame Them"
+        url: https://www.toptal.com/designers/product-design/design-problem-statement
+      - level: required
+        authors: LegalTechReady
+        title: Needs Assessment, Process Mapping, and Goal Setting
+        url: https://www.legaltechready.com/#1
+        note: Step 1 only, and within it the Needs Assessment and Process Mapping sections.
+      - level: optional
+        authors: Margaret Hagan
+        title: "Law By Design, Ch. 3: The Legal Design Process"
+        url: https://lawbydesign.co/design-process/
+      - level: optional
+        authors: UX Design Institute
+        title: "The IDEO Framework: Desirability, Viability, and Feasibility"
+        url: https://www.uxdesigninstitute.com/blog/desirability-viability-and-feasibility/
+
+  - id: "3-2"
+    title: Evaluating Legal Technology
+    time: about 40 min
+    readings:
+      - level: required
+        authors: Sarah Glassmeyer
+        title: "Evaluating Legal Technology: A Checklist"
+        source: Slaw
+        url: https://www.slaw.ca/2016/03/28/evaluating-legal-technology-a-checklist/
+      - level: required
+        authors: Mary O'Carroll
+        title: Defining and Using Legal Metrics That Actually Work
+        source: Ironclad
+        url: https://ironcladapp.com/resources/articles/legal-metrics
+      - level: required
+        authors: Joshua Yuvaraj
+        title: "The Verification-Value Paradox: A Normative Critique of Gen AI in Legal Practice"
+        source: arXiv; forthcoming Monash U. L. Rev.
+        url: http://arxiv.org/abs/2510.20109
+        note: Read selectively.
+      - level: required
+        authors: Spotdraft
+        title: Legal Tech Leaders Share Practical Approaches to Selection, Evaluating and Managing AI Tools
+        url: https://www.spotdraft.com/blog/practical-approaches-to-selecting-evaluating-and-managing-ai-tools
+
+  - id: "4-1"
+    title: Ethics of Legal Technology
+    time: about 57 min
+    readings:
+      - level: required
+        authors: Wendy J. Muchman
+        title: "Generative Artificial Intelligence Tools: ABA Formal Opinion 512 Provides Needed Guidance on the Benefits and Burdens of Lawyers' Use of GAI"
+        source: The Bar Examiner, Fall 2024
+        url: https://thebarexaminer.ncbex.org/article/fall-2024/generative-artificial-intelligence-tools/
+      - level: required
+        title: Ohio Rules of Professional Conduct, Rule 1.1 and Comment 8
+        url: https://www.supremecourt.ohio.gov/docs/LegalResources/Rules/ProfConduct/profConductRules.pdf
+        note: Pp. 5–6 only.
+      - level: required
+        authors: ABA Litigation News
+        title: Technological Proficiency Is an Ethical Duty
+        url: https://www.americanbar.org/groups/litigation/resources/litigation-news/2025/summer/technological-proficiency-ethical-duty/
+      - level: required
+        authors: Illinois State Bar Ass'n
+        title: "Be Reasonable, People! AI's Impact on Legal Fees"
+        source: ISBA AI Law Section Newsletter
+        url: https://www.isba.org/sections/ai/newsletter/2025/01/bereasonablepeopleaisimpactonlegalfees
+      - level: required
+        authors: Lee, Cooper & Grimmelmann
+        title: "Talkin' 'Bout AI Generation: Copyright and the Generative-AI Supply Chain"
+        source: 72 J. Copyright Soc'y 251 (2025)
+        url: https://copyrightsociety.org/journal-entries/talkin-bout-ai-generation-copyright-and-the-generative-ai-supply-chain/
+        note: Pp. 251–254, § III (261–275), and § IV (276–285).
+      - level: optional
+        authors: Edward Lee
+        title: Updated U.S. Map of Copyright Suits v. AI
+        source: ChatGPT Is Eating the World
+        url: https://chatgptiseatingtheworld.com/2025/12/05/updated-u-s-map-of-copyright-suits-v-ai-dec-5-2025-64-suits/
+      - level: optional
+        title: "ABA Formal Opinion 512: Generative Artificial Intelligence Tools"
+        url: https://www.americanbar.org/content/dam/aba/administrative/professional_responsibility/ethics-opinions/aba-formal-opinion-512.pdf
+
+  - id: "4-2"
+    title: Security & Confidentiality
+    time: about 60 min
+    readings:
+      - level: required
+        authors: NYC Bar
+        title: "Formal Opinion 2025-6: Ethical Issues Affecting Use of AI to Record, Transcribe and Summarize Conversations with Clients"
+        url: https://www.nycbar.org/reports/formal-opinion-2025-6-ethical-issues-affecting-use-of-ai-to-record-transcribe-and-summarize-conversations-with-clients/
+      - level: required
+        authors: Carolyn Elefant
+        title: How Attorneys Can Ethically Use ChatGPT for Client Matters Without Redacting Everything
+        source: MyShingle, Nov. 2025
+        url: https://www.myshingle.com/2026/05/why-attorneys-can-ethically-use-general-purpose-genai-for-client-matters-without-redacting-everything/
+        note: Read critically; it is advocacy. Since revised and retitled to cover general-purpose tools beyond ChatGPT.
+      - level: required
+        authors: Melissa Heidrick
+        title: "Shadow AI: The IT Risk We Can't Ignore"
+        source: ABA Law Practice Magazine, Sept./Oct. 2025
+        url: https://www.americanbar.org/groups/law_practice/resources/law-practice-magazine/2025/september-october-2025/shadow-ai-it-risk/
+      - level: required
+        authors: Ella Sherman
+        title: "'Tip of the Iceberg': Lawyers Look to Address Risks From Gen AI Transcription Tools"
+        source: Law.com / Legaltech News, Sept. 23, 2025
+        url: https://www.law.com/legaltechnews/2025/09/23/tip-of-the-iceberg-lawyers-look-to-address-risks-from-gen-ai-transcription-tools-/
+      - level: required
+        authors: ABA Cybersecurity Task Force
+        title: Vendor Contracting Checklist
+        url: https://www.eckertseamans.com/app/uploads/ABA_Cybersecurity-Task-Force-Vendor-Contracting-Checklist.pdf
+        note: Skim.
+      - level: optional
+        title: "Ohio Advisory Opinion 2017-5: Confidentiality and Cloud Storage"
+        url: https://www.ohioadvop.org/wp-content/uploads/2017/03/Adv.-Op.-2017-5.pdf
+      - level: optional
+        authors: Clio
+        title: 2026 Law Firm Data Security Guide
+        url: https://www.clio.com/blog/data-security-law-firms/
+      - level: optional
+        authors: Above the Law
+        title: "Washington Post Analysis Shows We Are Talking Too Much and Getting Questionable Advice From LLMs — And It May All Be Discoverable"
+        url: https://abovethelaw.com/2025/11/washington-post-analysis-shows-we-are-talking-too-much-and-getting-questionable-advice-from-llms-and-it-may-all-be-discoverable/
+
+  - id: "5-1"
+    title: Advanced Prompting & Context Engineering
+    note: No readings. Students set up access to Gemini, NotebookLM, Westlaw CoCounsel, and Lexis Protégé before class.
+
+  - id: "5-2"
+    title: LLMs and Legal Work Lab
+    note: No readings. An in-class CoCounsel lab working from an appellate case file and a set of merger agreements.
+
+  - id: "6-1"
+    title: Building Legal Technology
+    time: 20–25 min
+    readings:
+      - level: required
+        authors: Gavel
+        title: What is Document Automation?
+        url: https://www.gavel.io/resources/what-is-document-automation
+      - level: required
+        authors: Miguel Guhlin
+        title: "Create Your #GenAI Assistant: Google Gemini Gem"
+        url: https://mguhlin.org/2025/07/01/create-your-genai-assistant-googlegemini-gem/
+      - level: required
+        authors: Anthropic
+        title: "Claude legal plugin: review-contract skill"
+        source: GitHub
+        url: https://github.com/anthropics/knowledge-work-plugins/tree/main/legal/skills/review-contract
+      - level: optional
+        title: An Introduction to QnA Markup
+        source: video, 15–20 min
+        url: https://www.youtube.com/watch?v=RVhzQ1JVi3s
+      - level: optional
+        authors: Anthropic
+        title: "Claude legal plugin: triage-nda and brief skills"
+        source: GitHub
+        links:
+          - label: triage-nda
+            url: https://github.com/anthropics/knowledge-work-plugins/tree/main/legal/skills/triage-nda
+          - label: brief
+            url: https://github.com/anthropics/knowledge-work-plugins/tree/main/legal/skills/brief
+
+  - id: "6-2"
+    title: Vibe-Coding & Legal Data Sources
+    time: about 35 min, plus Gemini Canvas or Google AI Studio setup
+    readings:
+      - level: required
+        authors: Jamie Tso
+        title: "The Era of Vibe Coding: How to Get Started"
+        url: https://tsojamie.substack.com/p/the-era-of-vibe-coding-how-to-get
+      - level: required
+        authors: Artificial Lawyer
+        title: "Jamie Tso Interview: Vibe-Coding Your Own Legal AI Tools"
+        source: Jan. 5, 2026
+        url: https://www.artificiallawyer.com/2026/01/05/jamie-tso-interview-vibe-coding-your-own-legal-ai-tools/
+      - level: required
+        authors: Debevoise & Plimpton
+        title: "AI Use Cases for Lawyers, Part 1: Vibe Coding a Training Game for a New Policy"
+        url: https://www.debevoisedatablog.com/2025/09/02/ai-use-cases-for-lawyers-part-1-vibe-coding-a-training-game-for-a-new-policy/
+      - level: required
+        authors: Browserless
+        title: Is Web Scraping Legal in 2025?
+        url: https://www.browserless.io/blog/is-web-scraping-legal
+      - level: optional
+        authors: Roya
+        title: The Non-Technical Guide to Vibe Coding with Google AI Studio
+        source: Medium
+        url: https://medium.com/@roya90/the-non-technical-guide-to-vibe-coding-with-google-ai-studio-76d8797db744
+      - level: optional
+        title: Vibe-coded legal tool collections
+        links:
+          - label: Jamie Tso's apps
+            url: https://jamievibes.replit.app/
+          - label: LegalQuants
+            url: https://legalquants.com
+      - level: optional
+        authors: Dorna Moini
+        title: "Vibe Coding a Harvey Competitor: Fun Demo, Expensive Reality"
+        source: LinkedIn
+        url: https://www.linkedin.com/pulse/vibe-coding-harvey-competitor-fun-demo-expensive-reality-dorna-moini-umy6c
+      - level: reference
+        title: Legal data sources
+        links:
+          - label: PACER
+            url: https://pacer.uscourts.gov
+          - label: CourtListener / RECAP
+            url: https://www.courtlistener.com
+          - label: SEC EDGAR API
+            url: https://www.sec.gov/search-filings/edgar-application-programming-interfaces
+      - level: reference
+        authors: Rebecca Fordon
+        title: RSS Feeds, PACER, and the Fight for Access to Federal Docket Information
+        source: RIPS Law Librarian Blog
+        url: https://ripslawlibrarian.wordpress.com/2020/09/16/rss-feeds-pacer-and-the-fight-for-access-to-federal-docket-information/
+
+  - id: "7-1"
+    title: "Hallucinations: Causes, Detection, Mitigation"
+    time: 35–40 min
+    readings:
+      - level: required
+        authors: Rebecca Fordon
+        title: What the Science Says About AI Hallucinations in Legal Research
+        source: AI Law Librarians, Feb. 19, 2026
+        url: https://www.ailawlibrarians.com/2026/02/19/what-the-science-says-about-hallucinations-in-legal-research/
+      - level: required
+        title: "Declaration of Celeste H.G. Boyd, N.Z. v. Fenix International Ltd."
+        source: C.D. Cal. 2025
+        url: https://www.courtlistener.com/docket/68990373/176/2/nz-v-fenix-international-limited/
+        note: Appendix A.
+      - level: required
+        authors: Jason Koebler & Jules Roscoe
+        title: 18 Lawyers Caught Using AI Explain Why They Did It
+        source: 404 Media, Sept. 2025
+        url: https://www.404media.co/18-lawyers-caught-using-ai-explain-why-they-did-it/
+      - level: reference
+        authors: Damien Charlotin
+        title: AI Hallucination Cases Database
+        url: https://www.damiencharlotin.com/hallucinations/
+      - level: reference
+        authors: RAILS (Duke Center on Law & Tech)
+        title: Court Orders on AI Use
+        url: https://rails.legal/resources/resource-ai-orders/
+
+  - id: "7-2"
+    title: AI-Enhanced Legal Research
+    time: 40–45 min
+    readings:
+      - level: required
+        authors: Tanya Thomas
+        title: "Teaching Legal Research in the Generative AI Era: When Source Blindness and Source Erasure Collide"
+        source: RIPS Law Librarian Blog
+        links:
+          - label: Part 1
+            url: https://ripslawlibrarian.wordpress.com/2025/11/17/guest-post-teaching-legal-research-in-the-generative-ai-era-when-source-blindness-and-source-erasure-collide-part-1/
+          - label: Part 2
+            url: https://ripslawlibrarian.wordpress.com/2025/11/24/guest-post-teaching-legal-research-in-the-generative-ai-era-when-source-blindness-and-source-erasure-collide-part-2/
+      - level: required
+        authors: Mike Caulfield
+        title: "Google Search's AI is (or should be) about cognitive load"
+        url: https://mikecaulfield.substack.com/p/google-searchs-ai-is-or-should-be
+      - level: required
+        authors: Rebecca Fordon
+        title: "Legal Research Trapping You in an 'AI Tunnel'? Use a Toe-hold to Get Out"
+        source: AI Law Librarians
+        url: https://www.ailawlibrarians.com/2025/10/28/legal-research-trapping-you-in-an-ai-tunnel-use-a-toe-hold-to-get-out/
+      - level: required
+        title: "United States v. Heppner, Memorandum & Order"
+        source: S.D.N.Y. 2026
+        url: https://www.courtlistener.com/docket/71872024/27/united-states-v-heppner/
+      - level: optional
+        authors: Mike Caulfield
+        title: "SIFT for AI: Introduction and Pedagogy"
+        url: https://mikecaulfield.substack.com/p/sift-for-ai-introduction-and-pedagogy
+      - level: optional
+        authors: Carolyn Elefant
+        title: My Experience Comparing Lexis and ChatGPT Deep Research
+        source: MyShingle
+        url: https://myshingle.com/2025/05/articles/artificial-intelligence/my-experience-comparing-lexis-and-chatgpt-deep-research/
+      - level: optional
+        authors: Daniel Schwarcz et al.
+        title: AI-Powered Lawyering
+        source: SSRN
+        url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5162111
+
+  - id: "8-1"
+    title: Microsoft Word & PDF for Legal Practice
+    note: Required work is Procertas training modules (a Word trainer and the PDF for Legal trainer) rather than readings.
+    readings:
+      - level: optional
+        authors: Clio
+        title: Top 13 Microsoft Word Tips for Lawyers
+        url: https://www.clio.com/blog/microsoft-word-hacks-every-lawyer-should-know/
+      - level: optional
+        authors: Redactable
+        title: Redaction Risks and Best Practices for Attorneys
+        url: https://www.redactable.com/blog/redaction-risks-and-best-practices-for-attorneys
+      - level: optional
+        authors: NC Bar Ass'n
+        title: "Exposed! What Lawyers Need to Know About Metadata"
+        url: https://www.ncbar.org/2022/01/04/exposed-what-lawyers-need-to-know-about-metadata/
+
+  - id: "8-2"
+    title: Excel & Data Literacy for Lawyers
+    note: Required work is the Procertas Excel for Legal trainer rather than readings.
+    readings:
+      - level: optional
+        authors: SF Bar Ass'n
+        title: "Excel for Litigators: Tips to Present Numbers and Calculations at Trial"
+        url: https://www.sfbar.org/blog/excel-for-litigators-tips-to-present-numbers-and-calculations-at-trial/
+      - level: optional
+        authors: Clio
+        title: "Excel for Lawyers: Beginner-Friendly Templates and Tips"
+        url: https://www.clio.com/blog/excel-lawyers/
+      - level: optional
+        authors: CaseFleet
+        title: 3 Simple and Effective Uses of Excel for Litigation
+        url: https://www.casefleet.com/blog/from-legal-calendaring-to-case-valuation-how-excel-excels
+
+  - id: "9-1"
+    title: Algorithmic Bias & Discrimination
+    time: 45 min
+    readings:
+      - level: required
+        authors: Wang, Kapoor, Barocas & Narayanan
+        title: Against Predictive Optimization
+        source: interactive web paper
+        url: https://predictive-optimization.cs.princeton.edu
+      - level: required
+        authors: Pulvino, Sutton & Naddeo
+        title: "Hiding in Plain Sight: An Empirical Study of Prosecutorial Bias in AI Legal Analysis"
+        source: 27(1) Colum. Sci. & Tech. L. Rev. (2026)
+        url: https://journals.library.columbia.edu/index.php/stlr/article/view/14543
+        note: Pp. 3–10 and 47–53 only.
+      - level: required
+        title: "Complaint, Nippon Life Ins. Co. of Am. v. OpenAI Found."
+        source: No. 1:26-cv-02448 (N.D. Ill. Mar. 4, 2026)
+        url: https://www.courtlistener.com/docket/72365583/1/nippon-life-insurance-company-of-america-v-openai-foundation/
+
+  - id: "9-2"
+    title: Agentic AI
+    time: 40–50 min
+    readings:
+      - level: required
+        authors: Sam Harden
+        title: Welcome to Law Town
+        url: https://samharden.substack.com/p/welcome-to-law-town
+      - level: required
+        authors: Zack Shapiro
+        title: The Claude-Native Law Firm
+        source: LinkedIn
+        url: https://www.linkedin.com/pulse/claude-native-law-firm-zack-shapiro-qf7se/
+      - level: required
+        authors: Sean Harrington
+        title: How to Crash the Legal Tech Market
+        source: Geek Law Blog, Feb. 2026
+        url: https://www.geeklawblog.com/2026/02/how-to-crash-the-legal-tech-market.html
+      - level: optional
+        authors: Scott Shambaugh
+        title: An AI Agent Published a Hit Piece on Me
+        url: https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/
+
+  - id: "10-1"
+    title: Tool Presentations
+    note: No readings. Student presentations.
+
+  - id: "10-2"
+    title: Access to Justice & Technology
+    time: about 15 min of reading, plus video
+    note: An asynchronous module.
+    readings:
+      - level: required
+        authors: Sam Harden
+        title: Thinking Upstream in the Legal Ecosystem
+        source: video, about 41 min
+      - level: required
+        authors: Sarah Glassmeyer
+        title: So You Want to Create an A2J Tool
+        url: https://sarahglassmeyer.com/?p=2146
+      - level: required
+        authors: Margaret Hagan (Stanford Legal Design Lab)
+        title: "Measuring What Matters: A Quality Rubric for Legal AI Answers"
+        url: https://justiceinnovation.law.stanford.edu/measuring-what-matters-a-quality-rubric-for-legal-ai-answers/
+        note: Pp. 4–5 (§ 2.2), p. 7 (§ 3.1), and pp. 10–11 (§§ 4.1–4.3).
+      - level: optional
+        authors: Vivek Sankaran
+        title: They're Not Waiting for Us
+        url: https://viveksankaran.substack.com/p/theyre-not-waiting-for-us
+      - level: optional
+        authors: Jordan Furlong
+        title: Level the Playing Field
+        url: https://jordanfurlong.substack.com/p/level-the-playing-field-give-consumers
+      - level: optional
+        authors: Stanford Legal Design Lab
+        title: Benchmark Principles for A2J Tech
+        url: https://justiceinnovation.law.stanford.edu/benchmark-principles-for-a2j-tech/
+
+  - id: "11-1"
+    title: Review & Connections
+    note: No new readings.
+
+  - id: "11-2"
+    title: eDiscovery, Litigation Analytics & Transactional Technology
+    note: No readings. Taught through an eDiscovery simulation.
+    readings:
+      - level: reference
+        authors: EDRM
+        title: EDRM Model
+        url: https://edrm.net/resources/frameworks-and-standards/edrm-model/
+
+  - id: "12-1"
+    title: Business of Law & Technology Economics
+    time: 60–70 min
+    readings:
+      - level: required
+        authors: Nancy B. Rapoport & Joseph R. Tiano, Jr.
+        title: "Fighting the Hypothetical: Why Law Firms Should Rethink the Billable Hour in the Generative AI Era"
+        source: 20 Wash. J.L. Tech. & Arts (2025)
+        url: https://digitalcommons.law.uw.edu/wjlta/vol20/iss2/2
+        note: Parts I and III; Part IV optional.
+      - level: required
+        authors: Julian Birkinshaw & David Lancefield
+        title: How Professional Services Firms Dodged Disruption
+        source: MIT Sloan Management Review
+        url: https://sloanreview.mit.edu/article/how-professional-services-firms-dodged-disruption/
+      - level: required
+        authors: Justin Curl, Sayash Kapoor & Arvind Narayanan
+        title: AI Won't Automatically Make Legal Services Cheaper
+        source: Lawfare
+        url: https://www.lawfaremedia.org/article/ai-won-t-automatically-make-legal-services-cheaper
+      - level: required
+        authors: Julien Bek (Sequoia Capital)
+        title: "Services: The New Software"
+        url: https://sequoiacap.com/article/services-the-new-software/
+      - level: optional
+        authors: Thomson Reuters Institute
+        title: AI in Professional Services 2026
+        url: https://www.thomsonreuters.com/en-us/posts/technology/ai-in-professional-services-report-2026/
+      - level: optional
+        authors: Clio
+        title: Legal Trends Reports
+        links:
+          - label: "2024"
+            url: https://www.clio.com/wp-content/uploads/2024/10/NA-2024-Legal-Trends-Report-Full-Publication.pdf
+          - label: "2025"
+            url: https://www.clio.com/wp-content/uploads/2025/09/2025-Legal-Trends-Report.pdf
+
+  - id: "12-2"
+    title: Change Management & Technology Stacks
+    time: 25–30 min
+    readings:
+      - level: required
+        authors: Bill Henderson
+        title: Variables Determining the Rate of Adoption of Innovations
+        source: Legal Evolution, Post 008
+        url: https://www.legalevolution.org/2017/05/variables-determining-the-rate-of-adoption-of-innovations-008/
+      - level: required
+        authors: Mary O'Carroll
+        title: Every Legal Department Needs a Legal Engineer. Most Don't Have One.
+        url: https://maryocarroll.substack.com/p/every-legal-department-needs-a-legal
+
+  - id: "13-1"
+    title: Courts, Productivity & Remote Practice
+    time: 55 min
+    readings:
+      - level: required
+        authors: Anika Jaitley, Daniel W. Linna Jr., Hon. Xavier Rodriguez, V.S. Subrahmanian & Siyu Tao
+        title: "Artificial Intelligence in Federal Courts: A Random-Sample Survey of Judges"
+        source: 27 Sedona Conf. J. (Apr. 2026)
+        url: https://www.lawnext.com/wp-content/uploads/2026/03/Artificial_Intelligence_in_Federal_Courts_preprint.pdf
+        note: Pp. 5–7, 13–20, 34–41, and 49–59.
+      - level: required
+        authors: CNBC
+        title: People with ADHD, Autism, Dyslexia Say AI Agents Are Helping Them Succeed at Work
+        url: https://www.cnbc.com/2025/11/08/adhd-autism-dyslexia-jobs-careers-ai-agents-success.html
+      - level: required
+        authors: Lawyerist
+        title: Managing a Modern Law Office That Is Paperless and Remote
+        url: https://lawyerist.com/managing-law-firm/virtual-paperless/
+      - level: required
+        authors: BCG Attorney Search
+        title: "Remote Work in Law Firms 2025–2026: Transparency Report, Policy Rankings & Negotiation Playbook"
+        url: https://www.bcgsearch.com/sp/bcg-reports/attorney-retention/remote_work_in_law_firms_2025.php
+      - level: optional
+        authors: Washington Post / The Daily Record
+        title: Judges Increasingly Using AI to Draft Rulings and Prepare for Hearings
+        source: Apr. 6, 2026
+        url: https://thedailyrecord.com/2026/04/06/judges-use-ai-draft-rulings-hearings/
+      - level: optional
+        authors: deeflect
+        title: How ADHD and AI Work Together Better Than Any Productivity System I Tried
+        source: HackerNoon, Apr. 2026
+        url: https://hackernoon.com/how-adhd-and-ai-work-together-better-than-any-productivity-system-i-tried
+      - level: optional
+        authors: Leon Furze
+        title: "Lived Experience: Using AI as an AuDHD Adult"
+        source: Feb. 2026
+        url: https://leonfurze.com/2026/02/22/lived-experience-using-ai-as-an-audhd-adult/
+
+  - id: "13-2"
+    title: "Will Robots Take Our Jobs? (Part 2) & Course Synthesis"
+    note: No assigned readings.
