@@ -8,11 +8,26 @@ access: purchase
 price: "$17 ebook; $23 print and ebook"
 url: https://aspenpublishing.com/products/sloan-usinggenerativeai3
 audience: [jd-students]
-topics: [legal-research, prompting, accuracy-and-verification]
 description: >
   Short supplement for introducing generative AI into a legal research course, third edition. Covers
   the advantages and limits of AI for research, tasks it suits and does not, prompting, and citing
   AI-generated material. Follows the chapters of the author's Basic Legal Research and can also be
-  used on its own. No chapter list published.
+  used on its own.
+contents:
+  - title: "Introduction"
+    note: "Forms of AI and how they fit into a research process."
+    topics: [ai-fundamentals, legal-research]
+  - title: "Advantages and Challenges of Legal Research with AI Tools"
+    note: "Tasks AI is and is not useful for; research pitfalls."
+    topics: [legal-research, accuracy-and-verification]
+  - title: "Crafting Effective AI Prompts"
+    topics: [prompting]
+  - title: "Citing and Acknowledging Use of AI"
+    topics: [academic-integrity-and-student-use]
+  - title: "Research Examples Using AI"
+    note: "Worked examples, including evaluating AI research results."
+    topics: [legal-research, accuracy-and-verification]
+  - title: "Checklist for Research with AI Tools"
+    topics: [legal-research]
 added: 2026-09-25
 verified: 2026-09-25
