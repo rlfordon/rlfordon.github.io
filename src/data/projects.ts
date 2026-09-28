@@ -95,6 +95,13 @@ export const groups: { title: string; color: KindColor; intro: string; items: Pr
         ],
       },
       {
+        name: 'Citation Verifier',
+        blurb:
+          'Checks AI-generated case citations against CourtListener: does the cite exist, does it belong to the case named, and does the case support the proposition it is cited for.',
+        live: 'https://verify-and-retrieve.onrender.com/',
+        repo: 'https://github.com/rlfordon/citation-verifier',
+      },
+      {
         name: 'Docket Q&A',
         blurb: 'Ask questions of bankruptcy case documents pulled from the RECAP Archive.',
         repo: 'https://github.com/rlfordon/docket-qna',
