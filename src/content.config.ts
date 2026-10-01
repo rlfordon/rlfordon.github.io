@@ -43,6 +43,12 @@ export const RESOURCE_KINDS = [
   'website',
   'article',
   'bibliography',
+  'newsletter',
+  'podcast',
+  'blog',
+  'news-site',
+  'tracker',
+  'reference',
 ] as const;
 
 export const ACCESS_TYPES = ['open', 'free', 'subscription', 'purchase'] as const;
@@ -77,6 +83,8 @@ const resources = defineCollection({
     license: z.string().optional(),
     /** Free text, e.g. "$65 print". Goes stale; leans on `verified`. */
     price: z.string().optional(),
+    /** For ongoing sources: how often it publishes, e.g. "Weekly". Goes stale; leans on `verified`. */
+    frequency: z.string().optional(),
     url: z.string().url(),
     links: z.array(z.object({ label: z.string(), url: z.string().url() })).default([]),
     audience: z.array(z.enum(AUDIENCES)).default([]),
@@ -103,9 +111,20 @@ const guides = defineCollection({
     title: z.string(),
     description: z.string(),
     intro: z.string().optional(),
+    /** What the list holds, for the page's counts and messages. */
+    noun: z.object({ one: z.string(), many: z.string() }).default({ one: 'book', many: 'books' }),
+    /** Hint under the Topics heading; the default describes chapter tagging. */
+    topicsHint: z.string().optional(),
     updated: fullDate,
     draft: z.boolean().default(false),
-    items: z.array(z.object({ ref: reference('resources'), note: z.string().optional() })),
+    items: z.array(
+      z.object({
+        ref: reference('resources'),
+        note: z.string().optional(),
+        /** The guide author's own picks, marked on the row and offered as a filter. */
+        favorite: z.boolean().default(false),
+      }),
+    ),
   }),
 });
 

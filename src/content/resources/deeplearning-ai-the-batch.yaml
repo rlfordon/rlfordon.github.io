@@ -1,0 +1,14 @@
+title: "The Batch"
+authors:
+  - name: "Andrew Ng"
+publisher: "DeepLearning.AI"
+kind: newsletter
+access: free
+frequency: "Weekly"
+url: https://www.deeplearning.ai/the-batch/
+audience: [general]
+topics: [how-llms-work, ai-fundamentals]
+description: >
+  Weekly roundup of AI research and industry news with commentary from Andrew Ng. Accessible to non-specialists.
+added: 2026-10-01
+verified: 2026-10-01

@@ -1,0 +1,13 @@
+title: "MIT Technology Review: Artificial Intelligence"
+publisher: "MIT Technology Review"
+kind: news-site
+access: subscription
+price: "Limited free articles"
+frequency: "Several times a week"
+url: https://www.technologyreview.com/topic/artificial-intelligence/
+audience: [general]
+topics: [ai-fundamentals, ai-regulation]
+description: >
+  Reported journalism and explainers on AI capabilities, research, policy, and social impact.
+added: 2026-10-01
+verified: 2026-10-01

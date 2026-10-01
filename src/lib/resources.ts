@@ -73,10 +73,16 @@ export const KIND_LABELS: Record<Resource['kind'], string> = {
   website: 'Website',
   article: 'Article',
   bibliography: 'Bibliography',
+  newsletter: 'Newsletter',
+  podcast: 'Podcast',
+  blog: 'Blog',
+  'news-site': 'News site',
+  tracker: 'Tracker',
+  reference: 'Reference',
 };
 
 /**
- * Filter facets. The twelve kinds roll up into five groups because most kinds
+ * Filter facets. The kinds roll up into a few groups because most kinds
  * have one to three records and would be noise as separate choices.
  */
 export const KIND_GROUPS: { id: string; label: string; kinds: Resource['kind'][] }[] = [
@@ -84,6 +90,10 @@ export const KIND_GROUPS: { id: string; label: string; kinds: Resource['kind'][]
   { id: 'study-aids', label: 'Study aids', kinds: ['study-aid'] },
   { id: 'practitioner', label: 'Practitioner & general', kinds: ['practitioner-book', 'monograph', 'treatise'] },
   { id: 'courses', label: 'Courses & syllabi', kinds: ['online-course', 'syllabus', 'website'] },
+  { id: 'newsletters', label: 'Newsletters & blogs', kinds: ['newsletter', 'blog'] },
+  { id: 'news', label: 'News sites', kinds: ['news-site'] },
+  { id: 'podcasts', label: 'Podcasts', kinds: ['podcast'] },
+  { id: 'trackers', label: 'Trackers & reference', kinds: ['tracker', 'reference'] },
 ];
 // Articles and bibliographies have no group of their own; a record of those kinds still lists, but no Kind chip selects it.
 

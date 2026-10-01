@@ -1,0 +1,13 @@
+title: "AI Hallucination Cases"
+authors:
+  - name: "Damien Charlotin"
+kind: tracker
+access: free
+frequency: "Continuously updated"
+url: https://www.damiencharlotin.com/hallucinations/
+audience: [practitioners, jd-students, faculty]
+topics: [accuracy-and-verification, courts-and-judicial-use]
+description: >
+  Database of court decisions addressing AI-hallucinated content in filings, with more than 2,000 cases worldwide.
+added: 2026-10-01
+verified: 2026-10-01

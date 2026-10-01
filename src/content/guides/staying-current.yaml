@@ -1,0 +1,56 @@
+title: "Sources for following AI and law"
+description: >
+  Newsletters, news sites, podcasts, blogs, and trackers for keeping up with AI, legal AI, and AI law and policy.
+intro: >
+  Ongoing sources for keeping up with AI in general and with AI in law: news, analysis, legal technology
+  coverage, trackers, and policy. Don't try to follow everything. Pick one dependable general source and one
+  tied to your own field, and build a habit you can keep. My own favorites are marked; use the My favorites
+  filter to see just those. Frequency and access are as of the last check.
+noun: { one: source, many: sources }
+topicsHint: Tagged on each source. Pick one to see the sources that cover it; use + to add topics and find sources that cover them all.
+updated: 2026-10-01
+items:
+  - ref: tldr-ai
+  - ref: whittemore-ai-daily-brief
+  - ref: the-neuron
+  - ref: mit-technology-review-ai
+  - ref: techcrunch-ai
+  - ref: the-verge-ai
+  - ref: mollick-one-useful-thing
+    favorite: true
+  - ref: narayanan-kapoor-ai-as-normal-technology
+  - ref: clark-import-ai
+  - ref: deeplearning-ai-the-batch
+  - ref: bender-hanna-mystery-ai-hype-theater-3000
+  - ref: newton-platformer
+  - ref: willison-weblog
+  - ref: shane-ai-weirdness
+  - ref: mitchell-ai-guide-for-thinking-humans
+  - ref: stanford-hai-ai-index
+  - ref: nist-ai-resource-center
+  - ref: ambrogi-lawnext
+    favorite: true
+  - ref: artificial-lawyer
+  - ref: legaltech-news
+  - ref: edwards-lawyer-ex-machina
+    favorite: true
+  - ref: kubicki-brainyacts
+    favorite: true
+  - ref: legaltech-hub
+    favorite: true
+  - ref: lambert-gebauer-geek-in-review
+  - ref: legal-it-insider
+  - ref: charlotin-ai-hallucination-cases
+  - ref: ai-law-librarians
+  - ref: lee-chatgpt-is-eating-the-world
+  - ref: lawfare
+  - ref: tech-policy-press
+  - ref: iapp-ai-governance-dashboard
+  - ref: duffy-legal-tech-trends
+  - ref: pacifici-bespacific
+  - ref: tay-musings-about-librarianship
+  - ref: guadamuz-technollama
+  - ref: oecd-ai-policy-observatory
+  - ref: montreal-ai-ethics-brief
+  - ref: harden-team-do-something
+  - ref: law360-pulse-legal-tech-ai

@@ -1,0 +1,15 @@
+title: "Lawfare"
+publisher: "Lawfare"
+kind: news-site
+access: free
+frequency: "Daily"
+url: https://www.lawfaremedia.org/
+links:
+  - label: "Scaling Laws podcast"
+    url: https://www.lawfaremedia.org/podcasts-multimedia/podcast/scaling-laws
+audience: [practitioners, faculty]
+topics: [ai-regulation, national-security]
+description: >
+  Articles and podcasts on law, national security, and technology, including AI regulation. Its Scaling Laws podcast, with UT Law, focuses on AI.
+added: 2026-10-01
+verified: 2026-10-01

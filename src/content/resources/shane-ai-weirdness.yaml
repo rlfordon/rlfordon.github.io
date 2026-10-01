@@ -1,0 +1,14 @@
+title: "AI Weirdness"
+authors:
+  - name: "Janelle Shane"
+kind: blog
+access: free
+price: "Optional paid tier"
+frequency: "A few times a month"
+url: https://www.aiweirdness.com/
+audience: [general]
+topics: [accuracy-and-verification, how-llms-work]
+description: >
+  Playful experiments with AI models that build intuition about how they behave and fail.
+added: 2026-10-01
+verified: 2026-10-01

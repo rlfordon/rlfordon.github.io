@@ -257,6 +257,7 @@ footer.colophon a:hover { color: var(--link); }
 .resource .chapter-hits .snippet::before { content: none; }
 .resource .chapter-hits .more { color: var(--muted); font-style: italic; }
 .resource .chapter-hits .via-topic { font-weight: 600; color: var(--ink); }
+.resource .meta .fav { color: var(--ink); border-color: var(--yellow); background: color-mix(in srgb, var(--yellow) 22%, transparent); }
 .resource .note { margin: 0.4rem 0 0; font-size: 0.86rem; color: var(--ink); padding-left: 0.75rem; border-left: 2px solid var(--yellow); max-width: 60ch; }
 .resource .links { margin: 0.35rem 0 0; font-size: 0.76rem; font-weight: 500; }
 .resource .contents { margin-top: 0.4rem; font-size: 0.85rem; }

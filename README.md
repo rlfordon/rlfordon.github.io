@@ -10,7 +10,7 @@ Personal site: writing, projects, about. Built with [Astro](https://astro.build)
 | `src/data/media.ts` | Media appearances (podcasts, articles quoting me), newest first, for `/media/`. |
 | `src/data/projects.ts` | Hand-curated project list, grouped into teaching tools, research tooling, and fun; the home page shows the first three of each. |
 | `src/content/resources/*.yaml` | Resource catalog. One YAML record per book, course, or site; the file name is the record id. Neutral descriptions only. |
-| `src/content/guides/*.yaml` | Curated reading lists built from catalog records: a flat list of record ids, each with an optional note for that list. The page sorts and filters; file order is not shown. |
+| `src/content/guides/*.yaml` | Curated reading lists built from catalog records: a flat list of record ids, each with an optional note for that list and an optional `favorite: true` that marks it and adds a My favorites filter. The page sorts and filters; file order is not shown. |
 | `src/content/reading-lists/*.yaml` | Course reading lists as assigned, class by class. Each reading is inline (authors, title, source, url, optional `links` and `note`) at a `level` of required, optional, or reference; these are not catalog records. |
 | `src/lib/resources.ts` | Record helpers: formatting, the facet definitions (kind groups, audiences, published buckets), and sort keys. |
 | `src/data/topics.ts` | Controlled vocabulary for chapter topics, grouped, with a scope note per term. The build rejects any topic id not listed here. |

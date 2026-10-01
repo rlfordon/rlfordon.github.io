@@ -20,9 +20,27 @@ export async function getStaticPaths() {
 const { guide } = Astro.props;
 const g = guide.data;
 
-const entries = (await getEntries(g.items.map((i) => i.ref))).map((entry, i) => ({ entry, note: g.items[i].note }));
-// Server-side default order: newest first, undated last. The client re-sorts on demand.
-entries.sort((a, b) => sortKeys(b.entry.data).date.localeCompare(sortKeys(a.entry.data).date));
+const entries = (await getEntries(g.items.map((i) => i.ref))).map((entry, i) => ({
+  entry,
+  note: g.items[i].note,
+  favorite: g.items[i].favorite,
+}));
+// A list with no dated records (ongoing sources, not books) gets no date sort and defaults to title.
+const dated = entries.some((e) => e.entry.data.date);
+const defaultSort = dated ? 'date' : 'title';
+// Server-side default order matches the default sort. The client re-sorts on demand.
+entries.sort((a, b) =>
+  dated
+    ? sortKeys(b.entry.data).date.localeCompare(sortKeys(a.entry.data).date)
+    : sortKeys(a.entry.data).title.localeCompare(sortKeys(b.entry.data).title),
+);
+const favorites = entries.filter((e) => e.favorite).length;
+const placeholder = entries.some((e) => e.entry.data.contents.length > 0)
+  ? 'Search titles, authors, chapters, topics'
+  : 'Search titles, authors, descriptions, topics';
+const topicsHint =
+  g.topicsHint ??
+  `Tagged on chapters. Pick one to see the ${g.noun.many} with a chapter on it; use + to add topics and find ${g.noun.many} that cover them all.`;
 const total = entries.length;
 const count = (pred: (e: (typeof entries)[number]) => boolean) => entries.filter(pred).length;
 
@@ -76,10 +94,10 @@ const topicGroups = TOPIC_GROUPS.map((grp) => ({
     {g.intro && <p class="intro">{g.intro}</p>}
   </header>
 
-  <div class="guide" id="guide" data-total={total}>
+  <div class="guide" id="guide" data-total={total} data-noun-one={g.noun.one} data-noun-many={g.noun.many} data-default-sort={defaultSort} data-placeholder={placeholder}>
     <nav class="toc" aria-label="Topics">
       <details class="toc-wrap" open>
-        <summary><span class="toc-title">Topics</span><span class="toc-hint">Tagged on chapters. Pick one to see the books with a chapter on it; use + to add topics and find books that cover them all.</span></summary>
+        <summary><span class="toc-title">Topics</span><span class="toc-hint">{topicsHint}</span></summary>
         <button type="button" class="toc-clear" id="toc-clear" hidden>× Clear all topics</button>
         {
           topicGroups.map((grp) => (
@@ -105,10 +123,18 @@ const topicGroups = TOPIC_GROUPS.map((grp) => ({
       <form class="toolbar" id="filters" aria-label="Search and filter" onsubmit="return false">
         <div class="search-row">
           <label class="visually-hidden" for="q">Search</label>
-          <input id="q" type="search" name="q" placeholder="Search titles, authors, chapters, topics" autocomplete="off" disabled />
+          <input id="q" type="search" name="q" placeholder={placeholder} autocomplete="off" disabled />
           <button type="button" class="scope-all" id="scope-all" hidden>Search everything instead</button>
         </div>
         <p class="topic-suggest" id="topic-suggest" hidden></p>
+        {
+          favorites > 0 && (
+            <fieldset class="chips" data-facet="fav">
+              <legend>Show</legend>
+              <label><input type="checkbox" name="fav" value="yes" /><span>My favorites</span><data value={favorites}>{favorites}</data></label>
+            </fieldset>
+          )
+        }
         <fieldset class="chips" data-facet="access">
           <legend>Access</legend>
           {accessValues.map((v) => (
@@ -128,8 +154,8 @@ const topicGroups = TOPIC_GROUPS.map((grp) => ({
         <div class="display">
           <fieldset class="seg">
             <legend>Sort</legend>
-            <label><input type="radio" name="sort" value="date" checked /><span>Newest</span></label>
-            <label><input type="radio" name="sort" value="title" /><span>Title</span></label>
+            {dated && <label><input type="radio" name="sort" value="date" checked /><span>Newest</span></label>}
+            <label><input type="radio" name="sort" value="title" checked={!dated} /><span>Title</span></label>
             <label><input type="radio" name="sort" value="author" /><span>Author</span></label>
           </fieldset>
           <fieldset class="seg">
@@ -140,7 +166,7 @@ const topicGroups = TOPIC_GROUPS.map((grp) => ({
         </div>
       </div>
       <ul class="resource-list" id="resource-list">
-        {entries.map(({ entry, note }) => <ResourceItem resource={entry} note={note} />)}
+        {entries.map(({ entry, note, favorite }) => <ResourceItem resource={entry} note={note} favorite={favorite} />)}
       </ul>
       <p class="empty" id="empty" hidden>Nothing matches.</p>
     </div>
@@ -167,9 +193,12 @@ const topicGroups = TOPIC_GROUPS.map((grp) => ({
   const tocClear = document.getElementById('toc-clear') as HTMLButtonElement;
   const addButtons = Array.from(guide.querySelectorAll<HTMLButtonElement>('.toc-add'));
   const total = rows.length;
-  const FACETS = ['access', 'kind', 'topic'] as const;
+  const FACETS = ['fav', 'access', 'kind', 'topic'] as const;
+  const ONE = guide.dataset.nounOne ?? 'book';
+  const MANY = guide.dataset.nounMany ?? 'books';
+  const DEFAULT_SORT = guide.dataset.defaultSort ?? 'date';
   type Facet = (typeof FACETS)[number];
-  const PLACEHOLDER_ALL = 'Search titles, authors, chapters, topics';
+  const PLACEHOLDER_ALL = guide.dataset.placeholder ?? 'Search titles, authors, chapters, topics';
 
   const inputs = (sel: string) => Array.from(guide.querySelectorAll<HTMLInputElement>(`input${sel}`));
   const labelOf = (facet: string, value: string) =>
@@ -395,7 +424,7 @@ const topicGroups = TOPIC_GROUPS.map((grp) => ({
 
   function apply() {
     const sel = Object.fromEntries(FACETS.map((f) => [f, selected(f)])) as Record<Facet, string[]>;
-    const sort = selected('sort')[0] ?? 'date';
+    const sort = selected('sort')[0] ?? DEFAULT_SORT;
     const view = selected('view')[0] ?? 'full';
     const hits = runSearch(q.value);
     const inSearch = (row: HTMLLIElement) => hits === null || hits.has(row.id);
@@ -453,7 +482,7 @@ const topicGroups = TOPIC_GROUPS.map((grp) => ({
       // Topic names often contain "and", so list them with a separator rather than in a sentence.
       const all = [...sel.topic, t].map((v) => labelOf('topic', v)).join(' + ');
       b.classList.toggle('no-overlap', n === 0);
-      b.title = n === 0 ? `No book covers ${all}` : `Add ${label} (${n} ${n === 1 ? 'book covers' : 'books cover'} ${all})`;
+      b.title = n === 0 ? `No ${ONE} covers ${all}` : `Add ${label} (${n} ${n === 1 ? `${ONE} covers` : `${MANY} cover`} ${all})`;
       b.setAttribute('aria-label', b.title);
     }
 
@@ -562,14 +591,14 @@ const topicGroups = TOPIC_GROUPS.map((grp) => ({
       resultLine.append(clear);
     }
     empty.hidden = shown > 0;
-    empty.textContent = sel.topic.length > 1 && shown === 0 ? 'No single book covers all of these topics. Remove one to widen the list.' : 'Nothing matches.';
+    empty.textContent = sel.topic.length > 1 && shown === 0 ? `No single ${ONE} covers all of these topics. Remove one to widen the list.` : 'Nothing matches.';
     tocClear.hidden = sel.topic.length === 0;
 
     // URL state.
     const params = new URLSearchParams();
     if (hits !== null) params.set('q', q.value.trim());
     for (const f of active) params.set(f, sel[f].join(','));
-    if (sort !== 'date') params.set('sort', sort);
+    if (sort !== DEFAULT_SORT) params.set('sort', sort);
     if (view !== 'full') params.set('view', view);
     const qs = params.toString();
     history.replaceState(null, '', qs ? `?${qs}` : location.pathname);

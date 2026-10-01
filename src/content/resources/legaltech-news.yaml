@@ -1,0 +1,12 @@
+title: "Legaltech News"
+publisher: "ALM"
+kind: news-site
+access: subscription
+frequency: "Daily"
+url: https://www.law.com/legaltechnews/
+audience: [practitioners]
+topics: [tools-and-platforms, law-firm-business]
+description: >
+  Reported coverage of legal technology vendors, law firms, courts, and professional change.
+added: 2026-10-01
+verified: 2026-10-01

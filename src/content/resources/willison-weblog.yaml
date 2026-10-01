@@ -1,0 +1,13 @@
+title: "Simon Willison's Weblog"
+authors:
+  - name: "Simon Willison"
+kind: blog
+access: free
+frequency: "Daily"
+url: https://simonwillison.net/
+audience: [general]
+topics: [how-llms-work, tools-and-platforms, ai-agents]
+description: >
+  Careful, hands-on testing of new models and tools by a software developer, with frequent short notes and longer write-ups.
+added: 2026-10-01
+verified: 2026-10-01

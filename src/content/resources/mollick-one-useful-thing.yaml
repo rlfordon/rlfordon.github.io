@@ -1,0 +1,14 @@
+title: "One Useful Thing"
+authors:
+  - name: "Ethan Mollick"
+kind: newsletter
+access: free
+price: "Optional paid tier"
+frequency: "A few times a month"
+url: https://www.oneusefulthing.org/
+audience: [general, faculty]
+topics: [tools-and-platforms, prompting, teaching-with-ai]
+description: >
+  Practical, hands-on analysis of what current AI tools can do and how they change work and education, from a Wharton professor.
+added: 2026-10-01
+verified: 2026-10-01

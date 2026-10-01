@@ -15,8 +15,10 @@ interface Props {
   resource: CollectionEntry<'resources'>;
   /** Curatorial note from the guide that lists this record. */
   note?: string;
+  /** One of the guide author's own picks. */
+  favorite?: boolean;
 }
-const { resource, note } = Astro.props;
+const { resource, note, favorite = false } = Astro.props;
 const r = resource.data;
 const authors = formatAuthors(r);
 const pub = formatPublication(r);
@@ -34,6 +36,7 @@ const topics = [...new Set([...r.topics, ...r.contents.flatMap((c) => c.topics)]
   data-for={r.audience.join(' ')}
   data-pub={publishedBucket(r)}
   data-topic={topics.join(' ')}
+  data-fav={favorite ? 'yes' : ''}
   data-sort-date={keys.date}
   data-sort-title={keys.title}
   data-sort-author={keys.author}
@@ -44,9 +47,12 @@ const topics = [...new Set([...r.topics, ...r.contents.flatMap((c) => c.topics)]
       {authors && <span class="authors">{authors}</span>}
       {authors && pub && sep}
       {pub}
+      {(authors || pub) && r.frequency && sep}
+      {r.frequency}
       {sep}
       {KIND_LABELS[r.kind]}
       {publishedBucket(r) === 'older' && <span class="era">Pre-generative AI</span>}
+      {favorite && <span class="era fav">Favorite</span>}
     </p>
     <p class="chapter-hits" hidden></p>
     <p class="desc">{r.description}</p>

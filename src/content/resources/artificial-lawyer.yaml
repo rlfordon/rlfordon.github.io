@@ -1,0 +1,13 @@
+title: "Artificial Lawyer"
+authors:
+  - name: "Richard Tromans"
+kind: news-site
+access: free
+frequency: "Daily"
+url: https://www.artificiallawyer.com/
+audience: [practitioners]
+topics: [tools-and-platforms, law-firm-business]
+description: >
+  News and analysis on legal AI products, law firms, and the business case for AI-augmented legal work.
+added: 2026-10-01
+verified: 2026-10-01
