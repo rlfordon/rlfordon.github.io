@@ -54,3 +54,7 @@ items:
   - ref: montreal-ai-ethics-brief
   - ref: harden-team-do-something
   - ref: law360-pulse-legal-tech-ai
+  - ref: aall-knowitaall
+    favorite: true
+  - ref: above-the-law-technology
+  - ref: chronicle-jagged-intelligence

@@ -1,14 +1,21 @@
 ---
-title: "How I Stay Up to Date on AI (Without Drowning)"
-description: "The five sources I actually read, a handful of people worth following on LinkedIn, and why my best news comes from communities, not feeds."
+title: "Keeping Up With AI in the Law, Three Years Later"
+description: "An update to my 2023 post on keeping up with generative AI: what changed, the five sources I read now, people worth following, and why my best news comes from communities."
 pubDate: "2026-10-01"
 draft: true
 tags: ["AI", "staying current"]
 ---
 
-People ask me some version of this question all the time: *how do you keep up?* The honest answer is that I don't keep up with everything, and I've stopped trying. What I have is a small set of sources I trust, a feed I've trained to show me AI and law, and a couple of communities where the best stuff surfaces on its own.
+Three years ago, I wrote a post on [keeping up with generative AI in the law](https://www.ailawlibrarians.com/2023/09/28/keeping-up-with-generative-ai-in-the-law/). People still ask me some version of that question all the time: *how do you keep up?* The honest answer is that I don't keep up with everything, and I've stopped trying. What I have is a small set of sources I trust, a feed I've trained to show me AI and law, and a couple of communities where the best stuff surfaces on its own.
 
-If you want the longer, filterable list, it's here: [Sources for following AI and law](https://rebeccafordon.com/resources/staying-current/). This post is the short version: what I actually read.
+If you want the longer, filterable list, it's here: [Sources for following AI and law](https://rebeccafordon.com/resources/staying-current/). This post is the short version: what I actually read now, and what's changed.
+
+## **What's changed since 2023**
+
+- **I left Twitter.** In 2023 it was still one of my main sources. I know a lot of AI conversation still happens on X, but I'm not on that platform. I've accepted that I'll hear about some things a bit later, once they bubble up on LinkedIn, and that tradeoff is fine with me.
+- **LinkedIn became my main feed.** In 2023 I noted that legal tech discussions seemed to be moving there. They did, and now it's where most of my day-to-day news comes from.
+- **Some newsletters lasted; plenty didn't.** One Useful Thing, Lawyer Ex Machina, and The Brainyacts were on my 2023 list and are still on it. Others have gone quiet, been renamed, or just fallen out of my rotation.
+- **Communities matter most.** My 2023 post didn't mention a single community. Now they're where I learn the most (more on that below).
 
 ## **My top five**
 
@@ -20,7 +27,7 @@ If you want the longer, filterable list, it's here: [Sources for following AI an
 
 ## **Building a balanced feed**
 
-Most of my day-to-day AI news comes through LinkedIn. That's not because LinkedIn is great; it's because I've trained my feed. I follow broadly, I engage with posts that teach me something, and I mute the hype and people who post about things I don't need to know (sorry to my former bankruptcy colleagues). After a while the algorithm gets the message.
+LinkedIn works for me not because it's great, but because I've trained my feed. I follow broadly, I engage with posts that teach me something, and I mute the hype and people who post about things I don't need to know (sorry to my former bankruptcy colleagues). After a while the algorithm gets the message.
 
 The trick is balance. If everyone you follow is a booster, you'll think every problem is solved; if everyone is a skeptic, you'll miss what's genuinely useful. So I try to make sure my feed has a mix: people who experiment with the tools and show their work, skeptics who check claims against the evidence, people tracking what goes wrong (like hallucinated citations in court filings), information literacy folks who teach you how to evaluate what AI gives you, voices on ethics and AI's broader costs, and legal innovators rethinking how legal work and legal education get done.
 
@@ -38,8 +45,6 @@ Here are a few of the people I learn from. It's not a "best of" list, just a sta
 - **[Jenny Wondracek](https://www.linkedin.com/in/jennifer-wondracek/)**, for a law librarian's view of AI in legal research and legal education.
 
 If you post thoughtfully about AI and law and I'm not following you, tell me.
-
-**A note on X.** I know a lot of AI conversation happens on X. I'm not on that platform. I've accepted that I'll hear about some things a bit later, once they bubble up on LinkedIn, and that tradeoff is fine with me.
 
 ## **Where my best news actually comes from: people**
 
