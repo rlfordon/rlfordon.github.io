@@ -1,0 +1,18 @@
+title: "LIT Blog"
+authors:
+  - name: "Quinten Steenhuis"
+  - name: "David Colarusso"
+  - name: "Sam Glover"
+publisher: "Suffolk LIT Lab"
+kind: blog
+access: free
+frequency: "Two or three times a month"
+url: https://suffolklitlab.org/blog/
+audience: [practitioners, faculty]
+topics: [access-to-justice, teaching-with-ai, tools-and-platforms]
+description: >
+  Blog of the Legal Innovation & Technology Lab at Suffolk University Law School: court-form and
+  document-automation projects built with docassemble, legal tech and AI for public interest lawyers, and
+  teaching law students to build tools.
+added: 2026-10-03
+verified: 2026-10-03

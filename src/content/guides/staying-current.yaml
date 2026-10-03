@@ -47,6 +47,8 @@ items:
   - ref: tech-policy-press
   - ref: iapp-ai-governance-dashboard
   - ref: duffy-legal-tech-trends
+  - ref: chandler-ai-for-legal-education
+  - ref: suffolk-lit-lab-blog
   - ref: pacifici-bespacific
   - ref: tay-musings-about-librarianship
   - ref: guadamuz-technollama
