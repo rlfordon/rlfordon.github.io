@@ -22,6 +22,7 @@ Personal site: writing, projects, about. Built with [Astro](https://astro.build)
 | `public/fonts/` | Self-hosted Fraunces and Montserrat (variable, Latin subset) with their SIL OFL license files. |
 | `archive/ailawlibrarians/` | Raw Wayback Machine backup of the AI Law Librarians posts and shared pages. Not published. |
 | `scripts/convert-posts.py` | One-time migration that produced the blog Markdown from the archive. |
+| `scripts/sync-ailawlibrarians.mjs` | Imports my new AI Law Librarians posts; run daily by `.github/workflows/sync-ailawlibrarians.yml`. |
 
 ## Writing a new post
 
@@ -43,6 +44,22 @@ paragraphs are styled as ordinary text.
 
 Add `draft: true` to keep a post out of the build. The `originalUrl` and `originalSite` fields are only for
 republished posts; they render the provenance note at the top of the article.
+
+## New posts from AI Law Librarians
+
+Posts I publish on AI Law Librarians are imported automatically. Every morning the
+`sync-ailawlibrarians` workflow reads the WordPress API for my posts, converts any that no local post
+lists as its `originalUrl`, downloads their images, checks that the site builds, commits to `main`, and
+starts the deploy. To run it now, use Actions → "Import new AI Law Librarians posts" → Run workflow, or run
+`node scripts/sync-ailawlibrarians.mjs` locally.
+
+- The description comes from the WordPress excerpt (its first full sentences); edit it after import if it
+  reads poorly.
+- A local `draft: true` post with the same title and no `originalUrl` is replaced by the published copy,
+  which keeps the draft's description. So drafting here and publishing there just works.
+- To keep a post out, add its WordPress slug to `SKIP` in the script. Deleting the file alone is not
+  enough; the next run would import it again.
+- Links to my other imported posts point to their copies here; links to this site become relative.
 
 ## Adding a resource
 
