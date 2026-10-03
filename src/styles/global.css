@@ -91,6 +91,9 @@ footer.colophon a:hover { color: var(--link); }
 .section { margin-top: 5rem; }
 .section-head { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; margin-bottom: 1.6rem; }
 .intro { font-size: 1.02rem; font-weight: 300; color: var(--ink-soft); max-width: 44rem; margin: -0.6rem 0 1.8rem; }
+/* how to get new posts: home Writing section and the foot of each post */
+.subscribe { font-size: 0.85rem; color: var(--ink-soft); max-width: 44rem; padding-left: 0.9rem; border-left: 2px solid var(--yellow); margin: -0.4rem 0 1.8rem; }
+.article-foot .subscribe { margin: 0 0 1.2rem; }
 
 /* ---- home hero: mostly air ------------------------------------------- */
 .hero { padding: 2rem 0 3rem; max-width: 40rem; }

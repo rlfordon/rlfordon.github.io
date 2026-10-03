@@ -2,6 +2,7 @@
 import Base from '../layouts/Base.astro';
 import PostList from '../components/PostList.astro';
 import ProjectItem from '../components/ProjectItem.astro';
+import Subscribe from '../components/Subscribe.astro';
 import { getCollection } from 'astro:content';
 import { groups } from '../data/projects';
 
@@ -28,6 +29,7 @@ const resourcePages = [
 
   <section class="section">
     <div class="section-head"><h2>Writing</h2><a class="more" href="/blog/">All posts →</a></div>
+    <Subscribe />
     <PostList posts={posts} />
   </section>
 

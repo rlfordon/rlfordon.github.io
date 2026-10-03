@@ -1,5 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
+import Subscribe from '../../components/Subscribe.astro';
 import { getCollection, render } from 'astro:content';
 
 export async function getStaticPaths() {
@@ -35,6 +36,7 @@ const fmt = (x: Date) =>
     </div>
     <footer class="article-foot">
       {d.tags.length > 0 && <div class="taglist">{d.tags.map((t) => <span>{t}</span>)}</div>}
+      <Subscribe />
       <p class="more"><a href="/blog/">← All writing</a></p>
     </footer>
   </article>
