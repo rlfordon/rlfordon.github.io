@@ -50,6 +50,19 @@ items:
   - ref: chandler-ai-for-legal-education
   - ref: suffolk-lit-lab-blog
   - ref: vaill-ai-of-law
+  - ref: rips-law-librarian-blog
+  - ref: aall-lit-sis-blog
+  - ref: harvard-lil-blog
+  - ref: llrx
+  - ref: nori-augmented-lawyer
+  - ref: stanford-legal-design-lab-justice-innovation
+  - ref: kennedy-dennis-kennedy-blog
+  - ref: greenwood-dazza-weblog
+  - ref: schlegel-sch-legal-tech
+  - ref: tashea-jtdl
+  - ref: martin-lawdroid-manifesto
+  - ref: slaw-legal-technology
+  - ref: furlong-jordan-furlong
   - ref: pacifici-bespacific
   - ref: tay-musings-about-librarianship
   - ref: guadamuz-technollama
