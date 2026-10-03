@@ -1,0 +1,17 @@
+title: "The Finite Scroll"
+publisher: "Suffolk LIT Lab"
+kind: feed-reader
+access: open
+license: MIT
+url: https://thefinitescroll.org/
+links:
+  - label: Source on GitHub
+    url: https://github.com/SuffolkLITLab/the_finite_scroll
+audience: [general, practitioners]
+topics: [legal-research, tools-and-platforms]
+description: >
+  Free, open-source RSS reader from Suffolk Law's LIT Lab that ranks articles by your thumbs-up and thumbs-down
+  votes, entirely in your browser with no login. Start from pre-made feed collections, including legal tech,
+  LexBlog, Lawfare, and arXiv, then add, remove, or customize feeds.
+added: 2026-10-03
+verified: 2026-10-03

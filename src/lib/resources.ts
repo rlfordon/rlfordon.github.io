@@ -76,6 +76,7 @@ export const KIND_LABELS: Record<Resource['kind'], string> = {
   newsletter: 'Newsletter',
   podcast: 'Podcast',
   'video-channel': 'Video channel',
+  'feed-reader': 'Feed reader',
   blog: 'Blog',
   'news-site': 'News site',
   tracker: 'Tracker',
@@ -92,7 +93,7 @@ export const KIND_GROUPS: { id: string; label: string; kinds: Resource['kind'][]
   { id: 'practitioner', label: 'Practitioner & general', kinds: ['practitioner-book', 'monograph', 'treatise'] },
   { id: 'courses', label: 'Courses & syllabi', kinds: ['online-course', 'syllabus', 'website'] },
   { id: 'newsletters', label: 'Newsletters & blogs', kinds: ['newsletter', 'blog'] },
-  { id: 'news', label: 'News sites', kinds: ['news-site'] },
+  { id: 'news', label: 'News sites & readers', kinds: ['news-site', 'feed-reader'] },
   { id: 'podcasts', label: 'Podcasts & video', kinds: ['podcast', 'video-channel'] },
   { id: 'trackers', label: 'Trackers & reference', kinds: ['tracker', 'reference'] },
 ];
