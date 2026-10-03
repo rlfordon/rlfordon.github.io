@@ -1,6 +1,6 @@
 title: "Sources for following AI and law"
 description: >
-  Newsletters, news sites, podcasts, blogs, and trackers for keeping up with AI, legal AI, and AI law and policy.
+  Newsletters, news sites, podcasts, video channels, blogs, and trackers for keeping up with AI, legal AI, and AI law and policy.
 intro: >
   Ongoing sources for keeping up with AI in general and with AI in law: news, analysis, legal technology
   coverage, trackers, and policy. Don't try to follow everything. Pick one dependable general source and one
@@ -8,7 +8,7 @@ intro: >
   filter to see just those. Frequency and access are as of the last check.
 noun: { one: source, many: sources }
 topicsHint: Tagged on each source. Pick one to see the sources that cover it; use + to add topics and find sources that cover them all.
-updated: 2026-10-01
+updated: 2026-10-03
 items:
   - ref: tldr-ai
   - ref: whittemore-ai-daily-brief
@@ -58,3 +58,5 @@ items:
     favorite: true
   - ref: above-the-law-technology
   - ref: chronicle-jagged-intelligence
+  - ref: ai-engineer-youtube
+  - ref: ibm-technology-youtube

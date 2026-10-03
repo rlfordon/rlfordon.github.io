@@ -1,0 +1,13 @@
+title: "IBM Technology"
+publisher: "IBM"
+kind: video-channel
+access: free
+frequency: "Almost daily"
+url: https://www.youtube.com/@IBMTechnology
+audience: [general]
+topics: [ai-fundamentals, how-llms-work, ai-agents]
+description: >
+  IBM's YouTube channel of short whiteboard explainers on technology topics, including a large library on AI:
+  how LLMs work, RAG, fine-tuning, agents, and AI security and governance.
+added: 2026-10-03
+verified: 2026-10-03

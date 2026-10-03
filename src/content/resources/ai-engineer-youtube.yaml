@@ -1,0 +1,16 @@
+title: "AI Engineer"
+publisher: "AI Engineer"
+kind: video-channel
+access: free
+frequency: "Several videos a week, heaviest after each conference"
+url: https://www.youtube.com/@aiDotEngineer
+links:
+  - label: Conference site
+    url: https://ai.engineer/
+audience: [general]
+topics: [ai-agents, tools-and-platforms, how-llms-work]
+description: >
+  YouTube channel of the AI Engineer conferences, which posts recorded talks and workshops from practitioners
+  building with LLMs: agents, evaluation, retrieval, coding tools, and production deployment.
+added: 2026-10-03
+verified: 2026-10-03

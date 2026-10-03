@@ -75,6 +75,7 @@ export const KIND_LABELS: Record<Resource['kind'], string> = {
   bibliography: 'Bibliography',
   newsletter: 'Newsletter',
   podcast: 'Podcast',
+  'video-channel': 'Video channel',
   blog: 'Blog',
   'news-site': 'News site',
   tracker: 'Tracker',
@@ -92,7 +93,7 @@ export const KIND_GROUPS: { id: string; label: string; kinds: Resource['kind'][]
   { id: 'courses', label: 'Courses & syllabi', kinds: ['online-course', 'syllabus', 'website'] },
   { id: 'newsletters', label: 'Newsletters & blogs', kinds: ['newsletter', 'blog'] },
   { id: 'news', label: 'News sites', kinds: ['news-site'] },
-  { id: 'podcasts', label: 'Podcasts', kinds: ['podcast'] },
+  { id: 'podcasts', label: 'Podcasts & video', kinds: ['podcast', 'video-channel'] },
   { id: 'trackers', label: 'Trackers & reference', kinds: ['tracker', 'reference'] },
 ];
 // Articles and bibliographies have no group of their own; a record of those kinds still lists, but no Kind chip selects it.

@@ -45,6 +45,7 @@ export const RESOURCE_KINDS = [
   'bibliography',
   'newsletter',
   'podcast',
+  'video-channel',
   'blog',
   'news-site',
   'tracker',
