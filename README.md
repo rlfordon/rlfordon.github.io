@@ -19,6 +19,7 @@ Personal site: writing, projects, about. Built with [Astro](https://astro.build)
 | `src/layouts/Base.astro` | Shared shell: head, masthead, nav, footer. |
 | `src/styles/global.css` | All styling. Palette, type, and layout tokens at the top. Light-only by design. |
 | `public/images/blog/<slug>/` | Post images. |
+| `public/p/4831f533/` | Unlisted copy of the myguides Podcasts & Current Awareness guide, at `/p/4831f533/podcastsblogs/`. Not linked from any page or the sitemap, and marked noindex. Generated, not edited here: refresh it from the myguides repo with `MSYS_NO_PATHCONV=1 uv run scripts/publish-standalone.py podcastsblogs ../website/public --path /p/4831f533 --home-url / --home-label "Rebecca Fordon"`; delete the folder to take it down. |
 | `public/fonts/` | Self-hosted Fraunces and Montserrat (variable, Latin subset) with their SIL OFL license files. |
 | `archive/ailawlibrarians/` | Raw Wayback Machine backup of the AI Law Librarians posts and shared pages. Not published. |
 | `scripts/convert-posts.py` | One-time migration that produced the blog Markdown from the archive. |

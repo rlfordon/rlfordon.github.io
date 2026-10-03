@@ -1,0 +1,3185 @@
+{
+  "id": "podcastsblogs",
+  "title": "Podcasts & Current Awareness",
+  "description": "Podcasts, newsletters, and other ways to keep up with law, chosen for Moritz students and faculty. Grouped by course subject, with law school, the profession, and legal news beside them.",
+  "source": "https://moritzlaw.osu.libguides.com/podcastsblogs",
+  "updated": "2026-10-03",
+  "url": "https://rlfordon.github.io/p/4831f533/podcastsblogs/",
+  "template": "directory",
+  "about": [
+    {
+      "title": "Finding more",
+      "text": "This guide collects podcasts, newsletters, and other current-awareness tools relevant to your studies and interests in law. Each entry has a short description and a link. Group the list by course subject, kind, or how you can get access, or search it; the Moritz picks are shows produced by our own faculty, centers, and programs."
+    },
+    {
+      "title": "What are legal newsletters?",
+      "text": "Legal newsletters are regular updates that provide legal professionals with the latest news, analysis, and commentary on legal developments and industry trends, including new case law and legislation. These newsletters may cover a broad range of topics, such as litigation, regulatory changes, and emerging areas of law. Law students might use newsletters to:\n\n- Stay up-to-date with the latest legal developments and industry trends.\n- Get insights into different areas of law and potential career paths.\n- Develop a deeper understanding of legal issues and concepts.\n- Gain exposure to different legal writing styles and formats.\n- Identify potential research topics or areas of interest for further study.\n\nTo find newsletters, review the list, or ask a librarian: if you are having trouble finding titles in your practice area, contact a law librarian through the library's [Ask a Librarian](https://moritzlaw.osu.libguides.com/askalibrarian) page. Another way to find newsletters is a web search for your practice area along with \"law newsletter libguide\", which leads to research guides created by librarians with recommendations for specific newsletters."
+    },
+    {
+      "title": "Access to subscription newsletters",
+      "text": "Many vendors provide newsletters, and the right one for you will depend on your practice area and which vendors you can access. Moritz Law Library provides access to Bloomberg Law, Law360 (through Lexis+), Vital Law, Practical Law, Westlaw, Checkpoint Edge, and ALM's Law Journal Newsletters; each entry says how to log in. Access is limited to OSU faculty, students, and staff."
+    }
+  ],
+  "group_by": {
+    "default": "topics",
+    "options": [
+      "topics",
+      "kind",
+      "access",
+      "platform",
+      "none"
+    ]
+  },
+  "picks": {
+    "label": "Moritz picks",
+    "items": [
+      {
+        "ref": "drugs-on-the-docket",
+        "note": "From Moritz's Drug Enforcement and Policy Center. Supreme Court rulings and drug policy, monthly."
+      },
+      {
+        "ref": "law-and-democracy",
+        "note": "From Moritz's Election Law Program, hosted by Ned Foley, Steve Huefner, Terri Enns, and Anne Ralph."
+      },
+      {
+        "ref": "medaition",
+        "note": "Bill Froehlich and Amy J. Schmitz's monthly column and video series on AI in mediation."
+      },
+      {
+        "ref": "arbitration-conversation",
+        "note": "Hosted by Amy J. Schmitz. Twenty conversations with arbitration scholars and practitioners; the back catalog stands."
+      },
+      {
+        "ref": "democracys-chief-executive",
+        "note": "Hosted by emeritus professor Peter M. Shane, on the power of the presidency."
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "items",
+      "title": "",
+      "items": [
+        {
+          "record": "aba-law-student-podcast"
+        },
+        {
+          "record": "ipse-dixit"
+        },
+        {
+          "record": "law-school-toolbox-podcast"
+        },
+        {
+          "record": "amicus"
+        },
+        {
+          "record": "dissed"
+        },
+        {
+          "record": "divided-argument"
+        },
+        {
+          "record": "more-perfect"
+        },
+        {
+          "record": "oyez-oral-arguments"
+        },
+        {
+          "record": "scotus-101"
+        },
+        {
+          "record": "strict-scrutiny"
+        },
+        {
+          "record": "amaricas-constitution"
+        },
+        {
+          "record": "we-the-people"
+        },
+        {
+          "record": "what-roman-mars-can-learn-about-con-law"
+        },
+        {
+          "record": "above-the-law-podcast"
+        },
+        {
+          "record": "advisory-opinions"
+        },
+        {
+          "record": "bloomberg-law-podcast"
+        },
+        {
+          "record": "boom-lawyered"
+        },
+        {
+          "record": "international-law-behind-the-headlines"
+        },
+        {
+          "record": "lawnext"
+        },
+        {
+          "record": "lawfare-podcast"
+        },
+        {
+          "record": "serious-trouble"
+        },
+        {
+          "record": "stay-tuned-with-preet"
+        },
+        {
+          "record": "legal-geeks"
+        },
+        {
+          "record": "law360-podcasts"
+        },
+        {
+          "record": "law-com-podcasts"
+        },
+        {
+          "record": "legal-talk-network"
+        },
+        {
+          "record": "arbitration-conversation"
+        },
+        {
+          "record": "democracys-chief-executive"
+        },
+        {
+          "record": "bloomberg-law-reports"
+        },
+        {
+          "record": "law360"
+        },
+        {
+          "record": "vital-law"
+        },
+        {
+          "record": "practical-law-newsletters"
+        },
+        {
+          "record": "westlaw-practitioner-insights"
+        },
+        {
+          "record": "checkpoint-edge"
+        },
+        {
+          "record": "alm-law-journal-newsletters"
+        },
+        {
+          "record": "national-law-review-newsletter"
+        },
+        {
+          "record": "justia-newsletters"
+        },
+        {
+          "record": "ncsl-newsletters"
+        },
+        {
+          "record": "i-am-the-law"
+        },
+        {
+          "record": "grace-period"
+        },
+        {
+          "record": "lawyer-2-lawyer"
+        },
+        {
+          "record": "aba-journal-podcasts"
+        },
+        {
+          "record": "law-talk-epstein-yoo-cooke"
+        },
+        {
+          "record": "supreme-court-opinions"
+        },
+        {
+          "record": "pop-goes-the-legal"
+        },
+        {
+          "record": "technically-legal"
+        },
+        {
+          "record": "lawyerist-podcast"
+        },
+        {
+          "record": "ejil-the-podcast"
+        },
+        {
+          "record": "international-law-chats"
+        },
+        {
+          "record": "lawyer-stories-podcast"
+        },
+        {
+          "record": "court-news-ohio"
+        },
+        {
+          "record": "aba-journal-newsletters"
+        },
+        {
+          "record": "jurist"
+        },
+        {
+          "record": "findlaw-newsletters"
+        },
+        {
+          "record": "drugs-on-the-docket"
+        },
+        {
+          "record": "law-and-democracy"
+        },
+        {
+          "record": "medaition"
+        },
+        {
+          "record": "icodr-podcast"
+        },
+        {
+          "record": "law-401"
+        },
+        {
+          "record": "sentencing-law-and-policy"
+        },
+        {
+          "record": "closing-argument"
+        },
+        {
+          "record": "wrongful-conviction"
+        },
+        {
+          "record": "new-books-in-law"
+        },
+        {
+          "record": "digging-a-hole"
+        },
+        {
+          "record": "excited-utterance"
+        },
+        {
+          "record": "jotwell-criminal-law"
+        },
+        {
+          "record": "ohio-state-legal-studies-research-paper-series"
+        }
+      ]
+    }
+  ],
+  "records": [
+    {
+      "id": "aba-law-student-podcast",
+      "url": "https://rlfordon.github.io/p/4831f533/podcastsblogs/#r-aba-law-student-podcast",
+      "title": "ABA Law Student Podcast",
+      "authors": [],
+      "publisher": "American Bar Association",
+      "kind": {
+        "id": "podcast",
+        "label": "Podcast"
+      },
+      "jurisdiction": [],
+      "topics": [
+        {
+          "id": "law-school",
+          "label": "Law school and the bar"
+        }
+      ],
+      "description": "A podcast from the American Bar Association on issues that affect law students, law schools, and recent graduates. Episodes cover finals, graduation, the bar exam, and finding a job.",
+      "access_points": [
+        {
+          "platform": {
+            "id": "open-web",
+            "label": "Open web"
+          },
+          "access": {
+            "id": "free",
+            "label": "Free to read"
+          },
+          "url": "https://www.americanbar.org/groups/law_students/resources/podcast/"
+        }
+      ],
+      "added": "2026-10-03"
+    },
+    {
+      "id": "ipse-dixit",
+      "url": "https://rlfordon.github.io/p/4831f533/podcastsblogs/#r-ipse-dixit",
+      "title": "Ipse Dixit",
+      "authors": [],
+      "kind": {
+        "id": "podcast",
+        "label": "Podcast"
+      },
+      "jurisdiction": [],
+      "topics": [
+        {
+          "id": "legal-scholarship",
+          "label": "Legal scholarship"
+        }
+      ],
+      "description": "A podcast on legal scholarship, hosted by a group of seven law professors. Episodes typically feature a guest discussing their own scholarship.",
+      "access_points": [
+        {
+          "platform": {
+            "id": "open-web",
+            "label": "Open web"
+          },
+          "access": {
+            "id": "free",
+            "label": "Free to read"
+          },
+          "url": "https://shows.acast.com/ipse-dixit"
+        }
+      ],
+      "added": "2026-10-03",
+      "verified": "2026-10-03"
+    },
+    {
+      "id": "law-school-toolbox-podcast",
+      "url": "https://rlfordon.github.io/p/4831f533/podcastsblogs/#r-law-school-toolbox-podcast",
+      "title": "Law School Toolbox Podcast",
+      "authors": [
+        {
+          "name": "Alison Monahan",
+          "role": "host"
+        },
+        {
+          "name": "Lee Burgess",
+          "role": "host"
+        }
+      ],
+      "kind": {
+        "id": "podcast",
+        "label": "Podcast"
+      },
+      "jurisdiction": [],
+      "topics": [
+        {
+          "id": "law-school",
+          "label": "Law school and the bar"
+        }
+      ],
+      "description": "A weekly podcast with tips on law school, careers, the bar exam, and life, from the hosts of the Law School Toolbox.",
+      "access_points": [
+        {
+          "platform": {
+            "id": "open-web",
+            "label": "Open web"
+          },
+          "access": {
+            "id": "free",
+            "label": "Free to read"
+          },
+          "url": "https://lawschooltoolbox.com/podcast/"
+        }
+      ],
+      "added": "2026-10-03"
+    },
+    {
+      "id": "amicus",
+      "url": "https://rlfordon.github.io/p/4831f533/podcastsblogs/#r-amicus",
+      "title": "Amicus",
+      "authors": [
+        {
+          "name": "Dahlia Lithwick",
+          "role": "host"
+        }
+      ],
+      "publisher": "Slate",
+      "kind": {
+        "id": "podcast",
+        "label": "Podcast"
+      },
+      "jurisdiction": [],
+      "topics": [
+        {
+          "id": "supreme-court",
+          "label": "Supreme Court"
+        }
+      ],
+      "description": "Slate's podcast on the Supreme Court, covering current cases and emerging issues.",
+      "access_points": [
+        {
+          "platform": {
+            "id": "open-web",
+            "label": "Open web"
+          },
+          "access": {
+            "id": "free",
+            "label": "Free to read"
+          },
+          "url": "https://slate.com/podcasts/amicus"
+        }
+      ],
+      "added": "2026-10-03"
+    },
+    {
+      "id": "dissed",
+      "url": "https://rlfordon.github.io/p/4831f533/podcastsblogs/#r-dissed",
+      "title": "Dissed",
+      "authors": [
+        {
+          "name": "Anastasia Boden",
+          "role": "host"
+        },
+        {
+          "name": "Elizabeth Slattery",
+          "role": "host"
+        }
+      ],
+      "publisher": "Pacific Legal Foundation",
+      "kind": {
+        "id": "podcast",
+        "label": "Podcast"
+      },
+      "jurisdiction": [],
+      "topics": [
+        {
+          "id": "supreme-court",
+          "label": "Supreme Court"
+        }
+      ],
+      "description": "A podcast on Supreme Court dissenting opinions and the stories behind them, produced by the Pacific Legal Foundation.",
+      "access_points": [
+        {
+          "platform": {
+            "id": "open-web",
+            "label": "Open web"
+          },
+          "access": {
+            "id": "free",
+            "label": "Free to read"
+          },
+          "url": "https://pacificlegal.org/dissed-podcast/"
+        }
+      ],
+      "added": "2026-10-03"
+    },
+    {
+      "id": "divided-argument",
+      "url": "https://rlfordon.github.io/p/4831f533/podcastsblogs/#r-divided-argument",
+      "title": "Divided Argument",
+      "authors": [
+        {
+          "name": "Will Baude",
+          "role": "host"
+        },
+        {
+          "name": "Dan Epps",
+          "role": "host"
+        }
+      ],
+      "kind": {
+        "id": "podcast",
+        "label": "Podcast"
+      },
+      "jurisdiction": [],
+      "topics": [
+        {
+          "id": "supreme-court",
+          "label": "Supreme Court"
+        }
+      ],
+      "description": "A podcast on the Supreme Court, hosted by two law professors.",
+      "access_points": [
+        {
+          "platform": {
+            "id": "open-web",
+            "label": "Open web"
+          },
+          "access": {
+            "id": "free",
+            "label": "Free to read"
+          },
+          "url": "https://www.dividedargument.com/"
+        }
+      ],
+      "added": "2026-10-03"
+    },
+    {
+      "id": "more-perfect",
+      "url": "https://rlfordon.github.io/p/4831f533/podcastsblogs/#r-more-perfect",
+      "title": "More Perfect",
+      "authors": [],
+      "publisher": "WNYC Studios",
+      "kind": {
+        "id": "podcast",
+        "label": "Podcast"
+      },
+      "jurisdiction": [],
+      "topics": [
+        {
+          "id": "constitutional-law",
+          "label": "Constitutional law"
+        },
+        {
+          "id": "supreme-court",
+          "label": "Supreme Court"
+        }
+      ],
+      "description": "A podcast from WNYC Studios, a spinoff of Radiolab, on the stories behind major Supreme Court rulings and the impact of the decisions.",
+      "access_points": [
+        {
+          "platform": {
+            "id": "open-web",
+            "label": "Open web"
+          },
+          "access": {
+            "id": "free",
+            "label": "Free to read"
+          },
+          "url": "https://www.npr.org/podcasts/481105292/more-perfect"
+        }
+      ],
+      "added": "2026-10-03"
+    },
+    {
+      "id": "oyez-oral-arguments",
+      "url": "https://rlfordon.github.io/p/4831f533/podcastsblogs/#r-oyez-oral-arguments",
+      "title": "Oyez Supreme Court Arguments",
+      "authors": [],
+      "publisher": "Oyez",
+      "kind": {
+        "id": "podcast",
+        "label": "Podcast"
+      },
+      "jurisdiction": [],
+      "topics": [
+        {
+          "id": "supreme-court",
+          "label": "Supreme Court"
+        }
+      ],
+      "description": "Recordings of oral arguments before the Supreme Court, presented as a podcast by Oyez.",
+      "access_points": [
+        {
+          "platform": {
+            "id": "open-web",
+            "label": "Open web"
+          },
+          "access": {
+            "id": "free",
+            "label": "Free to read"
+          },
+          "url": "https://podcasts.apple.com/us/podcast/u-s-supreme-court-oral-arguments/id1048210550"
+        }
+      ],
+      "added": "2026-10-03",
+      "verified": "2026-10-03"
+    },
+    {
+      "id": "scotus-101",
+      "url": "https://rlfordon.github.io/p/4831f533/podcastsblogs/#r-scotus-101",
+      "title": "SCOTUS 101",
+      "authors": [],
+      "publisher": "Heritage Foundation",
+      "kind": {
+        "id": "podcast",
+        "label": "Podcast"
+      },
+      "jurisdiction": [],
+      "topics": [
+        {
+          "id": "supreme-court",
+          "label": "Supreme Court"
+        }
+      ],
+      "description": "A weekly podcast on what is happening at the Supreme Court, produced by the Heritage Foundation.",
+      "access_points": [
+        {
+          "platform": {
+            "id": "open-web",
+            "label": "Open web"
+          },
+          "access": {
+            "id": "free",
+            "label": "Free to read"
+          },
+          "url": "https://www.heritage.org/scotus-101"
+        }
+      ],
+      "added": "2026-10-03"
+    },
+    {
+      "id": "strict-scrutiny",
+      "url": "https://rlfordon.github.io/p/4831f533/podcastsblogs/#r-strict-scrutiny",
+      "title": "Strict Scrutiny",
+      "authors": [
+        {
+          "name": "Leah Litman",
+          "role": "host"
+        },
+        {
+          "name": "Melissa Murray",
+          "role": "host"
+        },
+        {
+          "name": "Kate Shaw",
+          "role": "host"
+        }
+      ],
+      "kind": {
+        "id": "podcast",
+        "label": "Podcast"
+      },
+      "jurisdiction": [],
+      "topics": [
+        {
+          "id": "supreme-court",
+          "label": "Supreme Court"
+        },
+        {
+          "id": "constitutional-law",
+          "label": "Constitutional law"
+        }
+      ],
+      "description": "A podcast on the Supreme Court and the legal culture around it, hosted by three law professors.",
+      "access_points": [
+        {
+          "platform": {
+            "id": "open-web",
+            "label": "Open web"
+          },
+          "access": {
+            "id": "free",
+            "label": "Free to read"
+          },
+          "url": "https://strict-scrutiny.simplecast.com/"
+        }
+      ],
+      "added": "2026-10-03"
+    },
+    {
+      "id": "amaricas-constitution",
+      "url": "https://rlfordon.github.io/p/4831f533/podcastsblogs/#r-amaricas-constitution",
+      "title": "Amarica's Constitution",
+      "authors": [
+        {
+          "name": "Akhil Reed Amar",
+          "role": "host"
+        },
+        {
+          "name": "Andy Lipka",
+          "role": "host"
+        }
+      ],
+      "kind": {
+        "id": "podcast",
+        "label": "Podcast"
+      },
+      "jurisdiction": [],
+      "topics": [
+        {
+          "id": "constitutional-law",
+          "label": "Constitutional law"
+        }
+      ],
+      "description": "A weekly podcast in which Yale constitutional scholar Akhil Reed Amar discusses current constitutional issues with co-host Andy Lipka and guests.",
+      "access_points": [
+        {
+          "platform": {
+            "id": "open-web",
+            "label": "Open web"
+          },
+          "access": {
+            "id": "free",
+            "label": "Free to read"
+          },
+          "url": "https://akhilamar.com/podcast-2/"
+        }
+      ],
+      "added": "2026-10-03"
+    },
+    {
+      "id": "we-the-people",
+      "url": "https://rlfordon.github.io/p/4831f533/podcastsblogs/#r-we-the-people",
+      "title": "We the People",
+      "authors": [
+        {
+          "name": "Julie Silverbrook",
+          "role": "host"
+        },
+        {
+          "name": "Tom Donnelly",
+          "role": "host"
+        }
+      ],
+      "publisher": "National Constitution Center",
+      "kind": {
+        "id": "podcast",
+        "label": "Podcast"
+      },
+      "jurisdiction": [],
+      "topics": [
+        {
+          "id": "constitutional-law",
+          "label": "Constitutional law"
+        }
+      ],
+      "description": "The National Constitution Center's podcast, presenting arguments on all sides of constitutional issues in American public life.",
+      "access_points": [
+        {
+          "platform": {
+            "id": "open-web",
+            "label": "Open web"
+          },
+          "access": {
+            "id": "free",
+            "label": "Free to read"
+          },
+          "url": "https://constitutioncenter.org/news-debate/podcasts"
+        }
+      ],
+      "added": "2026-10-03"
+    },
+    {
+      "id": "what-roman-mars-can-learn-about-con-law",
+      "url": "https://rlfordon.github.io/p/4831f533/podcastsblogs/#r-what-roman-mars-can-learn-about-con-law",
+      "title": "What Trump Can Teach Us About Con Law",
+      "authors": [
+        {
+          "name": "Elizabeth Joh",
+          "role": "host"
+        },
+        {
+          "name": "Roman Mars",
+          "role": "host"
+        }
+      ],
+      "kind": {
+        "id": "podcast",
+        "label": "Podcast"
+      },
+      "jurisdiction": [],
+      "topics": [
+        {
+          "id": "constitutional-law",
+          "label": "Constitutional law"
+        }
+      ],
+      "description": "A podcast in which law professor Elizabeth Joh teaches constitutional law through the week's news to Roman Mars, host of 99% Invisible.",
+      "access_points": [
+        {
+          "platform": {
+            "id": "open-web",
+            "label": "Open web"
+          },
+          "access": {
+            "id": "free",
+            "label": "Free to read"
+          },
+          "url": "https://trumpconlaw.com/"
+        }
+      ],
+      "added": "2026-10-03"
+    },
+    {
+      "id": "above-the-law-podcast",
+      "url": "https://rlfordon.github.io/p/4831f533/podcastsblogs/#r-above-the-law-podcast",
+      "title": "Thinking Like a Lawyer",
+      "authors": [
+        {
+          "name": "Joe Patrice",
+          "role": "host"
+        },
+        {
+          "name": "Kathryn Rubino",
+          "role": "host"
+        }
+      ],
+      "publisher": "Legal Talk Network",
+      "kind": {
+        "id": "podcast",
+        "label": "Podcast"
+      },
+      "jurisdiction": [],
+      "topics": [
+        {
+          "id": "legal-news",
+          "label": "Legal news and current events"
+        },
+        {
+          "id": "law-school",
+          "label": "Law school and the bar"
+        }
+      ],
+      "description": "A podcast from Above the Law that discusses news items through a legal lens and often covers law school and bar exam issues.",
+      "access_points": [
+        {
+          "platform": {
+            "id": "open-web",
+            "label": "Open web"
+          },
+          "access": {
+            "id": "free",
+            "label": "Free to read"
+          },
+          "url": "https://legaltalknetwork.com/podcasts/thinking-like-a-lawyer/"
+        }
+      ],
+      "added": "2026-10-03"
+    },
+    {
+      "id": "advisory-opinions",
+      "url": "https://rlfordon.github.io/p/4831f533/podcastsblogs/#r-advisory-opinions",
+      "title": "Advisory Opinions",
+      "authors": [
+        {
+          "name": "David French",
+          "role": "host"
+        },
+        {
+          "name": "Sarah Isgur",
+          "role": "host"
+        }
+      ],
+      "publisher": "The Dispatch",
+      "kind": {
+        "id": "podcast",
+        "label": "Podcast"
+      },
+      "jurisdiction": [],
+      "topics": [
+        {
+          "id": "legal-news",
+          "label": "Legal news and current events"
+        }
+      ],
+      "description": "A podcast from The Dispatch on law, culture, and current events.",
+      "access_points": [
+        {
+          "platform": {
+            "id": "open-web",
+            "label": "Open web"
+          },
+          "access": {
+            "id": "free",
+            "label": "Free to read"
+          },
+          "url": "https://advisoryopinions.thedispatch.com/"
+        }
+      ],
+      "added": "2026-10-03"
+    },
+    {
+      "id": "bloomberg-law-podcast",
+      "url": "https://rlfordon.github.io/p/4831f533/podcastsblogs/#r-bloomberg-law-podcast",
+      "title": "Bloomberg Law",
+      "authors": [
+        {
+          "name": "June Grasso",
+          "role": "host"
+        }
+      ],
+      "publisher": "Bloomberg",
+      "kind": {
+        "id": "podcast",
+        "label": "Podcast"
+      },
+      "jurisdiction": [],
+      "topics": [
+        {
+          "id": "legal-news",
+          "label": "Legal news and current events"
+        }
+      ],
+      "description": "Bloomberg's podcast examining major legal issues and cases in the news.",
+      "access_points": [
+        {
+          "platform": {
+            "id": "open-web",
+            "label": "Open web"
+          },
+          "access": {
+            "id": "free",
+            "label": "Free to read"
+          },
+          "url": "https://www.bloomberg.com/podcasts/series/law"
+        }
+      ],
+      "added": "2026-10-03"
+    },
+    {
+      "id": "boom-lawyered",
+      "url": "https://rlfordon.github.io/p/4831f533/podcastsblogs/#r-boom-lawyered",
+      "title": "Boom! Lawyered",
+      "authors": [
+        {
+          "name": "Imani Gandy",
+          "role": "host"
+        },
+        {
+          "name": "Jessica Mason Pieklo",
+          "role": "host"
+        }
+      ],
+      "publisher": "Rewire News Group",
+      "kind": {
+        "id": "podcast",
+        "label": "Podcast"
+      },
+      "jurisdiction": [],
+      "topics": [
+        {
+          "id": "legal-news",
+          "label": "Legal news and current events"
+        }
+      ],
+      "description": "A weekly podcast on legal battles over reproductive rights and justice, produced by Rewire News Group.",
+      "access_points": [
+        {
+          "platform": {
+            "id": "open-web",
+            "label": "Open web"
+          },
+          "access": {
+            "id": "free",
+            "label": "Free to read"
+          },
+          "url": "https://rewirenewsgroup.com/tag/boom-lawyered/"
+        }
+      ],
+      "added": "2026-10-03"
+    },
+    {
+      "id": "international-law-behind-the-headlines",
+      "url": "https://rlfordon.github.io/p/4831f533/podcastsblogs/#r-international-law-behind-the-headlines",
+      "title": "International Law Behind the Headlines",
+      "authors": [
+        {
+          "name": "Catherine Amirfar",
+          "role": "host"
+        },
+        {
+          "name": "Kal Raustiala",
+          "role": "host"
+        }
+      ],
+      "publisher": "American Society of International Law",
+      "kind": {
+        "id": "podcast",
+        "label": "Podcast"
+      },
+      "jurisdiction": [],
+      "topics": [
+        {
+          "id": "international-law",
+          "label": "International and comparative law"
+        },
+        {
+          "id": "legal-news",
+          "label": "Legal news and current events"
+        }
+      ],
+      "description": "A podcast on the international legal issues in the news, produced by the American Society of International Law.",
+      "access_points": [
+        {
+          "platform": {
+            "id": "open-web",
+            "label": "Open web"
+          },
+          "access": {
+            "id": "free",
+            "label": "Free to read"
+          },
+          "url": "https://www.asil.org/podcast"
+        }
+      ],
+      "added": "2026-10-03",
+      "verified": "2026-10-03"
+    },
+    {
+      "id": "lawnext",
+      "url": "https://rlfordon.github.io/p/4831f533/podcastsblogs/#r-lawnext",
+      "title": "LawNext",
+      "authors": [
+        {
+          "name": "Bob Ambrogi",
+          "role": "host"
+        }
+      ],
+      "kind": {
+        "id": "podcast",
+        "label": "Podcast"
+      },
+      "jurisdiction": [],
+      "topics": [
+        {
+          "id": "legal-technology",
+          "label": "Legal technology and innovation"
+        }
+      ],
+      "description": "A podcast on the future of law and legal technology, hosted by a legal journalist.",
+      "access_points": [
+        {
+          "platform": {
+            "id": "open-web",
+            "label": "Open web"
+          },
+          "access": {
+            "id": "free",
+            "label": "Free to read"
+          },
+          "url": "https://lawnext.libsyn.com/"
+        }
+      ],
+      "added": "2026-10-03"
+    },
+    {
+      "id": "lawfare-podcast",
+      "url": "https://rlfordon.github.io/p/4831f533/podcastsblogs/#r-lawfare-podcast",
+      "title": "The Lawfare Podcast",
+      "authors": [],
+      "publisher": "The Lawfare Institute",
+      "kind": {
+        "id": "podcast",
+        "label": "Podcast"
+      },
+      "jurisdiction": [],
+      "topics": [
+        {
+          "id": "legal-news",
+          "label": "Legal news and current events"
+        }
+      ],
+      "description": "Lawfare's podcast, produced with the Brookings Institution. Episodes include interviews with policymakers, scholars, journalists, and analysts, and panel discussions.",
+      "access_points": [
+        {
+          "platform": {
+            "id": "open-web",
+            "label": "Open web"
+          },
+          "access": {
+            "id": "free",
+            "label": "Free to read"
+          },
+          "url": "https://www.lawfaremedia.org/topic/lawfare-podcast"
+        }
+      ],
+      "added": "2026-10-03"
+    },
+    {
+      "id": "serious-trouble",
+      "url": "https://rlfordon.github.io/p/4831f533/podcastsblogs/#r-serious-trouble",
+      "title": "Serious Trouble",
+      "authors": [
+        {
+          "name": "Ken White",
+          "role": "host"
+        },
+        {
+          "name": "Josh Barro",
+          "role": "host"
+        }
+      ],
+      "kind": {
+        "id": "podcast",
+        "label": "Podcast"
+      },
+      "jurisdiction": [],
+      "topics": [
+        {
+          "id": "legal-news",
+          "label": "Legal news and current events"
+        }
+      ],
+      "description": "A podcast on current legal controversies and dilemmas, hosted by a lawyer and a journalist.",
+      "access_points": [
+        {
+          "platform": {
+            "id": "open-web",
+            "label": "Open web"
+          },
+          "access": {
+            "id": "fee",
+            "label": "Paid"
+          },
+          "url": "https://www.serioustrouble.show/",
+          "note": "By subscription; some episodes are free."
+        }
+      ],
+      "added": "2026-10-03"
+    },
+    {
+      "id": "stay-tuned-with-preet",
+      "url": "https://rlfordon.github.io/p/4831f533/podcastsblogs/#r-stay-tuned-with-preet",
+      "title": "Stay Tuned with Preet",
+      "authors": [
+        {
+          "name": "Preet Bharara",
+          "role": "host"
+        }
+      ],
+      "kind": {
+        "id": "podcast",
+        "label": "Podcast"
+      },
+      "jurisdiction": [],
+      "topics": [
+        {
+          "id": "legal-news",
+          "label": "Legal news and current events"
+        }
+      ],
+      "description": "A podcast discussing legal topics in the news, hosted by a former United States Attorney.",
+      "access_points": [
+        {
+          "platform": {
+            "id": "open-web",
+            "label": "Open web"
+          },
+          "access": {
+            "id": "free",
+            "label": "Free to read"
+          },
+          "url": "https://podcasts.apple.com/us/podcast/stay-tuned-with-preet/id1265845136"
+        }
+      ],
+      "added": "2026-10-03"
+    },
+    {
+      "id": "legal-geeks",
+      "url": "https://rlfordon.github.io/p/4831f533/podcastsblogs/#r-legal-geeks",
+      "title": "The Legal Geeks",
+      "authors": [
+        {
+          "name": "Jessica Mederson",
+          "role": "host"
+        },
+        {
+          "name": "Joshua Gilliland",
+          "role": "host"
+        }
+      ],
+      "kind": {
+        "id": "podcast",
+        "label": "Podcast"
+      },
+      "jurisdiction": [],
+      "topics": [
+        {
+          "id": "law-and-popular-culture",
+          "label": "Law and popular culture"
+        }
+      ],
+      "description": "A podcast on the legal issues that arise in science fiction, comics, and other fan universes, hosted by two attorneys.",
+      "access_points": [
+        {
+          "platform": {
+            "id": "open-web",
+            "label": "Open web"
+          },
+          "access": {
+            "id": "free",
+            "label": "Free to read"
+          },
+          "url": "https://thelegalgeeks.com/the-legal-geek-podcasts/"
+        }
+      ],
+      "added": "2026-10-03",
+      "verified": "2026-10-03"
+    },
+    {
+      "id": "law360-podcasts",
+      "url": "https://rlfordon.github.io/p/4831f533/podcastsblogs/#r-law360-podcasts",
+      "title": "Law360 Podcasts",
+      "authors": [],
+      "publisher": "Law360",
+      "kind": {
+        "id": "podcast-network",
+        "label": "Podcast network"
+      },
+      "jurisdiction": [],
+      "topics": [
+        {
+          "id": "general",
+          "label": "General and overview"
+        }
+      ],
+      "description": "Law360's podcasts, including Pro Say, a recap of the biggest stories in law, and The Term, on the Supreme Court.",
+      "access_points": [
+        {
+          "platform": {
+            "id": "open-web",
+            "label": "Open web"
+          },
+          "access": {
+            "id": "free",
+            "label": "Free to read"
+          },
+          "url": "https://www.law360.com/law360podcasts"
+        }
+      ],
+      "added": "2026-10-03"
+    },
+    {
+      "id": "law-com-podcasts",
+      "url": "https://rlfordon.github.io/p/4831f533/podcastsblogs/#r-law-com-podcasts",
+      "title": "Law.com Podcasts",
+      "authors": [],
+      "publisher": "Law.com",
+      "kind": {
+        "id": "podcast-network",
+        "label": "Podcast network"
+      },
+      "jurisdiction": [],
+      "topics": [
+        {
+          "id": "general",
+          "label": "General and overview"
+        }
+      ],
+      "description": "Law.com's podcasts, including Legal Speak, a set of series and stand-alone episodes, and Unprecedented, on the future of law.",
+      "access_points": [
+        {
+          "platform": {
+            "id": "open-web",
+            "label": "Open web"
+          },
+          "access": {
+            "id": "free",
+            "label": "Free to read"
+          },
+          "url": "https://www.law.com/podcastcenter/"
+        }
+      ],
+      "added": "2026-10-03"
+    },
+    {
+      "id": "legal-talk-network",
+      "url": "https://rlfordon.github.io/p/4831f533/podcastsblogs/#r-legal-talk-network",
+      "title": "Legal Talk Network",
+      "authors": [],
+      "publisher": "Legal Talk Network",
+      "kind": {
+        "id": "podcast-network",
+        "label": "Podcast network"
+      },
+      "jurisdiction": [],
+      "topics": [
+        {
+          "id": "general",
+          "label": "General and overview"
+        }
+      ],
+      "description": "A network of dozens of legal podcasts on topics including law school and young lawyers, news and current events, and access to justice.",
+      "access_points": [
+        {
+          "platform": {
+            "id": "open-web",
+            "label": "Open web"
+          },
+          "access": {
+            "id": "free",
+            "label": "Free to read"
+          },
+          "url": "https://legaltalknetwork.com/"
+        }
+      ],
+      "added": "2026-10-03",
+      "verified": "2026-10-03"
+    },
+    {
+      "id": "arbitration-conversation",
+      "url": "https://rlfordon.github.io/p/4831f533/podcastsblogs/#r-arbitration-conversation",
+      "title": "The Arbitration Conversation",
+      "authors": [
+        {
+          "name": "Amy J. Schmitz",
+          "role": "host"
+        }
+      ],
+      "kind": {
+        "id": "podcast",
+        "label": "Podcast"
+      },
+      "jurisdiction": [],
+      "topics": [
+        {
+          "id": "dispute-resolution",
+          "label": "Alternative dispute resolution"
+        }
+      ],
+      "description": "A podcast on developments in arbitration, in conversations with scholars and practitioners from around the world, hosted by a Moritz College of Law faculty member.",
+      "access_points": [
+        {
+          "platform": {
+            "id": "open-web",
+            "label": "Open web"
+          },
+          "access": {
+            "id": "free",
+            "label": "Free to read"
+          },
+          "url": "https://podcasts.apple.com/us/podcast/the-arbitration-conversation/id1617895048"
+        }
+      ],
+      "added": "2026-10-03"
+    },
+    {
+      "id": "democracys-chief-executive",
+      "url": "https://rlfordon.github.io/p/4831f533/podcastsblogs/#r-democracys-chief-executive",
+      "title": "Democracy's Chief Executive",
+      "authors": [
+        {
+          "name": "Peter M. Shane",
+          "role": "host"
+        }
+      ],
+      "kind": {
+        "id": "podcast",
+        "label": "Podcast"
+      },
+      "jurisdiction": [],
+      "topics": [
+        {
+          "id": "election-law",
+          "label": "Election law and government"
+        }
+      ],
+      "description": "A podcast on the power of the presidency and whether presidents are above the law, hosted by a Moritz College of Law emeritus professor.",
+      "access_points": [
+        {
+          "platform": {
+            "id": "open-web",
+            "label": "Open web"
+          },
+          "access": {
+            "id": "free",
+            "label": "Free to read"
+          },
+          "url": "https://creators.spotify.com/pod/profile/democracys-ceo-pod/"
+        }
+      ],
+      "added": "2026-10-03"
+    },
+    {
+      "id": "bloomberg-law-reports",
+      "url": "https://rlfordon.github.io/p/4831f533/podcastsblogs/#r-bloomberg-law-reports",
+      "title": "Bloomberg Law Reports",
+      "authors": [],
+      "publisher": "Bloomberg Law",
+      "kind": {
+        "id": "newsletter",
+        "label": "Newsletter or alert service"
+      },
+      "jurisdiction": [],
+      "topics": [
+        {
+          "id": "legal-news",
+          "label": "Legal news and current events"
+        }
+      ],
+      "description": "Bloomberg Law's news and analysis reports in 55 topic areas, each available as an email alert.",
+      "access_points": [
+        {
+          "platform": {
+            "id": "bloomberg-law",
+            "label": "Bloomberg Law"
+          },
+          "access": {
+            "id": "subscription-individual",
+            "label": "Individual login"
+          },
+          "url": "https://profile.bna.com/emsf/main.jsp",
+          "note": "Browse titles and subscribe to email alerts in a legal area."
+        }
+      ],
+      "added": "2026-10-03"
+    },
+    {
+      "id": "law360",
+      "url": "https://rlfordon.github.io/p/4831f533/podcastsblogs/#r-law360",
+      "title": "Law360",
+      "authors": [],
+      "publisher": "Law360",
+      "kind": {
+        "id": "newsletter",
+        "label": "Newsletter or alert service"
+      },
+      "jurisdiction": [],
+      "topics": [
+        {
+          "id": "legal-news",
+          "label": "Legal news and current events"
+        }
+      ],
+      "description": "A legal news service covering about 55 sections of U.S. law, each with an email newsletter and RSS feed.",
+      "access_points": [
+        {
+          "platform": {
+            "id": "lexis",
+            "label": "Lexis+"
+          },
+          "access": {
+            "id": "subscription-individual",
+            "label": "Individual login"
+          },
+          "url": "https://www.law360.com/",
+          "note": "Log in to Lexis+ and choose Law360 from the grid menu in the upper left."
+        }
+      ],
+      "added": "2026-10-03"
+    },
+    {
+      "id": "vital-law",
+      "url": "https://rlfordon.github.io/p/4831f533/podcastsblogs/#r-vital-law",
+      "title": "Vital Law",
+      "authors": [],
+      "kind": {
+        "id": "newsletter",
+        "label": "Newsletter or alert service"
+      },
+      "jurisdiction": [],
+      "topics": [
+        {
+          "id": "legal-news",
+          "label": "Legal news and current events"
+        }
+      ],
+      "description": "A legal research platform whose newsletters summarize cases, legislation, and regulatory action in dozens of practice areas, by email or RSS.",
+      "access_points": [
+        {
+          "platform": {
+            "id": "library-database",
+            "label": "Other library database"
+          },
+          "access": {
+            "id": "subscription-campus",
+            "label": "Campus network or VPN"
+          },
+          "url": "https://search.library.osu.edu/discovery/fulldisplay?context=L&vid=01OHIOLINK_OSU:OSU&lang=en&docid=alma991063922779708507",
+          "note": "OSU library record. Newsletters are under News within each practice area; subscribing needs a free account on the platform."
+        }
+      ],
+      "added": "2026-10-03"
+    },
+    {
+      "id": "practical-law-newsletters",
+      "url": "https://rlfordon.github.io/p/4831f533/podcastsblogs/#r-practical-law-newsletters",
+      "title": "Practical Law Newsletters (Thomson Reuters)",
+      "authors": [],
+      "publisher": "Thomson Reuters",
+      "kind": {
+        "id": "newsletter",
+        "label": "Newsletter or alert service"
+      },
+      "jurisdiction": [],
+      "topics": [
+        {
+          "id": "legal-news",
+          "label": "Legal news and current events"
+        }
+      ],
+      "description": "Weekly or monthly Practical Law update newsletters in about thirteen practice areas.",
+      "access_points": [
+        {
+          "platform": {
+            "id": "westlaw",
+            "label": "Westlaw"
+          },
+          "access": {
+            "id": "subscription-individual",
+            "label": "Individual login"
+          },
+          "url": "https://ask.legalsolutions.thomsonreuters.info/preference-center-login?src=PL",
+          "note": "Sign-up page at Thomson Reuters."
+        }
+      ],
+      "added": "2026-10-03"
+    },
+    {
+      "id": "westlaw-practitioner-insights",
+      "url": "https://rlfordon.github.io/p/4831f533/podcastsblogs/#r-westlaw-practitioner-insights",
+      "title": "Westlaw Practitioner Insights Analysis",
+      "authors": [],
+      "publisher": "Westlaw",
+      "kind": {
+        "id": "newsletter",
+        "label": "Newsletter or alert service"
+      },
+      "jurisdiction": [],
+      "topics": [
+        {
+          "id": "legal-news",
+          "label": "Legal news and current events"
+        }
+      ],
+      "description": "Westlaw's news publications in dozens of practice areas, with several titles in each, including niche areas.",
+      "access_points": [
+        {
+          "platform": {
+            "id": "westlaw",
+            "label": "Westlaw"
+          },
+          "access": {
+            "id": "subscription-individual",
+            "label": "Individual login"
+          },
+          "url": "https://www.westlaw.com/Browse/Home/News/PractitionerInsightsAnalysis?contextData=(sc.Default)&transitionType=Default&VR=3.0&RS=cblt1.0",
+          "note": "Email subscription is possible but not obvious; ask a librarian."
+        }
+      ],
+      "added": "2026-10-03"
+    },
+    {
+      "id": "checkpoint-edge",
+      "url": "https://rlfordon.github.io/p/4831f533/podcastsblogs/#r-checkpoint-edge",
+      "title": "Checkpoint Edge",
+      "authors": [],
+      "kind": {
+        "id": "newsletter",
+        "label": "Newsletter or alert service"
+      },
+      "jurisdiction": [],
+      "topics": [
+        {
+          "id": "legal-news",
+          "label": "Legal news and current events"
+        }
+      ],
+      "description": "A tax research platform with weekly updates on federal and state tax law.",
+      "access_points": [
+        {
+          "platform": {
+            "id": "library-database",
+            "label": "Other library database"
+          },
+          "access": {
+            "id": "subscription-campus",
+            "label": "Campus network or VPN"
+          },
+          "url": "https://search.library.osu.edu/discovery/fulldisplay?context=L&vid=01OHIOLINK_OSU:OSU&lang=en&docid=alma991085683724508507",
+          "note": "OSU library record. After logging in, choose News, then Checkpoint Weekly Updates. Email delivery is not available to law students."
+        }
+      ],
+      "added": "2026-10-03"
+    },
+    {
+      "id": "alm-law-journal-newsletters",
+      "url": "https://rlfordon.github.io/p/4831f533/podcastsblogs/#r-alm-law-journal-newsletters",
+      "title": "ALM / Law.com",
+      "authors": [],
+      "publisher": "ALM",
+      "kind": {
+        "id": "newsletter",
+        "label": "Newsletter or alert service"
+      },
+      "jurisdiction": [],
+      "topics": [
+        {
+          "id": "legal-news",
+          "label": "Legal news and current events"
+        }
+      ],
+      "description": "ALM's Law Journal Newsletters, written by lawyers for lawyers, on topics including cybersecurity and privacy, real estate, bankruptcy, and medical malpractice.",
+      "access_points": [
+        {
+          "platform": {
+            "id": "library-database",
+            "label": "Other library database"
+          },
+          "access": {
+            "id": "subscription-campus",
+            "label": "Campus network or VPN"
+          },
+          "url": "https://search.library.osu.edu/discovery/fulldisplay?context=L&vid=01OHIOLINK_OSU:OSU&lang=en&docid=alma991052762439708507",
+          "note": "OSU library record."
+        }
+      ],
+      "added": "2026-10-03",
+      "verified": "2026-10-03"
+    },
+    {
+      "id": "national-law-review-newsletter",
+      "url": "https://rlfordon.github.io/p/4831f533/podcastsblogs/#r-national-law-review-newsletter",
+      "title": "National Law Review",
+      "authors": [],
+      "publisher": "National Law Review",
+      "kind": {
+        "id": "newsletter",
+        "label": "Newsletter or alert service"
+      },
+      "jurisdiction": [],
+      "topics": [
+        {
+          "id": "legal-news",
+          "label": "Legal news and current events"
+        }
+      ],
+      "description": "A free legal news site publishing articles hourly across many topics, with an email newsletter that needs no paid subscription.",
+      "access_points": [
+        {
+          "platform": {
+            "id": "open-web",
+            "label": "Open web"
+          },
+          "access": {
+            "id": "free",
+            "label": "Free to read"
+          },
+          "url": "https://natlawreview.com/newsletters"
+        }
+      ],
+      "added": "2026-10-03"
+    },
+    {
+      "id": "justia-newsletters",
+      "url": "https://rlfordon.github.io/p/4831f533/podcastsblogs/#r-justia-newsletters",
+      "title": "Justia",
+      "authors": [],
+      "publisher": "Justia",
+      "kind": {
+        "id": "newsletter",
+        "label": "Newsletter or alert service"
+      },
+      "jurisdiction": [
+        {
+          "id": "multi-jurisdictional",
+          "label": "Multi-jurisdictional"
+        }
+      ],
+      "topics": [
+        {
+          "id": "legal-news",
+          "label": "Legal news and current events"
+        }
+      ],
+      "description": "Justia's free daily newsletters of opinion summaries for federal and state courts, with commentary on developing law. Three newsletters can be chosen at no charge.",
+      "access_points": [
+        {
+          "platform": {
+            "id": "open-web",
+            "label": "Open web"
+          },
+          "access": {
+            "id": "free",
+            "label": "Free to read"
+          },
+          "url": "https://connect.justia.com/case-law-summary-newsletters"
+        }
+      ],
+      "added": "2026-10-03"
+    },
+    {
+      "id": "ncsl-newsletters",
+      "url": "https://rlfordon.github.io/p/4831f533/podcastsblogs/#r-ncsl-newsletters",
+      "title": "NCSL Newsletters",
+      "authors": [],
+      "publisher": "National Conference of State Legislatures",
+      "kind": {
+        "id": "newsletter",
+        "label": "Newsletter or alert service"
+      },
+      "jurisdiction": [
+        {
+          "id": "multi-jurisdictional",
+          "label": "Multi-jurisdictional"
+        }
+      ],
+      "topics": [
+        {
+          "id": "election-law",
+          "label": "Election law and government"
+        }
+      ],
+      "description": "Electronic newsletters from the National Conference of State Legislatures on state legislative developments. A free account is needed to subscribe.",
+      "access_points": [
+        {
+          "platform": {
+            "id": "open-web",
+            "label": "Open web"
+          },
+          "access": {
+            "id": "free",
+            "label": "Free to read"
+          },
+          "url": "https://www.ncsl.org/subscribe-to-ncsl-communications"
+        }
+      ],
+      "added": "2026-10-03",
+      "verified": "2026-10-03"
+    },
+    {
+      "id": "i-am-the-law",
+      "url": "https://rlfordon.github.io/p/4831f533/podcastsblogs/#r-i-am-the-law",
+      "title": "I Am The Law",
+      "authors": [],
+      "publisher": "LawHub (LSAC)",
+      "kind": {
+        "id": "podcast",
+        "label": "Podcast"
+      },
+      "jurisdiction": [],
+      "topics": [
+        {
+          "id": "law-school",
+          "label": "Law school and the bar"
+        },
+        {
+          "id": "legal-careers",
+          "label": "Legal careers and practice"
+        }
+      ],
+      "description": "A podcast from LSAC's LawHub in which law school graduates describe the practice areas and settings they work in. Weekly interviews aimed at students choosing a path.",
+      "access_points": [
+        {
+          "platform": {
+            "id": "open-web",
+            "label": "Open web"
+          },
+          "access": {
+            "id": "free",
+            "label": "Free to read"
+          },
+          "url": "https://podcasts.apple.com/us/podcast/i-am-the-law/id955634521"
+        }
+      ],
+      "added": "2026-10-03",
+      "verified": "2026-10-03"
+    },
+    {
+      "id": "grace-period",
+      "url": "https://rlfordon.github.io/p/4831f533/podcastsblogs/#r-grace-period",
+      "title": "The Grace Period: Shining a Light on Lawyer Wellbeing",
+      "authors": [
+        {
+          "name": "Emily Logan Stedman",
+          "role": "host"
+        }
+      ],
+      "kind": {
+        "id": "podcast",
+        "label": "Podcast"
+      },
+      "jurisdiction": [],
+      "topics": [
+        {
+          "id": "legal-careers",
+          "label": "Legal careers and practice"
+        }
+      ],
+      "description": "A podcast on lawyer well-being and the realities of large-firm practice, with practice-management tips.",
+      "access_points": [
+        {
+          "platform": {
+            "id": "open-web",
+            "label": "Open web"
+          },
+          "access": {
+            "id": "free",
+            "label": "Free to read"
+          },
+          "url": "https://stedmanemily.squarespace.com"
+        }
+      ],
+      "added": "2026-10-03",
+      "verified": "2026-10-03"
+    },
+    {
+      "id": "lawyer-2-lawyer",
+      "url": "https://rlfordon.github.io/p/4831f533/podcastsblogs/#r-lawyer-2-lawyer",
+      "title": "Lawyer 2 Lawyer",
+      "authors": [
+        {
+          "name": "J. Craig Williams",
+          "role": "host"
+        }
+      ],
+      "publisher": "Legal Talk Network",
+      "kind": {
+        "id": "podcast",
+        "label": "Podcast"
+      },
+      "jurisdiction": [],
+      "topics": [
+        {
+          "id": "legal-news",
+          "label": "Legal news and current events"
+        }
+      ],
+      "description": "A Legal Talk Network podcast, running since 2005, in which the host and guests examine current events and recent rulings from a legal perspective.",
+      "access_points": [
+        {
+          "platform": {
+            "id": "open-web",
+            "label": "Open web"
+          },
+          "access": {
+            "id": "free",
+            "label": "Free to read"
+          },
+          "url": "https://legaltalknetwork.com/podcasts/lawyer-2-lawyer/"
+        }
+      ],
+      "added": "2026-10-03",
+      "verified": "2026-10-03"
+    },
+    {
+      "id": "aba-journal-podcasts",
+      "url": "https://rlfordon.github.io/p/4831f533/podcastsblogs/#r-aba-journal-podcasts",
+      "title": "ABA Journal Podcasts",
+      "authors": [],
+      "publisher": "ABA Journal",
+      "kind": {
+        "id": "podcast-network",
+        "label": "Podcast network"
+      },
+      "jurisdiction": [],
+      "topics": [
+        {
+          "id": "general",
+          "label": "General and overview"
+        }
+      ],
+      "description": "The ABA Journal's podcasts, produced with Legal Talk Network: Legal Rebels, on people changing how law is practiced, and Modern Law Library, interviews with legal authors.",
+      "access_points": [
+        {
+          "platform": {
+            "id": "open-web",
+            "label": "Open web"
+          },
+          "access": {
+            "id": "free",
+            "label": "Free to read"
+          },
+          "url": "https://www.americanbar.org/groups/journal/podcast/"
+        }
+      ],
+      "added": "2026-10-03",
+      "verified": "2026-10-03"
+    },
+    {
+      "id": "law-talk-epstein-yoo-cooke",
+      "url": "https://rlfordon.github.io/p/4831f533/podcastsblogs/#r-law-talk-epstein-yoo-cooke",
+      "title": "Law Talk with Epstein, Yoo & Cooke",
+      "authors": [
+        {
+          "name": "Richard Epstein",
+          "role": "host"
+        },
+        {
+          "name": "John Yoo",
+          "role": "host"
+        },
+        {
+          "name": "Charles C. W. Cooke",
+          "role": "host"
+        }
+      ],
+      "publisher": "Civitas Institute, University of Texas at Austin",
+      "kind": {
+        "id": "podcast",
+        "label": "Podcast"
+      },
+      "jurisdiction": [],
+      "topics": [
+        {
+          "id": "constitutional-law",
+          "label": "Constitutional law"
+        }
+      ],
+      "description": "A podcast on legislation and constitutional jurisprudence with law professors Richard Epstein and John Yoo, hosted by Charles C. W. Cooke and produced by the Civitas Institute at the University of Texas at Austin.",
+      "access_points": [
+        {
+          "platform": {
+            "id": "open-web",
+            "label": "Open web"
+          },
+          "access": {
+            "id": "free",
+            "label": "Free to read"
+          },
+          "url": "https://podcasts.apple.com/us/podcast/law-talk-with-epstein-yoo-cooke/id563127951"
+        }
+      ],
+      "added": "2026-10-03",
+      "verified": "2026-10-03"
+    },
+    {
+      "id": "supreme-court-opinions",
+      "url": "https://rlfordon.github.io/p/4831f533/podcastsblogs/#r-supreme-court-opinions",
+      "title": "Supreme Court Opinions",
+      "authors": [],
+      "kind": {
+        "id": "podcast",
+        "label": "Podcast"
+      },
+      "jurisdiction": [],
+      "topics": [
+        {
+          "id": "supreme-court",
+          "label": "Supreme Court"
+        }
+      ],
+      "description": "Readings of United States Supreme Court opinions in full, with citations omitted. Not affiliated with the Court; episodes follow the Court's opinion days.",
+      "access_points": [
+        {
+          "platform": {
+            "id": "open-web",
+            "label": "Open web"
+          },
+          "access": {
+            "id": "free",
+            "label": "Free to read"
+          },
+          "url": "https://podcasts.apple.com/us/podcast/supreme-court-opinions/id1618263041"
+        }
+      ],
+      "added": "2026-10-03",
+      "verified": "2026-10-03"
+    },
+    {
+      "id": "pop-goes-the-legal",
+      "url": "https://rlfordon.github.io/p/4831f533/podcastsblogs/#r-pop-goes-the-legal",
+      "title": "Pop! Goes the Legal",
+      "authors": [],
+      "kind": {
+        "id": "podcast",
+        "label": "Podcast"
+      },
+      "jurisdiction": [],
+      "topics": [
+        {
+          "id": "law-and-popular-culture",
+          "label": "Law and popular culture"
+        }
+      ],
+      "description": "A podcast on the legal issues around pop culture, from cases that drew national attention to celebrity lawsuits.",
+      "access_points": [
+        {
+          "platform": {
+            "id": "open-web",
+            "label": "Open web"
+          },
+          "access": {
+            "id": "free",
+            "label": "Free to read"
+          },
+          "url": "https://shows.acast.com/pop-goes-the-legal"
+        }
+      ],
+      "added": "2026-10-03",
+      "verified": "2026-10-03"
+    },
+    {
+      "id": "technically-legal",
+      "url": "https://rlfordon.github.io/p/4831f533/podcastsblogs/#r-technically-legal",
+      "title": "Technically Legal",
+      "authors": [
+        {
+          "name": "Chad Main",
+          "role": "host"
+        }
+      ],
+      "publisher": "Percipient",
+      "kind": {
+        "id": "podcast",
+        "label": "Podcast"
+      },
+      "jurisdiction": [],
+      "topics": [
+        {
+          "id": "legal-technology",
+          "label": "Legal technology and innovation"
+        }
+      ],
+      "description": "A podcast on legal technology and innovation, in interviews with legal innovators and technologists.",
+      "access_points": [
+        {
+          "platform": {
+            "id": "open-web",
+            "label": "Open web"
+          },
+          "access": {
+            "id": "free",
+            "label": "Free to read"
+          },
+          "url": "https://www.tlpodcast.com/"
+        }
+      ],
+      "added": "2026-10-03",
+      "verified": "2026-10-03"
+    },
+    {
+      "id": "lawyerist-podcast",
+      "url": "https://rlfordon.github.io/p/4831f533/podcastsblogs/#r-lawyerist-podcast",
+      "title": "Lawyerist Podcast",
+      "authors": [],
+      "publisher": "Lawyerist",
+      "kind": {
+        "id": "podcast",
+        "label": "Podcast"
+      },
+      "jurisdiction": [],
+      "topics": [
+        {
+          "id": "legal-careers",
+          "label": "Legal careers and practice"
+        },
+        {
+          "id": "legal-technology",
+          "label": "Legal technology and innovation"
+        }
+      ],
+      "description": "A weekly podcast on running a modern law firm: technology, business models, client relationships, and marketing, in conversations with firm owners and legal professionals.",
+      "access_points": [
+        {
+          "platform": {
+            "id": "open-web",
+            "label": "Open web"
+          },
+          "access": {
+            "id": "free",
+            "label": "Free to read"
+          },
+          "url": "https://lawyerist.com/podcast/"
+        }
+      ],
+      "added": "2026-10-03",
+      "verified": "2026-10-03"
+    },
+    {
+      "id": "ejil-the-podcast",
+      "url": "https://rlfordon.github.io/p/4831f533/podcastsblogs/#r-ejil-the-podcast",
+      "title": "EJIL: The Podcast!",
+      "authors": [],
+      "publisher": "European Journal of International Law",
+      "kind": {
+        "id": "podcast",
+        "label": "Podcast"
+      },
+      "jurisdiction": [],
+      "topics": [
+        {
+          "id": "international-law",
+          "label": "International and comparative law"
+        }
+      ],
+      "description": "A podcast from the editors of the European Journal of International Law on international law in contemporary international and national affairs.",
+      "access_points": [
+        {
+          "platform": {
+            "id": "open-web",
+            "label": "Open web"
+          },
+          "access": {
+            "id": "free",
+            "label": "Free to read"
+          },
+          "url": "https://www.ejiltalk.org/ejil-the-podcast-page/"
+        }
+      ],
+      "added": "2026-10-03",
+      "verified": "2026-10-03"
+    },
+    {
+      "id": "international-law-chats",
+      "url": "https://rlfordon.github.io/p/4831f533/podcastsblogs/#r-international-law-chats",
+      "title": "International Law Chats",
+      "authors": [
+        {
+          "name": "Chiara Giorgetti",
+          "role": "host"
+        },
+        {
+          "name": "Alison Macdonald",
+          "role": "host"
+        },
+        {
+          "name": "Milena Sterio",
+          "role": "host"
+        }
+      ],
+      "publisher": "American Branch of the International Law Association",
+      "kind": {
+        "id": "podcast",
+        "label": "Podcast"
+      },
+      "jurisdiction": [],
+      "topics": [
+        {
+          "id": "international-law",
+          "label": "International and comparative law"
+        }
+      ],
+      "description": "A podcast from the American Branch of the International Law Association: monthly conversations with international law scholars and practitioners.",
+      "access_points": [
+        {
+          "platform": {
+            "id": "open-web",
+            "label": "Open web"
+          },
+          "access": {
+            "id": "free",
+            "label": "Free to read"
+          },
+          "url": "https://www.ila-americanbranch.org/audio_podcasts/international-law-chats/"
+        }
+      ],
+      "added": "2026-10-03",
+      "verified": "2026-10-03"
+    },
+    {
+      "id": "lawyer-stories-podcast",
+      "url": "https://rlfordon.github.io/p/4831f533/podcastsblogs/#r-lawyer-stories-podcast",
+      "title": "The Lawyer Stories Podcast",
+      "authors": [
+        {
+          "name": "Benjamin Gold",
+          "role": "host"
+        }
+      ],
+      "kind": {
+        "id": "podcast",
+        "label": "Podcast"
+      },
+      "jurisdiction": [],
+      "topics": [
+        {
+          "id": "legal-careers",
+          "label": "Legal careers and practice"
+        },
+        {
+          "id": "law-school",
+          "label": "Law school and the bar"
+        }
+      ],
+      "description": "A podcast of interviews with lawyers and law students about their paths into the profession.",
+      "access_points": [
+        {
+          "platform": {
+            "id": "open-web",
+            "label": "Open web"
+          },
+          "access": {
+            "id": "free",
+            "label": "Free to read"
+          },
+          "url": "https://lawyerstories.libsyn.com/website"
+        }
+      ],
+      "added": "2026-10-03",
+      "verified": "2026-10-03"
+    },
+    {
+      "id": "court-news-ohio",
+      "url": "https://rlfordon.github.io/p/4831f533/podcastsblogs/#r-court-news-ohio",
+      "title": "Court News Ohio",
+      "authors": [],
+      "publisher": "Supreme Court of Ohio",
+      "kind": {
+        "id": "podcast",
+        "label": "Podcast"
+      },
+      "jurisdiction": [
+        {
+          "id": "ohio",
+          "label": "Ohio"
+        }
+      ],
+      "topics": [
+        {
+          "id": "legal-news",
+          "label": "Legal news and current events"
+        }
+      ],
+      "description": "Video reports from the Supreme Court of Ohio's news service on featured decisions and the legal process behind them, published on the court's YouTube channel, with email subscriptions by topic.",
+      "access_points": [
+        {
+          "platform": {
+            "id": "government",
+            "label": "Government website"
+          },
+          "access": {
+            "id": "free",
+            "label": "Free to read"
+          },
+          "url": "https://courtnewsohio.gov/watch/default.asp"
+        }
+      ],
+      "added": "2026-10-03"
+    },
+    {
+      "id": "aba-journal-newsletters",
+      "url": "https://rlfordon.github.io/p/4831f533/podcastsblogs/#r-aba-journal-newsletters",
+      "title": "ABA Journal newsletters",
+      "authors": [],
+      "publisher": "ABA Journal",
+      "kind": {
+        "id": "newsletter",
+        "label": "Newsletter or alert service"
+      },
+      "jurisdiction": [],
+      "topics": [
+        {
+          "id": "legal-news",
+          "label": "Legal news and current events"
+        }
+      ],
+      "description": "The ABA Journal's free email newsletters: a Friday roundup of legal news headlines and a monthly roundup of technology-related legal news.",
+      "access_points": [
+        {
+          "platform": {
+            "id": "open-web",
+            "label": "Open web"
+          },
+          "access": {
+            "id": "free",
+            "label": "Free to read"
+          },
+          "url": "https://www.abajournal.com/stay_connected/newsletter"
+        }
+      ],
+      "added": "2026-10-03",
+      "verified": "2026-10-03"
+    },
+    {
+      "id": "jurist",
+      "url": "https://rlfordon.github.io/p/4831f533/podcastsblogs/#r-jurist",
+      "title": "JURIST",
+      "authors": [],
+      "publisher": "JURIST",
+      "kind": {
+        "id": "newsletter",
+        "label": "Newsletter or alert service"
+      },
+      "jurisdiction": [],
+      "topics": [
+        {
+          "id": "legal-news",
+          "label": "Legal news and current events"
+        }
+      ],
+      "description": "A legal news service reported and edited by law students at law schools around the world, with a free daily email digest.",
+      "access_points": [
+        {
+          "platform": {
+            "id": "open-web",
+            "label": "Open web"
+          },
+          "access": {
+            "id": "free",
+            "label": "Free to read"
+          },
+          "url": "https://www.jurist.org/",
+          "note": "The daily digest sign-up is on the home page."
+        }
+      ],
+      "added": "2026-10-03",
+      "verified": "2026-10-03"
+    },
+    {
+      "id": "findlaw-newsletters",
+      "url": "https://rlfordon.github.io/p/4831f533/podcastsblogs/#r-findlaw-newsletters",
+      "title": "FindLaw newsletters",
+      "authors": [],
+      "publisher": "FindLaw",
+      "kind": {
+        "id": "newsletter",
+        "label": "Newsletter or alert service"
+      },
+      "jurisdiction": [],
+      "topics": [
+        {
+          "id": "legal-news",
+          "label": "Legal news and current events"
+        }
+      ],
+      "description": "FindLaw's two free email newsletters: FindLaw Times, on how the law affects daily life, and FindLaw for Legal Professionals.",
+      "access_points": [
+        {
+          "platform": {
+            "id": "open-web",
+            "label": "Open web"
+          },
+          "access": {
+            "id": "free",
+            "label": "Free to read"
+          },
+          "url": "https://newsletters.findlaw.com/"
+        }
+      ],
+      "added": "2026-10-03",
+      "verified": "2026-10-03"
+    },
+    {
+      "id": "drugs-on-the-docket",
+      "url": "https://rlfordon.github.io/p/4831f533/podcastsblogs/#r-drugs-on-the-docket",
+      "title": "Drugs on the Docket",
+      "authors": [
+        {
+          "name": "Hannah Miller",
+          "role": "host"
+        }
+      ],
+      "publisher": "Drug Enforcement and Policy Center, The Ohio State University",
+      "kind": {
+        "id": "podcast",
+        "label": "Podcast"
+      },
+      "jurisdiction": [],
+      "topics": [
+        {
+          "id": "supreme-court",
+          "label": "Supreme Court"
+        },
+        {
+          "id": "criminal-law",
+          "label": "Criminal law and procedure"
+        }
+      ],
+      "description": "A podcast from the Drug Enforcement and Policy Center at The Ohio State University on how court rulings, mainly the Supreme Court's, shape drug law and policy. Douglas A. Berman is editorial advisor.",
+      "access_points": [
+        {
+          "platform": {
+            "id": "open-web",
+            "label": "Open web"
+          },
+          "access": {
+            "id": "free",
+            "label": "Free to read"
+          },
+          "url": "https://moritzlaw.osu.edu/faculty-and-research/drug-enforcement-and-policy-center/drugs-docket-podcast"
+        }
+      ],
+      "added": "2026-10-03",
+      "verified": "2026-10-03"
+    },
+    {
+      "id": "law-and-democracy",
+      "url": "https://rlfordon.github.io/p/4831f533/podcastsblogs/#r-law-and-democracy",
+      "title": "Law & Democracy",
+      "authors": [
+        {
+          "name": "Ned Foley",
+          "role": "host"
+        },
+        {
+          "name": "Steve Huefner",
+          "role": "host"
+        },
+        {
+          "name": "Terri Enns",
+          "role": "host"
+        },
+        {
+          "name": "Anne Ralph",
+          "role": "host"
+        }
+      ],
+      "publisher": "Election Law Program, Moritz College of Law",
+      "kind": {
+        "id": "podcast",
+        "label": "Podcast"
+      },
+      "jurisdiction": [],
+      "topics": [
+        {
+          "id": "election-law",
+          "label": "Election law and government"
+        }
+      ],
+      "description": "A public-affairs podcast from the Election Law Program at the Moritz College of Law on voting rights, redistricting, election administration, and campaign finance.",
+      "access_points": [
+        {
+          "platform": {
+            "id": "open-web",
+            "label": "Open web"
+          },
+          "access": {
+            "id": "free",
+            "label": "Free to read"
+          },
+          "url": "https://podcast.osu.edu/law-and-democracy/"
+        }
+      ],
+      "added": "2026-10-03",
+      "verified": "2026-10-03"
+    },
+    {
+      "id": "medaition",
+      "url": "https://rlfordon.github.io/p/4831f533/podcastsblogs/#r-medaition",
+      "title": "MedAItion",
+      "authors": [
+        {
+          "name": "Bill Froehlich"
+        },
+        {
+          "name": "Amy J. Schmitz"
+        }
+      ],
+      "publisher": "AAA Mediation Magazine",
+      "kind": {
+        "id": "column",
+        "label": "Column or video series"
+      },
+      "jurisdiction": [],
+      "topics": [
+        {
+          "id": "legal-technology",
+          "label": "Legal technology and innovation"
+        },
+        {
+          "id": "dispute-resolution",
+          "label": "Alternative dispute resolution"
+        }
+      ],
+      "description": "A monthly column and YouTube interview series in the American Arbitration Association's Mediation Magazine on how mediators can use AI tools and the ethical questions that raises, by two Moritz College of Law professors.",
+      "access_points": [
+        {
+          "platform": {
+            "id": "open-web",
+            "label": "Open web"
+          },
+          "access": {
+            "id": "free",
+            "label": "Free to read"
+          },
+          "url": "https://mediationmagazine.adr.org/category/column-medaition/"
+        }
+      ],
+      "added": "2026-10-03",
+      "verified": "2026-10-03"
+    },
+    {
+      "id": "icodr-podcast",
+      "url": "https://rlfordon.github.io/p/4831f533/podcastsblogs/#r-icodr-podcast",
+      "title": "The ICODR Podcast",
+      "authors": [
+        {
+          "name": "Ian Macduff",
+          "role": "host"
+        }
+      ],
+      "publisher": "International Council for Online Dispute Resolution",
+      "kind": {
+        "id": "podcast",
+        "label": "Podcast"
+      },
+      "jurisdiction": [],
+      "topics": [
+        {
+          "id": "dispute-resolution",
+          "label": "Alternative dispute resolution"
+        },
+        {
+          "id": "legal-technology",
+          "label": "Legal technology and innovation"
+        }
+      ],
+      "description": "A podcast from the International Council for Online Dispute Resolution interviewing online-dispute-resolution experts on ethics, culture, security, and impartiality.",
+      "access_points": [
+        {
+          "platform": {
+            "id": "open-web",
+            "label": "Open web"
+          },
+          "access": {
+            "id": "free",
+            "label": "Free to read"
+          },
+          "url": "https://icodr.podbean.com/"
+        }
+      ],
+      "added": "2026-10-03",
+      "verified": "2026-10-03"
+    },
+    {
+      "id": "law-401",
+      "url": "https://rlfordon.github.io/p/4831f533/podcastsblogs/#r-law-401",
+      "title": "Law 401",
+      "authors": [
+        {
+          "name": "Nicole Dyszlewski",
+          "role": "host"
+        },
+        {
+          "name": "Michael Donnelly-Boylen",
+          "role": "host"
+        }
+      ],
+      "publisher": "Roger Williams University School of Law",
+      "kind": {
+        "id": "podcast",
+        "label": "Podcast"
+      },
+      "jurisdiction": [],
+      "topics": [
+        {
+          "id": "legal-news",
+          "label": "Legal news and current events"
+        }
+      ],
+      "description": "A podcast from Roger Williams University School of Law on the legal issues that shape daily life in Rhode Island, from housing and healthcare to public safety, politics, and infrastructure, in plain-language conversations with guests.",
+      "access_points": [
+        {
+          "platform": {
+            "id": "open-web",
+            "label": "Open web"
+          },
+          "access": {
+            "id": "free",
+            "label": "Free to read"
+          },
+          "url": "https://law.rwu.edu/law-401-podcast"
+        }
+      ],
+      "added": "2026-10-03",
+      "verified": "2026-10-03"
+    },
+    {
+      "id": "sentencing-law-and-policy",
+      "url": "https://rlfordon.github.io/p/4831f533/podcastsblogs/#r-sentencing-law-and-policy",
+      "title": "Sentencing Law and Policy",
+      "authors": [
+        {
+          "name": "Douglas A. Berman"
+        }
+      ],
+      "publisher": "Drug Enforcement and Policy Center, The Ohio State University",
+      "kind": {
+        "id": "blog",
+        "label": "Blog"
+      },
+      "jurisdiction": [],
+      "topics": [
+        {
+          "id": "criminal-law",
+          "label": "Criminal law and procedure"
+        }
+      ],
+      "description": "A blog by Moritz professor Douglas A. Berman on sentencing law and policy, including sentencing guidelines, the death penalty, drug sentencing, and reform.",
+      "access_points": [
+        {
+          "platform": {
+            "id": "open-web",
+            "label": "Open web"
+          },
+          "access": {
+            "id": "free",
+            "label": "Free to read"
+          },
+          "url": "https://sentencinglawandpolicy.wordpress.com/",
+          "note": "Email subscription on the home page."
+        }
+      ],
+      "added": "2026-10-03",
+      "verified": "2026-10-03"
+    },
+    {
+      "id": "closing-argument",
+      "url": "https://rlfordon.github.io/p/4831f533/podcastsblogs/#r-closing-argument",
+      "title": "Closing Argument",
+      "authors": [
+        {
+          "name": "Jamiles Lartey"
+        }
+      ],
+      "publisher": "The Marshall Project",
+      "kind": {
+        "id": "newsletter",
+        "label": "Newsletter or alert service"
+      },
+      "jurisdiction": [],
+      "topics": [
+        {
+          "id": "criminal-law",
+          "label": "Criminal law and procedure"
+        }
+      ],
+      "description": "The Marshall Project's weekly newsletter in which reporter Jamiles Lartey examines one key issue in criminal justice in depth.",
+      "access_points": [
+        {
+          "platform": {
+            "id": "open-web",
+            "label": "Open web"
+          },
+          "access": {
+            "id": "free",
+            "label": "Free to read"
+          },
+          "url": "https://www.themarshallproject.org/newsletters/closing-argument"
+        }
+      ],
+      "added": "2026-10-03",
+      "verified": "2026-10-03"
+    },
+    {
+      "id": "wrongful-conviction",
+      "url": "https://rlfordon.github.io/p/4831f533/podcastsblogs/#r-wrongful-conviction",
+      "title": "Wrongful Conviction",
+      "authors": [
+        {
+          "name": "Jason Flom",
+          "role": "host"
+        },
+        {
+          "name": "Maggie Freleng",
+          "role": "host"
+        },
+        {
+          "name": "Lauren Bright Pacheco",
+          "role": "host"
+        }
+      ],
+      "publisher": "Lava for Good",
+      "kind": {
+        "id": "podcast",
+        "label": "Podcast"
+      },
+      "jurisdiction": [],
+      "topics": [
+        {
+          "id": "criminal-law",
+          "label": "Criminal law and procedure"
+        }
+      ],
+      "description": "A podcast of conversations with people who spent years in prison for crimes they maintain they did not commit, hosted by Innocence Project founding board member Jason Flom with Maggie Freleng and Lauren Bright Pacheco.",
+      "access_points": [
+        {
+          "platform": {
+            "id": "open-web",
+            "label": "Open web"
+          },
+          "access": {
+            "id": "free",
+            "label": "Free to read"
+          },
+          "url": "https://podcasts.apple.com/us/podcast/wrongful-conviction/id1151670380"
+        }
+      ],
+      "added": "2026-10-03",
+      "verified": "2026-10-03"
+    },
+    {
+      "id": "new-books-in-law",
+      "url": "https://rlfordon.github.io/p/4831f533/podcastsblogs/#r-new-books-in-law",
+      "title": "New Books in Law",
+      "authors": [],
+      "publisher": "New Books Network",
+      "kind": {
+        "id": "podcast",
+        "label": "Podcast"
+      },
+      "jurisdiction": [],
+      "topics": [
+        {
+          "id": "legal-scholarship",
+          "label": "Legal scholarship"
+        }
+      ],
+      "description": "The law channel of the New Books Network, in which scholars discuss their recently published books on law with an interviewer from the field.",
+      "access_points": [
+        {
+          "platform": {
+            "id": "open-web",
+            "label": "Open web"
+          },
+          "access": {
+            "id": "free",
+            "label": "Free to read"
+          },
+          "url": "https://newbooksnetwork.com/category/academic-areas/law"
+        }
+      ],
+      "added": "2026-10-03",
+      "verified": "2026-10-03"
+    },
+    {
+      "id": "digging-a-hole",
+      "url": "https://rlfordon.github.io/p/4831f533/podcastsblogs/#r-digging-a-hole",
+      "title": "Digging a Hole: The Legal Theory Podcast",
+      "authors": [
+        {
+          "name": "Sam Moyn",
+          "role": "host"
+        },
+        {
+          "name": "David Schleicher",
+          "role": "host"
+        }
+      ],
+      "kind": {
+        "id": "podcast",
+        "label": "Podcast"
+      },
+      "jurisdiction": [],
+      "topics": [
+        {
+          "id": "legal-scholarship",
+          "label": "Legal scholarship"
+        }
+      ],
+      "description": "A podcast in which Yale Law School professors Sam Moyn and David Schleicher interview legal scholars about the debates in legal academia.",
+      "access_points": [
+        {
+          "platform": {
+            "id": "open-web",
+            "label": "Open web"
+          },
+          "access": {
+            "id": "free",
+            "label": "Free to read"
+          },
+          "url": "https://www.diggingaholepodcast.com/"
+        }
+      ],
+      "added": "2026-10-03",
+      "verified": "2026-10-03"
+    },
+    {
+      "id": "excited-utterance",
+      "url": "https://rlfordon.github.io/p/4831f533/podcastsblogs/#r-excited-utterance",
+      "title": "Excited Utterance: Evidence and Proof Podcast",
+      "authors": [
+        {
+          "name": "Ed Cheng",
+          "role": "host"
+        },
+        {
+          "name": "Alex Nunn",
+          "role": "host"
+        }
+      ],
+      "kind": {
+        "id": "podcast",
+        "label": "Podcast"
+      },
+      "jurisdiction": [],
+      "topics": [
+        {
+          "id": "legal-scholarship",
+          "label": "Legal scholarship"
+        }
+      ],
+      "description": "A podcast that interviews authors of new or forthcoming legal scholarship on evidence and proof.",
+      "access_points": [
+        {
+          "platform": {
+            "id": "open-web",
+            "label": "Open web"
+          },
+          "access": {
+            "id": "free",
+            "label": "Free to read"
+          },
+          "url": "https://excitedutterance.com/"
+        }
+      ],
+      "added": "2026-10-03",
+      "verified": "2026-10-03"
+    },
+    {
+      "id": "jotwell-criminal-law",
+      "url": "https://rlfordon.github.io/p/4831f533/podcastsblogs/#r-jotwell-criminal-law",
+      "title": "Jotwell: Criminal Law",
+      "authors": [],
+      "publisher": "Jotwell",
+      "kind": {
+        "id": "blog",
+        "label": "Blog"
+      },
+      "jurisdiction": [],
+      "topics": [
+        {
+          "id": "criminal-law",
+          "label": "Criminal law and procedure"
+        },
+        {
+          "id": "legal-scholarship",
+          "label": "Legal scholarship"
+        }
+      ],
+      "description": "The criminal law section of Jotwell, the Journal of Things We Like (Lots), in which law professors write short reviews of recent scholarship on criminal law, procedure, policing, and punishment.",
+      "access_points": [
+        {
+          "platform": {
+            "id": "open-web",
+            "label": "Open web"
+          },
+          "access": {
+            "id": "free",
+            "label": "Free to read"
+          },
+          "url": "https://crim.jotwell.com/"
+        }
+      ],
+      "added": "2026-10-03",
+      "verified": "2026-10-03"
+    },
+    {
+      "id": "ohio-state-legal-studies-research-paper-series",
+      "url": "https://rlfordon.github.io/p/4831f533/podcastsblogs/#r-ohio-state-legal-studies-research-paper-series",
+      "title": "Ohio State University Moritz College of Law Legal Studies Research Paper Series",
+      "authors": [],
+      "publisher": "SSRN",
+      "kind": {
+        "id": "newsletter",
+        "label": "Newsletter or alert service"
+      },
+      "jurisdiction": [],
+      "topics": [
+        {
+          "id": "legal-scholarship",
+          "label": "Legal scholarship"
+        }
+      ],
+      "description": "SSRN's eJournal of new papers by Moritz College of Law faculty, sent to subscribers as an email of abstracts.",
+      "access_points": [
+        {
+          "platform": {
+            "id": "open-web",
+            "label": "Open web"
+          },
+          "access": {
+            "id": "free",
+            "label": "Free to read"
+          },
+          "url": "https://www.ssrn.com/index.cfm/en/ohio-state-leg/",
+          "note": "Subscribe with a free SSRN account."
+        }
+      ],
+      "added": "2026-10-03",
+      "verified": "2026-10-03"
+    }
+  ],
+  "vocabularies": {
+    "kinds": [
+      {
+        "id": "treatise",
+        "label": "Treatise",
+        "group": "Secondary sources",
+        "scope": "Multivolume or single-volume expert works organized by doctrine or code section, such as Collier. Includes looseleaf and online-updated treatises."
+      },
+      {
+        "id": "practice-guide",
+        "label": "Practice guide",
+        "group": "Secondary sources",
+        "scope": "Task-oriented guides for practitioners, such as CEB Action Guides and handbooks with forms and checklists."
+      },
+      {
+        "id": "practice-center",
+        "label": "Practice center",
+        "group": "Databases",
+        "scope": "A vendor's topical portal bundling primary law, dockets, news, and secondary sources for one practice area, such as Bloomberg Law's practice centers. A vendor portal listed for company information is company-database, even if the vendor calls it a practice center or law center."
+      },
+      {
+        "id": "legislative-history",
+        "label": "Legislative history compilation",
+        "group": "Secondary sources",
+        "scope": "Compiled legislative histories of a specific act, in print or online, and databases of them. Also publisher editions of a new act's text with explanation or analysis, such as CCH \"law, explanation\" volumes and Resnick & Sommer on BAPCPA. A single article on an act's history is article."
+      },
+      {
+        "id": "article",
+        "label": "Article",
+        "group": "Secondary sources",
+        "scope": "A single law review or journal article."
+      },
+      {
+        "id": "code",
+        "label": "Code or statute",
+        "group": "Primary law",
+        "scope": "Official or annotated codifications of statutes, such as the U.S.C., USCA, USCS, or a free code site. Annotated codes stay here, not treatise."
+      },
+      {
+        "id": "court-rules",
+        "label": "Court rules",
+        "group": "Primary law",
+        "scope": "Federal or local rules of procedure, and annotated rules publications."
+      },
+      {
+        "id": "case-law-database",
+        "label": "Case law database",
+        "group": "Databases",
+        "scope": "A searchable collection of judicial opinions. A practice center that includes cases is practice-center."
+      },
+      {
+        "id": "docket-source",
+        "label": "Dockets and filings",
+        "group": "Databases",
+        "scope": "Sources of docket sheets, briefs, pleadings, and motions, such as PACER, RECAP, or a vendor's filings database."
+      },
+      {
+        "id": "company-database",
+        "label": "Company information",
+        "group": "Databases",
+        "scope": "Databases of company profiles, filings, financials, and news, such as EDGAR or Mergent."
+      },
+      {
+        "id": "glossary",
+        "label": "Glossary or dictionary",
+        "group": "Reference",
+        "scope": "Lists of defined terms for a field. Also reference lists that define document or form types, such as the SEC Forms Index."
+      },
+      {
+        "id": "research-guide",
+        "label": "Research guide",
+        "group": "Reference",
+        "scope": "Another library's or organization's guide to researching a subject, including other LibGuides. Also bibliographies and finding aids that point to sources, such as Johnson's Sources of Compiled Legislative Histories."
+      },
+      {
+        "id": "organization",
+        "label": "Organization or program",
+        "group": "Reference",
+        "scope": "A court program, clinic, or nonprofit, listed for its services or volunteer opportunities rather than as a source of information."
+      },
+      {
+        "id": "podcast",
+        "label": "Podcast",
+        "group": "Media and current awareness",
+        "scope": "An audio or video series released as episodes, including shows reachable only through a directory page (Apple Podcasts) and a court's video reports offered as a series. A hub of several shows is podcast-network."
+      },
+      {
+        "id": "podcast-network",
+        "label": "Podcast network",
+        "group": "Media and current awareness",
+        "scope": "A publisher's or network's page of several podcasts, listed as a whole rather than show by show. Takes the general topic."
+      },
+      {
+        "id": "newsletter",
+        "label": "Newsletter or alert service",
+        "group": "Media and current awareness",
+        "scope": "Email newsletters, alert services, and RSS digests, free or subscription, including a vendor platform listed for its newsletters (Vital Law, Checkpoint Edge, Westlaw Practitioner Insights)."
+      },
+      {
+        "id": "column",
+        "label": "Column or video series",
+        "group": "Media and current awareness",
+        "scope": "A recurring written column in a magazine or on a site, with or without companion videos. A video series offered as episodes is podcast."
+      },
+      {
+        "id": "blog",
+        "label": "Blog",
+        "group": "Media and current awareness",
+        "scope": "A site of dated posts by an author or a group of editors, read on the web or by RSS or email subscription, including a journal of short posted reviews such as Jotwell. A recurring piece in a magazine is column; a service whose main offering is an email digest is newsletter."
+      }
+    ],
+    "topics": [
+      {
+        "id": "general",
+        "label": "General and overview",
+        "group": "Overview",
+        "scope": "Resources that cover a collection's whole subject rather than one part of it: in the bankruptcy guide, comprehensive treatises, practice centers, glossaries, and the Bankruptcy Code itself (Title 11); in a media guide, podcast networks and publishers' podcast hubs that span every legal topic. Use it instead of listing every area the resource touches. Databases of cases or filings get no topic, even subject-specific ones; readers find them by kind. A general resource can also take a narrower term when it has something distinctive there. Don't use it for a resource that simply fits no other term; that one gets no topic."
+      },
+      {
+        "id": "consumer-bankruptcy",
+        "label": "Consumer bankruptcy",
+        "group": "Kinds of bankruptcy",
+        "scope": "Bankruptcy for individuals whose debts are mainly personal, usually under chapter 7 or chapter 13. Includes petitions and schedules, the means test, discharge, and exemptions, and legislation aimed mainly at consumer cases, such as BAPCPA 2005. A resource covering bankruptcy as a whole takes general, not this term. A source covering both individual and small-business cases gets this term and business-bankruptcy."
+      },
+      {
+        "id": "business-bankruptcy",
+        "label": "Business bankruptcy and restructuring",
+        "group": "Kinds of bankruptcy",
+        "scope": "Bankruptcy and restructuring for businesses, including chapter 11 reorganization, small-business and subchapter V cases, chapter 12 family farmers, distressed debt, special situations, and restructuring terminology. Research on a debtor company's finances is company-research; a source about both gets both. A resource covering bankruptcy as a whole takes general, not this term."
+      },
+      {
+        "id": "bankruptcy-procedure",
+        "label": "Bankruptcy rules and procedure",
+        "group": "Rules and legislative history",
+        "scope": "The Federal Rules of Bankruptcy Procedure, local bankruptcy rules, chambers rules, and how a case moves through bankruptcy court. Give it to resources that contain the bankruptcy rules or are mainly about them, including annotated codes and the print U.S.C. that reprint them. A general treatise or practice center that includes the rules takes general instead. The Federal Rules of Civil Procedure are civil-procedure; a source with both sets of rules gets both terms."
+      },
+      {
+        "id": "civil-procedure",
+        "label": "Civil rules in bankruptcy",
+        "group": "Rules and legislative history",
+        "scope": "The Federal Rules of Civil Procedure and works on them, which apply in bankruptcy through adversary proceedings. Includes rule texts, handbooks, and annotated pamphlets, plus annotated codes and the print U.S.C. because they contain the civil rules. A source with both the civil and the bankruptcy rules also gets bankruptcy-procedure."
+      },
+      {
+        "id": "legislative-history",
+        "label": "Legislative history",
+        "group": "Rules and legislative history",
+        "scope": "Where a bankruptcy law or rule came from and what Congress intended, covering the 1898 Act, the 1978 Reform Act, the 1984, 1986, 1994, and 2005 amendments, and the history of court rules. Includes compiled histories, publisher \"law and explanation\" volumes for a new act, law review articles on an act's history, legislative history databases, bibliographies of compiled histories, and guides to legislative history research. A treatise gets this term only if it reprints legislative materials (Collier does); one that only cites legislative history in its commentary (Norton) doesn't. An annotated code doesn't get it for its history notes."
+      },
+      {
+        "id": "company-research",
+        "label": "Company research",
+        "group": "Company research",
+        "scope": "Researching a debtor or creditor company, including its corporate structure, parent and subsidiaries, equity and debt, financial performance, filings, and news. Give it to every company database and company research guide. sec-filings and private-companies are narrower terms; a record with either also gets company-research. Case law and docket sources don't get it, even though dockets show who the debtor is."
+      },
+      {
+        "id": "sec-filings",
+        "label": "SEC filings",
+        "group": "Company research",
+        "scope": "Finding and reading public companies' SEC filings, such as 10-Ks, 8-Ks, and proxy statements, and identifying form types. Give it to EDGAR, the SEC Forms Index, and any company database whose description says it searches or holds SEC filings. A database with company profiles and news but no filings doesn't get it. The record also gets company-research."
+      },
+      {
+        "id": "private-companies",
+        "label": "Private companies",
+        "group": "Company research",
+        "scope": "Information on companies that don't file with the SEC, such as state entity filings, directories, profiles, and news. Give it to a resource whose description says it covers private companies, including \"public and private\" databases, but not to a public-company-only source like EDGAR or Mergent Market Atlas. The record also gets company-research."
+      },
+      {
+        "id": "constitutional-law",
+        "label": "Constitutional law",
+        "group": "Course subjects",
+        "scope": "Constitutional doctrine and debate, including shows that teach it through the news and shows on the history of landmark cases. The first-year course and its upper-level sequels. A show built around the Court's current docket takes supreme-court; a Court-focused show that also treats constitutional law or constitutional culture (Strict Scrutiny) takes both. Election law, the presidency, and legislatures are election-law."
+      },
+      {
+        "id": "supreme-court",
+        "label": "Supreme Court",
+        "group": "Course subjects",
+        "scope": "Shows and sources whose frame is the United States Supreme Court: its cases, arguments, opinions, justices, and term, including recordings and readings of arguments and opinions, and a show on how the Court's rulings shape one field. Not a course, but the companion to Constitutional Law and Federal Courts. General legal-news shows that cover the Court among other things take legal-news."
+      },
+      {
+        "id": "criminal-law",
+        "label": "Criminal law and procedure",
+        "group": "Course subjects",
+        "scope": "Criminal law, criminal procedure, sentencing, and drug policy as the subject, including the first-year course and the Criminal Law area of study. Drugs on the Docket takes it with supreme-court. A legal-controversies show takes it only if its description centers on prosecutions rather than legal controversies generally."
+      },
+      {
+        "id": "election-law",
+        "label": "Election law and government",
+        "group": "Course subjects",
+        "scope": "Elections, voting rights, redistricting, the presidency, legislatures, and state and local government as the subject. Maps to Election Law, Legislation, and State and Local Government Law in the catalog. A constitutional show that touches these in passing takes constitutional-law only."
+      },
+      {
+        "id": "international-law",
+        "label": "International and comparative law",
+        "group": "Course subjects",
+        "scope": "Public and private international law and comparative law as the subject. National-security law has no term; a national-security show takes legal-news."
+      },
+      {
+        "id": "dispute-resolution",
+        "label": "Alternative dispute resolution",
+        "group": "Course subjects",
+        "scope": "Arbitration, mediation, negotiation, and online dispute resolution as the subject; the Dispute Resolution area of study and the ADR course. A source about AI or online dispute resolution also takes legal-technology."
+      },
+      {
+        "id": "law-school",
+        "label": "Law school and the bar",
+        "group": "Law school",
+        "scope": "Being a law student: classes, exams, the bar, choosing a path, and law school culture. A show about practicing law after school takes legal-careers; one that does both takes both. A show on legal scholarship for the academy is legal-scholarship, not this."
+      },
+      {
+        "id": "legal-careers",
+        "label": "Legal careers and practice",
+        "group": "The profession",
+        "scope": "How lawyers work and live: careers, practice settings, firm management, professionalism, and lawyer well-being. Well-being has no term of its own and belongs here. A show about the law itself takes its subject term instead. Podcast networks that span the profession take general, not this, unless the network is itself about practice."
+      },
+      {
+        "id": "legal-technology",
+        "label": "Legal technology and innovation",
+        "group": "The profession",
+        "scope": "Technology in legal practice and dispute resolution, including AI, online dispute resolution, and legal innovation. Distinct from the law of technology (intellectual property, privacy), which takes a course-subject term when one exists. Sources on technology in dispute resolution also take dispute-resolution."
+      },
+      {
+        "id": "legal-scholarship",
+        "label": "Legal scholarship",
+        "group": "The profession",
+        "scope": "Legal scholarship and the academy as the subject: shows that discuss law review articles and books with their authors, or the work of law professors. For faculty and for students who read scholarship. A show that teaches a subject takes the subject term; a show about law school life is law-school."
+      },
+      {
+        "id": "legal-news",
+        "label": "Legal news and current events",
+        "group": "News and culture",
+        "scope": "Sources that report or discuss legal developments as they happen: news shows, practice-area newsletters and alert services, case-summary digests, and court news services. Every newsletter takes it unless its subject is narrower (a state-legislature newsletter is election-law). Includes national-security coverage and reproductive-rights litigation coverage, which have no terms of their own. A show whose frame is the Court or constitutional doctrine takes that term instead."
+      },
+      {
+        "id": "law-and-popular-culture",
+        "label": "Law and popular culture",
+        "group": "News and culture",
+        "scope": "Legal analysis of fiction, celebrity cases, and pop culture, usually comedic. A show that uses humor to discuss real current cases is legal-news."
+      }
+    ],
+    "access": [
+      {
+        "id": "open",
+        "label": "Open",
+        "scope": "Free to anyone and openly licensed."
+      },
+      {
+        "id": "free",
+        "label": "Free to read",
+        "scope": "Free to anyone online; rights reserved."
+      },
+      {
+        "id": "fee",
+        "label": "Paid",
+        "scope": "Open to the public for a fee, per use (PACER) or by subscription (a paid podcast)."
+      },
+      {
+        "id": "subscription-individual",
+        "label": "Individual login",
+        "scope": "A library subscription that needs each user's own account, such as Westlaw, Lexis, or Bloomberg Law for law students."
+      },
+      {
+        "id": "subscription-campus",
+        "label": "Campus network or VPN",
+        "scope": "A library subscription available on the campus network or through the VPN, no personal account needed."
+      },
+      {
+        "id": "print",
+        "label": "In the library",
+        "scope": "A physical copy in the library's collection."
+      }
+    ],
+    "platforms": [
+      {
+        "id": "lexis",
+        "label": "Lexis+",
+        "scope": "Lexis+, Lexis Advance, and Nexis Uni."
+      },
+      {
+        "id": "westlaw",
+        "label": "Westlaw",
+        "scope": "Westlaw Precision and Westlaw Edge."
+      },
+      {
+        "id": "bloomberg-law",
+        "label": "Bloomberg Law"
+      },
+      {
+        "id": "heinonline",
+        "label": "HeinOnline"
+      },
+      {
+        "id": "proquest",
+        "label": "ProQuest"
+      },
+      {
+        "id": "ceb",
+        "label": "CEB OnLAW"
+      },
+      {
+        "id": "library-database",
+        "label": "Other library database",
+        "scope": "A library-licensed database on its vendor's own platform, such as Factiva, Mergent, or Business Source Complete, or an e-book reached through the library catalog."
+      },
+      {
+        "id": "government",
+        "label": "Government website",
+        "scope": "Official sites such as uscourts.gov, sec.gov, and the House Office of the Law Revision Counsel."
+      },
+      {
+        "id": "open-web",
+        "label": "Open web",
+        "scope": "Free nonprofit"
+      },
+      {
+        "id": "library-print",
+        "label": "Library collection",
+        "scope": "A print or physical copy; give the call number and location."
+      }
+    ],
+    "jurisdictions": [
+      {
+        "id": "us-federal",
+        "label": "U.S. federal"
+      },
+      {
+        "id": "california",
+        "label": "California"
+      },
+      {
+        "id": "multi-jurisdictional",
+        "label": "Multi-jurisdictional",
+        "scope": "Covers several U.S. jurisdictions without centering on one."
+      },
+      {
+        "id": "ohio",
+        "label": "Ohio",
+        "scope": "Ohio law, courts, and government as the subject or the jurisdiction covered. A Moritz-produced show on national subjects does not take it."
+      }
+    ]
+  },
+  "ai_disclosure": "Records were drafted and tagged with AI assistance; a librarian reviewed every tag shown."
+}
