@@ -6,6 +6,7 @@ kind: newsletter
 access: free
 frequency: "A few times a month"
 url: https://www.normaltech.ai/
+feed: https://www.normaltech.ai/feed
 audience: [general]
 topics: [evaluating-and-procuring-ai-tools, ai-safety-and-agi]
 description: >

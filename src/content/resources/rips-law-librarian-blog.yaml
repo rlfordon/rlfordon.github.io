@@ -4,6 +4,7 @@ kind: blog
 access: free
 frequency: "Once or twice a week"
 url: https://ripslawlibrarian.wordpress.com/
+feed: https://ripslawlibrarian.wordpress.com/feed/
 audience: [faculty, practitioners]
 topics: [legal-research, teaching-with-ai]
 description: >

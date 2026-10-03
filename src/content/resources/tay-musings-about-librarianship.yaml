@@ -5,6 +5,7 @@ kind: newsletter
 access: free
 frequency: "A few times a month"
 url: https://aarontay.substack.com/
+feed: https://aarontay.substack.com/feed
 audience: [faculty, general]
 topics: [legal-research, evaluating-and-procuring-ai-tools, how-llms-work]
 description: >

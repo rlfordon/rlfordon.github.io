@@ -5,6 +5,7 @@ kind: newsletter
 access: free
 frequency: "Daily"
 url: https://www.theneurondaily.com/
+feed: https://rss.beehiiv.com/feeds/N4eCstxvgX.xml
 audience: [general]
 topics: [tools-and-platforms]
 description: >

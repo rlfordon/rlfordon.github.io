@@ -93,5 +93,6 @@ const topics = [...new Set([...r.topics, ...r.contents.flatMap((c) => c.topics)]
   <div class="access" data-access={r.access}>
     <span class="dot" aria-hidden="true"></span>{ACCESS_LABELS[r.access]}
     {qual && <small>{qual}</small>}
+    {r.feed && <a class="feed" href={r.feed} aria-label={`RSS feed for ${r.title}`}>RSS feed</a>}
   </div>
 </li>

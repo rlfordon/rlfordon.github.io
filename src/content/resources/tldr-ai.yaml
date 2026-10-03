@@ -4,6 +4,7 @@ kind: newsletter
 access: free
 frequency: "Weekdays"
 url: https://tldr.tech/ai/
+feed: https://tldr.tech/api/rss/ai
 audience: [general]
 topics: [tools-and-platforms, ai-fundamentals]
 description: >

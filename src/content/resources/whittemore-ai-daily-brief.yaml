@@ -6,6 +6,7 @@ access: free
 price: "Optional paid tier"
 frequency: "Daily"
 url: https://aidailybrief.ai/
+feed: https://anchor.fm/s/f7cac464/podcast/rss
 audience: [general]
 topics: [tools-and-platforms]
 description: >

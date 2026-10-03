@@ -4,6 +4,7 @@ authors:
 kind: blog
 access: free
 url: https://www.technollama.co.uk/
+feed: https://www.technollama.co.uk/feed
 audience: [practitioners, faculty, jd-students]
 topics: [copyright-and-training-data, international-and-comparative]
 description: >

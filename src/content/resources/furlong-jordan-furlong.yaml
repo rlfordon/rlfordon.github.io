@@ -5,6 +5,7 @@ kind: newsletter
 access: free
 frequency: "One or two a month"
 url: https://jordanfurlong.substack.com/
+feed: https://jordanfurlong.substack.com/feed
 audience: [practitioners, faculty]
 topics: [law-firm-business, careers-and-licensure]
 description: >

@@ -4,6 +4,7 @@ kind: news-site
 access: subscription
 frequency: "Daily"
 url: https://www.law.com/legaltechnews/
+feed: https://www.law.com/legaltechnews/feed/
 audience: [practitioners]
 topics: [tools-and-platforms, law-firm-business]
 description: >

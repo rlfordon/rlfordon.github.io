@@ -6,6 +6,7 @@ access: free
 price: "Optional paid tier"
 frequency: "Once or twice a week"
 url: https://judgeschlegel.substack.com/
+feed: https://judgeschlegel.substack.com/feed
 audience: [practitioners]
 topics: [courts-and-judicial-use, ai-agents]
 description: >

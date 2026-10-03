@@ -5,6 +5,7 @@ kind: blog
 access: free
 frequency: "Several times a week, in bursts"
 url: https://www.denniskennedy.com/
+feed: https://www.denniskennedy.com/feed/
 audience: [practitioners]
 topics: [law-firm-business, ai-governance-and-risk-management, ai-agents]
 description: >

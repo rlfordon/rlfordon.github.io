@@ -5,6 +5,7 @@ kind: blog
 access: free
 frequency: "Daily"
 url: https://chatgptiseatingtheworld.com/
+feed: https://chatgptiseatingtheworld.com/feed/
 audience: [practitioners, faculty, jd-students]
 topics: [copyright-and-training-data]
 description: >

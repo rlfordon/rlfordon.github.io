@@ -5,6 +5,7 @@ kind: newsletter
 access: free
 frequency: "About every two weeks"
 url: https://legaltechtrends.substack.com/
+feed: https://legaltechtrends.substack.com/feed
 audience: [practitioners]
 topics: [tools-and-platforms, law-firm-business, evaluating-and-procuring-ai-tools]
 description: >

@@ -7,6 +7,7 @@ kind: podcast
 access: free
 frequency: "About every two weeks"
 url: https://dair-institute.org/maiht3k/
+feed: https://rss.buzzsprout.com/2126417.rss
 audience: [general]
 topics: [evaluating-and-procuring-ai-tools, bias-and-discrimination]
 description: >

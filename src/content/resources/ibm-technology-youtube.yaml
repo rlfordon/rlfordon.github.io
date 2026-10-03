@@ -4,6 +4,7 @@ kind: video-channel
 access: free
 frequency: "Almost daily"
 url: https://www.youtube.com/@IBMTechnology
+feed: https://www.youtube.com/feeds/videos.xml?channel_id=UCKWaEZ-_VweaEx1j62do_vQ
 audience: [general]
 topics: [ai-fundamentals, how-llms-work, ai-agents]
 description: >

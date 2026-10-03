@@ -4,6 +4,7 @@ kind: blog
 access: free
 frequency: "Two to four times a month"
 url: https://lil.law.harvard.edu/blog/
+feed: https://lil.law.harvard.edu/blog/feed/index.xml
 audience: [faculty, general]
 topics: [legal-research, computational-law-and-analytics]
 description: >

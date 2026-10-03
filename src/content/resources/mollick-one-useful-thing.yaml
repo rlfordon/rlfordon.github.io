@@ -6,6 +6,7 @@ access: free
 price: "Optional paid tier"
 frequency: "A few times a month"
 url: https://www.oneusefulthing.org/
+feed: https://www.oneusefulthing.org/feed
 audience: [general, faculty]
 topics: [tools-and-platforms, prompting, teaching-with-ai]
 description: >

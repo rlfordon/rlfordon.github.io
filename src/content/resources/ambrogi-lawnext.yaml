@@ -5,6 +5,7 @@ kind: blog
 access: free
 frequency: "Daily"
 url: https://www.lawnext.com/
+feed: https://www.lawnext.com/feed/
 audience: [practitioners, jd-students]
 topics: [tools-and-platforms, law-firm-business]
 description: >

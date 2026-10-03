@@ -4,6 +4,7 @@ kind: blog
 access: free
 frequency: "Two to four times a month"
 url: https://www.slaw.ca/category/columns/legal-tech/
+feed: https://www.slaw.ca/category/columns/legal-tech/feed/
 audience: [practitioners, faculty]
 topics: [courts-and-judicial-use, professional-responsibility, teaching-with-ai, international-and-comparative]
 description: >

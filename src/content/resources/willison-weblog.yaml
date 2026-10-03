@@ -5,6 +5,7 @@ kind: blog
 access: free
 frequency: "Daily"
 url: https://simonwillison.net/
+feed: https://simonwillison.net/atom/everything/
 audience: [general]
 topics: [how-llms-work, tools-and-platforms, ai-agents]
 description: >

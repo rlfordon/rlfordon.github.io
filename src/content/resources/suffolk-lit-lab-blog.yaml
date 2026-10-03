@@ -8,6 +8,7 @@ kind: blog
 access: free
 frequency: "Two or three times a month"
 url: https://suffolklitlab.org/blog/
+feed: https://suffolklitlab.org/blog/feed/
 audience: [practitioners, faculty]
 topics: [access-to-justice, teaching-with-ai, tools-and-platforms]
 description: >

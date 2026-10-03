@@ -5,6 +5,7 @@ kind: newsletter
 access: free
 frequency: "Irregular"
 url: https://samharden.substack.com/
+feed: https://samharden.substack.com/feed
 audience: [practitioners]
 topics: [access-to-justice, tools-and-platforms]
 description: >

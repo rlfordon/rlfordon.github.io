@@ -5,6 +5,7 @@ kind: newsletter
 access: free
 frequency: "Every two weeks, with breaks"
 url: https://www.justicetech.download/
+feed: https://www.justicetech.download/feed
 audience: [practitioners, general]
 topics: [courts-and-judicial-use, criminal-justice-and-policing, access-to-justice]
 description: >

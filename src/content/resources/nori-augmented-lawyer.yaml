@@ -5,6 +5,7 @@ kind: newsletter
 access: free
 frequency: "About weekly"
 url: https://sateeshnori.substack.com/
+feed: https://sateeshnori.substack.com/feed
 audience: [practitioners, faculty]
 topics: [access-to-justice, teaching-with-ai, careers-and-licensure]
 description: >

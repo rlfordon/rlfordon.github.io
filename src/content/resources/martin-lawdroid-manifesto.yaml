@@ -5,6 +5,7 @@ kind: newsletter
 access: free
 frequency: "Once or twice a week"
 url: https://www.lawdroidmanifesto.com/
+feed: https://www.lawdroidmanifesto.com/feed
 audience: [practitioners, faculty]
 topics: [law-firm-business, access-to-justice, ai-agents]
 description: >

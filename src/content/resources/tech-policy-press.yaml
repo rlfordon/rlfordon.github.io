@@ -4,6 +4,7 @@ kind: news-site
 access: free
 frequency: "Daily"
 url: https://www.techpolicy.press/
+feed: https://techpolicy.press/rss/feed.xml
 audience: [general, practitioners]
 topics: [ai-regulation, consumer-protection-and-competition]
 description: >

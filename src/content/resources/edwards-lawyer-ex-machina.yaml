@@ -5,6 +5,7 @@ kind: newsletter
 access: free
 frequency: "Weekly"
 url: https://buttondown.com/LawyerExMachina
+feed: https://buttondown.com/LawyerExMachina/rss
 audience: [jd-students, practitioners]
 topics: [tools-and-platforms, law-firm-business]
 description: >

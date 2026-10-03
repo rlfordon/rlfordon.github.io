@@ -5,6 +5,7 @@ kind: blog
 access: free
 frequency: "Several times a week"
 url: https://www.llrx.com/
+feed: https://www.llrx.com/feed/
 audience: [practitioners, faculty]
 topics: [legal-research, tools-and-platforms, professional-responsibility]
 description: >

@@ -5,6 +5,7 @@ kind: news-site
 access: free
 frequency: "Daily"
 url: https://www.artificiallawyer.com/
+feed: https://www.artificiallawyer.com/feed/
 audience: [practitioners]
 topics: [tools-and-platforms, law-firm-business]
 description: >

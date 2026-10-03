@@ -3,6 +3,7 @@ kind: blog
 access: free
 frequency: "Irregular"
 url: https://www.ailawlibrarians.com/
+feed: https://www.ailawlibrarians.com/feed/
 audience: [faculty, practitioners]
 topics: [legal-research, teaching-with-ai, accuracy-and-verification]
 description: >

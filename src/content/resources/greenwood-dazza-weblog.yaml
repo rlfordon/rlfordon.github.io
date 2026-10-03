@@ -5,6 +5,7 @@ kind: newsletter
 access: free
 frequency: "About monthly"
 url: https://www.dazzagreenwood.com/
+feed: https://www.dazzagreenwood.com/feed
 audience: [practitioners, general]
 topics: [ai-agents, computational-law-and-analytics, professional-responsibility]
 description: >

@@ -88,6 +88,8 @@ const resources = defineCollection({
     /** For ongoing sources: how often it publishes, e.g. "Weekly". Goes stale; leans on `verified`. */
     frequency: z.string().optional(),
     url: z.string().url(),
+    /** RSS or Atom feed, for ongoing sources that offer one. */
+    feed: z.string().url().optional(),
     links: z.array(z.object({ label: z.string(), url: z.string().url() })).default([]),
     audience: z.array(z.enum(AUDIENCES)).default([]),
     /** Whole-work topics, for resources with no chapter list. Chapters carry their own. */

@@ -4,6 +4,7 @@ kind: news-site
 access: free
 frequency: "Daily"
 url: https://www.lawfaremedia.org/
+feed: https://www.lawfaremedia.org/feeds/articles
 links:
   - label: "Scaling Laws podcast"
     url: https://www.lawfaremedia.org/podcasts-multimedia/podcast/scaling-laws

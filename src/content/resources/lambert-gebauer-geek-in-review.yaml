@@ -6,6 +6,7 @@ kind: podcast
 access: free
 frequency: "Weekly"
 url: https://www.geeklawblog.com/podcast
+feed: https://anchor.fm/s/4440da0/podcast/rss
 audience: [practitioners]
 topics: [law-firm-business, legal-research]
 description: >

@@ -5,6 +5,7 @@ kind: newsletter
 access: free
 frequency: "Weekly"
 url: https://jack-clark.net/
+feed: https://jack-clark.net/feed/
 audience: [general]
 topics: [how-llms-work, ai-regulation, ai-safety-and-agi]
 description: >

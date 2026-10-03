@@ -35,6 +35,9 @@ entries.sort((a, b) =>
     : sortKeys(a.entry.data).title.localeCompare(sortKeys(b.entry.data).title),
 );
 const favorites = entries.filter((e) => e.favorite).length;
+// Sources with feeds can be taken into a feed reader all at once, as OPML.
+const feeds = entries.filter((e) => e.entry.data.feed).length;
+const opmlHref = `/resources/${guide.id}.opml`;
 const placeholder = entries.some((e) => e.entry.data.contents.length > 0)
   ? 'Search titles, authors, chapters, topics'
   : 'Search titles, authors, descriptions, topics';
@@ -92,9 +95,17 @@ const topicGroups = TOPIC_GROUPS.map((grp) => ({
     <p class="meta"><a href="/resources/">Resources</a> · Last checked {formatFullDate(g.updated)}</p>
     <h1>{g.title}</h1>
     {g.intro && <p class="intro">{g.intro}</p>}
+    {
+      feeds > 0 && (
+        <p class="subscribe">
+          Use a feed reader? {feeds} of these {g.noun.many} have RSS feeds. <a href={opmlHref} download>Download them all as one OPML file</a> and
+          import it into Feedly, Inoreader, or any other reader.
+        </p>
+      )
+    }
   </header>
 
-  <div class="guide" id="guide" data-total={total} data-noun-one={g.noun.one} data-noun-many={g.noun.many} data-default-sort={defaultSort} data-placeholder={placeholder}>
+  <div class="guide" id="guide" data-total={total} data-noun-one={g.noun.one} data-noun-many={g.noun.many} data-default-sort={defaultSort} data-placeholder={placeholder} data-guide={guide.id} data-title={g.title}>
     <nav class="toc" aria-label="Topics">
       <details class="toc-wrap" open>
         <summary><span class="toc-title">Topics</span><span class="toc-hint">{topicsHint}</span></summary>
@@ -152,6 +163,13 @@ const topicGroups = TOPIC_GROUPS.map((grp) => ({
       <div class="results-head">
         <p class="result-line" id="result-line" aria-live="polite"><strong>{total} resources</strong></p>
         <div class="display">
+          {
+            feeds > 0 && (
+              <a class="feed opml" id="opml" href={opmlHref} download title="Download the feeds for the sources shown, to import into a feed reader">
+                {feeds} feeds as OPML
+              </a>
+            )
+          }
           <fieldset class="seg">
             <legend>Sort</legend>
             {dated && <label><input type="radio" name="sort" value="date" checked /><span>Newest</span></label>}
@@ -178,6 +196,7 @@ const topicGroups = TOPIC_GROUPS.map((grp) => ({
   import MiniSearch from 'minisearch';
   import { SYNONYMS } from '../../data/search-synonyms';
   import { TOPIC_LABELS, TOPICS } from '../../data/topics';
+  import { opml } from '../../lib/opml';
 
   // Client-side search, filter, sort, and view for the guide. Every record is
   // already in the HTML; this only hides, reorders, annotates, and counts.
@@ -192,6 +211,7 @@ const topicGroups = TOPIC_GROUPS.map((grp) => ({
   const empty = document.getElementById('empty')!;
   const tocClear = document.getElementById('toc-clear') as HTMLButtonElement;
   const addButtons = Array.from(guide.querySelectorAll<HTMLButtonElement>('.toc-add'));
+  const opmlLink = document.getElementById('opml') as HTMLAnchorElement | null;
   const total = rows.length;
   const FACETS = ['fav', 'access', 'kind', 'topic'] as const;
   const ONE = guide.dataset.nounOne ?? 'book';
@@ -594,6 +614,14 @@ const topicGroups = TOPIC_GROUPS.map((grp) => ({
     empty.textContent = sel.topic.length > 1 && shown === 0 ? `No single ${ONE} covers all of these topics. Remove one to widen the list.` : 'Nothing matches.';
     tocClear.hidden = sel.topic.length === 0;
 
+    // The OPML link covers the feeds of the sources showing. Unfiltered, it is the prebuilt file.
+    if (opmlLink) {
+      const n = rows.filter((row) => !row.hidden && row.querySelector('a.feed')).length;
+      opmlLink.textContent = `${n} ${n === 1 ? 'feed' : 'feeds'} as OPML`;
+      opmlLink.hidden = n === 0;
+      opmlLink.dataset.filtered = anything ? 'yes' : '';
+    }
+
     // URL state.
     const params = new URLSearchParams();
     if (hits !== null) params.set('q', q.value.trim());
@@ -646,6 +674,24 @@ const topicGroups = TOPIC_GROUPS.map((grp) => ({
   scopeAll.addEventListener('click', () => {
     inputs('[name="topic"]').forEach((i) => (i.checked = false));
     apply();
+  });
+  // A filtered view's OPML is built on the spot from the rows showing, in their current order.
+  opmlLink?.addEventListener('click', (e) => {
+    if (!opmlLink.dataset.filtered) return;
+    e.preventDefault();
+    const feeds = rows
+      .filter((row) => !row.hidden)
+      .flatMap((row) => {
+        const feed = row.querySelector<HTMLAnchorElement>('a.feed');
+        const title = row.querySelector<HTMLAnchorElement>('a.title')!;
+        return feed ? [{ title: original(title), xmlUrl: feed.href, htmlUrl: title.href }] : [];
+      });
+    const url = URL.createObjectURL(new Blob([opml(guide.dataset.title ?? 'Feeds', feeds)], { type: 'text/x-opml' }));
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `${guide.dataset.guide ?? 'feeds'}-selected.opml`;
+    a.click();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
   });
   q.disabled = false;
   guide.classList.add('js');

@@ -3,6 +3,7 @@ publisher: "Law360"
 kind: news-site
 access: subscription
 url: https://www.law360.com/pulse/legal-tech
+feed: https://www.law360.com/pulse/legal-tech/rss
 links:
   - label: "Newsletter sign-up"
     url: https://www.law360.com/pulse/legal-tech/newsletter

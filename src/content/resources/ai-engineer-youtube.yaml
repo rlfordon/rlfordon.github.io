@@ -4,6 +4,7 @@ kind: video-channel
 access: free
 frequency: "Several videos a week, heaviest after each conference"
 url: https://www.youtube.com/@aiDotEngineer
+feed: https://www.youtube.com/feeds/videos.xml?channel_id=UCLKPca3kwwd-B59HNr-_lvA
 links:
   - label: Conference site
     url: https://ai.engineer/

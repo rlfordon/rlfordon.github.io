@@ -6,6 +6,7 @@ kind: blog
 access: free
 frequency: "Irregular, roughly monthly"
 url: https://justiceinnovation.law.stanford.edu/
+feed: https://justiceinnovation.law.stanford.edu/feed/
 audience: [practitioners, faculty]
 topics: [access-to-justice, evaluating-and-procuring-ai-tools]
 description: >

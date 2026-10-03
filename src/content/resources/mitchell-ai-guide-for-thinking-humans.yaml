@@ -5,6 +5,7 @@ kind: newsletter
 access: free
 frequency: "Irregular"
 url: https://aiguide.substack.com/
+feed: https://aiguide.substack.com/feed
 audience: [general]
 topics: [ai-fundamentals, how-llms-work]
 description: >

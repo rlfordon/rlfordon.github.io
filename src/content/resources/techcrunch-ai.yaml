@@ -4,6 +4,7 @@ kind: news-site
 access: free
 frequency: "Daily"
 url: https://techcrunch.com/category/artificial-intelligence/
+feed: https://techcrunch.com/category/artificial-intelligence/feed/
 audience: [general]
 topics: [tools-and-platforms]
 description: >

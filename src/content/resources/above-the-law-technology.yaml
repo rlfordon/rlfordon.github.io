@@ -4,6 +4,7 @@ kind: news-site
 access: free
 frequency: "Daily"
 url: https://abovethelaw.com/category/technology/
+feed: https://abovethelaw.com/category/technology/feed/
 audience: [practitioners, jd-students]
 topics: [tools-and-platforms, law-firm-business, accuracy-and-verification]
 description: >

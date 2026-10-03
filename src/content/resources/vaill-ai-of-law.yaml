@@ -8,6 +8,7 @@ kind: newsletter
 access: free
 frequency: "Several times a month"
 url: https://vaill.substack.com/
+feed: https://vaill.substack.com/feed
 audience: [practitioners, faculty]
 topics: [professional-responsibility, teaching-with-ai, ai-agents, access-to-justice]
 description: >

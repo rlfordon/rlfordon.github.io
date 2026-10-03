@@ -5,6 +5,7 @@ access: free
 price: "Some content paid"
 frequency: "Daily"
 url: https://www.theverge.com/ai-artificial-intelligence
+feed: https://www.theverge.com/rss/ai-artificial-intelligence/index.xml
 audience: [general]
 topics: [tools-and-platforms]
 description: >

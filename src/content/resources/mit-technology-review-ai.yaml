@@ -5,6 +5,7 @@ access: subscription
 price: "Limited free articles"
 frequency: "Several times a week"
 url: https://www.technologyreview.com/topic/artificial-intelligence/
+feed: https://www.technologyreview.com/topic/artificial-intelligence/feed
 audience: [general]
 topics: [ai-fundamentals, ai-regulation]
 description: >

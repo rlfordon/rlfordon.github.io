@@ -4,6 +4,7 @@ kind: blog
 access: free
 frequency: "About weekly"
 url: https://litsis.classcaster.net/
+feed: https://cssis.classcaster.net/feed/
 audience: [faculty, practitioners]
 topics: [tools-and-platforms, legal-research, professional-responsibility]
 description: >

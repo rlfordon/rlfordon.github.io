@@ -5,6 +5,7 @@ kind: blog
 access: free
 frequency: "Daily"
 url: https://www.bespacific.com/
+feed: https://www.bespacific.com/feed/
 audience: [practitioners, faculty]
 topics: [legal-research, tools-and-platforms, ai-regulation]
 description: >

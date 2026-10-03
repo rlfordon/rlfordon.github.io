@@ -6,6 +6,7 @@ access: free
 price: "Some content paid"
 frequency: "Several times a week"
 url: https://www.platformer.news/
+feed: https://www.platformer.news/rss/
 audience: [general]
 topics: [consumer-protection-and-competition, tools-and-platforms]
 description: >

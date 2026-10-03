@@ -5,6 +5,7 @@ kind: news-site
 access: free
 frequency: "Daily"
 url: https://legaltechnology.com/
+feed: https://legaltechnology.com/feed/
 audience: [practitioners]
 topics: [tools-and-platforms, law-firm-business]
 description: >

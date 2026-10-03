@@ -6,6 +6,7 @@ access: free
 price: "Optional paid tier"
 frequency: "A few times a month"
 url: https://www.aiweirdness.com/
+feed: https://www.aiweirdness.com/rss/
 audience: [general]
 topics: [accuracy-and-verification, how-llms-work]
 description: >

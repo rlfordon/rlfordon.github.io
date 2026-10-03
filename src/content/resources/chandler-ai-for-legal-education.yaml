@@ -5,6 +5,7 @@ kind: blog
 access: free
 frequency: "Weekly or more, plus a periodic news brief"
 url: https://legaled.ai/
+feed: https://legaled.ai/rss/
 audience: [faculty, jd-students]
 topics: [teaching-with-ai, academic-integrity-and-student-use, tools-and-platforms]
 description: >

@@ -4,6 +4,7 @@ kind: newsletter
 access: free
 frequency: "About every two weeks"
 url: https://brief.montrealethics.ai/
+feed: https://brief.montrealethics.ai/feed
 audience: [general]
 topics: [bias-and-discrimination, ai-governance-and-risk-management]
 description: >
