@@ -1,0 +1,242 @@
+---
+import Base from '../layouts/Base.astro';
+import { bios, NAME_STYLES } from '../data/bio';
+
+const TONES = [
+  ['standard', 'Plain'],
+  ['lively', 'Livelier'],
+] as const;
+const defaultName = NAME_STYLES[0];
+// `{name}` becomes a span the script can rewrite; the text around it is escaped
+const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;');
+const fill = (p: string) => esc(p).replaceAll('{name}', `<span class="bio-ref">${defaultName}</span>`);
+---
+<Base
+  title="Bio"
+  section="about"
+  description="Short, medium, and full speaker bios for Rebecca Fordon, ready to copy for programs and introductions."
+>
+  <header class="article-head">
+    <h1>Bio</h1>
+    <p class="intro">
+      For event organizers. Pick a length, copy it, and paste it as is. Every version is plain text in the third
+      person.
+    </p>
+  </header>
+
+  <div class="bio-tool" id="bio-tool">
+    <div class="display bio-controls">
+      <fieldset class="seg">
+        <legend>Length</legend>
+        {
+          bios.map((b, i) => (
+            <label title={b.use}>
+              <input type="radio" name="bio-len" value={b.id} checked={i === 2} />
+              {b.label}
+            </label>
+          ))
+        }
+      </fieldset>
+      <fieldset class="seg">
+        <legend>Tone</legend>
+        {
+          TONES.map(([value, label], i) => (
+            <label>
+              <input type="radio" name="bio-tone" value={value} checked={i === 0} />
+              {label}
+            </label>
+          ))
+        }
+      </fieldset>
+      <fieldset class="seg">
+        <legend>Later mentions</legend>
+        {
+          NAME_STYLES.map((n, i) => (
+            <label>
+              <input type="radio" name="bio-name" value={n} checked={i === 0} />
+              {n}
+            </label>
+          ))
+        }
+      </fieldset>
+    </div>
+
+    <div class="bio-out">
+      {
+        bios.flatMap((b) =>
+          TONES.map(([tone]) => (
+            <section class="bio-text" data-len={b.id} data-tone={tone} hidden={tone !== 'standard'}>
+              <h2 class="bio-label">
+                {b.label} <span>{b.use}</span>
+              </h2>
+              {b[tone].map((p) => (
+                <p set:html={fill(p)} />
+              ))}
+            </section>
+          ))
+        )
+      }
+      <div class="bio-actions">
+        <button type="button" class="bio-copy">Copy bio</button>
+        <span class="bio-count"></span>
+        <span class="bio-status" role="status"></span>
+      </div>
+    </div>
+
+    <details class="bio-match">
+      <summary>Match a co-panelist’s bio</summary>
+      <p>
+        Paste someone else’s bio from the same program. The page picks the length closest to theirs and refers to me
+        the way they refer to themselves. Nothing you paste leaves this page.
+      </p>
+      <label for="bio-theirs" class="visually-hidden">Their bio</label>
+      <textarea id="bio-theirs" rows="6" placeholder="Paste a bio here"></textarea>
+      <p class="bio-verdict" aria-live="polite"></p>
+    </details>
+  </div>
+</Base>
+
+<script>
+  const tool = document.getElementById('bio-tool')!;
+  tool.classList.add('js');
+  const blocks = [...tool.querySelectorAll<HTMLElement>('.bio-text')];
+  const count = tool.querySelector<HTMLElement>('.bio-count')!;
+  const status = tool.querySelector<HTMLElement>('.bio-status')!;
+  const theirs = tool.querySelector<HTMLTextAreaElement>('#bio-theirs')!;
+  const verdict = tool.querySelector<HTMLElement>('.bio-verdict')!;
+
+  const picked = (name: string) => tool.querySelector<HTMLInputElement>(`input[name="${name}"]:checked`)!.value;
+  const pick = (name: string, value: string) => {
+    const input = tool.querySelector<HTMLInputElement>(`input[name="${name}"][value="${value}"]`);
+    if (input) input.checked = true;
+  };
+  const words = (s: string) => s.split(/\s+/).filter(Boolean).length;
+  // paragraphs joined by a blank line, which pastes cleanly into forms, email, and Word
+  const plain = (el: HTMLElement) =>
+    [...el.querySelectorAll('p')].map((p) => p.textContent!.replace(/\s+/g, ' ').trim()).join('\n\n');
+  const current = () => blocks.find((b) => !b.hidden)!;
+
+  function render() {
+    const len = picked('bio-len');
+    const tone = picked('bio-tone');
+    const name = picked('bio-name');
+    tool.querySelectorAll('.bio-ref').forEach((r) => (r.textContent = name));
+    for (const b of blocks) b.hidden = !(b.dataset.len === len && b.dataset.tone === tone);
+    count.textContent = `${words(plain(current()))} words`;
+    status.textContent = '';
+  }
+  tool.querySelector('.bio-controls')!.addEventListener('change', render);
+  render();
+
+  tool.querySelector('.bio-copy')!.addEventListener('click', async () => {
+    const text = plain(current());
+    try {
+      await navigator.clipboard.writeText(text);
+      status.textContent = 'Copied.';
+    } catch {
+      // no clipboard access: select the text so Ctrl+C works
+      const range = document.createRange();
+      range.selectNodeContents(current());
+      getSelection()?.removeAllRanges();
+      getSelection()?.addRange(range);
+      status.textContent = 'Selected. Press Ctrl+C (⌘C on a Mac) to copy.';
+    }
+  });
+
+  // ---- match another bio: length, and how it refers to its subject after the opening
+  const HONORIFIC = /^(Professor|Prof\.?|Dr\.?|Dean|Judge|Justice|Hon\.?|The|Mr\.?|Ms\.?|Mrs\.?|Mx\.?)$/;
+  const SUFFIX = /^(Jr|Sr|II|III|IV|PhD|Ph\.D|JD|J\.D|MLIS|MLS|Esq)\.?$/i;
+  const reEsc = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+  /** First and last name from the opening run of capitalized words, e.g. "Dr. Jane Q. Smith, J.D., is ..." */
+  function nameOf(text: string) {
+    const run: string[] = [];
+    for (const raw of text.trim().split(/\s+/)) {
+      const tok = raw.replace(/[,;:]+$/, '');
+      if (!/^[A-Z]/.test(tok)) break;
+      if (!HONORIFIC.test(tok) && !SUFFIX.test(tok) && !/^[A-Z]\.?$/.test(tok)) run.push(tok.replace(/['’]s$/, ''));
+      if (raw !== tok || run.length >= 4) break;
+    }
+    return run.length >= 2 ? { first: run[0], last: run[run.length - 1] } : null;
+  }
+
+  /** Which of my name styles matches how the bio refers to its subject after the first sentence. */
+  function styleOf(text: string, first: string, last: string) {
+    const rest = text.replace(/^[^.!?]*[.!?]/, '');
+    const titled = rest.match(new RegExp(`\\b(Professor|Prof\\.|Dr\\.|Dean|Judge|Justice)\\s+${reEsc(last)}\\b`));
+    if (titled) return { style: 'Professor Fordon', seen: titled[0] };
+    const bareLast = rest.match(new RegExp(`(?<!${reEsc(first)}\\s)\\b${reEsc(last)}\\b`, 'g'))?.length ?? 0;
+    const bareFirst = rest.match(new RegExp(`\\b${reEsc(first)}\\b(?!\\s+${reEsc(last)})`, 'g'))?.length ?? 0;
+    if (bareFirst > bareLast) return { style: 'Rebecca', seen: first };
+    if (bareLast > 0) return { style: 'Fordon', seen: last };
+    return null;
+  }
+
+  function match() {
+    const text = theirs.value.trim();
+    if (!text) {
+      verdict.textContent = '';
+      return;
+    }
+    const n = words(text);
+    const notes = [`Theirs is ${n} words`];
+
+    const firstPerson = (text.match(/\bI\b|\b(my|me)\b/gi) ?? []).length;
+    const thirdPerson = (text.match(/\b(he|she|they|his|her|their|him|them)\b/gi) ?? []).length;
+    const name = nameOf(text);
+    const style = name ? styleOf(text, name.first, name.last) : null;
+    if (style) {
+      pick('bio-name', style.style);
+      notes.push(`and calls them “${style.seen}” after the opening`);
+    }
+
+    // closest length in the current tone, counted with the name style just chosen
+    pick('bio-len', 'line');
+    render();
+    const tone = picked('bio-tone');
+    let best = blocks[0];
+    let gap = Infinity;
+    for (const b of blocks) {
+      if (b.dataset.tone !== tone) continue;
+      const d = Math.abs(words(plain(b)) - n);
+      if (d < gap) [best, gap] = [b, d];
+    }
+    pick('bio-len', best.dataset.len!);
+    render();
+
+    let out = `${notes.join(', ')}. Switched to the ${best.querySelector('.bio-label')!.firstChild!.textContent!.trim()} bio (${count.textContent})`;
+    out += style ? ` with “${style.style}”.` : '.';
+    if (firstPerson > thirdPerson) out += ' Theirs is in the first person; these are all third person.';
+    verdict.textContent = out;
+  }
+  theirs.addEventListener('input', match);
+</script>
+
+<style>
+  .bio-tool { max-width: var(--measure); }
+  .bio-controls { margin: 0 0 1.2rem; gap: 0.6rem 2rem; }
+  .bio-controls .seg { flex-wrap: wrap; }
+  .bio-out { border-top: 2px solid var(--teal); padding-top: 1.2rem; }
+  .bio-text { font-size: 1.02rem; }
+  .bio-tool:not(.js) .bio-text + .bio-text { margin-top: 2rem; }
+  .bio-label { font-size: 1.2rem; margin: 0 0 0.6rem; }
+  .bio-label span { font-family: var(--sans); font-weight: 400; font-size: 0.78rem; color: var(--muted); letter-spacing: 0; margin-left: 0.4rem; }
+  .bio-actions { display: flex; align-items: baseline; gap: 1rem; flex-wrap: wrap; padding-top: 0.4rem; font-size: 0.78rem; color: var(--muted); }
+  .bio-copy { font: inherit; font-size: 0.8rem; font-weight: 500; padding: 0.35rem 0.9rem; border: 1px solid var(--ink-soft); border-radius: 999px; background: #fff; color: var(--ink); cursor: pointer; }
+  .bio-copy:hover { border-color: var(--link); color: var(--link); }
+  .bio-copy:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; }
+  .bio-status { color: var(--link); font-weight: 500; }
+  .bio-match { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--rule); font-size: 0.9rem; color: var(--ink-soft); }
+  .bio-match summary { cursor: pointer; font-family: var(--display); font-weight: 900; font-variation-settings: 'SOFT' 100, 'WONK' 1, 'opsz' 144; font-size: 1.2rem; letter-spacing: -0.015em; color: var(--ink); }
+  .bio-match summary:hover { color: var(--link); }
+  .bio-match p { margin: 0.8rem 0; }
+  .bio-match textarea { width: 100%; font: inherit; font-size: 0.88rem; padding: 0.6rem 0.75rem; border: 1px solid var(--rule); border-radius: 4px; background: #fff; color: var(--ink); resize: vertical; }
+  .bio-verdict { color: var(--ink); padding-left: 0.9rem; border-left: 2px solid var(--yellow); }
+  .bio-verdict:empty { display: none; }
+
+  /* with the script: one bio at a time, chosen by the controls; without it: every plain version, labelled */
+  .bio-tool.js .bio-label { display: none; }
+  .bio-tool:not(.js) .bio-controls,
+  .bio-tool:not(.js) .bio-actions,
+  .bio-tool:not(.js) .bio-match { display: none; }
+</style>
