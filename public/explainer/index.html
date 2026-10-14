@@ -2,18 +2,28 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-qy+iXEcC5nsiSkZV6zzXwtYiGK+J1QUi51JQuD0RP/4='; style-src 'unsafe-inline'; img-src data:; font-src 'none'; connect-src 'none'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-/8+E8kA6l6mfr7SMQwBMSSaP9Lm8UjHnONUGWFcvV0E='; style-src 'unsafe-inline'; img-src data:; font-src 'self'; connect-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="no-referrer">
 <meta name="robots" content="noindex">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Explainer</title>
 <style>
+@font-face{font-family:"Newsreader";font-style:italic;font-weight:400;font-display:swap;src:url(fonts/newsreader-italic-400.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:"Newsreader";font-style:normal;font-weight:400 700;font-display:swap;src:url(fonts/newsreader.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:"Source Serif 4";font-style:italic;font-weight:400;font-display:swap;src:url(fonts/source-serif-4-italic-400.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:"Source Serif 4";font-style:normal;font-weight:400 700;font-display:swap;src:url(fonts/source-serif-4.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:"Bricolage Grotesque";font-style:normal;font-weight:400 800;font-display:swap;src:url(fonts/bricolage-grotesque.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:"IBM Plex Sans";font-style:italic;font-weight:400;font-display:swap;src:url(fonts/ibm-plex-sans-italic-400.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:"IBM Plex Sans";font-style:normal;font-weight:400 700;font-display:swap;src:url(fonts/ibm-plex-sans.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:400;font-display:swap;src:url(fonts/ibm-plex-mono-400.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:600;font-display:swap;src:url(fonts/ibm-plex-mono-600.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:700;font-display:swap;src:url(fonts/ibm-plex-mono-700.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
 :root{--s1:4px;--s2:8px;--s3:12px;--s4:16px;--s5:24px;--s6:32px;--s7:48px;--s8:64px;--s9:96px;--maxw:1180px;--measure:66ch;--r:4px}
 *{box-sizing:border-box}
 [hidden]{display:none!important}
 html{scroll-behavior:smooth}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--text);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
 h1,h2,h3,h4{font-family:var(--disp);font-weight:600;line-height:1.14;margin:0;letter-spacing:-.012em;text-wrap:balance}
 p{margin:0 0 var(--s4)}
 a{color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent-dim)}
@@ -52,7 +62,7 @@ section[id]{scroll-margin-top:72px}
 .eyebrow{font-family:var(--mono);font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin:0 0 var(--s3)}
 .eyebrow span{color:var(--ink-3)}
 .sechead{margin-bottom:var(--s6)}
-.sechead h2{font-size:clamp(28px,3.8vw,40px);max-width:24ch}
+.sechead h2{font-size:clamp(28px,3.8vw,40px);max-width:17ch}
 .sechead .lede{font-size:18.5px;color:var(--ink-2);max-width:62ch;margin:var(--s3) 0 0}
 .split-head .sechead{max-width:none;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:var(--s7);align-items:end}
 .split-head .sechead .eyebrow{grid-column:1/-1}
@@ -786,46 +796,93 @@ function plain(src) {
 return {esc,cleanClass,cleanId,slug,safeUrl,hexColor,parseAttrs,splitAttrs,mergeAttrs,attrHtml,parse,splitRow,parseColumn,cellOf,parseList,quoteParas,inline,plain};
 })();
 __m["../lib/theme.js"]=(function(){
-/* theme.js — one token vocabulary, a few palettes, and the head keys that tune them.
+/* theme.js — themes: a palette, a font pairing and a few type adjustments, chosen by name.
+ *
+ *   theme: brief | counsel | field-guide | night        (default: brief)
  *
  * Tokens (frozen from fbi-cia-nsa.html, the cleanest of the existing pages):
  *   surfaces  --bg --surface --surface-2 --raise      lines  --line --line-2
  *   ink       --ink --ink-2 --ink-3                   chrome --accent --accent-dim --accent-lt
  *   status    --ok --bad --warn (+ -dim)              dark band --dk-bg --dk-surface --dk-line --dk-ink --dk-ink-2
- *   type      --disp --sans --mono                    space  --s1..--s9 = 4 8 12 16 24 32 48 64 96
- * Head keys:  palette: paper-cool | paper-warm | ink    accent: #hex
- *             colors: fbi=#1d4e89 cia=#7d5f18 …       (topic colours → .c-<name> and [label]{.name} chips)
- *             fonts: Display / Sans / Mono            (Google Fonts names; the file target loads them)
+ *   type      --disp (headings) --text (prose) --sans (controls, labels) --mono
+ *   space     --s1..--s9 = 4 8 12 16 24 32 48 64 96
+ * Head keys that override the theme: accent: #hex · colors: fbi=#1d4e89 … (topic colours →
+ * .c-<name> and [label]{.name} chips) · fonts: Display / Sans / Mono (file target: any Google
+ * font; link viewer: only the fonts it hosts, see FONTS).
  * Every value from the head is validated here; nothing else from a source reaches CSS.
  */
 const { hexColor, cleanClass } = __m["../lib/md.js"];
 
-const PALETTES = {
-  "paper-cool": {
-    bg: "#eef1f5", surface: "#f7f9fb", "surface-2": "#ffffff", raise: "#e4e9ef",
-    line: "#d5dce4", "line-2": "#b9c4cf", ink: "#14181f", "ink-2": "#4a5460", "ink-3": "#626d7b",
-    accent: "#5b3a5e", ok: "#1a6b5e", bad: "#8c2f2f", warn: "#8a5a00",
-    "dk-bg": "#131a24", "dk-surface": "#1c2531", "dk-line": "#2f3c4c", "dk-ink": "#e8edf3", "dk-ink-2": "#9fb0c2",
+/* The families the link viewer serves itself (fonts/, from scripts/fetch-fonts.mjs). */
+const FONTS = ["Newsreader", "Source Serif 4", "Bricolage Grotesque", "IBM Plex Sans", "IBM Plex Mono"];
+
+const PLEX = { sans: "IBM Plex Sans", mono: "IBM Plex Mono" };
+
+const THEMES = {
+  brief: {
+    label: "Brief — cool paper, Newsreader headlines; policy and public explainers",
+    fonts: { disp: "Newsreader", text: "IBM Plex Sans", ...PLEX },
+    palette: {
+      bg: "#eef1f5", surface: "#f7f9fb", "surface-2": "#ffffff", raise: "#e4e9ef",
+      line: "#d5dce4", "line-2": "#b9c4cf", ink: "#14181f", "ink-2": "#4a5460", "ink-3": "#626d7b",
+      accent: "#5b3a5e", ok: "#1a6b5e", bad: "#8c2f2f", warn: "#8a5a00",
+      "dk-bg": "#131a24", "dk-surface": "#1c2531", "dk-line": "#2f3c4c", "dk-ink": "#e8edf3", "dk-ink-2": "#9fb0c2",
+    },
+    css: "",
   },
-  "paper-warm": {
-    bg: "#f3f0ea", surface: "#f9f7f3", "surface-2": "#ffffff", raise: "#e9e4dc",
-    line: "#ddd6ca", "line-2": "#c3b9a9", ink: "#1b1814", "ink-2": "#4d473f", "ink-3": "#6b6358",
-    accent: "#2f4f6f", ok: "#2c6a4f", bad: "#8e3131", warn: "#86600c",
-    "dk-bg": "#1a1815", "dk-surface": "#24211d", "dk-line": "#3a352e", "dk-ink": "#f0ece5", "dk-ink-2": "#b3aa9c",
+  counsel: {
+    label: "Counsel — warm paper, a serif to read like a letter; client pages",
+    fonts: { disp: "Source Serif 4", text: "Source Serif 4", ...PLEX },
+    palette: {
+      bg: "#f5f2ec", surface: "#faf8f4", "surface-2": "#ffffff", raise: "#ece7de",
+      line: "#ded6c9", "line-2": "#c5baa8", ink: "#1c1915", "ink-2": "#4b453c", "ink-3": "#6b6357",
+      accent: "#24496b", ok: "#2c6a4f", bad: "#8e3131", warn: "#86600c",
+      "dk-bg": "#1c2430", "dk-surface": "#252f3c", "dk-line": "#38465a", "dk-ink": "#f1ede6", "dk-ink-2": "#b7c0cc",
+    },
+    css: "body{font-size:18px;line-height:1.62}h1,h2,h3,h4{font-weight:600;letter-spacing:-.008em}" +
+      ".hero h1{font-size:clamp(36px,5.6vw,60px)}.sechead h2{font-size:clamp(28px,3.4vw,38px)}" +
+      ".dek,.lede{font-style:normal}.cmp td,.data td,.gloss dd,.roles,.stage p,.tl-panel p{font-family:var(--text)}",
   },
-  ink: {
-    bg: "#11151b", surface: "#171c24", "surface-2": "#1d232c", raise: "#262e39",
-    line: "#2c3542", "line-2": "#3e4a59", ink: "#e9edf2", "ink-2": "#aab5c2", "ink-3": "#8a96a5",
-    accent: "#9db7ff", ok: "#5fc9a4", bad: "#f08a8a", warn: "#e8bd5e",
-    "dk-bg": "#0b0e12", "dk-surface": "#12161c", "dk-line": "#242c36", "dk-ink": "#e9edf2", "dk-ink-2": "#9aa6b5",
+  "field-guide": {
+    label: "Field guide — bright paper, Bricolage Grotesque; tools and how-tos",
+    fonts: { disp: "Bricolage Grotesque", text: "IBM Plex Sans", ...PLEX },
+    palette: {
+      bg: "#f7f6f2", surface: "#ffffff", "surface-2": "#ffffff", raise: "#eeece6",
+      line: "#e1ded6", "line-2": "#c9c4b8", ink: "#15161c", "ink-2": "#4a4d5a", "ink-3": "#6a6d79",
+      accent: "#5b48b8", ok: "#2f7d4f", bad: "#c0392b", warn: "#a86a00",
+      "dk-bg": "#1b1a2e", "dk-surface": "#242339", "dk-line": "#38365a", "dk-ink": "#f0eefa", "dk-ink-2": "#b9b4d8",
+    },
+    css: "h1,h2,h3,h4{font-weight:750;letter-spacing:-.022em}.hero h1{font-weight:800;letter-spacing:-.03em}" +
+      ".eyebrow{letter-spacing:.1em}.demo,.quiz,.checklist{border-radius:10px}.seg,.btn,.wire,.opt,.stage{border-radius:7px}",
+  },
+  night: {
+    label: "Night — dark ink, Newsreader headlines; presentations and late reading",
+    fonts: { disp: "Newsreader", text: "IBM Plex Sans", ...PLEX },
+    palette: {
+      bg: "#11151b", surface: "#171c24", "surface-2": "#1d232c", raise: "#262e39",
+      line: "#2c3542", "line-2": "#3e4a59", ink: "#e9edf2", "ink-2": "#b0bac6", "ink-3": "#8e99a8",
+      accent: "#a9bdff", ok: "#5fc9a4", bad: "#f08a8a", warn: "#e8bd5e",
+      "dk-bg": "#0a0d11", "dk-surface": "#12161c", "dk-line": "#242c36", "dk-ink": "#e9edf2", "dk-ink-2": "#9aa6b5",
+    },
+    css: "",
   },
 };
 
+/* older names */
+const ALIAS = { "paper-cool": "brief", "paper-warm": "counsel", ink: "night" };
+
+function themeOf(head) {
+  const name = String(head.theme || ALIAS[head.palette] || head.palette || "brief").toLowerCase();
+  return THEMES[ALIAS[name] || name] || THEMES.brief;
+}
+
 const FALLBACK = {
   disp: 'Georgia,"Times New Roman",serif',
+  serif: 'Georgia,"Times New Roman",serif',
   sans: '-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif',
   mono: 'ui-monospace,SFMono-Regular,Menlo,Consolas,monospace',
 };
+const SERIFS = ["Newsreader", "Source Serif 4"];
 
 function rgb(hex) {
   let h = hex.slice(1);
@@ -842,9 +899,15 @@ function lum(hex) {
     .reduce((s, v, k) => s + v * [0.2126, 0.7152, 0.0722][k], 0);
 }
 
-function fontNames(head) {
-  const parts = String(head.fonts || "").split("/").map((s) => s.trim()).filter((s) => /^[A-Za-z0-9 ]{2,40}$/.test(s));
-  return { disp: parts[0] || "", sans: parts[1] || "", mono: parts[2] || "" };
+/* The page's fonts: the theme's, with `fonts: Display / Sans / Mono` overriding. In the
+ * link viewer only hosted families are allowed (`hosted: true`). */
+function fontNames(head, { hosted = false } = {}) {
+  const t = themeOf(head).fonts;
+  const ok = (s) => /^[A-Za-z0-9 ]{2,40}$/.test(s) && (!hosted || FONTS.includes(s));
+  const parts = String(head.fonts || "").split("/").map((s) => s.trim());
+  const pick = (i, dflt) => (parts[i] && ok(parts[i]) ? parts[i] : dflt);
+  const disp = pick(0, t.disp), sans = pick(1, t.sans), mono = pick(2, t.mono);
+  return { disp, text: head.fonts && parts[1] && ok(parts[1]) ? sans : t.text, sans, mono };
 }
 
 function topicColors(head) {
@@ -856,10 +919,10 @@ function topicColors(head) {
   return out;
 }
 
-/* :root tokens + topic colour classes for a page, as a CSS string. `webFonts` false means
- * the font names are dropped (the link viewer makes no network requests). */
-function themeCss(head, { webFonts = true } = {}) {
-  const pal = { ...(PALETTES[head.palette] || PALETTES["paper-cool"]) };
+/* :root tokens, the theme's adjustments and topic colour classes, as a CSS string. */
+function themeCss(head, { hosted = false } = {}) {
+  const theme = themeOf(head);
+  const pal = { ...theme.palette };
   const acc = hexColor(head.accent);
   if (acc) pal.accent = acc;
   const dark = lum(pal.bg) < 0.2;
@@ -867,27 +930,33 @@ function themeCss(head, { webFonts = true } = {}) {
   vars.push(`--accent-dim:${rgba(pal.accent, dark ? 0.18 : 0.1)}`, `--accent-lt:${mix(pal.accent, "#ffffff", 0.45)}`);
   for (const k of ["ok", "bad", "warn"]) vars.push(`--${k}-dim:${rgba(pal[k], dark ? 0.2 : 0.11)}`);
   vars.push(`--nav-bg:${rgba(pal.bg, 0.92)}`);
-  const f = webFonts ? fontNames(head) : { disp: "", sans: "", mono: "" };
-  for (const k of ["disp", "sans", "mono"]) vars.push(`--${k}:${f[k] ? `"${f[k]}",` : ""}${FALLBACK[k]}`);
-  let css = `:root{${vars.join(";")}}\n`;
+  const f = fontNames(head, { hosted });
+  const stack = (name, kind) => `"${name}",${FALLBACK[kind === "text" || kind === "disp" ? (SERIFS.includes(name) ? "serif" : "sans") : kind]}`;
+  vars.push(`--disp:${stack(f.disp, "disp")}`, `--text:${stack(f.text, "text")}`, `--sans:${stack(f.sans, "sans")}`, `--mono:${stack(f.mono, "mono")}`);
+  let css = `:root{${vars.join(";")}}\n${theme.css}\n`;
   for (const [name, hex] of Object.entries(topicColors(head))) {
     css += `.c-${name}{--c:${hex};--c-dim:${rgba(hex, dark ? 0.22 : 0.11)};--c-lt:${mix(hex, "#ffffff", 0.5)}}\n`;
   }
-  if (dark) css += `:root{color-scheme:dark}\n`;
+  // on a dark theme, topic colours use their light variants so they stay visible
+  if (dark) css += `:root{color-scheme:dark}\n.tl-dot.kt,.tl-key i.kt{background:var(--c-lt);border-color:var(--c-lt)}.tl-dot.kt.future{background:var(--surface-2)}` +
+    `.chip{background:var(--c-lt,var(--ink-2));color:var(--bg)}table thead th.h-c{color:var(--c-lt);box-shadow:inset 0 -3px 0 var(--c-lt)}\n`;
   return css;
 }
 
-/* Google Fonts stylesheet URL for the file target, or "" when the head names none. */
+/* Google Fonts stylesheet URL for the file target. */
 function fontLink(head) {
   const f = fontNames(head);
   const fam = [];
-  if (f.disp) fam.push(`family=${f.disp.replace(/ /g, "+")}:wght@400;500;600;700`);
-  if (f.sans && f.sans !== f.disp) fam.push(`family=${f.sans.replace(/ /g, "+")}:ital,wght@0,400;0,500;0,600;0,700;1,400`);
-  if (f.mono) fam.push(`family=${f.mono.replace(/ /g, "+")}:wght@400;500;600;700`);
-  return fam.length ? `https://fonts.googleapis.com/css2?${fam.join("&")}&display=swap` : "";
+  const seen = new Set();
+  const add = (name, axes) => { if (!seen.has(name)) { seen.add(name); fam.push(`family=${name.replace(/ /g, "+")}:${axes}`); } };
+  add(f.disp, "wght@400;500;600;700;800");
+  add(f.text, "ital,wght@0,400;0,500;0,600;0,700;1,400");
+  add(f.sans, "ital,wght@0,400;0,500;0,600;0,700;1,400");
+  add(f.mono, "wght@400;500;600;700");
+  return `https://fonts.googleapis.com/css2?${fam.join("&")}&display=swap`;
 }
 
-return {PALETTES,fontNames,topicColors,themeCss,fontLink};
+return {FONTS,THEMES,themeOf,fontNames,topicColors,themeCss,fontLink};
 })();
 __m["../lib/wkit.js"]=(function(){
 /* wkit.js — small helpers the widget renderers share. No DOM, no Node. */
@@ -1135,7 +1204,23 @@ const timeline = {
     }
     if (max === min) max = min + 1;
     if (!ticks || !ticks.length) ticks = autoTicks(min, max, dated);
-    const pos = (v) => ((v - min) / (max - min)).toFixed(4);
+    let posOf = (v) => (v - min) / (max - min);
+    if (kv.scale === "even") {
+      // equal spacing, for chronologies where a few early events would squeeze the rest;
+      // "today" still lands between the right neighbours. No axis: the dot labels carry dates.
+      const k = evs.length, at = (i) => (k === 1 ? 0.5 : 0.03 + (0.94 * i) / (k - 1));
+      posOf = (v) => {
+        if (v <= evs[0].w.v) return at(0);
+        if (v > evs[k - 1].w.v) return Math.min(0.99, at(k - 1) + 0.02);
+        for (let i = 1; i < k; i++) if (v <= evs[i].w.v) {
+          const a = evs[i - 1].w.v, b = evs[i].w.v;
+          return at(i - 1) + (at(i) - at(i - 1)) * (b === a ? 0 : (v - a) / (b - a));
+        }
+        return at(k - 1);
+      };
+      ticks = [];
+    }
+    const pos = (v) => posOf(v).toFixed(4);
 
     const short = (w) => w.mo === null ? String(w.y) : (max - min <= 1.5 ? `${MON[w.mo]}${w.d ? " " + w.d : ""}` : `${MON[w.mo]} ${w.y}`);
     const items = evs.map((e) => {
@@ -1586,7 +1671,7 @@ function renderPage(src, { mode = "file" } = {}) {
     `<nav class="nav" aria-label="Sections"><div class="wrap"><span class="brand">${ctx.inline(brand)}</span>` +
     `<div class="links">${nav}</div></div></nav>\n`;
 
-  const meta = String(head.meta || "").split("·").map((s) => s.trim()).filter(Boolean);
+  const meta = String(head.meta || "").split(/\|/.test(head.meta || "") ? "|" : "·").map((s) => s.trim()).filter(Boolean);
   html += `<header class="hero"><div class="wrap hero-anim">` +
     `<h1>${ctx.inline(title)}</h1>` +
     (head.dek ? `<p class="dek">${ctx.inline(head.dek)}</p>` : "") +
@@ -1692,7 +1777,7 @@ function timeline(root) {
       const left = Math.max(1.5, Math.min(98.5, e.p * 100));
       const top = rows[i % 3];
       h += '<div class="tl-node" data-i="' + i + '" style="left:' + left.toFixed(2) + "%;top:" + top + 'px">' +
-        '<div class="tl-stem" style="top:20px;height:' + (208 - top - 20) + 'px"></div>' + dot(e, i) +
+        '<div class="tl-stem" style="top:40px;height:' + Math.max(0, 208 - top - 40) + 'px"></div>' + dot(e, i) +
         '<div class="tl-yr">' + e.s + "</div></div>";
     });
     if (today !== null) h += '<div class="tl-today" style="left:' + pct(today) + '"><span>Today</span></div>';
@@ -1970,12 +2055,13 @@ return {HYDRATE};
 })();
 __m["boot.js"]=(function(){
 /* boot.js — the link viewer. Reads the fragment, renders it with the trusted widget set, and
- * hydrates. It never fetches anything (the page's CSP forbids it), never runs code from the
- * link (page.js in "link" mode passes no raw HTML or script through), and keeps in-page
- * links from rewriting the fragment, which is the document. */
+ * hydrates. It fetches nothing but its own theme fonts (the page's CSP allows only those),
+ * never runs code from the link (page.js in "link" mode passes no raw HTML or script
+ * through), and keeps in-page links from rewriting the fragment, which is the document.
+ * ?theme=<name> before the # swaps the page's theme (a named theme, nothing else). */
 const { decodeFragment } = __m["../lib/codec.js"];
 const { renderPage } = __m["../lib/page.js"];
-const { themeCss } = __m["../lib/theme.js"];
+const { themeCss, THEMES } = __m["../lib/theme.js"];
 const { HYDRATE } = __m["hydrate.js"];
 
 const root = document.getElementById("x-root");
@@ -2003,7 +2089,9 @@ async function show() {
   const page = renderPage(src, { mode: "link" });
   document.title = page.title || "Explainer";
   if (page.head.lang && /^[a-z]{2}(-[A-Za-z]{2})?$/.test(page.head.lang)) document.documentElement.lang = page.head.lang;
-  theme.textContent = themeCss(page.head, { webFonts: false });
+  const pick = new URLSearchParams(location.search).get("theme");
+  const head = pick && Object.prototype.hasOwnProperty.call(THEMES, pick) ? { ...page.head, theme: pick, accent: "" } : page.head;
+  theme.textContent = themeCss(head, { hosted: true });
   // Until links are signed, anyone can write one that renders here, so say where it came from.
   root.innerHTML = page.html + '<footer class="x-origin"><div class="wrap">This page came from the link you opened. ' +
     "It is not published by this site, and nothing in it was sent to any server: the page lives in the link itself.</div></footer>";
