@@ -1,0 +1,20 @@
+title: "Law Skills Hub"
+publisher: Harvard Law School Library Innovation Lab
+date: 2026-10
+kind: website
+access: free
+url: https://lil.law.harvard.edu/lawskills-hub/
+links:
+  - label: Announcement
+    url: https://hls.harvard.edu/amicus-libris/library-innovation-lab-introduces-law-skills-hub/
+  - label: GitHub repository
+    url: https://github.com/harvard-lil/lawskills-hub
+audience: [faculty, jd-students]
+topics: [ai-agents, teaching-with-ai]
+description: >
+  A collection of agent skills for legal education: short Markdown instruction files you install in an
+  AI agent, grouped by role (student, professor, CLE, pro se). Examples include résumé coaching,
+  syllabus scaffolding, and reformatting feedback against a rubric. Developed in the open on GitHub,
+  with a test harness for contributed skills. License not yet set.
+added: 2026-10-20
+verified: 2026-10-20

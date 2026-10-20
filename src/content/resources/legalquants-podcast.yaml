@@ -1,0 +1,21 @@
+title: "The LegalQuants Podcast"
+authors:
+  - name: Victor Wang
+publisher: LegalQuants
+kind: podcast
+access: free
+frequency: "Every two weeks"
+url: https://www.legalquants.com/podcast
+feed: https://www.youtube.com/feeds/videos.xml?channel_id=UCZen0gRIPZZlza8NMIg6otg
+links:
+  - label: YouTube
+    url: https://www.youtube.com/@legalquants
+  - label: Spotify
+    url: https://open.spotify.com/show/1VlmGinwWWURwJErxWrzdq
+audience: [practitioners]
+topics: [ai-agents, tools-and-platforms, law-firm-business]
+description: >
+  Long-form video conversations with lawyers who build their own AI tools, often with live demos. Started
+  in September 2026.
+added: 2026-10-20
+verified: 2026-10-20

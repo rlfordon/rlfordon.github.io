@@ -1,0 +1,34 @@
+title: "The Practical Legal AI Handbook"
+publisher: Lawve AI
+date: 2026-10
+kind: online-course
+access: free
+url: https://lawve.ai/courses
+audience: [practitioners, jd-students, non-jd-students]
+description: >
+  Free self-paced web course for lawyers and legal teams with no technical background, from Lawve AI,
+  a hub of community-built agent skills and connectors for legal work. Short lessons with interactive
+  examples, a glossary, and sourced, dated figures. Only the first two of eight chapters were published
+  at the last check; the rest are announced as coming soon. No account required. No license stated.
+contents:
+  - title: "Introduction"
+    note: "Who it is for, the seven questions behind the course, and a survival glossary."
+    topics: [ai-fundamentals]
+  - title: "How can AI help my day-to-day work?"
+    note: "What AI is, chatbots vs. agents, skills, MCP and plugins, how legal teams use AI, and whether it saves time."
+    topics: [ai-fundamentals, ai-agents, law-firm-business]
+  - title: "Can I trust it?"
+    note: "Not yet published. Planned: hallucinations, sycophancy, benchmarks, testing on your own matters."
+  - title: "Am I allowed to use it?"
+    note: "Not yet published. Planned: uploaded documents and data reuse, anonymisation, professional rules by jurisdiction."
+  - title: "How do I choose the best tools?"
+    note: "Not yet published. Planned: subscription vs. API, legal vs. general-purpose tools, open vs. closed, questions for vendors."
+  - title: "How do we make it work across the team?"
+    note: "Not yet published. Planned: pilots, training, measuring time saved, change management."
+  - title: "What does this mean for my career?"
+    note: "Not yet published. Planned: skills to develop, legal engineers, fees and staffing."
+  - title: "Where and how do I start now?"
+    note: "Not yet published."
+contentsSource: https://lawve.ai/courses
+added: 2026-10-20
+verified: 2026-10-20

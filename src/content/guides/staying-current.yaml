@@ -8,7 +8,7 @@ intro: >
   filter to see just those. Frequency and access are as of the last check.
 noun: { one: source, many: sources }
 topicsHint: Tagged on each source. Pick one to see the sources that cover it; use + to add topics and find sources that cover them all.
-updated: 2026-10-03
+updated: 2026-10-20
 items:
   - ref: tldr-ai
   - ref: whittemore-ai-daily-brief
@@ -39,8 +39,13 @@ items:
   - ref: legaltech-hub
     favorite: true
   - ref: lambert-gebauer-geek-in-review
+  - ref: theodoropoulos-legal-innovation-spotlight
+  - ref: legalquants-weekly-digest
+  - ref: legalquants-podcast
+  - ref: ang-alt-counsel
   - ref: legal-it-insider
   - ref: charlotin-ai-hallucination-cases
+  - ref: perlman-ai-in-legal-education-archive
   - ref: ai-law-librarians
   - ref: lee-chatgpt-is-eating-the-world
   - ref: lawfare
