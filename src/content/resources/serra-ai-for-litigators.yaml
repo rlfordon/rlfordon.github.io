@@ -1,0 +1,47 @@
+title: "AI for Litigators: Practical Tools to Transform Your Practice"
+authors:
+  - name: Alexandria Serra
+publisher: Aspen Publishing (NITA)
+date: 2026-09-22
+pages: 200
+isbn: "9798886691801"
+kind: practitioner-book
+access: purchase
+price: "$107 print and ebook or ebook; $59 print-on-demand companion"
+url: https://aspenpublishing.com/products/serra-ai-litigators1
+audience: [practitioners]
+description: >
+  A practitioner guide for trial lawyers in the NITA series, from AI fundamentals and prompt engineering
+  through custom GPTs, AI-generated evidence, advocacy training simulations, hallucination and sanctions
+  risk, and firm operations.
+contents:
+  - title: "Introduction: Why AI Matters Now More Than Ever"
+    note: "Impact on the legal industry, the lawyer pipeline, technological competence in advocacy and trial preparation."
+    topics: [careers-and-licensure, professional-responsibility]
+  - title: "AI Fundamentals for Litigators"
+    note: "AI and machine learning terminology, how LLM systems learn from users, data security, redaction and anonymizing, informed consent."
+    topics: [ai-fundamentals, how-llms-work, confidentiality-and-client-data]
+  - title: "AI as Co-Intelligence: Why AI Won't Replace Human Litigators"
+    note: "Machine versus human tasks, the AGI question, the expert as filter, validator, evaluator, and supervisor roles."
+    topics: [careers-and-licensure]
+  - title: "Prompt Engineering: The Litigator's New Essential Skill"
+    note: "A recipe for strong prompts, defining use cases, prompting for demonstrative evidence, prompting for better prompts."
+    topics: [prompting]
+  - title: "Custom GPTs: Creating Secure AI Tools for Your Practice"
+    note: "Custom GPTs versus agents, vibe coding, building and testing a closed-universe GPT, confidentiality."
+    topics: [tools-and-platforms, ai-agents, confidentiality-and-client-data]
+  - title: "AI-Generated Evidence: Rules, Risks, and Courtroom Realities"
+    note: "Deepfakes, avatars as witnesses and representatives, AI expert evidence, FRE 107, proposed FRE 707 and 901(c), state approaches, privilege and work product."
+    topics: [evidence-and-deepfakes, courts-and-judicial-use]
+  - title: "Enhancing Advocacy Skills With AI Training Tools"
+    note: "Simulated courtrooms, objections, examination practice, evidentiary foundations, mock voir dire and focus groups, legal digital twins."
+    topics: [tools-and-platforms]
+  - title: "Confronting AI's Reputation Problem"
+    note: "Hallucinations, sycophancy, bias, plagiarism, environmental and ghost-work concerns, fake citations and sanctions, disclosure, a firm AI policy and risk assessment."
+    topics: [accuracy-and-verification, bias-and-discrimination, professional-responsibility, ai-governance-and-risk-management]
+  - title: "AI in the Business of Law: Applications Across Practice"
+    note: "Choosing a tech stack, client intake, budgeting and profitability forecasting, HR and operations, change management."
+    topics: [law-firm-business, evaluating-and-procuring-ai-tools]
+contentsSource: https://assets.ctfassets.net/exvcr1lfm0et/6Z6ZBS2SUwSEsbUODK0OmL/1411984d6d9f4b8540d68bdf9c752785/9798886691801_Serra_NITA_AI_for_Litigators_Practical_Tools_to_Transform_Your_Practice_TOC.pdf
+added: 2026-11-06
+verified: 2026-11-06

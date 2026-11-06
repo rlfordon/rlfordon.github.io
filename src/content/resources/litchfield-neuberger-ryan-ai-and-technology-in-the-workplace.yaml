@@ -1,0 +1,52 @@
+title: "Artificial Intelligence and Technology in the Workplace"
+authors:
+  - name: John L. Litchfield
+  - name: Mark J. Neuberger
+  - name: Michael F. Ryan
+publisher: LexisNexis Matthew Bender
+date: 2026-11-09
+status: forthcoming
+isbn: "9781663377562"
+kind: practitioner-book
+access: purchase
+price: "$299 print or ebook"
+url: https://store.lexisnexis.com/en-us/products/artificial-intelligence-and-technology-in-the-workplace.html
+audience: [practitioners]
+description: >
+  Practice guide for employers and their counsel on developing, deploying, monitoring, and evaluating AI
+  tools in employment, covering federal, state, and local rules and areas from hiring and wage-and-hour
+  law to benefits, immigration, labor law, and litigation.
+contents:
+  - title: "Introduction to Artificial Intelligence and Technology in the Workplace"
+    topics: [ai-fundamentals, employment-and-labor]
+  - title: "Developing a Workplace Artificial Intelligence Policy"
+    topics: [ai-governance-and-risk-management, employment-and-labor]
+  - title: "State Survey of State and Local AI Laws, Rules, and Regulations"
+    topics: [ai-regulation, employment-and-labor]
+  - title: "Artificial Intelligence and Legal Ethics Guidance"
+    topics: [professional-responsibility]
+  - title: "AI in Recruitment and Hiring"
+    topics: [employment-and-labor, bias-and-discrimination]
+  - title: "AI In Wage and Hour Law"
+    topics: [employment-and-labor]
+  - title: "Employer Secrets and AI"
+    topics: [patents-and-trade-secrets, employment-and-labor]
+  - title: "Artificial Intelligence in U.S. Immigration Law"
+    topics: [employment-and-labor]
+  - title: "Artificial Intelligence in Employee Benefits"
+    topics: [employment-and-labor]
+  - title: "Artificial Intelligence and Traditional Labor Law"
+    topics: [employment-and-labor]
+  - title: "Artificial Intelligence in Litigation"
+    topics: [courts-and-judicial-use]
+  - title: "AI and Employment Litigation"
+    topics: [employment-and-labor]
+  - title: "Implementing AI in Discovery"
+    topics: [ediscovery-and-document-review]
+  - title: "California Case Studies and Concerns"
+    topics: [employment-and-labor, ai-regulation]
+  - title: "Auditing Your HR Function for Compliance with AI Regulations"
+    topics: [ai-governance-and-risk-management, ai-regulation, employment-and-labor]
+contentsSource: https://store.lexisnexis.com/en-us/products/artificial-intelligence-and-technology-in-the-workplace.html
+added: 2026-11-06
+verified: 2026-11-06

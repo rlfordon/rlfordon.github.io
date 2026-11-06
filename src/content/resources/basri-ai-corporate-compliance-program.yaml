@@ -1,0 +1,45 @@
+title: "A Guide to Creating an Effective AI Corporate Compliance Program"
+authors:
+  - name: Carole Basri
+  - name: Shlomit Yanisky-Ravid
+  - name: Alonzo Barber
+publisher: Practising Law Institute
+date: 2026-09-08
+pages: 584
+isbn: "9781402451799"
+kind: treatise
+access: purchase
+price: "$395 print or PLI PLUS one-year subscription"
+url: https://www.pli.edu/catalog/publications/treatise/a-guide-to-creating-an-effective-ai-corporate-compliance-program/451116
+audience: [practitioners]
+description: >
+  Treatise on building an AI compliance program on the Sentencing Guidelines' seven elements and DOJ's
+  Evaluation of Corporate Compliance Programs, covering governance and board oversight, global regulation,
+  data privacy, security, and intellectual property, with checklists and template documents.
+contents:
+  - title: "The Dawn of the Artificial Intelligence Era—Navigating the New Frontier of Corporate Compliance"
+    topics: [in-house-and-compliance, ai-governance-and-risk-management]
+  - title: "How Do Artificial Intelligence Systems Actually Work?"
+    note: "With a glossary."
+    topics: [ai-fundamentals]
+  - title: "Artificial Intelligence Systems: Historical Perspectives"
+    note: "With a glossary."
+    topics: [ai-fundamentals]
+  - title: "Creating an \"Effective\" Artificial Intelligence Compliance Program"
+    note: "AI legal risk assessment, the Sentencing Guidelines' seven steps, the AI compliance officer, board oversight duties."
+    topics: [in-house-and-compliance, ai-governance-and-risk-management]
+  - title: "Toolkit for Artificial Intelligence Risk Management and Compliance"
+    topics: [ai-governance-and-risk-management, in-house-and-compliance]
+  - title: "AI Regulation"
+    topics: [ai-regulation]
+  - title: "The Artificial Intelligence Data Lifecycle and Data Privacy"
+    topics: [privacy-law]
+  - title: "AI Security"
+    topics: [ai-governance-and-risk-management]
+  - title: "AI and Intellectual Property"
+    topics: [copyright-and-training-data, patents-and-trade-secrets]
+  - title: "The Future of Artificial Intelligence and Compliance"
+    topics: [in-house-and-compliance, ai-governance-and-risk-management]
+contentsSource: https://www.pli.edu/catalog/publications/treatise/a-guide-to-creating-an-effective-ai-corporate-compliance-program/451116
+added: 2026-11-06
+verified: 2026-11-06
