@@ -10,11 +10,48 @@ links:
   - label: Syllabus
     url: https://llms4l.netlify.app/syllabus
 audience: [faculty, jd-students]
-topics: [tools-and-platforms, prompting, ai-agents, how-llms-work]
 description: >
   Public course site and syllabus for a Fall 2026 hands-on course in using, evaluating, and building
   with AI systems. The schedule runs from prompting and context engineering through
   retrieval-augmented generation and hallucination control, agents and MCP, speech and coding, and
   data analysis, alongside a semester-long legal AI project.
+contents:
+  - title: "Platforms and the Model Landscape"
+    note: "General and legal AI markets; Claude; Gemini, NotebookLM, and Workspace; ChatGPT and Codex; skills, CustomGPTs, plugins."
+    topics: [tools-and-platforms]
+  - title: "How the Models Work"
+    note: "Transformer architecture, tokens, parameters, training, fine-tuning, RLHF, distillation."
+    topics: [how-llms-work]
+  - title: "AI Regulation"
+    note: "The regulatory landscape for AI systems."
+    topics: [ai-regulation]
+  - title: "Prompt and Context Engineering"
+    note: "The CORRECT framework, advanced prompting, context windows, system prompts, skills, gems, retrieval-augmented generation."
+    topics: [prompting, how-llms-work]
+  - title: "Reliability and Professional Responsibility"
+    note: "Hallucination control, confidentiality under Rule 1.6, disclosure obligations."
+    topics: [accuracy-and-verification, professional-responsibility, confidentiality-and-client-data]
+  - title: "Extending the Models"
+    note: "MCP servers, connectors, skills, plugins, workflows, speech models, coding, website construction, data formats."
+    topics: [tools-and-platforms, ai-agents]
+  - title: "Data and Self-Education"
+    note: "Ethical scraping, structured data and outputs, data analysis, AI-assisted self-education."
+    topics: [computational-law-and-analytics]
+  - title: "Agents and Autonomy"
+    note: "Harness engineering, scheduled tasks, agentic browsing, computer use."
+    topics: [ai-agents]
+  - title: "Markets, Costs, and Design"
+    note: "Frontier models, the cost of AI, AI law firms, design and visualization with AI."
+    topics: [law-firm-business, tools-and-platforms]
+  - title: "Media and Editing"
+    note: "Video generation and AI-assisted editing."
+    topics: [tools-and-platforms]
+  - title: "Legal Research Platforms"
+    note: "Midpage, Descrybe, Consensus, research agents, Westlaw AI, Lexis AI, Harvey, Claude for Legal."
+    topics: [legal-research, evaluating-and-procuring-ai-tools]
+  - title: "Frontiers and the Profession"
+    note: "Foreign and comparative law, local models, judicial use, ADR, simulators, the profession."
+    topics: [international-and-comparative, courts-and-judicial-use, careers-and-licensure]
+contentsSource: https://llms4l.netlify.app/syllabus
 added: 2026-08-20
-verified: 2026-09-05
+verified: 2026-11-06

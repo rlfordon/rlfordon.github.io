@@ -19,23 +19,32 @@ description: >
   evidence, and governance policies and vendor checklists in the appendices.
 contents:
   - title: "The Intersection of Artificial Intelligence and Legal Practice"
-    topics: [ai-fundamentals]
+    note: "AI literacy as a professional competency, history of legal technology, cautionary tales and standing orders, the Model Rules (1.1, 1.4, 1.5, 1.6, 3.1, 3.4, 5.1, 5.3, 5.5), ABA resolutions and Formal Opinion 512."
+    topics: [ai-fundamentals, professional-responsibility, courts-and-judicial-use]
   - title: "What Is Artificial Intelligence"
-    topics: [ai-fundamentals]
+    note: "The Turing test, the Dartmouth Conference, AI winters and expert systems, machine learning, deep learning and neural networks, narrow, general, and superintelligent AI."
+    topics: [ai-fundamentals, how-llms-work, ai-safety-and-agi]
   - title: "Generative Artificial Intelligence"
-    topics: [how-llms-work]
+    note: "How generative AI and LLMs work, prompting and advanced techniques, prompt libraries, CustomGPTs, hallucinations, RLHF, agentic AI and its limits, data retention and privacy strategies."
+    topics: [how-llms-work, prompting, accuracy-and-verification, ai-agents, confidentiality-and-client-data]
   - title: "Revolutionizing Legal Practice with AI"
-    topics: [tools-and-platforms, law-firm-business]
+    note: "AI legal research platforms and market leaders, predictive modeling and verdict prediction, document assembly, contract analysis and due diligence, eDiscovery, chatbots, online dispute resolution."
+    topics: [tools-and-platforms, legal-research, litigation-analytics, drafting-and-contracts, ediscovery-and-document-review, access-to-justice]
   - title: "Principles of Ethical AI for Legal Professionals"
-    topics: [professional-responsibility, ai-governance-and-risk-management]
+    note: "AI alignment and its limits, regulatory models, accountability, validity and reliability, user trust, privacy, governance."
+    topics: [professional-responsibility, ai-governance-and-risk-management, ai-safety-and-agi, ai-regulation]
   - title: "Bias in Artificial Intelligence Systems"
-    topics: [bias-and-discrimination]
+    note: "Training data and other bias, equal protection and algorithmic discrimination, employment screening, credit, housing, veterans benefits, mitigation and monitoring."
+    topics: [bias-and-discrimination, employment-and-labor]
   - title: "Liability in the Age of AI"
+    note: "Tort liability, First Amendment, Section 230, causation, medical AI, contractual frameworks, insurance."
     topics: [liability-and-torts]
   - title: "Artificial Intelligence and the Courts"
+    note: "Technology adoption in courts, efficiency and due process, generative AI in courts, judicial independence and competence, deepfakes and evidence authentication."
     topics: [courts-and-judicial-use, accuracy-and-verification, evidence-and-deepfakes]
   - title: "AI and the Business of Law Practice"
-    topics: [law-firm-business]
+    note: "AI investment, the billable hour and alternative fees, client acquisition and advertising, malpractice insurance, AI governance policy, vendor assessment checklist."
+    topics: [law-firm-business, ai-governance-and-risk-management, evaluating-and-procuring-ai-tools]
   - title: "Appendix A: AI Tool Evaluation Form"
     topics: [evaluating-and-procuring-ai-tools]
   - title: "Appendix B: Client Informed Consent Templates"
@@ -68,4 +77,4 @@ contents:
     topics: [tools-and-platforms]
 contentsSource: https://subscription.westacademic.com/Book/Detail?id=29264
 added: 2026-08-14
-verified: 2026-09-05
+verified: 2026-11-06

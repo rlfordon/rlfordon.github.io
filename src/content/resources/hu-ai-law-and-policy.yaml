@@ -16,59 +16,86 @@ contents:
   - title: Introduction
     topics: [ai-fundamentals]
   - title: Definitions
+    note: "AI definitions in federal and state law, OECD and EU AI Act; components and terms; fields such as machine learning and NLP; narrow, generative, and general AI; AI lifecycles."
     topics: [ai-fundamentals]
   - title: Conceptualizing AI Governance
+    note: "Hard and soft law, horizontal and vertical oversight, risk-based and rights-based models, governance through statutory reform."
     topics: [ai-governance-and-risk-management, ai-regulation]
   - title: Algorithmic Discrimination and Disparate Impact
+    note: "Algorithmic bias harms, case studies in algorithmic bias, federal responses."
     topics: [bias-and-discrimination]
   - title: Transparency and Explanation
+    note: "Notice and disclosure, explanation, black-box accountability."
     topics: [ai-governance-and-risk-management, ai-regulation]
   - title: Data Privacy and Autonomy
+    note: "Informational privacy, self-determination and autonomy."
     topics: [privacy-law]
   - title: Personhood and Citizenship
+    note: "AI and personhood, human personhood as a legal requirement, androids and citizenship, virtual assistants."
     topics: [ai-personhood, copyright-and-training-data, patents-and-trade-secrets]
   - title: Human Oversight and Generative AI
+    note: "Human oversight, challenges of overseeing generative AI, evolving liabilities."
     topics: [ai-governance-and-risk-management, how-llms-work]
   - title: Selected European Union (EU) Frameworks
+    note: "The EU AI Act and related EU laws."
     topics: [ai-regulation, international-and-comparative]
   - title: Selected International Frameworks
+    note: "China, other international AI developments, international cooperation."
     topics: [international-and-comparative]
   - title: U.S. Federal and State Law Developments
+    note: "Federal and state and local law developments."
     topics: [ai-regulation]
   - title: "Overlapping Legal Regimes: International and Domestic, Public and Private"
+    note: "Platform regulation and internet law in the U.S., TikTok ban efforts as a case study."
     topics: [ai-regulation, international-and-comparative]
   - title: Expressive Freedoms
+    note: "First Amendment challenges by platforms and AI companies, filtering and content moderation."
     topics: [liability-and-torts]
   - title: Elections and Deepfakes
+    note: "Cognitive security, regulating deepfakes, AI robocalls."
     topics: [evidence-and-deepfakes]
   - title: Due Process and Equal Protection
+    note: "Substantive due process and information privacy, procedural due process, equal protection."
     topics: [government-and-administrative-use, bias-and-discrimination]
   - title: Criminal Procedure
+    note: "Criminal procedure challenges, AI-enhanced evidence in criminal proceedings."
     topics: [criminal-justice-and-policing]
   - title: Worker Protections in Equal Employment and Disability Laws
+    note: "Antidiscrimination and disability law in employment."
     topics: [employment-and-labor, bias-and-discrimination]
   - title: Consumer and Financial Protections
+    note: "Consumer protection, protections for children and minors."
     topics: [consumer-protection-and-competition]
   - title: "Overview of AI Product Liability and Negligence: Examining the Intersection of Tort and Contract Law"
+    note: "Torts and product liability, contract liability, medical liability."
     topics: [liability-and-torts]
   - title: Privacy Torts and Defamation
+    note: "Privacy torts, defamation."
     topics: [privacy-law, liability-and-torts]
   - title: Data Protection, Cybersecurity, and Web Scraping
+    note: "Data protection, cybersecurity and data breaches, web scraping."
     topics: [privacy-law]
   - title: Intellectual Property
+    note: "Patentability of AI, copyright and trademark infringement, trade secrets, USPTO guidance."
     topics: [copyright-and-training-data, patents-and-trade-secrets]
   - title: Securities and Antitrust
+    note: "Conflicts of interest, SEC enforcement, FTC antitrust enforcement, the EU Digital Markets Act."
     topics: [consumer-protection-and-competition]
   - title: Impact on Legal Practice and Legal Systems
+    note: "AI in the legal profession and courts, sanctions, AI in judicial decisionmaking and lawmaking."
     topics: [professional-responsibility, courts-and-judicial-use, law-firm-business]
   - title: AI Ethics and Audits
+    note: "Ethical frameworks, AI inventories and governance boards, auditing, assessments and monitoring."
     topics: [ai-governance-and-risk-management]
   - title: Remedies and Preventive Measures
+    note: "Preventive measures, pretesting and impact assessments, ex ante and ex post remedies."
     topics: [ai-regulation, ai-governance-and-risk-management]
   - title: National Security
+    note: "Military and intelligence AI, cyberattacks and geopolitical conflict, nuclear threats."
     topics: [national-security]
   - title: Humanity and Sustainability
+    note: "Labor strikes, workforce training, education and research, sustainability and the environment."
     topics: [employment-and-labor, ai-regulation]
-contentsSource: https://aspenpublishing.com/products/hu-ailawandpolicy
+contentsSource: https://assets.ctfassets.net/exvcr1lfm0et/60Ck7kJbZhXOHRXFDEt1p3/79de3590d1d5144d7655bcc6e2219145/9798886145472_HU_AI_Law_and_Policy__First_Edition_TOC.pdf
 added: 2026-08-14
-verified: 2026-11-01
+verified: 2026-11-06
