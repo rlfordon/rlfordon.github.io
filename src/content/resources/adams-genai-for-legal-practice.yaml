@@ -1,0 +1,86 @@
+title: "GenAI for Legal Practice"
+authors:
+  - name: Mitchell Adams
+publisher: Swinburne University of Technology
+date: 2025-08-01
+isbn: "9781925761627"
+kind: textbook
+access: open
+license: CC BY-NC-SA 4.0
+url: https://swinburne.studium.pub/gen-ai-legal-practice/
+links:
+  - label: DOI
+    url: https://doi.org/10.25916/z48s-w308
+audience: [practitioners, jd-students, faculty]
+description: >
+  Open textbook from Swinburne Law School on generative AI in Australian legal practice, published through
+  the CAUL Open Educational Resources Collective. Covers how AI and LLMs work, an AI Fluency Framework,
+  general and legal AI products, prompting for legal tasks, and ethics and AI policy. Updated regularly.
+contents:
+  - title: "Understanding Generative AI and its Role in Law"
+    note: "Law as a profession of words, ethical considerations, setting realistic expectations."
+    topics: [ai-fundamentals]
+  - title: "What is Artificial Intelligence?"
+    note: "Expert systems, history of AI, machine learning, deep learning and generative AI."
+    topics: [ai-fundamentals, computational-law-and-analytics]
+  - title: "Large Language Models"
+    note: "Foundation models, next-token prediction, tokens and context windows, interpretability research."
+    topics: [how-llms-work]
+  - title: "Retrieval-Augmented Generation"
+    note: "How RAG differs from standard chat; uses in case law research, knowledge management, compliance, and client document analysis."
+    topics: [how-llms-work, legal-research]
+  - title: "AI Agents"
+    note: "Core components of agents, how they differ from other approaches, a contract portfolio review example."
+    topics: [ai-agents]
+  - title: "Best Practices for Integrating AI into Legal Workflows"
+    note: "What AI fluency is; three modes of AI collaboration in law."
+    topics: [law-firm-business]
+  - title: "An AI Fluency Framework for Legal Practice"
+    note: "Five competencies (purpose, prompting, evaluation, responsibility, context), an AI fluency workflow, a competency-mapping exercise."
+    topics: [careers-and-licensure, prompting]
+  - title: "Adoption"
+    note: "Overview of the models to choose from."
+    topics: [tools-and-platforms]
+  - title: "ChatGPT"
+    topics: [tools-and-platforms]
+  - title: "Claude"
+    topics: [tools-and-platforms]
+  - title: "Gemini"
+    topics: [tools-and-platforms]
+  - title: "Other Options and Products"
+    note: "Perplexity, Llama, Grok, Mistral."
+    topics: [tools-and-platforms]
+  - title: "Platform Integration"
+    note: "Microsoft Copilot and Apple Intelligence, including privacy architecture."
+    topics: [tools-and-platforms, confidentiality-and-client-data]
+  - title: "Legal Generative AI"
+    note: "Harvey, Lexis+ AI, CoCounsel, Spellbook, and the legal AI landscape."
+    topics: [tools-and-platforms]
+  - title: "Fundamentals to Prompting"
+    note: "Prompt design, context and personas, output formats, hallucinations, sycophancy."
+    topics: [prompting, accuracy-and-verification]
+  - title: "Effective Legal Prompting"
+    note: "Guidelines, pitfalls, keeping confidential information out of prompts."
+    topics: [prompting, confidentiality-and-client-data]
+  - title: "Prompting a 'Reasoning' Model"
+    note: "Prompting reasoning models; deep research tools."
+    topics: [prompting, legal-research]
+  - title: "Prompt Engineering"
+    note: "Few-shot, prompt chaining, chain-of-thought, meta prompting, self-consistency, verification prompting, custom instructions."
+    topics: [prompting]
+  - title: "Practical Applications and Patterns"
+    note: "Summarisation and extraction, legal research and case briefs, client communication, document assembly, legal writing."
+    topics: [prompting, legal-research, drafting-and-contracts]
+  - title: "Evaluating and Refining Outputs"
+    note: "LLM risks and mitigations, checking AI-generated legal content, refining prompts."
+    topics: [accuracy-and-verification]
+  - title: "Build a Personal Prompt & Pattern Library"
+    topics: [prompting]
+  - title: "Ethical and Professional Responsibility Considerations"
+    note: "Fabricated case law and its fallout, professional obligations, a framework for Australian legal practice."
+    topics: [professional-responsibility, accuracy-and-verification, international-and-comparative]
+  - title: "Crafting an AI Policy"
+    topics: [ai-governance-and-risk-management]
+contentsSource: https://swinburne.studium.pub/gen-ai-legal-practice/
+added: 2026-11-06
+verified: 2026-11-06

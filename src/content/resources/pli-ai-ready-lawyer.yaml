@@ -1,0 +1,49 @@
+title: "The AI-Ready Lawyer: A Competency Framework for the AI Era"
+authors:
+  - name: Practising Law Institute Innovation Council
+  - name: Professional Development Consortium
+publisher: Practising Law Institute
+date: 2026-05-05
+pages: 18
+kind: article
+access: free
+url: https://cms.pli.edu/globalassets/resources/ai-competency/The-AI-Ready-Lawyer.pdf
+links:
+  - label: Announcement
+    url: https://www.pli.edu/company/media-and-press/2026/press-release--pli-introduces-industry-first-ai-competency-framework
+audience: [practitioners, faculty, jd-students]
+description: >
+  Competency framework for lawyers using AI, developed by PLI's Innovation Council and the Professional
+  Development Consortium with Creative Lawyers. Sets out five pillars and 20 competencies at three
+  proficiency levels, with guidance by practice setting and recommendations for each part of the profession.
+contents:
+  - title: "Introduction"
+    note: "Why a shared AI competency model is needed (ABA Formal Opinion 512, Model Rule 1.1), how each audience can use the framework, the five pillars, and the three proficiency levels."
+    topics: [careers-and-licensure, professional-responsibility]
+  - title: "Pillar 1: AI Fluency"
+    note: "Foundational AI knowledge (LLMs, training data, context windows, RAG, agentic AI), prompting, tool awareness and selection, recognizing AI failure modes."
+    topics: [ai-fundamentals, how-llms-work, prompting, evaluating-and-procuring-ai-tools]
+  - title: "Pillar 2: AI-Enhanced Legal Work"
+    note: "AI-assisted research, drafting and review, discovery and due diligence, client communication, workflow integration and delegation."
+    topics: [legal-research, drafting-and-contracts, ediscovery-and-document-review, law-firm-business]
+  - title: "Pillar 3: Critical Oversight"
+    note: "Verifying citations and analysis, preserving independent judgment against anchoring bias, supervising AI-assisted work."
+    topics: [accuracy-and-verification, professional-responsibility]
+  - title: "Pillar 4: Ethical AI Governance"
+    note: "Confidentiality and data protection, client AI requirements in outside counsel guidelines, vendor data terms, regulatory compliance, disclosure of AI use, bias."
+    topics: [confidentiality-and-client-data, professional-responsibility, ai-governance-and-risk-management, bias-and-discrimination]
+  - title: "Pillar 5: Professional Evolution"
+    note: "Continuous learning and change leadership, building the strengths AI lacks, mentoring and sharing knowledge."
+    topics: [careers-and-licensure, law-firm-business]
+  - title: "Cross-Cutting Considerations"
+    note: "Billing and economics, differences between practice settings, deskilling, speed of change, assessing AI competency."
+    topics: [law-firm-business, careers-and-licensure]
+  - title: "Implementation Guidance by Practice Setting"
+    note: "Large firms, mid-size firms, solo and small firms, in-house departments, public interest and government."
+    topics: [law-firm-business, in-house-and-compliance, access-to-justice]
+  - title: "Stakeholder Recommendations: How Each Part of the Profession Can Act"
+    note: "Actions for legal employers, law schools and educators, bar associations and regulators, in-house departments, courts, CLE providers, malpractice carriers, and individual lawyers."
+    topics: [teaching-with-ai, courts-and-judicial-use, professional-responsibility, in-house-and-compliance]
+contentsSource: https://cms.pli.edu/globalassets/resources/ai-competency/The-AI-Ready-Lawyer.pdf
+added: 2026-11-06
+verified: 2026-11-06

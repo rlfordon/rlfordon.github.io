@@ -11,7 +11,7 @@ intro: >
   the match was found. The filters narrow by how a title can be obtained and what kind of book it is.
   Titles marked Subscription are in the West Academic Study Aids package many law libraries license.
   Prices and dates are as of the last check.
-updated: 2026-11-05
+updated: 2026-11-06
 items:
   - ref: rich-ai-and-the-law
   - ref: martin-generative-ai-and-the-delivery-of-legal-services
@@ -55,6 +55,8 @@ items:
   - ref: barfield-pagallo-advanced-introduction-to-law-and-ai
   - ref: pli-linna-ai-competence-and-law-practice
   - ref: lawve-practical-legal-ai-handbook
+  - ref: pli-ai-ready-lawyer
+  - ref: adams-genai-for-legal-practice
   - ref: chandler-llms-for-lawyers
   - ref: arkfeld-on-artificial-intelligence
   - ref: artificial-intelligence-law-and-litigation
