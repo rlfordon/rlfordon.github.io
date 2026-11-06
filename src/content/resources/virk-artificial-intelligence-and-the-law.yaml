@@ -1,0 +1,52 @@
+title: "Artificial Intelligence and the Law: Global Perspectives, Regulatory Challenges, and Emerging Jurisprudence"
+authors:
+  - name: Simmi Virk
+edited: true
+publisher: Routledge
+date: 2026-07-24
+pages: 222
+isbn: "9781041303145"
+kind: monograph
+access: purchase
+price: "$54.99 paperback, $233.99 hardback, $54.99 ebook"
+url: https://www.routledge.com/Artificial-Intelligence-and-the-Law-Global-Perspectives-Regulatory-Challenges-and-Emerging-Jurisprudence/Virk/p/book/9781041303145
+audience: [faculty]
+description: >
+  Edited volume of fifteen chapters on AI, law, ethics, and human rights, with most contributions
+  focused on India and several comparing Indian law with the EU AI Act and the GDPR. Covers
+  regulation, deepfakes, judicial use of LLMs, criminal liability, national security, intellectual
+  property, and legal personhood.
+contents:
+  - title: "Artificial Intelligence and the Information Technology Act, 2000: A Critical Analysis of Legislative Gaps and Regulatory Challenges"
+    note: India's IT Act and its gaps for AI.
+    topics: [ai-regulation, international-and-comparative]
+  - title: "The Artificial Intelligence in the EU – Legal Aspect"
+    topics: [ai-regulation, international-and-comparative]
+  - title: "Balancing Risk and Rights: India's Emerging Framework and the EU AI Act on Facial Recognition and Deepfake Technologies"
+    topics: [ai-regulation, evidence-and-deepfakes, criminal-justice-and-policing, international-and-comparative]
+  - title: "Exploring the Issues and Challenges of Deepfakes: A Doctrinal Study"
+    topics: [evidence-and-deepfakes]
+  - title: "Balancing Innovation and Justice: Human Rights in the Age of Artificial Intelligence"
+    topics: [international-and-comparative]
+  - title: "Impact of AI on Child Education: A Critical Analysis"
+  - title: "Towards Sustainable AI Governance: Legal Challenges and Opportunities for Environmental Protection in India"
+    topics: [ai-regulation, international-and-comparative]
+  - title: "Governing AI Ethically: Lessons from Europe's GDPR and India's Emerging Regulatory Landscape"
+    topics: [privacy-law, ai-regulation, international-and-comparative]
+  - title: "Algorithmic Governance and Constitutional Accountability: Rethinking AI Regulation in India"
+    topics: [ai-regulation, government-and-administrative-use, international-and-comparative]
+  - title: "The Role of LLMs in Judicial Decision-Making in India: Challenges, Regulatory Frameworks and Future Directions"
+    topics: [courts-and-judicial-use, international-and-comparative]
+  - title: "Artificial Intelligence, Autonomy, and Criminal Liability in India: Rethinking Accountability"
+    topics: [criminal-justice-and-policing, liability-and-torts]
+  - title: "Role of artificial intelligence in national security"
+    topics: [national-security]
+  - title: "The Role of Artificial Intelligence in Shaping Intellectual Property Rights: A Comprehensive Review"
+    topics: [copyright-and-training-data, patents-and-trade-secrets]
+  - title: "Authorship in the Age of Artificial Intelligence: Navigating Copyright Challenges in AI-Generated Content"
+    topics: [copyright-and-training-data]
+  - title: "Endowing AI with Legal Personhood: A Jurisprudential Odyssey Through Theory and Practice"
+    topics: [ai-personhood]
+contentsSource: https://www.routledge.com/Artificial-Intelligence-and-the-Law-Global-Perspectives-Regulatory-Challenges-and-Emerging-Jurisprudence/Virk/p/book/9781041303145
+added: 2026-11-06
+verified: 2026-11-06

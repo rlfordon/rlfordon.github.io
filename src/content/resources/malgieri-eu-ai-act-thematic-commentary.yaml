@@ -1,0 +1,114 @@
+title: "The EU Artificial Intelligence Act: A Thematic Commentary"
+authors:
+  - name: Gianclaudio Malgieri
+  - name: Gloria González Fuster
+  - name: Alessandro Mantelero
+  - name: Gabriela Zanfir-Fortuna
+edited: true
+publisher: Hart Publishing
+date: 2026-05
+isbn: "9781509988600"
+kind: treatise
+access: purchase
+price: "£225 hardback, £202.50 ebook"
+url: https://doi.org/10.5040/9781509988570
+audience: [practitioners, faculty]
+description: >
+  Commentary on the EU AI Act, organized by theme, with chapters keyed to the Act's articles. It
+  covers prohibited practices, high-risk systems, general-purpose AI models, sandboxes, governance,
+  enforcement, and AI literacy, and closes with the Act's interplay with the GDPR, the DSA, the
+  Product Liability Directive, the DMA, and the Data Act.
+contents:
+  - title: "Introduction to the Commentary"
+    topics: [ai-regulation]
+  - title: "The EU AI Act: The Objectives of the Law (Article 1)"
+    note: "Part I, Key Issues."
+    topics: [ai-regulation]
+  - title: "The Scope of the AI Act in Light of the EU's Digital Strategy (Article 2)"
+    topics: [ai-regulation]
+  - title: "Definitions in the AI Act – Main Actors and Key Concepts (Article 3)"
+    note: Providers, deployers, AI system, and other defined terms.
+    topics: [ai-regulation]
+  - title: "The Risk Framework in the AI Act and the Role of the European Commission"
+    topics: [ai-regulation]
+  - title: "The Mixed Nature of the AI Act: Product Safety and Fundamental Rights Regulation"
+    topics: [ai-regulation]
+  - title: "The Prohibitions Related to Human Vulnerabilities and Manipulation (Articles 5(1)(a) and 5(1)(b))"
+    note: "Part II, Prohibited Practices."
+    topics: [ai-regulation]
+  - title: "Social Scoring (Article 5(1)(c))"
+    topics: [ai-regulation, government-and-administrative-use]
+  - title: "Predictive Policing and Facial Recognition (Article 5(1)(d) and 5(1)(e))"
+    topics: [ai-regulation, criminal-justice-and-policing]
+  - title: "The Prohibition of Emotion Recognition Systems in Education and the Workplace (Article 5(1)(f))"
+    topics: [ai-regulation, employment-and-labor]
+  - title: "The Prohibitions Related to Biometric Surveillance and their Exceptions (Articles 5(1)(g), 5(1)(h), and 5(2) to 5(8))"
+    note: Biometric categorization and real-time remote biometric identification by law enforcement.
+    topics: [ai-regulation, criminal-justice-and-policing, privacy-law]
+  - title: "Classification of High-Risk AI Systems and Its Update (Articles 6, 7, 50, 71, Annex I and Annex III)"
+    note: "Part III, High-Risk AI Systems."
+    topics: [ai-regulation]
+  - title: "Obligations of Providers of High-Risk AI Systems (Articles 8, 9, 16, 20, 21, 22)"
+    topics: [ai-regulation]
+  - title: "Deployers – Key Obligations (Article 26)"
+    topics: [ai-regulation]
+  - title: "Conformity Assessment, Quality and Risk Management Systems (Articles 8, 9, 17, 42, 43, 46)"
+    topics: [ai-regulation, ai-governance-and-risk-management]
+  - title: "The Fundamental Rights Impact Assessment (Article 27)"
+    topics: [ai-regulation, ai-governance-and-risk-management]
+  - title: "Data and Data Governance (Article 10)"
+    topics: [ai-regulation]
+  - title: "Accountability and Transparency in the EU AI Act: The Procedural Foundations of the Risk-Based Model (Articles 11–13, 18–19, and 50)"
+    note: Technical documentation, record-keeping, logs, and transparency duties.
+    topics: [ai-regulation]
+  - title: "Human Oversight (Article 14)"
+    topics: [ai-regulation, ai-governance-and-risk-management]
+  - title: "Accuracy, Robustness and Cybersecurity (Article 15)"
+    topics: [ai-regulation]
+  - title: "Identification and Obligations of Importers, Distributors, and Responsibilities Along the AI Value Chain (Articles 23, 24, 25)"
+    topics: [ai-regulation]
+  - title: "Standards, Certificates, Registration (Articles 40, 41, 44–49)"
+    note: Harmonized standards, common specifications, CE marking, and the EU database.
+    topics: [ai-regulation, ai-governance-and-risk-management]
+  - title: "The Obligations of Providers of General-Purpose AI Models (Articles 53, 54 and 56)"
+    note: "Part IV, General-Purpose AI Models. Includes the copyright policy and training-data summary duties."
+    topics: [ai-regulation, copyright-and-training-data]
+  - title: "General Purpose AI Models with Systemic Risks – Classification and Specific Obligations (Articles 51, 52, 55)"
+    topics: [ai-regulation]
+  - title: "AI Regulatory Sandboxes and Testing in Real-World Conditions (Articles 57–61)"
+    note: "Part V, Measures in Support of Innovation."
+    topics: [ai-regulation]
+  - title: "SMEs and Derogation (Articles 62 and 63)"
+    topics: [ai-regulation]
+  - title: "EU-Level Governance (AI Office, AI Board, Advisory Forum, Scientific Panel) (Articles 64 to 69)"
+    note: "Part VI, Governance."
+    topics: [ai-regulation]
+  - title: "National Level Governance (National Competent Authorities) and Notification Procedures"
+    topics: [ai-regulation]
+  - title: "Implementing Articles 72 and 73 of the EU AI Act: Practical Insights and Recommendations for Post Market Monitoring and Reporting Serious Incidents"
+    note: "Part VII, Monitoring and Enforcement."
+    topics: [ai-regulation, ai-governance-and-risk-management]
+  - title: "Enforcement (Articles 74–84 and 88–94)"
+    topics: [ai-regulation]
+  - title: "The Right to Explanation in the AI Act (Article 86)"
+    topics: [ai-regulation]
+  - title: "Remedies and Penalties (Articles 85, 87, 99–101)"
+    topics: [ai-regulation]
+  - title: "Codes of Conduct and EC Guidelines (Articles 56, 95–98)"
+    note: "Part VIII, Codes of Conduct, Guidelines and AI Literacy."
+    topics: [ai-regulation, ai-governance-and-risk-management]
+  - title: "AI Literacy (Article 4)"
+    topics: [ai-regulation]
+  - title: "The AI Act and the GDPR"
+    note: "Part IX, Interactions with the Digital Rulebook."
+    topics: [ai-regulation, privacy-law]
+  - title: "The AI Act and the Digital Services Act: Legal Consistency and Normative Tensions"
+    topics: [ai-regulation, consumer-protection-and-competition]
+  - title: "The AI Act and the Product Liability Directive"
+    topics: [ai-regulation, liability-and-torts]
+  - title: "Divergent Paths, Subtle Crossroads: Disentangling the DMA and the DA from the AI Act"
+    note: The Digital Markets Act and the Data Act.
+    topics: [ai-regulation, consumer-protection-and-competition]
+contentsSource: https://api.crossref.org/works?filter=isbn:9781509988600&rows=100
+added: 2026-11-06
+verified: 2026-11-06
