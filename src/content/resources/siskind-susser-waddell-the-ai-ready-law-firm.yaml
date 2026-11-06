@@ -1,0 +1,75 @@
+title: "The AI-Ready Law Firm: How Lawyers Use Generative Tools to Work Smarter and Serve Clients Better"
+authors:
+  - name: Gregory H. Siskind
+  - name: Jason Susser
+  - name: Josh Waddell
+publisher: American Bar Association
+date: 2026-08-20
+pages: 364
+isbn: "9781639058105"
+kind: practitioner-book
+access: purchase
+price: "$114; $103 ABA members; $91 section members"
+url: https://www.americanbar.org/products/inv/book/458897270/
+audience: [practitioners]
+description: >
+  A practical guide to generative AI in law practice, moving from prompt writing through research,
+  drafting, litigation, client intake, and billing, and closing with a chapter on legal ethics.
+contents:
+  - title: "What Generative AI Is (and What It's Not)"
+    topics: [ai-fundamentals, how-llms-work]
+  - title: "Prompt Writing 101 for Lawyers"
+    note: "Elements of a good legal prompt, common prompting techniques, building a prompt library."
+    topics: [prompting]
+  - title: "Legal Research Reimagined"
+    note: "RAG, hallucination mitigation, vendor due diligence, cross-jurisdictional research, AI research tools, cautions on public LLMs like ChatGPT and Claude."
+    topics: [legal-research, accuracy-and-verification, evaluating-and-procuring-ai-tools]
+  - title: "Drafting with AI"
+    note: "The evolution of AI drafting, early LLM constraints, use cases and corresponding products, finding a vendor."
+    topics: [drafting-and-contracts, tools-and-platforms]
+  - title: "Integrating AI with Case Management Systems"
+    note: "AI inside case management, custom reporting, existing features, limitations."
+    topics: [law-firm-business, tools-and-platforms]
+  - title: "Fact Analysis and Case Strategy"
+    topics: [litigation-analytics]
+  - title: "AI Tools for Litigators"
+    note: "Early case assessment, motions, discovery and document review, deposition and cross-examination prep, trial prep and exhibits, litigation strategy."
+    topics: [ediscovery-and-document-review, drafting-and-contracts, litigation-analytics]
+  - title: "Summarization and Translation"
+    topics: [tools-and-platforms]
+  - title: "Client Communication and Education"
+    note: "Explaining legal concepts, AI as a communication coach, client education materials."
+    topics: [law-firm-business]
+  - title: "Marketing and Business Development"
+    note: "Content at scale and in multiple languages, avatars, personal brand, social media, lead nurturing, AI replacing search for clients seeking legal help."
+    topics: [law-firm-business]
+  - title: "Client Intake and Support"
+    note: "CRM, smart intake, conflict checks and red-flag detection, intake KPIs."
+    topics: [law-firm-business]
+  - title: "Billing, Timekeeping, and Administrative Automation"
+    note: "Time-tracking tools, passive time tracking, administrative automation, legal operations over five years."
+    topics: [law-firm-business]
+  - title: "Firm Knowledge Management and Internal Tools"
+    note: "Internal GPTs and knowledge bases, document management integration, custom GPTs."
+    topics: [law-firm-business, tools-and-platforms]
+  - title: "Additional AI Use Cases and Examples for Your Law Practice"
+    note: "RFPs, engagement letters, policies, firm procedures bot, training materials, proofreading, plain English, presentations, anonymization, notetaking, AI receptionists."
+    topics: [law-firm-business, drafting-and-contracts]
+  - title: "AI Agents: Beyond the One-Off Prompt"
+    note: "LLMs vs. workflows vs. agents, workflow tools, examples, how to build an agent."
+    topics: [ai-agents]
+  - title: "Legal Ethics in the Age of Generative AI"
+    note: "Ethical frameworks, rule-by-rule analysis, privilege; appendix with a regulatory chart and sample engagement-letter disclosure language."
+    topics: [professional-responsibility, confidentiality-and-client-data, ai-regulation]
+  - title: "Why Implementation Matters"
+    note: "AI strategy, firm-wide use policy, training, change management, client transparency."
+    topics: [ai-governance-and-risk-management, law-firm-business]
+  - title: "The Future of AI and Legal Work"
+    note: "Early adoption, AI as additive, honesty about weaknesses, evolving roles in the firm."
+    topics: [careers-and-licensure, accuracy-and-verification]
+  - title: "Choosing the Right Tools for the Job"
+    note: "General AI tools, general legal tools, practice-area-specific tools; appendices with an AI legal software directory and a comparison of AI notetakers."
+    topics: [tools-and-platforms, evaluating-and-procuring-ai-tools]
+contentsSource: https://www.americanbar.org/products/inv/book/458897270/
+added: 2026-11-05
+verified: 2026-11-05

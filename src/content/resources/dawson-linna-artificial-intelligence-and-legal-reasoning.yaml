@@ -7,13 +7,53 @@ date: 2026-10-21
 pages: 1000
 kind: textbook
 access: purchase
-price: "$126"
+price: "$128 ebook; $162 ebook and audiobook"
 url: https://aspenpublishing.com/products/dawson-aiandlegal
 audience: [jd-students, non-jd-students]
-topics: [legal-research, drafting-and-contracts, professional-responsibility]
 description: >
   Skills-oriented textbook on using AI in legal work. Covers large language models, machine
   learning, and expert systems across research, drafting, counseling, and adjudication, with
   ethics integrated throughout.
+contents:
+  - title: "Introduction to Artificial Intelligence and Legal Reasoning"
+    note: "Why lawyers need to innovate, what legal reasoning is, judgment as a skill, computational law, combining rules- and data-driven approaches."
+    topics: [ai-fundamentals, computational-law-and-analytics]
+  - title: "Demystifying Artificial Intelligence and Data Science"
+    note: "Machine learning and deep learning, large language models and legal tasks, prompt engineering, RAG, AI agents and agentic AI, data science."
+    topics: [ai-fundamentals, how-llms-work, prompting, ai-agents, computational-law-and-analytics]
+  - title: "Evaluating AI Capabilities, Benefits, and Risks"
+    note: "AI risks, evaluating generative AI for legal services, frameworks for managing AI risk in legal organizations."
+    topics: [evaluating-and-procuring-ai-tools, accuracy-and-verification, ai-governance-and-risk-management]
+  - title: "Lawyer Rules of Professional Responsibility"
+    note: "Competence, confidentiality, AI output as evidence and use by experts."
+    topics: [professional-responsibility, confidentiality-and-client-data, evidence-and-deepfakes]
+  - title: "AI in Courts and Other Dispute Resolution Fora"
+    note: "Courts before and after generative AI, judges using gen AI tools, guidance on judicial use, algorithmic adjudication in courts, agencies, and ADR."
+    topics: [courts-and-judicial-use, government-and-administrative-use]
+  - title: "AI in Disputes and Litigation"
+    note: "Use cases in disputes, AI across the lifecycle of a dispute, AI in alternative dispute resolution."
+    topics: [litigation-analytics, ediscovery-and-document-review]
+  - title: "AI for Contracts, Transactions, and Regulatory Compliance"
+    topics: [drafting-and-contracts, in-house-and-compliance]
+  - title: "AI for Criminal and Public Law"
+    note: "Criminal law, legislation and coding law, AI in government."
+    topics: [criminal-justice-and-policing, computational-law-and-analytics, government-and-administrative-use]
+  - title: "AI for Access to Legal Services and Justice"
+    note: "The access to justice gap and emerging technology."
+    topics: [access-to-justice]
+  - title: "Regulation of Legal Services"
+    note: "Unauthorized practice of law, fee-sharing and nonlawyer ownership of law firms (Model Rule 5.4)."
+    topics: [professional-responsibility, access-to-justice]
+  - title: "AI Regulation and Governance"
+    note: "What AI governance is, the evolving regulatory landscape, principles and frameworks including ISO standards, law firm AI governance best practices."
+    topics: [ai-regulation, ai-governance-and-risk-management]
+  - title: "Frameworks for Innovation"
+    note: "Workflow optimization, innovation, and transformation frameworks such as design thinking and Toyota Kata; case studies."
+    topics: [law-firm-business]
+  - title: "Creating a Business Case for Innovation and Technology"
+    note: "The innovator's dilemma in Big Law, the Lean Canvas for business cases and individual career plans."
+    topics: [law-firm-business, careers-and-licensure]
+  - title: "Future of Law Firms, Lawyering, Legal Services, and the Law"
+    topics: [law-firm-business, careers-and-licensure]
 added: 2026-08-14
-verified: 2026-11-01
+verified: 2026-11-05

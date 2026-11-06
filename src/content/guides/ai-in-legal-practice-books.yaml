@@ -11,7 +11,7 @@ intro: >
   the match was found. The filters narrow by how a title can be obtained and what kind of book it is.
   Titles marked Subscription are in the West Academic Study Aids package many law libraries license.
   Prices and dates are as of the last check.
-updated: 2026-10-20
+updated: 2026-11-05
 items:
   - ref: rich-ai-and-the-law
   - ref: martin-generative-ai-and-the-delivery-of-legal-services
@@ -43,6 +43,7 @@ items:
   - ref: claypoole-think-like-a-lawyer-about-ai
   - ref: cwik-suarez-thomson-ai-legal-issues-policy-and-practical-strategies
   - ref: switzer-dittmar-the-ai-enabled-law-firm
+  - ref: siskind-susser-waddell-the-ai-ready-law-firm
   - ref: aba-the-augmented-lawyer
   - ref: levy-ai-and-the-legal-profession-2d
   - ref: pli-ai-course-handbooks
